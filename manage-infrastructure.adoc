@@ -1,0 +1,62 @@
+---
+sidebar: sidebar 
+permalink: manage-infrastructure.html 
+keywords: ai, chatbot, creating, knowledge base 
+summary: 您可以查看有关已部署的GenAI RAG基础架构的详细信息、或者删除不再需要的聊天机器人基础架构。 
+---
+= 管理GenAI基础架构
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以查看有关已部署的GenAI RAG基础架构的详细信息、或者删除不再需要的聊天机器人基础架构。
+
+
+
+== 查看有关基础架构的信息
+
+您可以查看有关聊天机器人基础架构的信息。
+
+.步骤
+. 从导航菜单中选择*AI*。
+. 选择*基础架构*选项卡。
+. 查看有关基础架构的信息、其中包括有关以下组件的详细信息：
++
+** AWS 设置
+** FSx for ONTAP文件系统
+** AI引擎
+** 引导程序数据库
+
+
+
+
+
+
+== 删除基础架构
+
+如果您不再需要为一个或多个聊天机器人部署的聊天机器人基础架构、可以将其从Workload Factory中删除。
+
+
+NOTE: 此基础架构上部署的所有聊天机器人都将被禁用、并且所有聊天历史记录都将被删除。
+
+此操作仅会从Workload Factory中删除指向AI基础架构的链接、而不会从AWS中删除所有组件。您需要从AWS中手动删除以下基础架构组件：
+
+* VM实例
+* 专用端点
+* FSx for ONTAP文件系统上包含AI数据库的卷
+* IAM角色
+* 策略
+* 安全组
+
+
+.步骤
+. 从导航菜单中选择*AI*。
+. 选择*基础架构*选项卡。
+. 选择 image:icon-action.png["选项按钮"] 并选择*删除聊天机器人基础架构*。
+. 确认要删除基础架构，然后选择*Remove*。
+
+
+.结果
+聊天机器人基础架构组件将从Workload Factory中删除。

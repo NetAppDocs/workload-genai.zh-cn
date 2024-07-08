@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: activate-authentication.html 
+keywords: ai, chatbot, publishing, knowledge base 
+summary: 激活知识库身份验证、以便在将知识库与聊天机器人应用程序集成时需要令牌验证和ACL。 
+---
+= 为知识库激活外部身份验证
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+激活知识库身份验证、以便在使用API端点将知识库与聊天机器人应用程序集成时需要进行令牌验证和ACL。
+
+.步骤
+. 从"Knowledge Bases"清单页面中、选择要发布的知识库。
+. 选择 image:icon-action.png["选项按钮"] 并选择*管理知识库*。
+. 选择*操作*菜单，然后选择*管理身份验证设置*。
+. 设置身份验证：
++
+.. 选择*激活身份验证设置*。
+.. 提供所需信息：
++
+*** 算法
+*** 受众
+*** 颁发者
+*** JWKS URI
+
+
+
+
++
+您应从身份验证提供程序获取这些字段的值。
+
+. 选择 * 保存 * 。
+
+
+.结果
+现在、您已发布知识库、并拥有可用于将知识库与聊天机器人应用程序集成的唯一端点。

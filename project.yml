@@ -1,0 +1,66 @@
+---
+settings:
+  name: GenAI
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  langs: zh-cn,us-en,ja-jp,ko-kr,zh-tw,de-de,es-es,fr-fr,it-it
+sidebar:
+  entries:
+  - title: GenAI文档
+    url: "/index.html"
+  - title: 发行说明
+    entries:
+    - title: 新增功能
+      url: "/whats-new.html"
+  - title: 开始使用
+    entries:
+    - title: 了解适用于GenAI的Workload Factory
+      url: "/ai-workloads-overview.html"
+    - title: 快速入门
+      url: "/quick-start.html"
+    - title: GenAI要求
+      url: "/requirements.html"
+    - title: 为您的知识库确定数据源
+      url: "/identify-data-sources.html"
+    - title: 部署知识库基础架构
+      url: "/deploy-infrastructure.html"
+  - title: 使用GenAI创建知识库
+    entries:
+    - title: 建立知识库
+      entries:
+      - title: 创建知识库
+        url: "/create-knowledgebase.html"
+      - title: 测试知识库
+        url: "/test-knowledgebase.html"
+      - title: 激活身份验证
+        url: "/activate-authentication.html"
+      - title: 发布知识库
+        url: "/publish-knowledgebase.html"
+      - title: 接下来可以执行的操作
+        url: "/whats-next.html"
+    - title: 管理数据源
+      url: "/manage-data-source.html"
+    - title: 管理知识库
+      url: "/manage-knowledgebase.html"
+  - title: 管理GenAI
+    entries:
+    - title: 管理GenAI基础架构
+      url: "/manage-infrastructure.html"
+    - title: NetApp GenAI引擎的组件
+      url: "/genai-engine-instance.html"
+  - title: 知识和支持
+    entries:
+    - title: 注册以获得支持
+      url: "/support-registration.html"
+    - title: 获取帮助
+      url: "/get-help.html"
+  - title: 法律声明
+    url: "/legal-notices.html"
+product-family:
+  name: BlueXP Workload Factory for AWS
+  repo: workload-family

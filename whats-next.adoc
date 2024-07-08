@@ -1,0 +1,25 @@
+---
+sidebar: sidebar 
+permalink: whats-next.html 
+keywords: what you can do, knowledge base 
+summary: 现在、您已经使用企业数据创建了知识库并为用户部署了该知识库、您可以管理知识库、数据源和RAG基础架构、包括适用于ONTAP文件系统的FSx。 
+---
+= 接下来可以执行的操作
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+现在、您已经使用企业数据创建了知识库并为用户部署了该知识库、您可以管理知识库、数据源和RAG基础架构、包括适用于ONTAP文件系统的FSx。
+
+您可以执行以下任务来管理知识库组件：
+
+* 更新数据源的内容或添加新数据源、并将这些更改与知识库和聊天机器人同步。
+* 管理数据源设置、包括分块策略和权限感知(用于SMB文件访问)。
+* 管理您的知识库设置、包括聊天模式和对话开场白。
+* 取消发布知识库或在进行更改后重新发布知识库。
+* 备份和保护FSx for ONTAP文件系统上的重要数据、以确保知识库数据和其他基础架构组件始终可用。
+
+
+有关管理FSx for ONTAP文件系统的信息、请转到 https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["Workload Factory for Amazon FSx for NetApp ONTAP文档"^] 以查看可使用的备份和保护功能。

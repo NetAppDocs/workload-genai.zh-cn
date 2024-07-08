@@ -1,0 +1,93 @@
+---
+sidebar: sidebar 
+permalink: deploy-infrastructure.html 
+keywords: ai, chatbot, infrastructure, bedrock, fsx for ontap 
+summary: 您需要先在环境中部署RAG框架的基础架构、然后才能为组织构建FSx for ONTAP知识库和应用程序。主要基础架构组件包括Amazon Brock AI服务、NetApp GenAI引擎的虚拟机实例以及适用于ONTAP文件系统的FSx。 
+---
+= 部署GenAI基础架构
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+您需要先在环境中部署适用于RAG框架的GenAI基础架构、然后才能为组织构建FSx for ONTAP知识库和应用程序。主要基础架构组件包括Amazon Brock服务、NetApp GenAI引擎的虚拟机实例以及适用于ONTAP文件系统的FSx。
+
+部署的基础架构可以支持多个知识库和聊天机器人、因此您通常只需要执行一次此任务。
+
+
+
+== 基础架构详细信息
+
+您的GenAI部署必须位于启用了Amazon Brock的AWS地区。 https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-supported.html["查看受支持区域的列表"^]
+
+此部署包含以下组件。
+
+亚马逊基岩服务:: Amazon Brock是一项完全托管的服务、支持您通过单个API使用领先AI公司的基础模型(FMS)。它还提供构建安全生成型AI应用程序所需的功能。
++
+--
+https://aws.amazon.com/bedrock/["了解有关Amazon Brock的更多信息"^]
+
+--
+NetApp GenAI引擎的虚拟机:: 在此过程中会部署NetApp GenAI引擎。它提供了从数据源中加载数据、然后将该数据写入向量数据库的处理能力。
+FSx for ONTAP文件系统:: FSx for ONTAP文件系统为您的GenAI系统提供存储。
++
+--
+此时将部署一个卷、其中包含用于存储基础模型根据数据源生成的数据的向量数据库。
+
+您要集成到知识库中的数据源可以位于同一个FSx for ONTAP文件系统上、也可以位于不同的系统上。
+
+NetApp GenAI引擎可监控这两个卷并与之交互。
+
+--
+
+
+下图显示了GenAI基础架构。编号为1、2和3的部件将在此过程中展开。在开始部署之前、其他要素必须已准备就绪。
+
+image:diagram-chatbot-infrastructure.png["AI聊天机器人组件示意图。"]
+
+
+
+== 部署GenAI基础架构
+
+您需要输入AWS凭据并选择适用于ONTAP的FSx文件系统、以部署恢复增强生成(RAG)基础架构。
+
+.开始之前
+在开始此过程之前、请确保您的环境满足 link:requirements.html["要求"] 要求。
+
+.步骤
+. 登录到Workload Factory。
+. 在AI Workloads (AI工作负载)磁贴中、选择*部署和管理*。
+. 查看基础架构图并选择“*下一步”。
+. 完成*AWS设置*部分中的项目：
++
+.. *AWS凭据*：选择或添加可提供部署AWS资源权限的AWS凭据。
+.. *位置*：选择AWS区域、VPC和子网。
++
+GenAI部署必须位于启用了Amazon Brock的AWS区域中。 https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-supported.html["查看受支持区域的列表"^]
+
+
+
+. 完成*Infrastructure settings (基础架构设置)*部分中的项目：
++
+.. *FSx for ONTAP file system*：选择FSx for ONTAP文件系统和要部署GenAI实例数据库卷的Storage VM、然后指定要用于此卷的名称。
++
+根据Workload Factory是否具有FSx for ONTAP文件系统的凭据、您可能需要输入用户名和密码。
+
+.. *标记*：输入要应用于此部署中的所有AWS资源的任何标记键/值对。
+.. *密钥对*：选择一个可安全连接到NetApp GenAI引擎实例的密钥对。
+
+
+. 选择*Deploy开始部署。
+
+
+.结果
+Workload Factory开始部署聊天机器人基础架构。此过程可能需要长达10分钟。
+
+在部署过程中、将设置以下各项：
+
+* 网络与专用端点一起设置。
+* 此时将创建IAM角色、实例配置文件和安全组。
+* 在FSx for ONTAP文件系统上创建用于GenAI引擎数据库(LanceDB)的卷。
+* 此时将部署GenAI引擎的虚拟机实例。
+

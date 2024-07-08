@@ -1,0 +1,93 @@
+---
+sidebar: sidebar 
+permalink: requirements.html 
+keywords: ai, chatbot, prerequisites, bedrock, fsx for ontap, prerequisites, requirements 
+summary: '在构建知识库之前、请确保已正确设置Workload Factory和AWS。其中包括拥有AWS登录凭据、部署了一个FSx for ONTAP文件系统(其中包含您要集成到知识库中的数据源)、访问Amazon B基石AI服务等。' 
+---
+= GenAI要求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+在构建知识库之前、请确保已正确设置Workload Factory和AWS。其中包括拥有AWS登录凭据、部署了一个FSx for ONTAP文件系统(其中包含您要集成到知识库中的数据源)、访问Amazon B基石AI服务等。
+
+工作负载出厂登录和帐户:: 您需要登录到Workload Factory并创建帐户。
++
+--
+https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["了解有关登录和创建帐户的更多信息"^]
+
+--
+AWS 凭据和权限:: 您需要向具有自动化权限的工作负载工厂添加AWS凭据、这意味着您将在_Automate _模式下对GenAI使用工作负载工厂。
++
+--
+目前不支持_Basic_模式和_Read_模式权限。
+
+设置凭据时、选择如下所示的权限后、您将拥有管理FSx for ONTAP文件系统以及部署和管理GenAI EC2实例以及知识库和聊天机器人所需的其他AWS资源的完全访问权限。
+
+image:screenshot-ai-permissions.png["屏幕截图显示了用于完全管理AI资源的权限设置。"]
+
+https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["了解如何将AWS凭据添加到Workload Factory"^]
+
+--
+亚马逊基岩:: Amazon Brock使您能够使用基础模型、并提供构建生成性AI应用程序的功能。
++
+--
+在开始使用适用于GenAI的Workload Factory之前、您必须先设置Amazon Brock。您的GenAI部署必须位于启用了Amazon Brock的AWS地区。
+
+* https://docs.aws.amazon.com/bedrock/latest/userguide/setting-up.html["AWS文档：设置Amazon Brock"^]
+* https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-supported.html["AWS文档：Amazon Brock知识库支持的区域和型号"^]
+
+
+--
+嵌入模型:: 在创建知识库之前、您必须启用计划使用的嵌入模型。支持以下嵌入模型：
++
+--
+* T人 嵌入G1 -文本
+* T人 嵌入文本v2
+* 第1代多模态嵌入
++
+https://aws.amazon.com/bedrock/titan/["详细了解Amazon大力孙"^]
+
+
+
+--
+聊天模式:: 在创建知识库之前、您必须启用计划使用的基本聊天模式。支持以下克洛德聊天模式：
++
+--
+* Claude 3.5 Sonnet
+* 克洛德3 Ops.
+* 克洛德3号
+* 克洛德3 Sonnet
+* 克洛德2.1
+* 克洛德2.0
++
+由于型号支持因AWS地区而异、请参见 https://docs.aws.amazon.com/bedrock/latest/userguide/models-regions.html["此AWS文档页面"^] 以验证您可以在计划部署知识库的地区使用哪些型号。
+
++
+详细了解可帮助您进行选择的型号： https://aws.amazon.com/bedrock/claude/["anthpic的克洛德在亚马逊基岩"^]
+
+
+
+--
+FSx for ONTAP文件系统:: 对于ONTAP文件系统、至少需要一个FSx：
++
+--
+* NetApp GenAI引擎将使用一个文件系统来存储知识库所使用的矢量数据库。
++
+此FSx for ONTAP文件系统必须使用FlexVol卷。不支持 FlexGroup 卷。
+
+* 一个或多个文件系统将包含要集成到知识库中的数据源。
++
+一个FSx for ONTAP文件系统可同时用于这两种用途、也可以使用多个FSx for ONTAP文件系统。
+
+* 您需要了解AWS FSx for ONTAP文件系统所在的AWS区域、VPC和子网。文件系统必须位于已启用Amazon Brock的AWS区域中。
+* 您需要考虑要应用于此部署中的AWS资源的标记键/值对(可选)。
+* 您需要知道密钥对信息、以便安全地连接到NetApp AI引擎实例。
+
+
+https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["了解如何部署和管理FSx for ONTAP文件系统"^]
+
+--
+
