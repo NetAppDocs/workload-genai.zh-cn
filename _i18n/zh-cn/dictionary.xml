@@ -54,7 +54,6 @@
   <block id="80a4d47d289b6794b7af32bf0403d817" category="list-text">根据知识库中的内容自动构建对话开场问题。</block>
   <block id="d115eba24b3d1be73af7f0952b82dc13" category="list-text">为数据管理员提供了一个聊天模拟器、用于测试与知识库的聊天。</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">成本</block>
-  <block id="848d5941560ff7e3f492b8bc6ca745d1" category="paragraph">在预览期间、使用Workload Factory的GenAI功能无需支付任何费用。</block>
   <block id="ca4fec9e2b2e873ba73dde822ed0fd02" category="paragraph">但是、要支持生成性AI基础架构、您需要为部署的AWS资源付费。例如、您将为Amazon Brock AI服务支付AWS费用、为ONTAP文件系统和存储容量支付FSx费用、并为GenAI引擎EC2实例支付费用。</block>
   <block id="0b9c6eef4e3d3a222eb04e910d252339" category="section-title">许可</block>
   <block id="0ea77fd2fdca0ee14d426a023ea715ad" category="paragraph">使用Workload Factory的AI功能无需从NetApp获得任何特殊许可证。</block>
@@ -538,4 +537,5 @@
   <block id="2e800147de9688c09f27dae52c542680" category="sidebar">使用GenAI创建知识库</block>
   <block id="b032727d9e00be7e59aefec94a0972c2" category="sidebar">激活身份验证</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知识和支持</block>
+  <block id="3163a16fc98aa29c5fea8b61c62bb459" category="paragraph">使用Workload Factory的GenAI功能无需任何成本。</block>
 </blocks>

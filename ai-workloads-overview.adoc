@@ -58,7 +58,7 @@ GenAI可通过以下方式帮助使用RAG构建生成性AI应用程序：
 
 == 成本
 
-在预览期间、使用Workload Factory的GenAI功能无需支付任何费用。
+使用Workload Factory的GenAI功能无需任何成本。
 
 但是、要支持生成性AI基础架构、您需要为部署的AWS资源付费。例如、您将为Amazon Brock AI服务支付AWS费用、为ONTAP文件系统和存储容量支付FSx费用、并为GenAI引擎EC2实例支付费用。
 
