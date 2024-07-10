@@ -538,4 +538,9 @@
   <block id="b032727d9e00be7e59aefec94a0972c2" category="sidebar">激活身份验证</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知识和支持</block>
   <block id="3163a16fc98aa29c5fea8b61c62bb459" category="paragraph">使用Workload Factory的GenAI功能无需任何成本。</block>
+  <block id="a46c34e822b00eb49125943300225ec1" category="summary">构建知识库并测试聊天机器人后、您可以设置应用程序、使用户能够查询聊天机器人。</block>
+  <block id="4c096c170a3ae328a9df5fb19871a9a7" category="doc">创建由FSx for ONTAP知识库提供支持的应用程序</block>
+  <block id="3034501b6830f6e24b0e219fa3565ffb" category="inline-link">了解如何在FSx for ONTAP上创建基于RAG的AI应用程序</block>
+  <block id="cddb505028d2d2c7026aad1d17c19a05" category="paragraph"><block ref="cddb505028d2d2c7026aad1d17c19a05" category="inline-link-rx"></block></block>
+  <block id="53b343f4a880bcff3b258324a35744ff" category="sidebar">创建基于RAG的AI应用程序</block>
 </blocks>

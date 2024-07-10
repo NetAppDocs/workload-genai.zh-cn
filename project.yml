@@ -41,6 +41,8 @@ sidebar:
         url: "/activate-authentication.html"
       - title: 发布知识库
         url: "/publish-knowledgebase.html"
+      - title: 创建基于RAG的AI应用程序
+        url: "/create-application.html"
       - title: 接下来可以执行的操作
         url: "/whats-next.html"
     - title: 管理数据源
