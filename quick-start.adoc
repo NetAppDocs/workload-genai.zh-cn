@@ -15,7 +15,7 @@ summary: 开始使用Amazon FSx for NetApp ONTAP文件系统上的组织数据�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] link:requirements.html["设置您的环境以满足GenAI要求"]
 [role="quick-margin-para"]
-您需要AWS凭据来部署AWS基础架构、部署并发现FSx for ONTAP文件系统、要集成到知识库中的数据源列表、访问Amazon Brock AI服务等。
+您需要AWS凭据来部署AWS基础架构、部署和发现FSx for ONTAP文件系统、要集成到知识库中的数据源列表、访问Amazon Brock AI服务等。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] link:identify-data-sources.html["确定包含数据源的FSx for ONTAP文件系统"]
 [role="quick-margin-para"]

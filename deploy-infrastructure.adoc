@@ -90,4 +90,6 @@ Workload Factory开始部署聊天机器人基础架构。此过程可能需要�
 * 此时将创建IAM角色、实例配置文件和安全组。
 * 在FSx for ONTAP文件系统上创建用于GenAI引擎数据库(LanceDB)的卷。
 * 此时将部署GenAI引擎的虚拟机实例。
+* Amazon Brock配置为使用带有前缀的日志组将日志发送到Amazon CloudWatch日志 `/aws/bedrock/`。
+* GenAI引擎配置为使用名为的日志组将日志发送到Amazon CloudWatch Logs、 `/netapp/wlmai/<tenancyAccountId>/randomId`其中是当前用户的。 `<tenancyAccountID>` https://docs.netapp.com/us-en/bluexp-automation/platform/get_identifiers.html#get-the-account-identifier["BlueXP帐户ID"^]
 

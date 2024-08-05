@@ -388,7 +388,6 @@
   <block id="19761722f9e779bd2a70fef96c24a1bc" category="paragraph">Workload Factory会发布此知识库。在知识库的详细信息页面上、状态将从*未发布*更改为*已发布。*</block>
   <block id="5e92f6a356303934a45930f0e541c6b1" category="paragraph">现在、您可以获取有关知识库唯一端点的详细信息。</block>
   <block id="004faa273ca0b2383f0f12b8850c493b" category="list-text">在已发布状态旁边，选择*view*。</block>
-  <block id="d1f4efe2fd3a800f4b008e172439fe85" category="paragraph">此时将显示有关如何使用工作负载出厂API访问知识库的详细信息。</block>
   <block id="9de2775e528dfff9dd9666885c222272" category="list-text">从*查看已发布信息*对话框中，复制可用于将知识库与应用程序集成的API端点。</block>
   <block id="7495d9f71402d3b1d20f08bd19ac6562" category="inline-link">API文档</block>
   <block id="2cb94eb0648b9f93f300ea0aff833f95" category="paragraph">要了解有关API端点的更多信息、请转到<block ref="c0a9aa55ed57e2e15b2d20baa6a6e023" category="inline-link-rx"></block> 、然后选择*人工智能&gt;外部*。</block>
@@ -398,7 +397,6 @@
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一个</block>
   <block id="e16edd708081c06a9c8bdef1486a94b4" category="inline-link-macro">设置您的环境以满足GenAI要求</block>
   <block id="0b0e916064e065ab12e1db6735832ef0" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> <block ref="d4a51aa0811f51e3206f49b62f46f1ef" category="inline-link-macro-rx"></block></block>
-  <block id="926f216b1b078ff9ce47e61e22932514" category="paragraph">您需要AWS凭据来部署AWS基础架构、部署并发现FSx for ONTAP文件系统、要集成到知识库中的数据源列表、访问Amazon Brock AI服务等。</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">两个</block>
   <block id="36ec882c51ea2d7689f78bed44b7fdaa" category="inline-link-macro">确定包含数据源的FSx for ONTAP文件系统</block>
   <block id="cc9cd1c7d0a54d3fe49ca467804963fb" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> <block ref="7206191241f03719b7415c03564b4c6e" category="inline-link-macro-rx"></block></block>
@@ -539,8 +537,17 @@
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知识和支持</block>
   <block id="3163a16fc98aa29c5fea8b61c62bb459" category="paragraph">使用Workload Factory的GenAI功能无需任何成本。</block>
   <block id="a46c34e822b00eb49125943300225ec1" category="summary">构建知识库并测试聊天机器人后、您可以设置应用程序、使用户能够查询聊天机器人。</block>
-  <block id="4c096c170a3ae328a9df5fb19871a9a7" category="doc">创建由FSx for ONTAP知识库提供支持的应用程序</block>
   <block id="3034501b6830f6e24b0e219fa3565ffb" category="inline-link">了解如何在FSx for ONTAP上创建基于RAG的AI应用程序</block>
   <block id="cddb505028d2d2c7026aad1d17c19a05" category="paragraph"><block ref="cddb505028d2d2c7026aad1d17c19a05" category="inline-link-rx"></block></block>
   <block id="53b343f4a880bcff3b258324a35744ff" category="sidebar">创建基于RAG的AI应用程序</block>
+  <block id="da1fd32e4f4851fbf4922d1c55e8fcc0" category="list-text">从"Knowledge Bases"清单页面中、选择要激活身份验证的知识库。</block>
+  <block id="d71d72ee7bc5c79bade09f02715592c3" category="paragraph">知识库身份验证现在处于活动状态、您可以使用API端点与知识库进行交互、并将知识库与聊天机器人应用程序集成。</block>
+  <block id="c83d7c23906c063b64dd22d30483cb24" category="list-text">Amazon Brock配置为使用带有前缀的日志组将日志发送到Amazon CloudWatch日志<block ref="26245dda4fa653114e9a41956171489d" prefix=" " category="inline-code"></block>。</block>
+  <block id="6fbe5ae14d71eb3abafcfce8f7fe977a" category="inline-link">BlueXP帐户ID</block>
+  <block id="af270465b477b731bafe1e4859956cc4" category="list-text">GenAI引擎配置为使用名为的日志组将日志发送到Amazon CloudWatch Logs、<block ref="267ed14c989ee7da1da6b5683a1ba205" prefix=" " category="inline-code"></block>其中是当前用户的。<block ref="44014fe9a7dd0d34b59279b9206b84b3" prefix=" " category="inline-code"></block><block ref="bffdd6286177ca86f99ccefe410268a2" category="inline-link-rx"></block></block>
+  <block id="b3ec171bb9a8cc7c009e2caf4d945535" category="paragraph">此时将显示有关如何使用工作负载出厂API访问知识库的详细信息。</block>
+  <block id="f48c3e82e3f3b9cc782fe1277e362ec5" category="paragraph">您需要AWS凭据来部署AWS基础架构、部署和发现FSx for ONTAP文件系统、要集成到知识库中的数据源列表、访问Amazon Brock AI服务等。</block>
+  <block id="691e71734464aaf43017f5b033e54559" category="section-title">2024 年 8 月 4 日</block>
+  <block id="ec7827c2237ae7b863c9ba93b519cbc1" category="section-title">Amazon CloudWatch Logs集成</block>
+  <block id="64c1dd8cb5f86710c3293cc9807760fb" category="paragraph">生成型AI工作负载现已与Amazon CloudWatch Logs集成、使您能够监控生成型AI工作负载日志文件。</block>
 </blocks>

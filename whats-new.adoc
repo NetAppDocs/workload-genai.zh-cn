@@ -15,6 +15,16 @@ summary: 了解Workload Factory的AI工作负载功能的新增功能。
 
 
 
+== 2024 年 8 月 4 日
+
+
+
+=== Amazon CloudWatch Logs集成
+
+生成型AI工作负载现已与Amazon CloudWatch Logs集成、使您能够监控生成型AI工作负载日志文件。
+
+
+
 == 2024年7月7日
 
 
