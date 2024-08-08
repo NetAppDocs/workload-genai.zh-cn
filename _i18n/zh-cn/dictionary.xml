@@ -543,13 +543,13 @@
   <block id="691e71734464aaf43017f5b033e54559" category="section-title">2024 年 8 月 4 日</block>
   <block id="ec7827c2237ae7b863c9ba93b519cbc1" category="section-title">Amazon CloudWatch Logs集成</block>
   <block id="64c1dd8cb5f86710c3293cc9807760fb" category="paragraph">生成型AI工作负载现已与Amazon CloudWatch Logs集成、使您能够监控生成型AI工作负载日志文件。</block>
-  <block id="c34bf4f0a7173f53dc110e7f41c2e0d0" category="paragraph">激活知识库身份验证、以便在使用API端点将知识库与聊天机器人应用程序集成时需要进行令牌验证和ACL。激活身份验证时、您会生成一个JSON Web令牌、用于向聊天机器人客户端发出的知识库API请求。</block>
   <block id="d4cc00616339f0819c8ca53d7850ca2c" category="list-text">提供所需信息。我们提供了一些示例、但您应从身份验证提供程序获取这些字段的值：</block>
   <block id="8fbebd38c35cb217ad6437410297b5e7" category="list-text">*算法*：身份验证提供程序使用的签名算法。</block>
-  <block id="59575929b41aa989abd4d539bc31b47a" category="list-text">*Audient*(可选)：包含身份验证令牌的预期收件人(有时为URL)的字符串。</block>
   <block id="8815fb464bfa6c8533fc5ae4e04b9c5a" category="list-text">*颁发 者*:用于标识发出令牌的提供程序的字符串。</block>
   <block id="9f921e08c2635ce0ca6d5507cf90b6d2" category="paragraph">例如、Amazon Cognito使用以下格式的颁发者字符串：</block>
   <block id="69a143a2f8c7c42f85ef0de9978c131d" category="paragraph">其中<block ref="d1dc4390a2dfb7cdc1a097e10b04acdf" prefix=" " category="inline-code"></block> 是包含用户池的AWS区域、<block ref="d47ea98789cbedeffd13a02b7b550538" prefix=" " category="inline-code"></block> 是您的用户池ID。您可以使用以下命令检索用户池ID：</block>
   <block id="563ae45eabbbd334a2af58d93ded707c" category="list-text">*JWKS URI*：提供验证此令牌签名所需的公共密钥的URI字符串。</block>
   <block id="2caafa02c784bfe569590254865dd928" category="paragraph">例如、Amazon Cognito使用以下格式的JWKS URI字符串：</block>
+  <block id="566673c66dc53f65f0662ca186b4ff33" category="paragraph">激活知识库身份验证、以便在使用API端点将知识库与聊天机器人应用程序集成时需要进行令牌验证和ACL。激活身份验证时、您需要为JSON Web令牌配置设置、此令牌将用于向聊天机器人客户端发出的知识库API请求。</block>
+  <block id="af3e21688164f21808a96c579519e58a" category="list-text">*Audient*(可选)：包含令牌预期收件人的字符串(有时为URL)。</block>
 </blocks>
