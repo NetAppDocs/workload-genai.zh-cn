@@ -29,6 +29,8 @@ sidebar:
       url: "/identify-data-sources.html"
     - title: 部署知识库基础架构
       url: "/deploy-infrastructure.html"
+    - title: 使用外部示例聊天机器人应用程序
+      url: "/example-chatbot-application.html"
   - title: 使用GenAI创建知识库
     entries:
     - title: 建立知识库
