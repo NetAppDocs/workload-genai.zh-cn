@@ -5,7 +5,6 @@
   <block id="e3fbe9ea657688c1ff4a86f23c1752c3" category="list-text">*选择卷*：选择数据源文件所在的卷，然后选择*下一步*。</block>
   <block id="3bce906453410b081d8e495b9cf8c9b0" category="paragraph">选择使用SMB协议存储的文件时、您需要输入Active Directory信息、其中包括域、IP地址、用户名和密码。</block>
   <block id="7028355d43ef8a71ff4d5e7bed32be2b" category="list-text">*选择数据源*：根据文件的保存位置选择数据源位置。该卷可以是整个卷，也可以是卷中的特定文件夹或子文件夹，然后选择*Next*。</block>
-  <block id="8cb2845f0cbb1e8e9ed75fc969cf512b" category="list-text">*定义AI参数*：在*区块定义*部分中，定义在查询数据源内容所属的知识库时，Amazon BROMOT服务如何将其拆分成区块。此时、您只能选择句子。</block>
   <block id="12d073958c6d4922a6f27ae8b5e4b533" category="list-text">在*权限感知*部分(仅当您选择的数据源位于使用SMB协议的卷上时才可用)中、您可以启用或禁用此选择：</block>
   <block id="751157f855d8f0597671b65bc8ea1301" category="list-text">*已启用*：访问此知识库的聊天机器人用户只会从他们有权访问的数据源获得查询响应。</block>
   <block id="9969ec0e7476736a130c54f32700611e" category="list-text">*已禁用*：聊天机器人用户将使用所有集成数据源的内容接收响应。</block>
@@ -58,9 +57,7 @@
   <block id="3bd4cddbc7a98f5c9632a455eca8c27e" category="section-title">创建并配置知识库</block>
   <block id="646df03c5fddafc8e9c4ed5aa7036edf" category="paragraph">知识库定义了一些特征、例如、要用来创建知识库的基础AI模型和嵌入格式。</block>
   <block id="d34fab7936dd110b003945d679bb4133" category="list-text">登录到Workload Factory。</block>
-  <block id="2775f5aa84cae461b809b629e27e2305" category="list-text">在AI Workloads (AI工作负载)磁贴中、选择*创建Chatbot*。</block>
   <block id="5b20d7e96740200c428376cbb5e7fdb4" category="list-text">从“Knowledge Bases”(知识库)选项卡中，选择“*添加知识库*”。</block>
-  <block id="a3efc362347ba241480bf992b9fa4899" category="list-text">在Define Knowledge Base页面中、配置知识库设置：</block>
   <block id="53bdd4ba55043d3b20fafbaeddced95e" category="list-text">*Name*：输入要用于知识库的名称。</block>
   <block id="867a64928002194654eea40509536879" category="list-text">*Description*：输入知识库的详细说明。</block>
   <block id="c37e3f948924097538b621ebbdc79afa" category="list-text">*嵌入模型*：嵌入模型定义了如何将数据转换为知识库的矢量嵌入。Workload Factory支持以下型号：</block>
@@ -75,7 +72,6 @@
   <block id="c6a0e7101f0906d1498552ff723709e5" category="paragraph">详细了解可帮助您进行选择的型号：<block ref="56cf03ef03ec9048e7282cdb73fcf2fd" category="inline-link-rx"></block></block>
   <block id="bb75c182eff66bee3c76899d41fc8e8f" category="list-text">*对话开场白*：选择是否要提供最多四个对话开场提示、这些提示将显示给与使用此知识库的聊天机器人进行交互的用户。建议您启用此设置。</block>
   <block id="fd6f710773f79577a44d128bb3df27cc" category="inline-link-macro">了解如何修改知识库设置</block>
-  <block id="1010b4e428fbb8fb24725a17eb384f8e" category="paragraph">如果您激活了对话启动器、则默认情况下会选中"自动模式"。只有在将数据源添加到知识库后、才能启用"手动模式"。<block ref="787b3d64d417e723feebaf5fa5dbfeee" category="inline-link-macro-rx"></block>(英文)</block>
   <block id="7311e81ffb665c2ec2a4c996ce693887" category="list-text">选择*创建知识库*将知识库添加到GenAI中。</block>
   <block id="89f815e342683a86616ce06926e87088" category="list-text">在向导的下一页中、您可以选择将数据源添加到新知识库中、或者在此处结束此过程而不添加数据源。建议您选择*添加数据源*，然后立即添加一个或多个数据源。</block>
   <block id="9bd079cbc91b32393983ae28a378c00c" category="section-title">向知识库添加数据源</block>
@@ -118,8 +114,6 @@
   <block id="e36b38f91227e22bbae32a9f84bef25b" category="list-text">*位置*：选择AWS区域、VPC和子网。</block>
   <block id="6f2c1c768f2edab4eb318bdb1580f9f7" category="paragraph">GenAI部署必须位于启用了Amazon Brock的AWS区域中。<block ref="25581c78bc5f676a9b9f4743abf4f06f" category="inline-link-rx"></block></block>
   <block id="49d6fbbfca02733209ee2833d2481e4e" category="list-text">完成*Infrastructure settings (基础架构设置)*部分中的项目：</block>
-  <block id="54e710456ced46833adf947bc5f6d4d8" category="list-text">*FSx for ONTAP file system*：选择FSx for ONTAP文件系统和要部署GenAI实例数据库卷的Storage VM、然后指定要用于此卷的名称。</block>
-  <block id="2d63bd7626a5c75abc0b0ce09d186bf9" category="paragraph">根据Workload Factory是否具有FSx for ONTAP文件系统的凭据、您可能需要输入用户名和密码。</block>
   <block id="3869544f6aa6ccd1570caed7671ca0d6" category="list-text">*标记*：输入要应用于此部署中的所有AWS资源的任何标记键/值对。</block>
   <block id="f445edd51fe9e6a1af8ffd9c30e87f40" category="list-text">*密钥对*：选择一个可安全连接到NetApp GenAI引擎实例的密钥对。</block>
   <block id="6449a99be42d938ed27187e040028634" category="list-text">选择*Deploy开始部署。</block>
@@ -127,7 +121,6 @@
   <block id="64dea11099d626528fa052576a740de2" category="paragraph">在部署过程中、将设置以下各项：</block>
   <block id="8f3d503d34aa6fe6a66b841b0bdd2996" category="list-text">网络与专用端点一起设置。</block>
   <block id="fc4ab898b1959c931605be5dfe62a71d" category="list-text">此时将创建IAM角色、实例配置文件和安全组。</block>
-  <block id="eac776dd224d1ed33599e26586f981b6" category="list-text">在FSx for ONTAP文件系统上创建用于GenAI引擎数据库(LanceDB)的卷。</block>
   <block id="216a480d552bd412d15e51cde6cbbf7a" category="list-text">此时将部署GenAI引擎的虚拟机实例。</block>
   <block id="6b39fa3582a5336c28b4c324f016a9a8" category="summary">在部署GenAI基础架构时、Workload Factory会为GenAI引擎创建一个EC2实例。它还会为此实例创建IAM角色、安全组和专用端点。您可能希望了解有关Workload Factory在AWS环境中创建的这些组件的更多详细信息。</block>
   <block id="44f33186e2b6baa4a697e5604c0a3863" category="doc">NetApp GenAI引擎的组件</block>
@@ -281,11 +274,8 @@
   <block id="24908e355d451004c7525900e1599a1f" category="list-text">通过选择展开每行 <block ref="0722c4ff5aff83b42b3212ce6356e926" category="inline-image-macro-rx" type="image"></block> 以查看有关每个数据源的详细信息、例如FSx for ONTAP文件系统、卷以及数据源所在的路径。</block>
   <block id="e251df112fcfd5ceb227487e3e407e23" category="paragraph">此外、还会列出嵌入信息以及该数据源当前是否嵌入到知识库中。</block>
   <block id="437e83696ee10276f1829979bc2001ee" category="section-title">编辑数据源设置</block>
-  <block id="20b4ccd92a21762105664927fab1bf0b" category="paragraph">您可以编辑有关已集成到知识库中的数据源的信息。将数据源添加到知识库后、大多数信息都会得到修复、但您可以更改分块定义和权限感知(在数据源卷上使用SMB协议时)。</block>
   <block id="d2e5a465dda010b6df10e906f7ceebf7" category="list-text">在知识库清单页面中，选择数据源所在的知识库，然后选择 <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block> 并选择*Manage Knowledge bas*。</block>
   <block id="16a3994ccc4796acb1b8e40635717ec3" category="list-text">在要编辑的数据源所在行中，选择 <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block> ，然后选择*Edit data source*。</block>
-  <block id="d4e6a12cce33b083e0522879b175e10f" category="list-text">在编辑数据源页面中、选择 <block ref="0722c4ff5aff83b42b3212ce6356e926" category="inline-image-macro-rx" type="image"></block> 以展开区块定义行。</block>
-  <block id="2be67c88816bb68c39e2b6cb0139de03" category="list-text">更新Chunking策略和区块大小以及权限感知(对于SMB卷)的设置、然后选择*保存*。</block>
   <block id="fcada3664d85dba347df890b564f014e" category="paragraph">此时将更新数据源设置、AI系统将同步数据源、以便将其重新编制到知识库中。</block>
   <block id="f0c862596fc0a1dd30faa6b630a0d09b" category="section-title">更新现有数据源的内容</block>
   <block id="d811eb8aad6aebc071695232fb58c5a5" category="paragraph">您可以随时更改数据源的内容、以添加或更新组织数据。如果此数据源正在知识库中使用、则必须同步此数据源、以便将其重新编制到知识库索引。同步是增量的、因此Amazon Bonrock仅处理FSx for ONTAP卷中自上次同步以来添加、修改或删除的对象。</block>
@@ -304,7 +294,6 @@
   <block id="3263e773b336a912867ed1aeefc4176b" category="list-text">选择*基础架构*选项卡。</block>
   <block id="441f8ae1adcfebb474bcc1b899e82a24" category="list-text">查看有关基础架构的信息、其中包括有关以下组件的详细信息：</block>
   <block id="fcf0479502455d0702db3f277c9df646" category="list-text">AWS 设置</block>
-  <block id="561e65b11988eaba0ecae49d7b764de1" category="list-text">FSx for ONTAP文件系统</block>
   <block id="ae83c68afab83f983d4cf40bb5e9197e" category="list-text">AI引擎</block>
   <block id="6d8dc0b510e717cbe34e53d7fc1097e5" category="list-text">引导程序数据库</block>
   <block id="2a118f240daca7e8bd0c3e4bc54a8d77" category="section-title">删除基础架构</block>
@@ -333,7 +322,6 @@
   <block id="6c81c0a68409ceeffca1a2438dbb831c" category="paragraph">每次在知识库中添加、修改或删除数据源时、都必须同步数据源、以便将其重新编制到知识库索引。同步是增量的、因此Amazon Bonrock仅处理FSx for ONTAP卷中自上次同步以来添加、修改或删除的对象。</block>
   <block id="d21368803fa621b044a871188810b1ac" category="list-text">从"Knowledge Bases"清单页面中、选择要更新的知识库。</block>
   <block id="6461d5a78cc7b9cc40e5443635d9112e" category="list-text">选择*操作*菜单，然后选择*编辑知识库*。</block>
-  <block id="0008bdb5b5e3b453e69696b34d9d5d1c" category="list-text">在"编辑知识库"页面中、您可以更改知识库名称、说明、嵌入模式、聊天模式、以及是自动还是手动创建启动对话。</block>
   <block id="e57d913eed051be6b0b9406295913487" category="paragraph">如果您使用"手动"模式启动对话、您也可以在此处更改启动对话的内容。</block>
   <block id="1302ca167379db1ebc02d198eb7518a3" category="list-text">完成更改后选择*保存*。</block>
   <block id="214d48f43c3d0248419d70ccacea9a73" category="section-title">向知识库添加其他数据源</block>
@@ -364,14 +352,9 @@
   <block id="bd5de107e9031f0c3a6ac09d2366a7be" category="list-text">选择*Actions*菜单，然后选择*Unpub*。</block>
   <block id="10b42a1e79dbd5f79dd793c2655522b8" category="paragraph">此知识库已禁用、无法再由聊天机器人应用程序访问。</block>
   <block id="cc0a404c41a82c6be9de0d64f06fcd89" category="section-title">删除知识库</block>
-  <block id="76420e895d8bcbca33f0cf3202997ba2" category="paragraph">如果您不再需要知识库、可以将其删除。删除此知识库后、它将从Workload Factory中删除、并且正在使用此知识库的任何应用程序或聊天机器人将停止工作。此操作不可逆。</block>
-  <block id="bd1e7a638d401a590a6dfd0683fcab0c" category="paragraph">删除知识库时、还应执行以下操作、以完全删除与该知识库关联的所有资源：</block>
-  <block id="d6a62e94706e27186ebc0fbca1c802d4" category="list-text">将知识库与其关联的任何座席分离。</block>
-  <block id="0581045f098dd9833078169a3178147a" category="list-text">从您的知识库中编制索引的基础数据将保留在您设置的向量存储中、并且仍可检索。要删除数据，您还需要删除包含数据内包的引导程序索引。</block>
   <block id="26d469c182333c4c1e4800ddcd6d2a61" category="list-text">从"Knowledge Bases"清单页面中、选择要删除的知识库。</block>
   <block id="0e0f1b27ca798d3b3b8154b411215d9a" category="list-text">选择*操作*菜单，然后选择*删除知识库*。</block>
   <block id="74091f3303c946e291c1c1702ba6d39a" category="list-text">在“删除知识库”对话框中，确认要将其删除，然后选择*Delete*。</block>
-  <block id="63d56e434f490d0e8d99ce407df90bf6" category="paragraph">知识库将从Workload Factory中删除。</block>
   <block id="8bbd4e338e42c1350d453ca5c82eb3b3" category="summary">在本地构建并测试知识库后、您可以发布知识库、以便与聊天机器人应用程序集成、使用户能够查询知识库。</block>
   <block id="70de8e73e84df845f91376c6c0d1188e" category="doc">发布知识库并查看唯一端点</block>
   <block id="12676fc9338d312de3a6cbb584fa3284" category="paragraph">在本地构建并测试知识库后、您可以发布知识库、以便与聊天机器人应用程序集成、使用户能够查询知识库。</block>
@@ -571,4 +554,29 @@
   <block id="d59048f21fd887ad520398ce677be586" category="section-title">了解更多信息。</block>
   <block id="862b02acae8afc7a8e5ed9bf4c7cb18e" category="inline-link">工作负载工厂API文档</block>
   <block id="39d0fcde59bc31b066cd026cdc9718f8" category="paragraph"><block ref="39d0fcde59bc31b066cd026cdc9718f8" category="inline-link-rx"></block></block>
+  <block id="8f3f613a5094ebfa7c5f531cb356028e" category="list-text">*定义AI参数*：在*Chunking strasy*部分中，定义在将数据源与知识库集成时，GenAI引擎如何将数据源内容拆分成块。您可以选择以下策略之一：</block>
+  <block id="091e1c7957272ab69145f4859b4465d0" category="list-text">*多句拆分*：将数据源中的信息组织为句子定义的区块。您可以选择每个区块包含多少个句子(最多100个)。</block>
+  <block id="87aa4ffcf50084a10651fe7094e75bda" category="list-text">*基于重叠的区块*：将数据源中的信息组织为字符定义的区块，这些区块可以重叠相邻区块。您可以选择每个区块的字符大小、以及每个区块与相邻区块重叠的程度。您可以将区块大小配置为50到3000个字符、并将重叠百分比配置为1到99%。</block>
+  <block id="18c41e2a8da7a23dcc990da8d7dfe06d" category="admonition">选择较高的重叠百分比会显著增加存储需求、但检索准确性只会稍有提高。</block>
+  <block id="e2c3c3f9d43a7b053dbca2a0234078b7" category="section-title">聊天机器人应用程序示例</block>
+  <block id="75a337f9fd41608c507045c7429174be" category="paragraph">通过NetApp Workload Factory GenAI示例应用程序、您可以在基于Web的聊天机器人应用程序中直接与发布的NetApp Workload Factory知识库进行交互、从而测试身份验证和从该知识库中检索的结果。</block>
+  <block id="8fa53177b9fd9cdb460f43ba4be39618" category="doc">其他分块策略</block>
+  <block id="a0a464c97ca1835adf3bddc803b001cd" category="paragraph">生成型AI工作负载现在支持对数据源执行多句分块和基于重叠的分块。</block>
+  <block id="4cb92325ae7034576f6dff7fe48e3254" category="section-title">为每个知识库提供专用卷</block>
+  <block id="a023a8333417a130bf6fb2c729aaa7f1" category="paragraph">现在、生成性AI工作负载会为每个新知识库创建一个专用的Amazon FSx for NetApp ONTAP卷、从而为每个知识库启用单独的快照策略、并提高对故障和数据中毒的防护能力。</block>
+  <block id="a97438cf1c94fe51248083c86ce591c5" category="list-text">在Define Knowledge Base页面上、配置知识库设置：</block>
+  <block id="b651dafbe972dff3ef00c60a522c2c08" category="paragraph">如果您激活了启动对话器、则默认情况下会选中"自动模式"。只有在将数据源添加到知识库后、才能启用"手动模式"。<block ref="787b3d64d417e723feebaf5fa5dbfeee" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="ce08e73f7c40cf7e58d6371a757d23c6" category="list-text">*FSx for ONTAP文件系统*：定义新知识库时，Workload Factory会创建一个新的Amazon FSx for NetApp ONTAP卷来存储该卷。选择现有文件系统名称以及要创建新卷的SVM (也称为Storage VM)。</block>
+  <block id="305529b9c4df0ab06763778bf46b9449" category="list-text">*Snapshot policy*：从Workload Factory存储清单中定义的现有策略列表中选择一个Snapshot策略。</block>
+  <block id="ced63c567878ed01730fce043c8ade96" category="inline-link">创建快照策略</block>
+  <block id="ad36efe6c620944e32785812d09accd6" category="paragraph">如果不存在所需的快照策略、则可以<block ref="7546e5b5141e2979fa53ccc7106931ca" category="inline-link-rx"></block>在包含此卷的Storage VM上执行此操作。</block>
+  <block id="d2efa843fffdf7f0b1400f4edeb08081" category="paragraph">您可以编辑有关已集成到知识库中的数据源的信息。将数据源添加到知识库后、大多数信息都会得到修复、但您可以更改分块定义和配置以及权限感知(在数据源卷上使用SMB协议时)。</block>
+  <block id="46f71814ee1d2e5bbe062c91635739cf" category="list-text">在编辑数据源页面中、选择<block ref="0722c4ff5aff83b42b3212ce6356e926" category="inline-image-macro-rx" type="image"></block>以展开区块定义行。</block>
+  <block id="c9ee341e3341c054d76e9a00e2455883" category="list-text">更新分块策略和配置以及权限感知(对于SMB卷)的设置、然后选择*保存*。</block>
+  <block id="f3ee02a23f65c24a5b66f40deaa52796" category="list-text">基础架构设置</block>
+  <block id="f39b1e8c1922f03eae35d54aa3cc70e1" category="list-text">在编辑知识库页面中、您可以更改知识库名称、说明、嵌入模型、聊天模式、自动还是手动创建对话启动程序以及用于包含知识库的卷的快照策略。</block>
+  <block id="88f99918375bbf8120b251d975b7e03e" category="paragraph">如果您不再需要知识库、可以将其删除。删除知识库后、该知识库将从Workload Factory中删除、并且包含该知识库的卷也将被删除。正在使用知识库的任何应用程序或聊天机器人将停止工作。删除知识库是不可逆的。</block>
+  <block id="fd33fe22719aed031c8ea822ba866360" category="paragraph">删除知识库时、您还应解除知识库与关联的任何代理的关联、以完全删除与知识库关联的所有资源。</block>
+  <block id="fa20235938197ed878f7da8159917a1d" category="paragraph">知识库将从Workload Factory中删除、并且其关联卷也将被删除。</block>
+  <block id="b5cef683aab00353096b98823a237e69" category="section-title">2024年9月1日</block>
 </blocks>
