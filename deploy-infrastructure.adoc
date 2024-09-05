@@ -69,14 +69,12 @@ GenAI部署必须位于启用了Amazon Brock的AWS区域中。 https://docs.aws.
 
 
 . 完成*Infrastructure settings (基础架构设置)*部分中的项目：
-
-
-. *标记*：输入要应用于此部署中的所有AWS资源的任何标记键/值对。
-. *密钥对*：选择一个可安全连接到NetApp GenAI引擎实例的密钥对。
 +
-.. 选择*Deploy开始部署。
+.. *标记*：输入要应用于此部署中的所有AWS资源的任何标记键/值对。
+.. *密钥对*：选择一个可安全连接到NetApp GenAI引擎实例的密钥对。
 
 
+. 选择*Deploy开始部署。
 
 
 .结果

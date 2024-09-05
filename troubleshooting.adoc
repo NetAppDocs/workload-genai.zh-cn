@@ -1,0 +1,72 @@
+---
+sidebar: sidebar 
+permalink: troubleshooting.html 
+keywords: support registration, register for support, support, nss account, add nss account, 
+summary: 要向NetApp技术支持创建支持案例、您需要先将NetApp支持站点帐户添加到工作负载工厂、然后注册支持。 
+---
+= 故障排除
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+了解如何解决您可能遇到的一些常见问题。
+
+
+
+== 常见问题和解决方案
+
+如果您遇到上述问题之一、可以使用"解决方法"列中的步骤尝试解决该问题。
+
+[cols="1,2,2,4"]
+|===
+| 区域 | 问题描述 | 发生原因 | 临时解决策 
+
+
+| 部署 | 由于卷已存在、部署失败。 | Workload Factory for GenAI需要在部署过程中创建新卷、但已存在使用您指定的名称的卷。 | 指定要用于新卷的唯一名称、然后重新尝试部署。 
+
+
+| 部署 | 部署失败、因为Workload Factory for GenAI无法挂载此卷。 | FSx for NetApp ONTAP所需的一个或多个入站端口已关闭或筛选。  a| 
+打开中列出的端口 https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/reference-security-groups-fsx.html#inbound-rules["适用于 ONTAP 的 FSX 的安全组规则"^]。
+
+
+
+| 维护 | Workload Factory for GenAI使用的后端Docker实例无法启动。 | 已删除此卷并重新启动EC2实例。  a| 
+请使用以下恢复步骤：
+
+.步骤
+. 在FSx for NetApp ONTAP上创建新卷。例如，卷名可以是 `netapp_ai`，卷路径可以是 `/netapp_ai`。
+. 通过SSH连接到Amazon EC2实例。
+. 列出卷：
++
+[source, console]
+----
+docker volume list
+----
+. 删除旧卷：
++
+[source, console]
+----
+docker volume rm ec2-user_persistent_folder
+----
+.  `docker-compose.yml`使用文本编辑器打开文件。
+. 在 `volumes`部分中、将设备路径更改为新卷路径。例如：
++
+[source, yaml]
+----
+volumes:
+  persistent_folder:
+    driver_opts:
+      type: 'nfs'
+      o: "addr=svm-0df66b96a890d8a72.\
+      fs-0d673008aaca12bc3.\
+      fsx.us-east-1.amazonaws.com,nolock,soft,rw"
+      device: ':/netapp_ai' # Path to new volume
+----
+
+
+
+
+| 维护 | Workload Factory for GenAI使用的后端Docker实例无法启动。 | 已删除此根卷。 | 使用名称和路径创建一个卷、然后从Amazon EC2重新启动后端Docker实例。 
+|===
