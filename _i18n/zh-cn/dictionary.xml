@@ -599,7 +599,6 @@
   <block id="9cbd2c5c5175ed32f13a8e1e7a8198dd" category="list-text">在<block ref="078831e29f354e83fac6da3db6ed6b7b" prefix=" " category="inline-code"></block>部分中、将设备路径更改为新卷路径。例如：</block>
   <block id="e9813bd2289d9835204f02be0a5d2df6" category="cell">已删除此根卷。</block>
   <block id="358ede72c2c3d3e77baf3ed35b4039f6" category="cell">使用名称和路径创建一个卷、然后从Amazon EC2重新启动后端Docker实例。</block>
-  <block id="430ea429b454fdc4ea2eb6c6b9cdbd77" category="doc">创建知识库卷的快照并还原该卷</block>
   <block id="1ae13d57da1c55ee537cb9dc63916d03" category="paragraph">现在、您可以通过创建知识库的时间点副本来保护生成性AI工作负载数据。这样、您就可以保护数据、防止意外丢失或测试对知识库设置所做的更改。您可以随时还原知识库卷的先前版本。</block>
   <block id="073751c61467c5e36c6cc197d92a75c4" category="section-title">暂停计划的扫描</block>
   <block id="6c31cb11ffc4d11a5aed0e968bb5f8c9" category="paragraph">现在、您可以暂停计划的数据源扫描。默认情况下、生成性AI工作负载每天都会扫描每个数据源、以便将新数据导入到每个知识库中。如果您不希望(例如在测试或还原快照期间)导入最新更改、您可以随时暂停计划的扫描并恢复它们。</block>
@@ -644,4 +643,5 @@
   <block id="340b5c4d996cad6cf6d27d13faf94e89" category="paragraph"><block ref="340b5c4d996cad6cf6d27d13faf94e89" category="inline-link-rx"></block></block>
   <block id="f951fa0f2608d186cd1f0bd8889ac232" category="paragraph"><block ref="f951fa0f2608d186cd1f0bd8889ac232" category="inline-link-rx"></block></block>
   <block id="8afd34c2a29e7b6286f3ed0bf9e20c22" category="paragraph"><block ref="8afd34c2a29e7b6286f3ed0bf9e20c22" category="inline-link-rx"></block></block>
+  <block id="4936442e55cb8f837f9616ca6aaf1e92" category="doc">为知识库卷提供快照和还原支持</block>
 </blocks>
