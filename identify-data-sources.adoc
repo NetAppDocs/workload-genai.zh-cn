@@ -23,7 +23,9 @@ summary: '确定或创建FSx for ONTAP文件系统上要集成到知识库中的
 
 == 数据源的位置
 
-数据源可以存储在Amazon FSx for NetApp ONTAP文件系统上的SMB共享或NFS导出上的单个卷或卷内的文件夹中。您不能选择卷或文件夹中的单个文档、因此、应确保包含数据源的每个卷或文件夹不包含不应与知识库集成的无关文档。
+数据源可以存储在Amazon FSx for NetApp ONTAP文件系统上的SMB共享或NFS导出上的单个卷或卷内的文件夹中。数据源还可以存储在NetApp SnapMirror数据保护关系中适用于NetApp ONTAP的Amazon FSx卷上。
+
+您不能选择卷或文件夹中的单个文档、因此、应确保包含数据源的每个卷或文件夹不包含不应与知识库集成的无关文档。
 
 您可以将多个数据源添加到每个知识库中、但这些数据源都需要驻留在可从AWS帐户访问的适用于ONTAP文件系统的FSx上。
 
@@ -50,14 +52,17 @@ summary: '确定或创建FSx for ONTAP文件系统上要集成到知识库中的
 | 文件格式 | 扩展 
 
 
+| 逗号分隔值文件 | .csv 
+
+
+| 降价 | .MD 
+
+
+| Microsoft Word | doc或.docx 
+
+
 | 纯文本 | .txt 
 
 
-| 便携式文档 | .pdf 
-
-
-| Microsoft Word | .docx 
-
-
-| 逗号分隔值文件 | .csv 
+| 可移植文档格式 | .pdf 
 |===

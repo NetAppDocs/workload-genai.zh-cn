@@ -73,14 +73,12 @@
   <block id="bb75c182eff66bee3c76899d41fc8e8f" category="list-text">*对话开场白*：选择是否要提供最多四个对话开场提示、这些提示将显示给与使用此知识库的聊天机器人进行交互的用户。建议您启用此设置。</block>
   <block id="fd6f710773f79577a44d128bb3df27cc" category="inline-link-macro">了解如何修改知识库设置</block>
   <block id="7311e81ffb665c2ec2a4c996ce693887" category="list-text">选择*创建知识库*将知识库添加到GenAI中。</block>
-  <block id="89f815e342683a86616ce06926e87088" category="list-text">在向导的下一页中、您可以选择将数据源添加到新知识库中、或者在此处结束此过程而不添加数据源。建议您选择*添加数据源*，然后立即添加一个或多个数据源。</block>
   <block id="9bd079cbc91b32393983ae28a378c00c" category="section-title">向知识库添加数据源</block>
   <block id="831e8ddab4c3e70bcfe67a3e58aaf8cc" category="paragraph">您可以添加一个或多个数据源、以便使用组织的数据填充知识库。</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">关于此任务</block>
   <block id="443fa995d0ec899357a7e519e2055b98" category="paragraph">支持的最大数据源数为10。</block>
   <block id="10031d73287aadb6c5f8b3dae7b23860" category="list-text">选择*添加数据源*后，将显示*选择文件系统*页。</block>
   <block id="8817d70d4163473468fa1b2b6e498321" category="paragraph">数据源开始嵌入到您的知识库中。当数据源完全嵌入时、状态将从"嵌入"更改为"嵌入"。</block>
-  <block id="8dfce7f4d224734508ee16a1aff7ad72" category="paragraph">向知识库添加单个数据源后、您可以在本地的Chatbot模拟器窗口中对其进行测试、并进行任何必要的更改、然后再将聊天机器人提供给用户。您也可以按照相同的步骤向知识库添加其他数据源。</block>
   <block id="b9605cf748e4b8e1c97d786258a0be40" category="summary">您需要先在环境中部署RAG框架的基础架构、然后才能为组织构建FSx for ONTAP知识库和应用程序。主要基础架构组件包括Amazon Brock AI服务、NetApp GenAI引擎的虚拟机实例以及适用于ONTAP文件系统的FSx。</block>
   <block id="e379b913896cf9bdd4e2d6717212215a" category="doc">部署GenAI基础架构</block>
   <block id="0cd805094b5dffd702d8e0faa10c927c" category="paragraph">您需要先在环境中部署适用于RAG框架的GenAI基础架构、然后才能为组织构建FSx for ONTAP知识库和应用程序。主要基础架构组件包括Amazon Brock服务、NetApp GenAI引擎的虚拟机实例以及适用于ONTAP文件系统的FSx。</block>
@@ -218,7 +216,6 @@
   <block id="7d7b61e2696184ef2f1a673b4b505c10" category="doc">确定要集成到知识库中的数据源</block>
   <block id="887cf13beb27381e3305ca34c5115c2d" category="section-title">数据源的最大数量</block>
   <block id="4b8e341857a3eb86f0ae58a01da824ed" category="section-title">数据源的位置</block>
-  <block id="517b9fa88a903df70d1614de4a032562" category="paragraph">数据源可以存储在Amazon FSx for NetApp ONTAP文件系统上的SMB共享或NFS导出上的单个卷或卷内的文件夹中。您不能选择卷或文件夹中的单个文档、因此、应确保包含数据源的每个卷或文件夹不包含不应与知识库集成的无关文档。</block>
   <block id="a07dd9fe7465f7ec7d15135a3cfab3a4" category="paragraph">您可以将多个数据源添加到每个知识库中、但这些数据源都需要驻留在可从AWS帐户访问的适用于ONTAP文件系统的FSx上。</block>
   <block id="ffbef7cfe7a8524b59851c8a1389ebcc" category="paragraph">每个数据源的最大文件大小为50 MB。</block>
   <block id="c84d4278eb32c7a089aea86ebf95ad39" category="section-title">支持的协议</block>
@@ -231,10 +228,8 @@
   <block id="63e4e92bb7d207ca577b11c07f827279" category="cell">扩展</block>
   <block id="f39a0720a929097afa9db4505cdf9669" category="cell">纯文本</block>
   <block id="be4117b0c842c4be8f9960294bdc2cd1" category="cell">.txt</block>
-  <block id="7fe3b93cf991d61aa2597033a8f37d76" category="cell">便携式文档</block>
   <block id="abdf095626d4a4ab2bcd4167b128c1f1" category="cell">.pdf</block>
   <block id="d241ed446445a725f6362568f61cc6c3" category="cell">Microsoft Word</block>
-  <block id="8c7a7a618a6d4acfe85b4b4b1048846d" category="cell">.docx</block>
   <block id="68dfdbe39ab30356a21fe4db773d9589" category="cell">逗号分隔值文件</block>
   <block id="01b1b6ebeb388697cca6712b58439069" category="cell">.csv</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律声明</block>
@@ -329,8 +324,6 @@
   <block id="365770c3700b9872888879ce60ec18e9" category="list-text">从"Knowledge Bases"清单页面中、选择要添加数据源的知识库。</block>
   <block id="5e1a4fe723264018579dfc3330f9b160" category="list-text">选择，然后选择 <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block> *添加数据源*。</block>
   <block id="07d9f547e6bcd64a574782add9797b63" category="paragraph">数据源已集成到您的知识库中。</block>
-  <block id="5b1f48da21d15acc675f4720c57d0f26" category="section-title">将数据源与知识库同步</block>
-  <block id="9547b575fe1c28cc98e35108cacd9918" category="paragraph">数据源每天自动与知识库同步一次、以便任何数据源更改都反映在聊天机器人中。如果您对任何数据源进行了更改、并且希望立即同步数据、则可以执行按需同步。</block>
   <block id="9cbd78c1bcf6132d43822acf74d520f1" category="paragraph">同步是增量的、因此Amazon Bonck仅处理数据源中自上次同步以来添加、修改或删除的对象。</block>
   <block id="5fe210e3b4435e2188200d1f9b96db74" category="list-text">从"Knowledge Bases"清单页面中、选择要同步的知识库。</block>
   <block id="fbf8fa86db3bb16616d2fb45b7250a0d" category="list-text">选择*Actions*菜单，然后选择*Scan Now (立即扫描)*。</block>
@@ -567,7 +560,6 @@
   <block id="a97438cf1c94fe51248083c86ce591c5" category="list-text">在Define Knowledge Base页面上、配置知识库设置：</block>
   <block id="b651dafbe972dff3ef00c60a522c2c08" category="paragraph">如果您激活了启动对话器、则默认情况下会选中"自动模式"。只有在将数据源添加到知识库后、才能启用"手动模式"。<block ref="787b3d64d417e723feebaf5fa5dbfeee" category="inline-link-macro-rx"></block>(英文)</block>
   <block id="ce08e73f7c40cf7e58d6371a757d23c6" category="list-text">*FSx for ONTAP文件系统*：定义新知识库时，Workload Factory会创建一个新的Amazon FSx for NetApp ONTAP卷来存储该卷。选择现有文件系统名称以及要创建新卷的SVM (也称为Storage VM)。</block>
-  <block id="305529b9c4df0ab06763778bf46b9449" category="list-text">*Snapshot policy*：从Workload Factory存储清单中定义的现有策略列表中选择一个Snapshot策略。</block>
   <block id="ced63c567878ed01730fce043c8ade96" category="inline-link">创建快照策略</block>
   <block id="ad36efe6c620944e32785812d09accd6" category="paragraph">如果不存在所需的快照策略、则可以<block ref="7546e5b5141e2979fa53ccc7106931ca" category="inline-link-rx"></block>在包含此卷的Storage VM上执行此操作。</block>
   <block id="d2efa843fffdf7f0b1400f4edeb08081" category="paragraph">您可以编辑有关已集成到知识库中的数据源的信息。将数据源添加到知识库后、大多数信息都会得到修复、但您可以更改分块定义和配置以及权限感知(在数据源卷上使用SMB协议时)。</block>
@@ -607,4 +599,45 @@
   <block id="9cbd2c5c5175ed32f13a8e1e7a8198dd" category="list-text">在<block ref="078831e29f354e83fac6da3db6ed6b7b" prefix=" " category="inline-code"></block>部分中、将设备路径更改为新卷路径。例如：</block>
   <block id="e9813bd2289d9835204f02be0a5d2df6" category="cell">已删除此根卷。</block>
   <block id="358ede72c2c3d3e77baf3ed35b4039f6" category="cell">使用名称和路径创建一个卷、然后从Amazon EC2重新启动后端Docker实例。</block>
+  <block id="430ea429b454fdc4ea2eb6c6b9cdbd77" category="doc">创建知识库卷的快照并还原该卷</block>
+  <block id="1ae13d57da1c55ee537cb9dc63916d03" category="paragraph">现在、您可以通过创建知识库的时间点副本来保护生成性AI工作负载数据。这样、您就可以保护数据、防止意外丢失或测试对知识库设置所做的更改。您可以随时还原知识库卷的先前版本。</block>
+  <block id="073751c61467c5e36c6cc197d92a75c4" category="section-title">暂停计划的扫描</block>
+  <block id="6c31cb11ffc4d11a5aed0e968bb5f8c9" category="paragraph">现在、您可以暂停计划的数据源扫描。默认情况下、生成性AI工作负载每天都会扫描每个数据源、以便将新数据导入到每个知识库中。如果您不希望(例如在测试或还原快照期间)导入最新更改、您可以随时暂停计划的扫描并恢复它们。</block>
+  <block id="9813be0bded00d4a8f5457f2e27277fa" category="section-title">现在、知识库可支持数据保护卷</block>
+  <block id="f20c02f54f20ee06aed661b133ba0fc3" category="paragraph">现在、在选择知识库卷时、您可以选择属于NetApp SnapMirror复制关系的数据保护卷。这样、您就可以将知识库存储在已受SnapMirror复制保护的卷上。</block>
+  <block id="c880ade9c6e1657038a733388834bf6d" category="list-text">*Snapshot policy*：从Workload Factory存储清单中定义的现有策略列表中选择一个Snapshot策略。系统将根据您选择的快照策略、以一定频率自动创建知识库的重复快照。</block>
+  <block id="530d81713422730939efa8236f41105f" category="paragraph">创建知识库时、将显示进度指示器。</block>
+  <block id="2ec7e499bf83fa315927a96623d03df5" category="paragraph">创建知识库后、您可以选择向新知识库添加数据源、也可以选择结束此过程而不添加数据源。建议您选择*添加数据源*，然后立即添加一个或多个数据源。</block>
+  <block id="e0308d285e9bc5966f6ceb7008c87849" category="paragraph">向知识库添加单个数据源后、您可以在本地的聊天机器人模拟器窗口中对其进行测试、并进行任何必要的更改、然后再将此聊天机器人提供给用户。您也可以按照相同的步骤向知识库添加其他数据源。</block>
+  <block id="2ea3dbeb714261d8180c0931e50d9b53" category="paragraph">数据源可以存储在Amazon FSx for NetApp ONTAP文件系统上的SMB共享或NFS导出上的单个卷或卷内的文件夹中。数据源还可以存储在NetApp SnapMirror数据保护关系中适用于NetApp ONTAP的Amazon FSx卷上。</block>
+  <block id="709c30bf3c120fca30b346788a407cf8" category="paragraph">您不能选择卷或文件夹中的单个文档、因此、应确保包含数据源的每个卷或文件夹不包含不应与知识库集成的无关文档。</block>
+  <block id="2182a74bab7188d959e795d9301e87ff" category="cell">降价</block>
+  <block id="dadf0304a901246ee7f588e5276f1761" category="cell">.MD</block>
+  <block id="09df1824d82fa779fc65302df5218ed7" category="cell">doc或.docx</block>
+  <block id="df8b8a3c2e9816c8fa5785b811006754" category="cell">可移植文档格式</block>
+  <block id="af467f026dd1b56c8564e770bf39737f" category="section-title">使用快照保护知识库</block>
+  <block id="ebe007adb0cdb086ff8918410a8dee5b" category="paragraph">您可以通过创建和还原知识库卷的快照来保护知识库数据。您可以随时从快照还原以还原到先前版本的知识库。</block>
+  <block id="4579190c461a9ec96d3604ff5fad8099" category="paragraph">与备份相比、快照速度更快、存储效率更高、并支持您使用不同的保护策略来保护每个知识库。快照可能会很有用的一些情形包括：</block>
+  <block id="07d621cfd1a721c92651875f5213cf9c" category="list-text">意外数据丢失或损坏</block>
+  <block id="b3edfca5cba615cc8a93b9d63e97b819" category="list-text">从知识文库中输入的错误数据中恢复</block>
+  <block id="0243c67f7fa35f362d1323768ccc5871" category="list-text">测试不同的数据源或分块策略、并在测试完成后快速还原</block>
+  <block id="4dfbf3ac57687ef65479f0135589593f" category="section-title">为知识库卷创建快照</block>
+  <block id="4d44b256311340bb736c203922fb0296" category="paragraph">您可以通过手动创建知识库卷的快照来保存知识库的状态。</block>
+  <block id="1fbeeb5e6aa15ff7209e4a92d6562e31" category="list-text">从"Knowledge Bases"清单页面中、选择要保护的知识库。</block>
+  <block id="81d9d121de4b6c5678182e3422bf9650" category="list-text">选择*操作*菜单，然后选择*快照&gt;创建新快照*。</block>
+  <block id="3ec558c4a178bea34d2e5946bf312b7d" category="paragraph">创建知识库快照。</block>
+  <block id="3d1e45266a0a6784e668353081a13cd0" category="section-title">还原知识库卷的快照</block>
+  <block id="1c0e06755573de2de1c2d9b32674ea2f" category="paragraph">您可以随时还原知识库卷的手动快照或计划快照。</block>
+  <block id="de134183bea5df515a6756a539ce6f18" category="inline-link">ONTAP 命令行界面</block>
+  <block id="f14abb5dd88e8c117fe2da63e57697d4" category="admonition">如果存储在卷上的数据库已损坏或被删除、则无法使用生成型AI工作负载UI还原快照。解决方法是、您可以在托管此卷的ONTAP集群上使用还原此快照<block ref="6335761ebc6c6e298f35eb8b2201e062" category="inline-link-rx"></block>。</block>
+  <block id="4eb5e554b61083f3b7827cb521093085" category="list-text">从"Knowledge Bases"清单页面中、选择要还原的知识库。</block>
+  <block id="e890c518ff6cfabdc152007bfb3c49d8" category="list-text">选择*Actions*菜单，然后选择*Snapshot &gt; Restore Snap照*。</block>
+  <block id="da5ec29ae3439bc7afa7fa8e6407b19e" category="paragraph">此时将显示快照选择对话框、您可以在此对话框中查看为此知识库创建的快照列表。</block>
+  <block id="ece73b44227fa0e2047743c76b07917a" category="list-text">(可选)如果希望在恢复快照后继续执行计划的和当前正在运行的数据源扫描，请取消选择*恢复快照后暂停运行和计划扫描*选项。</block>
+  <block id="562ecd64817b603d4fc723f3f68aa81c" category="paragraph">默认情况下、此选项处于启用状态、以确保在知识库处于部分还原状态时不会进行扫描、或者扫描不会使用旧数据更新新还原的知识库。</block>
+  <block id="c33a9a11971ce2afdcc7d2ca3639e49d" category="list-text">从列表中选择要还原的快照。</block>
+  <block id="f77361b272ce81d8275727f7b1a756a8" category="list-text">选择 * 还原 * 。</block>
+  <block id="75adfeedf06d70e0bc627133f85cd211" category="section-title">将数据源与知识库同步</block>
+  <block id="44736bad98446163ecd5077653cbd105" category="paragraph">数据源每天自动与相关知识库同步一次、以便任何数据源更改都反映在聊天机器人中。如果您对任何数据源进行了更改、并且希望立即同步数据、则可以执行按需同步。</block>
+  <block id="26e6f4cc71039ce95ddbb0acdad6891d" category="section-title">2024年9月29日</block>
 </blocks>
