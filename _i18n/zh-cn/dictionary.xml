@@ -640,4 +640,8 @@
   <block id="75adfeedf06d70e0bc627133f85cd211" category="section-title">将数据源与知识库同步</block>
   <block id="44736bad98446163ecd5077653cbd105" category="paragraph">数据源每天自动与相关知识库同步一次、以便任何数据源更改都反映在聊天机器人中。如果您对任何数据源进行了更改、并且希望立即同步数据、则可以执行按需同步。</block>
   <block id="26e6f4cc71039ce95ddbb0acdad6891d" category="section-title">2024年9月29日</block>
+  <block id="f8016d0e0375ce671e71803692cf105c" category="paragraph"><block ref="f8016d0e0375ce671e71803692cf105c" category="inline-link-rx"></block></block>
+  <block id="340b5c4d996cad6cf6d27d13faf94e89" category="paragraph"><block ref="340b5c4d996cad6cf6d27d13faf94e89" category="inline-link-rx"></block></block>
+  <block id="f951fa0f2608d186cd1f0bd8889ac232" category="paragraph"><block ref="f951fa0f2608d186cd1f0bd8889ac232" category="inline-link-rx"></block></block>
+  <block id="8afd34c2a29e7b6286f3ed0bf9e20c22" category="paragraph"><block ref="8afd34c2a29e7b6286f3ed0bf9e20c22" category="inline-link-rx"></block></block>
 </blocks>
