@@ -275,7 +275,6 @@
   <block id="f0c862596fc0a1dd30faa6b630a0d09b" category="section-title">更新现有数据源的内容</block>
   <block id="d811eb8aad6aebc071695232fb58c5a5" category="paragraph">您可以随时更改数据源的内容、以添加或更新组织数据。如果此数据源正在知识库中使用、则必须同步此数据源、以便将其重新编制到知识库索引。同步是增量的、因此Amazon Bonrock仅处理FSx for ONTAP卷中自上次同步以来添加、修改或删除的对象。</block>
   <block id="24f189799b33f2d3f465d0658dcc69e1" category="inline-link-macro">执行按需同步</block>
-  <block id="424609f726117c0fe50e1034bb197bf7" category="paragraph">数据源每天自动与知识库同步一次、以便任何数据源更改都反映在聊天机器人中。如果您对数据源进行了更改，并且希望立即同步数据，则可以 <block ref="67b891ffaab1342f4fb267d7cc798f81" category="inline-link-macro-rx"></block>。</block>
   <block id="35198182831e3f9922e23822e3f2e2eb" category="section-title">删除数据源</block>
   <block id="19045c987301cc2ddb28f24761554946" category="paragraph">如果您不再需要某个数据源加入知识库、可以将其删除。</block>
   <block id="7c25f02bbc30d711041ddd1cc4235dc3" category="list-text">从知识库清单页面中，选择数据源所在的知识库，然后选择并选择*管理知识库 <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block> *。</block>
@@ -501,7 +500,6 @@
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">发行说明</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="acbf2b120f060c765cc5fbfef7779840" category="sidebar">为您的知识库确定数据源</block>
-  <block id="2e800147de9688c09f27dae52c542680" category="sidebar">使用GenAI创建知识库</block>
   <block id="b032727d9e00be7e59aefec94a0972c2" category="sidebar">激活身份验证</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知识和支持</block>
   <block id="3163a16fc98aa29c5fea8b61c62bb459" category="paragraph">使用Workload Factory的GenAI功能无需任何成本。</block>
@@ -644,4 +642,6 @@
   <block id="f951fa0f2608d186cd1f0bd8889ac232" category="paragraph"><block ref="f951fa0f2608d186cd1f0bd8889ac232" category="inline-link-rx"></block></block>
   <block id="8afd34c2a29e7b6286f3ed0bf9e20c22" category="paragraph"><block ref="8afd34c2a29e7b6286f3ed0bf9e20c22" category="inline-link-rx"></block></block>
   <block id="4936442e55cb8f837f9616ca6aaf1e92" category="doc">为知识库卷提供快照和还原支持</block>
+  <block id="ef3d62d3a83e208fec16cf94a1c9ef8b" category="paragraph">数据源每天自动与知识库同步一次、以便任何数据源更改都反映在聊天机器人中。如果您对数据源进行了更改，并且希望立即同步数据，则可以 <block ref="a5f82761b74f2896160929ccd4ead00e" category="inline-link-macro-rx"></block>。</block>
+  <block id="3bd082f2a7c2961a682116b6ed9f43fc" category="sidebar">使用GenAI构建知识库</block>
 </blocks>

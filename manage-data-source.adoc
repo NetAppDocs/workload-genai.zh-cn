@@ -56,7 +56,7 @@ summary: 在FSx for ONTAP文件系统上使用数据源创建知识库后、您�
 
 您可以随时更改数据源的内容、以添加或更新组织数据。如果此数据源正在知识库中使用、则必须同步此数据源、以便将其重新编制到知识库索引。同步是增量的、因此Amazon Bonrock仅处理FSx for ONTAP卷中自上次同步以来添加、修改或删除的对象。
 
-数据源每天自动与知识库同步一次、以便任何数据源更改都反映在聊天机器人中。如果您对数据源进行了更改，并且希望立即同步数据，则可以 link:manage-knowledgebase.html#synchronize-your-data-sources-with-the-knowledge-base["执行按需同步"]。
+数据源每天自动与知识库同步一次、以便任何数据源更改都反映在聊天机器人中。如果您对数据源进行了更改，并且希望立即同步数据，则可以 link:manage-knowledgebase.html#synchronize-your-data-sources-with-a-knowledge-base["执行按需同步"]。
 
 
 

@@ -33,32 +33,30 @@ sidebar:
       url: "/deploy-infrastructure.html"
     - title: 使用外部示例聊天机器人应用程序
       url: "/example-chatbot-application.html"
-  - title: 使用GenAI创建知识库
+    - title: NetApp GenAI引擎的组件
+      url: "/genai-engine-instance.html"
+  - title: 使用GenAI构建知识库
     entries:
-    - title: 建立知识库
-      entries:
-      - title: 创建知识库
-        url: "/create-knowledgebase.html"
-      - title: 测试知识库
-        url: "/test-knowledgebase.html"
-      - title: 激活身份验证
-        url: "/activate-authentication.html"
-      - title: 发布知识库
-        url: "/publish-knowledgebase.html"
-      - title: 创建基于RAG的AI应用程序
-        url: "/create-application.html"
-      - title: 接下来可以执行的操作
-        url: "/whats-next.html"
-    - title: 管理数据源
-      url: "/manage-data-source.html"
-    - title: 管理知识库
-      url: "/manage-knowledgebase.html"
+    - title: 创建知识库
+      url: "/create-knowledgebase.html"
+    - title: 测试知识库
+      url: "/test-knowledgebase.html"
+    - title: 激活身份验证
+      url: "/activate-authentication.html"
+    - title: 发布知识库
+      url: "/publish-knowledgebase.html"
+    - title: 创建基于RAG的AI应用程序
+      url: "/create-application.html"
+    - title: 接下来可以执行的操作
+      url: "/whats-next.html"
   - title: 管理GenAI
     entries:
     - title: 管理GenAI基础架构
       url: "/manage-infrastructure.html"
-    - title: NetApp GenAI引擎的组件
-      url: "/genai-engine-instance.html"
+    - title: 管理知识库
+      url: "/manage-knowledgebase.html"
+    - title: 管理数据源
+      url: "/manage-data-source.html"
   - title: 知识和支持
     entries:
     - title: 注册以获得支持
