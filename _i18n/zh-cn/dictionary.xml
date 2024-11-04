@@ -564,7 +564,6 @@
   <block id="46f71814ee1d2e5bbe062c91635739cf" category="list-text">在编辑数据源页面中、选择<block ref="0722c4ff5aff83b42b3212ce6356e926" category="inline-image-macro-rx" type="image"></block>以展开区块定义行。</block>
   <block id="c9ee341e3341c054d76e9a00e2455883" category="list-text">更新分块策略和配置以及权限感知(对于SMB卷)的设置、然后选择*保存*。</block>
   <block id="f3ee02a23f65c24a5b66f40deaa52796" category="list-text">基础架构设置</block>
-  <block id="f39b1e8c1922f03eae35d54aa3cc70e1" category="list-text">在编辑知识库页面中、您可以更改知识库名称、说明、嵌入模型、聊天模式、自动还是手动创建对话启动程序以及用于包含知识库的卷的快照策略。</block>
   <block id="88f99918375bbf8120b251d975b7e03e" category="paragraph">如果您不再需要知识库、可以将其删除。删除知识库后、该知识库将从Workload Factory中删除、并且包含该知识库的卷也将被删除。正在使用知识库的任何应用程序或聊天机器人将停止工作。删除知识库是不可逆的。</block>
   <block id="fd33fe22719aed031c8ea822ba866360" category="paragraph">删除知识库时、您还应解除知识库与关联的任何代理的关联、以完全删除与知识库关联的所有资源。</block>
   <block id="fa20235938197ed878f7da8159917a1d" category="paragraph">知识库将从Workload Factory中删除、并且其关联卷也将被删除。</block>
@@ -644,4 +643,28 @@
   <block id="4936442e55cb8f837f9616ca6aaf1e92" category="doc">为知识库卷提供快照和还原支持</block>
   <block id="ef3d62d3a83e208fec16cf94a1c9ef8b" category="paragraph">数据源每天自动与知识库同步一次、以便任何数据源更改都反映在聊天机器人中。如果您对数据源进行了更改，并且希望立即同步数据，则可以 <block ref="a5f82761b74f2896160929ccd4ead00e" category="inline-link-macro-rx"></block>。</block>
   <block id="3bd082f2a7c2961a682116b6ed9f43fc" category="sidebar">使用GenAI构建知识库</block>
+  <block id="17e908b1a02b6ec45f4e125877322d0f" category="doc">使用数据防护屏蔽个人身份信息</block>
+  <block id="0f21cd7bd10e747bca7894a609acc04b" category="paragraph">生成型AI工作负载引入了由BlueXP  分类提供支持的数据防护功能。数据防护功能可识别和屏蔽个人身份信息(Personal可识别信息、Personal可识别信息、Personal可识别信息)、帮助您保持合规性并增强敏感组织数据的安全性。</block>
+  <block id="8137174f639d391921dfeb8ca6d792d1" category="paragraph"><block ref="8137174f639d391921dfeb8ca6d792d1" category="inline-link-macro-rx"></block></block>
+  <block id="a686d5fa6b6925450f1b7fa2b4245d28" category="inline-link-macro">了解BlueXP分类</block>
+  <block id="384713a8a1d5a2dd365da2851c50ad93" category="paragraph"><block ref="384713a8a1d5a2dd365da2851c50ad93" category="inline-link-macro-rx"></block></block>
+  <block id="ee538d8e0203b8c3e9bdb95ebee1162c" category="paragraph">知识库有两种数据集成方式-_public mode/和_Enterprise mode/。</block>
+  <block id="3b3458714be1e5c3f76dd200e4227588" category="list-text">公共模式</block>
+  <block id="ab6bcff4b8fb91fe0c83c8ef83da1c6e" category="list-text">企业模式</block>
+  <block id="e168133413009827e06cf1b52bf82d2e" category="paragraph">您的组织的数据源可能包含私人身份信息(隐私信息、个人身份信息)。为了保护此敏感信息的安全、您可以在创建和配置知识库时启用_data护栏_。由BlueXP  分类提供支持的数据防护栏可识别和屏蔽可识别身份信息、使其无法访问和检索。</block>
+  <block id="2abf45f9ff5a74918b97267cd4e59d6a" category="paragraph"><block ref="384713a8a1d5a2dd365da2851c50ad93" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="cf24c0f0066b07e51df4da735abd84e5" category="admonition">可以随时启用或禁用数据防护。如果您要切换数据防护、Workload Factory会从头开始扫描整个知识库、从而产生成本。</block>
+  <block id="1be907baab24daef236be08a55d381ce" category="inline-link-macro">了解由BlueXP  分类提供支持的数据防护</block>
+  <block id="239980b6c377cd208cd4875dd11871a7" category="list-text">*数据防护*：选择是启用还是禁用数据防护。<block ref="705e589dc60832aba1b9593eb1d26a9a" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="5d78af30e91e495d74cbd3cac7a282db" category="paragraph">要启用数据防护、必须满足以下前提条件。</block>
+  <block id="069e9a4c876c108cc9f27ee13170ed16" category="inline-link-macro">了解如何在BlueXP  中向成员添加角色</block>
+  <block id="f271e30d6a375057fa3075f037ab44e5" category="list-text">要与BlueXP  分类进行通信、需要使用服务帐户。要创建服务帐户、您必须在BlueXP  租户帐户上具有_Organization admin_角色。具有组织管理员角色的成员可以完成BlueXP  中的所有操作。<block ref="9ba9a2df720ef49e9efc4ba4af6ca608" category="inline-link-macro-rx"></block></block>
+  <block id="44b34442167c9611792529867ee76d90" category="inline-link-macro">BlueXP分类文档</block>
+  <block id="bc2f4df95fcf66983b127abe7caa7a0a" category="list-text">您需要执行中所述的以下操作<block ref="0e478e925fb96541eb2f7d657ca01cb8" category="inline-link-macro-rx"></block>：</block>
+  <block id="a5085066220b6bc77291e8a3ba481c5a" category="list-text">创建BlueXP Connector</block>
+  <block id="3e3c8a56035df76e06772f4505dc58c7" category="list-text">确保您的环境满足前提条件</block>
+  <block id="0ce4d42838344488f607ff306088fae9" category="list-text">部署BlueXP分类</block>
+  <block id="b91895758c5a35a75fd3e87dc1fa0741" category="list-text">在编辑知识库页面中、您可以更改知识库名称、说明、嵌入模型、聊天模式、数据防护栏支持、选择是自动还是手动创建对话启动程序、以及为包含知识库的卷使用的快照策略。</block>
+  <block id="fde00ba8f64d2c57d64a163698fd6f03" category="admonition">每个知识库扫描(包括嵌入)都将产生成本。如果在创建知识库后启用了数据防护、则会再次扫描知识库并产生成本。</block>
+  <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024年11月3日</block>
 </blocks>

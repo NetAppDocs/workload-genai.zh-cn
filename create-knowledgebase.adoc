@@ -13,9 +13,22 @@ summary: 在部署AI基础架构并从FSx for ONTAP数据存储库中确定要�
 [role="lead"]
 在部署AI基础架构并从FSx for ONTAP数据存储库中确定要集成到知识库中的数据源后、即可使用Workload Factory构建知识库。在此步骤中、您还将定义AI特征并创建对话开场白。
 
-无需集成企业的数据源、即可使用知识库。在这种情况下、与知识库集成的应用程序将仅提供互联网上公开提供的信息的结果。这称为_public mode_integration。
+.关于此任务
+知识库有两种数据集成方式-_public mode/和_Enterprise mode/。
 
-在大多数情况下、您需要将组织中的数据源集成到知识库中。这种方式称为_Enterprise mode_integration、因为它可以提供企业的知识。
+公共模式:: 无需集成企业的数据源、即可使用知识库。在这种情况下、与知识库集成的应用程序将仅提供互联网上公开提供的信息的结果。这称为_public mode_integration。
+企业模式:: 在大多数情况下、您需要将组织中的数据源集成到知识库中。这种方式称为_Enterprise mode_integration、因为它可以提供企业的知识。
++
+--
+您的组织的数据源可能包含私人身份信息(隐私信息、个人身份信息)。为了保护此敏感信息的安全、您可以在创建和配置知识库时启用_data护栏_。由BlueXP  分类提供支持的数据防护栏可识别和屏蔽可识别身份信息、使其无法访问和检索。
+
+link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解BlueXP分类"^](英文)
+
+
+NOTE: 可以随时启用或禁用数据防护。如果您要切换数据防护、Workload Factory会从头开始扫描整个知识库、从而产生成本。
+
+--
+
 
 
 
@@ -47,6 +60,21 @@ https://aws.amazon.com/bedrock/titan/["详细了解Amazon大力孙"^]
 .. *聊天模式*：从集成在Amazon Brock中的Claude聊天模式中进行选择。请注意、您必须已启用Amazon Brock中的聊天模式。
 +
 详细了解可帮助您进行选择的型号： https://aws.amazon.com/bedrock/claude/["anthpic的克洛德在亚马逊基岩"^]
+
+.. *数据防护*：选择是启用还是禁用数据防护。link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解由BlueXP  分类提供支持的数据防护"^](英文)
++
+要启用数据防护、必须满足以下前提条件。
+
++
+*** 要与BlueXP  分类进行通信、需要使用服务帐户。要创建服务帐户、您必须在BlueXP  租户帐户上具有_Organization admin_角色。具有组织管理员角色的成员可以完成BlueXP  中的所有操作。link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#add-a-role-to-a-member["了解如何在BlueXP  中向成员添加角色"^]
+*** 您需要执行中所述的以下操作link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html#quick-start["BlueXP分类文档"^]：
++
+.... 创建BlueXP Connector
+.... 确保您的环境满足前提条件
+.... 部署BlueXP分类
+
+
+
 
 .. *对话开场白*：选择是否要提供最多四个对话开场提示、这些提示将显示给与使用此知识库的聊天机器人进行交互的用户。建议您启用此设置。
 +
