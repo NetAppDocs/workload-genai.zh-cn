@@ -67,6 +67,7 @@ https://aws.amazon.com/bedrock/titan/["详细了解Amazon大力孙"^]
 
 +
 *** 要与BlueXP  分类进行通信、需要使用服务帐户。要创建服务帐户、您必须在BlueXP  租户帐户上具有_Organization admin_角色。具有组织管理员角色的成员可以完成BlueXP  中的所有操作。link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#add-a-role-to-a-member["了解如何在BlueXP  中向成员添加角色"^]
+*** AI引擎必须能够访问 link:https://console.bluexp.netapp.com/["BlueXP控制台"^]
 *** 您需要执行中所述的以下操作link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html#quick-start["BlueXP分类文档"^]：
 +
 .... 创建BlueXP Connector

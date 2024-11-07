@@ -42,6 +42,8 @@ IAM角色:: GenAI引擎实例需要具有向Amazon Brock上的嵌入模型发送
 * Amazon El生 容器注册表(ECR)
 * Amazon S3
 * AWS Systems Manager (SSM)
+* 适用于 NetApp ONTAP 的 Amazon FSX
+* Amazon CloudWatch
 
 
 --

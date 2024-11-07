@@ -667,4 +667,8 @@
   <block id="b91895758c5a35a75fd3e87dc1fa0741" category="list-text">在编辑知识库页面中、您可以更改知识库名称、说明、嵌入模型、聊天模式、数据防护栏支持、选择是自动还是手动创建对话启动程序、以及为包含知识库的卷使用的快照策略。</block>
   <block id="fde00ba8f64d2c57d64a163698fd6f03" category="admonition">每个知识库扫描(包括嵌入)都将产生成本。如果在创建知识库后启用了数据防护、则会再次扫描知识库并产生成本。</block>
   <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024年11月3日</block>
+  <block id="5975f7e9036c78e6217b16f295f0ca75" category="inline-link-macro">BlueXP控制台</block>
+  <block id="402ae08ce46f82670c0313312e504ad7" category="list-text">AI引擎必须能够访问 <block ref="046fd603b18837f482287e5ec741e5ed" category="inline-link-macro-rx"></block></block>
+  <block id="4d82a1ec1af02725042c8c785564ee7a" category="list-text">适用于 NetApp ONTAP 的 Amazon FSX</block>
+  <block id="4b88d56bd65ef92611ac63064c38369f" category="list-text">Amazon CloudWatch</block>
 </blocks>
