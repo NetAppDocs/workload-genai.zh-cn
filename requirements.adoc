@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: requirements.html 
 keywords: ai, chatbot, prerequisites, bedrock, fsx for ontap, prerequisites, requirements 
-summary: '在构建知识库之前、请确保已正确设置Workload Factory和AWS。其中包括拥有AWS登录凭据、部署了一个FSx for ONTAP文件系统(其中包含您要集成到知识库中的数据源)、访问Amazon B基石AI服务等。' 
+summary: '在构建知识库之前、请确保已正确设置工作负载工厂和AWS。其中包括拥有AWS登录凭据、部署了一个FSx for ONTAP文件系统(其中包含您要集成到知识库中的数据源)、访问Amazon B基石AI服务等。' 
 ---
 = GenAI要求
 :allow-uri-read: 
@@ -11,15 +11,10 @@ summary: '在构建知识库之前、请确保已正确设置Workload Factory和
 
 
 [role="lead"]
-在构建知识库之前、请确保已正确设置Workload Factory和AWS。其中包括拥有AWS登录凭据、部署了一个FSx for ONTAP文件系统(其中包含您要集成到知识库中的数据源)、访问Amazon B基石AI服务等。
+在构建知识库之前、请确保已正确设置工作负载工厂和AWS。其中包括拥有AWS登录凭据、部署了一个FSx for ONTAP文件系统(其中包含您要集成到知识库中的数据源)、访问Amazon B基石AI服务等。
 
-工作负载出厂登录和帐户:: 您需要登录到Workload Factory并创建帐户。
-+
---
-https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["了解有关登录和创建帐户的更多信息"^]
-
---
-AWS 凭据和权限:: 您需要向具有自动化权限的工作负载工厂添加AWS凭据、这意味着您将在_Automate _模式下对GenAI使用工作负载工厂。
+工作负载出厂登录和帐户:: 您需要 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在Workload Factory中设置一个帐户"^]使用其中一个登录 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
+AWS 凭据和权限:: 您需要将AWS凭据添加到具有自动化权限的工作负载工厂、这意味着您将在_Automate _模式下对GenAI使用工作负载工厂。
 +
 --
 目前不支持_Basic_模式和_Read_模式权限。
@@ -28,13 +23,13 @@ AWS 凭据和权限:: 您需要向具有自动化权限的工作负载工厂添�
 
 image:screenshot-ai-permissions.png["屏幕截图显示了用于完全管理AI资源的权限设置。"]
 
-https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["了解如何将AWS凭据添加到Workload Factory"^]
+https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["了解如何将AWS凭据添加到工作负载工厂"^]
 
 --
 亚马逊基岩:: Amazon Brock使您能够使用基础模型、并提供构建生成性AI应用程序的功能。
 +
 --
-在开始使用适用于GenAI的Workload Factory之前、您必须先设置Amazon Brock。您的GenAI部署必须位于启用了Amazon Brock的AWS地区。
+在开始使用适用于GenAI的工作负载工厂之前、您必须先设置Amazon Brock。您的GenAI部署必须位于启用了Amazon Brock的AWS地区。
 
 * https://docs.aws.amazon.com/bedrock/latest/userguide/setting-up.html["AWS文档：设置Amazon Brock"^]
 * https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-supported.html["AWS文档：Amazon Brock知识库支持的区域和型号"^]

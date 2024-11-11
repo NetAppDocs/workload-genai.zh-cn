@@ -56,7 +56,7 @@ image:diagram-chatbot-infrastructure.png["AI聊天机器人组件示意图。"]
 在开始此过程之前、请确保您的环境满足 link:requirements.html["要求"] 要求。
 
 .步骤
-. 登录到Workload Factory。
+. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
 . 在AI Workloads (AI工作负载)磁贴中、选择*部署和管理*。
 . 查看基础架构图并选择“*下一步”。
 . 完成*AWS设置*部分中的项目：
@@ -78,7 +78,7 @@ GenAI部署必须位于启用了Amazon Brock的AWS区域中。 https://docs.aws.
 
 
 .结果
-Workload Factory开始部署聊天机器人基础架构。此过程可能需要长达10分钟。
+工作负载工厂开始部署聊天机器人基础架构。此过程可能需要长达10分钟。
 
 在部署过程中、将设置以下各项：
 

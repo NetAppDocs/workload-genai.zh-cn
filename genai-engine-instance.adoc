@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: genai-engine-instance.html 
 keywords: genai engine, instance, ec2, role, iam role, permissions, security group, inbound, outbound, private endpoints 
-summary: 在部署GenAI基础架构时、Workload Factory会为GenAI引擎创建一个EC2实例。它还会为此实例创建IAM角色、安全组和专用端点。您可能希望了解有关Workload Factory在AWS环境中创建的这些组件的更多详细信息。 
+summary: 在部署GenAI基础架构时、工作负载工厂会为GenAI引擎创建一个EC2实例。它还会为此实例创建IAM角色、安全组和专用端点。您可能希望了解有关工作负载工厂在AWS环境中创建的这些组件的更多详细信息。 
 ---
 = NetApp GenAI引擎的组件
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 在部署GenAI基础架构时、Workload Factory会为GenAI引擎创建
 
 
 [role="lead"]
-在部署GenAI基础架构时、Workload Factory会为GenAI引擎创建一个EC2实例。它还会为此实例创建IAM角色、安全组和专用端点。您可能希望了解有关Workload Factory在AWS环境中创建的这些组件的更多详细信息。
+在部署GenAI基础架构时、工作负载工厂会为GenAI引擎创建一个EC2实例。它还会为此实例创建IAM角色、安全组和专用端点。您可能希望了解有关工作负载工厂在AWS环境中创建的这些组件的更多详细信息。
 
 EC2实例类型:: m5.large
 IAM角色:: GenAI引擎实例需要具有向Amazon Brock上的嵌入模型发送数据区块以及与NetApp AI服务后端进行通信的权限。IAM角色包括以下权限：
@@ -34,7 +34,7 @@ IAM角色:: GenAI引擎实例需要具有向Amazon Brock上的嵌入模型发送
 ----
 --
 安全组:: 出站规则对所有流量开放、而入站规则完全关闭。
-专用端点:: 如果目标VPC尚不具有专用端点、Workload Factory将为GenAI引擎EC2实例创建专用端点、以便它可以与以下AWS服务进行通信：
+专用端点:: 如果目标VPC尚不具有专用端点、则工作负载工厂将为GenAI引擎EC2实例创建专用端点、以便它可以与以下AWS服务进行通信：
 +
 --
 * 亚马逊基岩

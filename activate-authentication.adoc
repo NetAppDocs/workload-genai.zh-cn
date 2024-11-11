@@ -14,6 +14,7 @@ summary: 激活知识库身份验证、以便在将知识库与聊天机器人�
 激活知识库身份验证、以便在使用API端点将知识库与聊天机器人应用程序集成时需要进行令牌验证和ACL。激活身份验证时、您需要为JSON Web令牌配置设置、此令牌将用于向聊天机器人客户端发出的知识库API请求。
 
 .步骤
+. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
 . 从"Knowledge Bases"清单页面中、选择要激活身份验证的知识库。
 . 选择 image:icon-action.png["选项按钮"] 并选择*管理知识库*。
 . 选择*操作*菜单，然后选择*管理身份验证设置*。

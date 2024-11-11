@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: example-chatbot-application.html 
 keywords: ai, example, sample, chatbot, app, application, local 
-summary: 您可以安装并运行示例聊天机器人应用程序来测试您的知识库、并了解如何使用Workload Factory API创建您自己的生成型AI应用程序。 
+summary: 您可以安装并运行示例聊天机器人应用程序来测试您的知识库、并了解如何使用工作负载工厂API创建您自己的生成型AI应用程序。 
 ---
 = 使用外部示例聊天机器人应用程序
 :allow-uri-read: 
@@ -39,4 +39,4 @@ NOTE: 与此知识库集成的外部聊天应用程序将需要使用您在知�
 
 == 了解更多信息。
 
-https://console.workloads.netapp.com/api-doc["工作负载工厂API文档"]
+https://console.workloads.netapp.com/api-doc["编写出厂API文档"]

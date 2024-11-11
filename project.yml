@@ -21,7 +21,7 @@ sidebar:
       url: "/whats-new.html"
   - title: 开始使用
     entries:
-    - title: 了解适用于GenAI的Workload Factory
+    - title: 了解适用于GenAI的工作负载工厂
       url: "/ai-workloads-overview.html"
     - title: 快速入门
       url: "/quick-start.html"
@@ -68,5 +68,5 @@ sidebar:
   - title: 法律声明
     url: "/legal-notices.html"
 product-family:
-  name: BlueXP Workload Factory for AWS
+  name: BlueXP workload factory for AWS
   repo: workload-family

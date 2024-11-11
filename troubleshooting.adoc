@@ -24,15 +24,15 @@ summary: 要向NetApp技术支持创建支持案例、您需要先将NetApp支�
 | 区域 | 问题描述 | 发生原因 | 临时解决策 
 
 
-| 部署 | 由于卷已存在、部署失败。 | Workload Factory for GenAI需要在部署过程中创建新卷、但已存在使用您指定的名称的卷。 | 指定要用于新卷的唯一名称、然后重新尝试部署。 
+| 部署 | 由于卷已存在、部署失败。 | 在部署过程中、GenAI的工作负载工厂需要创建新卷、但已存在使用您指定的名称的卷。 | 指定要用于新卷的唯一名称、然后重新尝试部署。 
 
 
-| 部署 | 部署失败、因为Workload Factory for GenAI无法挂载此卷。 | FSx for NetApp ONTAP所需的一个或多个入站端口已关闭或筛选。  a| 
+| 部署 | 部署失败、因为GenAI的工作负载工厂无法挂载此卷。 | FSx for NetApp ONTAP所需的一个或多个入站端口已关闭或筛选。  a| 
 打开中列出的端口 https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/reference-security-groups-fsx.html#inbound-rules["适用于 ONTAP 的 FSX 的安全组规则"^]。
 
 
 
-| 维护 | Workload Factory for GenAI使用的后端Docker实例无法启动。 | 已删除此卷并重新启动EC2实例。  a| 
+| 维护 | 工作负载工厂使用的后端Docker实例无法启动GenAI。 | 已删除此卷并重新启动EC2实例。  a| 
 请使用以下恢复步骤：
 
 .步骤
@@ -68,5 +68,5 @@ volumes:
 
 
 
-| 维护 | Workload Factory for GenAI使用的后端Docker实例无法启动。 | 已删除此根卷。 | 使用名称和路径创建一个卷、然后从Amazon EC2重新启动后端Docker实例。 
+| 维护 | 工作负载工厂使用的后端Docker实例无法启动GenAI。 | 已删除此根卷。 | 使用名称和路径创建一个卷、然后从Amazon EC2重新启动后端Docker实例。 
 |===

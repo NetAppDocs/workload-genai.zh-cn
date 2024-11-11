@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: create-knowledgebase.html 
 keywords: ai, chatbot, creating, knowledge base 
-summary: 在部署AI基础架构并从FSx for ONTAP数据存储库中确定要集成到知识库中的数据源后、即可使用Workload Factory构建知识库。在此步骤中、您还将定义AI特征并创建对话开场白。 
+summary: 在您部署了AI基础架构并从FSx for ONTAP数据存储库中确定了要集成到知识库中的数据源之后、您便可以使用工作负载工厂构建知识库了。在此步骤中、您还将定义AI特征并创建对话开场白。 
 ---
 = 创建知识库
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 在部署AI基础架构并从FSx for ONTAP数据存储库中确定要�
 
 
 [role="lead"]
-在部署AI基础架构并从FSx for ONTAP数据存储库中确定要集成到知识库中的数据源后、即可使用Workload Factory构建知识库。在此步骤中、您还将定义AI特征并创建对话开场白。
+在您部署了AI基础架构并从FSx for ONTAP数据存储库中确定了要集成到知识库中的数据源之后、您便可以使用工作负载工厂构建知识库了。在此步骤中、您还将定义AI特征并创建对话开场白。
 
 .关于此任务
 知识库有两种数据集成方式-_public mode/和_Enterprise mode/。
@@ -37,14 +37,14 @@ NOTE: 可以随时启用或禁用数据防护。如果您要切换数据防护�
 知识库定义了一些特征、例如、要用来创建知识库的基础AI模型和嵌入格式。
 
 .步骤
-. 登录到Workload Factory。
+. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
 . 在AI Workloads (AI工作负载)磁贴中、选择*部署和管理*。
 . 从“Knowledge Bases”(知识库)选项卡中，选择“*添加知识库*”。
 . 在Define Knowledge Base页面上、配置知识库设置：
 +
 .. *Name*：输入要用于知识库的名称。
 .. *Description*：输入知识库的详细说明。
-.. *嵌入模型*：嵌入模型定义了如何将数据转换为知识库的矢量嵌入。Workload Factory支持以下型号：
+.. *嵌入模型*：嵌入模型定义了如何将数据转换为知识库的矢量嵌入。工作负载出厂支持以下型号：
 +
 *** T人 嵌入G1 -文本
 *** T人 嵌入文本v2
@@ -81,8 +81,8 @@ https://aws.amazon.com/bedrock/titan/["详细了解Amazon大力孙"^]
 +
 如果您激活了启动对话器、则默认情况下会选中"自动模式"。只有在将数据源添加到知识库后、才能启用"手动模式"。link:manage-knowledgebase.html["了解如何修改知识库设置"](英文)
 
-.. *FSx for ONTAP文件系统*：定义新知识库时，Workload Factory会创建一个新的Amazon FSx for NetApp ONTAP卷来存储该卷。选择现有文件系统名称以及要创建新卷的SVM (也称为Storage VM)。
-.. *Snapshot policy*：从Workload Factory存储清单中定义的现有策略列表中选择一个Snapshot策略。系统将根据您选择的快照策略、以一定频率自动创建知识库的重复快照。
+.. *FSx for ONTAP文件系统*：定义新的知识库时，工作负载工厂会创建一个新的Amazon FSx for NetApp ONTAP卷来存储它。选择现有文件系统名称以及要创建新卷的SVM (也称为Storage VM)。
+.. *Snapshot policy*：从工作负载出厂存储清单中定义的现有策略列表中选择一个Snapshot策略。系统将根据您选择的快照策略、以一定频率自动创建知识库的重复快照。
 +
 如果不存在所需的快照策略、则可以 https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html["创建快照策略"]在包含此卷的Storage VM上执行此操作。
 

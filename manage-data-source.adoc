@@ -20,7 +20,8 @@ summary: 在FSx for ONTAP文件系统上使用数据源创建知识库后、您�
 您可以查看有关数据源内容的信息、也可以查看其在知识库中的嵌入状态。由于数据源是知识库的一部分、因此您需要先打开知识库、然后才能查看数据源详细信息。
 
 .步骤
-. 从导航菜单中选择*AI*。
+. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
+. 从工作负载出厂导航菜单中、选择*AI*。
 . 选择数据源所在的知识库，然后选择并选择*管理知识库 image:icon-action.png["选项按钮"] *。
 +
 页面底部列出了此知识库中的数据源。
@@ -38,6 +39,7 @@ summary: 在FSx for ONTAP文件系统上使用数据源创建知识库后、您�
 您可以编辑有关已集成到知识库中的数据源的信息。将数据源添加到知识库后、大多数信息都会得到修复、但您可以更改分块定义和配置以及权限感知(在数据源卷上使用SMB协议时)。
 
 .步骤
+. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
 . 在知识库清单页面中，选择数据源所在的知识库，然后选择 image:icon-action.png["选项按钮"] 并选择*Manage Knowledge bas*。
 +
 页面底部列出了此知识库中的数据源。
@@ -65,6 +67,7 @@ summary: 在FSx for ONTAP文件系统上使用数据源创建知识库后、您�
 如果您不再需要某个数据源加入知识库、可以将其删除。
 
 .步骤
+. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
 . 从知识库清单页面中，选择数据源所在的知识库，然后选择并选择*管理知识库 image:icon-action.png["选项按钮"] *。
 +
 页面底部列出了此知识库中的数据源。
