@@ -1,6 +1,6 @@
 ---
 indexpage:
-  title: 适用于GenAI文档的工作负载工厂
+  title: BlueXP  工作负载工厂提供GenAI文档
   summary: 将FSx for ONTAP文件系统中的数据与MLOps平台和GenAI基础模型集成、以便使用组织数据创建功能聊天机器人。
   keywords: AI, GenAI, ML, Chatbot, FSx, FSx for ONTAP, knowledge base
   lead: 将FSx for ONTAP文件系统中的数据与MLOps平台和GenAI基础模型集成、以便使用组织数据创建功能聊天机器人。
