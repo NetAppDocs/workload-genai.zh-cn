@@ -29,7 +29,7 @@ https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["了解�
 亚马逊基岩:: Amazon Brock使您能够使用基础模型、并提供构建生成性AI应用程序的功能。
 +
 --
-在开始使用适用于GenAI的工作负载工厂之前、您必须先设置Amazon Brock。您的GenAI部署必须位于启用了Amazon Brock的AWS地区。
+在开始使用适用于GenAI的BlueXP  工作负载工厂之前、您必须先设置Amazon Brock。您的GenAI部署必须位于启用了Amazon Brock的AWS地区。
 
 * https://docs.aws.amazon.com/bedrock/latest/userguide/setting-up.html["AWS文档：设置Amazon Brock"^]
 * https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-supported.html["AWS文档：Amazon Brock知识库支持的区域和型号"^]

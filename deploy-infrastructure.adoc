@@ -50,7 +50,7 @@ image:diagram-chatbot-infrastructure.png["AI聊天机器人组件示意图。"]
 
 == 部署GenAI基础架构
 
-您需要输入AWS凭据并选择适用于ONTAP的FSx文件系统、以部署恢复增强生成(RAG)基础架构。
+您需要输入AWS凭据并选择FSx for ONTAP文件系统、以部署检索增强型生成(RAG)基础架构。
 
 .开始之前
 在开始此过程之前、请确保您的环境满足 link:requirements.html["要求"] 要求。
@@ -75,6 +75,10 @@ GenAI部署必须位于启用了Amazon Brock的AWS区域中。 https://docs.aws.
 
 
 . 选择*Deploy开始部署。
++
+
+NOTE: 如果部署失败并显示凭据错误、您可以通过选择错误消息中的超链接来获取更多错误详细信息。您可以查看缺少或阻止的权限列表、以及GenAI工作负载部署GenAI基础架构所需的权限列表。
+
 
 
 .结果

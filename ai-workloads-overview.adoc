@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: ai-workloads-overview.html 
 keywords: overview, concepts, features, use case, workloads, AI, Bedrock, knowledge base, chatbot 
-summary: 通过适用于GenAI的工作负载工厂、您可以将适用于NetApp ONTAP文件系统的Amazon FSx与GenAI基础模型相集成。这为您提供了高性能存储、并为您的AI数据集提供了一套丰富的保护、安全性和成本优化功能。 
+summary: 通过适用于GenAI的BlueXP  工作负载工厂、您可以将适用于NetApp ONTAP文件系统的Amazon FSx与GenAI基础模型相集成。这为您提供了高性能存储、并为您的AI数据集提供了一套丰富的保护、安全性和成本优化功能。 
 ---
-= 了解适用于GenAI的工作负载工厂
+= 了解适用于GenAI的BlueXP  工作负载工厂
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -15,9 +15,9 @@ summary: 通过适用于GenAI的工作负载工厂、您可以将适用于NetApp
 
 
 
-== 什么是GenAI的工作负载工厂？
+== 什么是适用于GenAI的BlueXP  工作负载工厂？
 
-通过适用于GenAI的工作负载工厂、您可以将Amazon FSx for NetApp ONTAP上的企业级数据源与生成性AI应用程序结合使用。利用"恢复增强生成"(RAG)框架、您可以快速将数据源连接到Amazon BROBON提供的基础模型、以开发由AI提供支持的生成性应用程序、例如虚拟助手、问答聊天机器人、文档汇总、内容创建等
+借助适用于GenAI的BlueXP  工作负载工厂、您可以在Amazon FSx for NetApp ONTAP上将企业级数据源与生成性AI应用程序结合使用。利用"恢复增强生成"(RAG)框架、您可以快速将数据源连接到Amazon BROBON提供的基础模型、以开发由AI提供支持的生成性应用程序、例如虚拟助手、问答聊天机器人、文档汇总、内容创建等
 
 将生成型AI与组织数据结合使用、您可以利用自己的知识和专业知识、而不仅仅是依靠模型基于模型所训练的公共数据的智能。使用RAG自定义模型可确保对组织特定问题做出准确且相关的响应、从而提高使用生成性AI的应用程序用户的工作效率。
 
@@ -29,7 +29,7 @@ summary: 通过适用于GenAI的工作负载工厂、您可以将适用于NetApp
 
 == 使用GenAI创建生成性AI应用程序的优势
 
-适用于GenAI的工作负载工厂可简化使用"恢复增强型生成"(RAG)构建生成型AI应用程序所需的基础架构部署流程。具体而言、GenAI具有以下优势：
+适用于GenAI的BlueXP  工作负载工厂可简化使用"恢复增强型生成"(RAG)构建生成型AI应用程序所需的基础架构部署流程。具体而言、GenAI具有以下优势：
 
 * IT管理员和开发人员无需深入了解数据基础架构、基础架构和语言模型、即可利用GenAI提供的自动化功能加快应用程序开发速度。数据管理员和开发人员可以轻松快速地创建企业知识库、以嵌入贵组织的非结构化数据、供生成型AI应用程序使用。
 * 通过在知识库中嵌入的文件中保留用户权限来增强安全性、以确保维护数据安全和隐私。可以开发一个应用程序(例如聊天机器人)、以便仅为经过身份验证的用户提供基于用户有权访问的数据的答案。
@@ -49,7 +49,7 @@ image:diagram-chatbot-processing.png["显示GenAI关键组件及其功能及其�
 
 
 
-== GenAI的工作负载工厂如何帮助构建生成型AI应用程序
+== 适用于GenAI的BlueXP  工作负载工厂如何帮助构建生成型AI应用程序
 
 GenAI可通过以下方式帮助使用RAG构建生成性AI应用程序：
 
