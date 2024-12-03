@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= 法律声明
+= BlueXP  工作负载工厂提供GenAI法律声明
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

@@ -14,24 +14,28 @@ summary: 开始使用Amazon FSx for NetApp ONTAP文件系统上的组织数据�
 开始使用Amazon FSx for NetApp ONTAP文件系统上的组织数据创建知识库。聊天机器人等应用程序将访问此知识库、以便为最终用户提供以组织为中心的响应。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"]登录到工作负载工厂
+[role="quick-margin-para"]
 您需要 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在Workload Factory中设置一个帐户"^]使用其中一个登录 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"]设置您的环境以满足GenAI要求
 [role="quick-margin-para"]
 您需要AWS凭据来部署AWS基础架构、部署和发现FSx for ONTAP文件系统、要集成到知识库中的数据源列表、访问Amazon Brock AI服务等。
 
+[role="quick-margin-para"]
 link:requirements.html["详细了解GenAI要求"^](英文)
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"]确定包含数据源的FSx for ONTAP文件系统
 [role="quick-margin-para"]
 您将集成到知识库中的数据源可以位于一个FSx for ONTAP文件系统上、也可以位于多个FSx for ONTAP文件系统上。这些系统可以位于不同的VPC中、但必须可在同一网络中进行访问。
 
+[role="quick-margin-para"]
 link:identify-data-sources.html["了解如何识别数据源"^](英文)
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四个"]部署知识库基础架构
 [role="quick-margin-para"]
 启动基础架构部署向导、在AWS环境中部署知识库基础架构。此过程会为NetApp GenAI引擎部署一个EC2实例、并在FSx for ONTAP文件系统上部署一个卷以包含NetApp AI引擎数据库。该卷用于存储知识库使用的矢量数据库。
 
+[role="quick-margin-para"]
 link:deploy-infrastructure.html["了解如何部署知识库基础架构"^](英文)
 
 .下一步行动

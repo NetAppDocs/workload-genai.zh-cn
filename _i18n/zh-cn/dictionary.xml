@@ -10,7 +10,6 @@
   <block id="9969ec0e7476736a130c54f32700611e" category="list-text">*已禁用*：聊天机器人用户将使用所有集成数据源的内容接收响应。</block>
   <block id="65f706122d6156fd52b6cb2ff2214944" category="list-text">选择*Add*将此数据源添加到您的知识库中。</block>
   <block id="f1af0b71f33a2e37e9e17b100f3c0b1e" category="summary">激活知识库身份验证、以便在将知识库与聊天机器人应用程序集成时需要令牌验证和ACL。</block>
-  <block id="970a6e4ed60b5e3eb0f25c2ab67433fe" category="doc">为知识库激活外部身份验证</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步骤</block>
   <block id="958a8f384aa34f23244386f38ed3aeab" category="list-text">从"Knowledge Bases"清单页面中、选择要发布的知识库。</block>
   <block id="2041999f6b6b70199d1267ee84f453a6" category="inline-image-macro">选项按钮</block>
@@ -321,7 +320,6 @@
   <block id="0e0f1b27ca798d3b3b8154b411215d9a" category="list-text">选择*操作*菜单，然后选择*删除知识库*。</block>
   <block id="74091f3303c946e291c1c1702ba6d39a" category="list-text">在“删除知识库”对话框中，确认要将其删除，然后选择*Delete*。</block>
   <block id="8bbd4e338e42c1350d453ca5c82eb3b3" category="summary">在本地构建并测试知识库后、您可以发布知识库、以便与聊天机器人应用程序集成、使用户能够查询知识库。</block>
-  <block id="70de8e73e84df845f91376c6c0d1188e" category="doc">发布知识库并查看唯一端点</block>
   <block id="12676fc9338d312de3a6cbb584fa3284" category="paragraph">在本地构建并测试知识库后、您可以发布知识库、以便与聊天机器人应用程序集成、使用户能够查询知识库。</block>
   <block id="079d0a527f117f9fde217668d7359a20" category="paragraph">您发布的每个知识库都有唯一的端点。</block>
   <block id="850b9475ef66eeb78335c085f71bae31" category="list-text">选择*操作*菜单，然后选择*发布*。</block>
@@ -427,7 +425,6 @@
   <block id="c61f79c1724a3bab0885dbbd3b2e87ea" category="inline-image-macro">运行按钮</block>
   <block id="ccd43d06a7b1187d2ac93471de4a9b64" category="list-text">在聊天机器人输入字段中、输入提示或问题、然后选择 <block ref="4673f7ece64f88d1999f6ef93db80a3b" category="inline-image-macro-rx" type="image"></block> 以查看您的聊天机器人如何利用您的组织知识做出响应。</block>
   <block id="2625a68b73d2dae552cbcc7be08396fc" category="list-text">如果您需要更新任何数据源、以便知识库提供更有针对性的答案、请立即进行这些更改、然后重新测试知识库。</block>
-  <block id="490414e0366b091220802d406e52c076" category="doc">新增功能</block>
   <block id="1d949c7c5600289e10795f178278edd1" category="section-title">2024年7月7日</block>
   <block id="3d2b63396c87b28180a4d9d0ba951b0d" category="paragraph">初始版本支持开发一个知识库、该知识库可通过嵌入组织的数据进行自定义。您的用户可以通过聊天机器人应用程序访问知识库。此功能可确保准确、相关地回答组织特定的问题、从而提高所有用户的满意度和工作效率。</block>
   <block id="a9273ae35bbdb787574410a5cd552892" category="summary">现在、您已经使用企业数据创建了知识库并为用户部署了该知识库、您可以管理知识库、数据源和RAG基础架构、包括适用于ONTAP文件系统的FSx。</block>
@@ -600,8 +597,6 @@
   <block id="b91895758c5a35a75fd3e87dc1fa0741" category="list-text">在编辑知识库页面中、您可以更改知识库名称、说明、嵌入模型、聊天模式、数据防护栏支持、选择是自动还是手动创建对话启动程序、以及为包含知识库的卷使用的快照策略。</block>
   <block id="fde00ba8f64d2c57d64a163698fd6f03" category="admonition">每个知识库扫描(包括嵌入)都将产生成本。如果在创建知识库后启用了数据防护、则会再次扫描知识库并产生成本。</block>
   <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024年11月3日</block>
-  <block id="5975f7e9036c78e6217b16f295f0ca75" category="inline-link-macro">BlueXP控制台</block>
-  <block id="402ae08ce46f82670c0313312e504ad7" category="list-text">AI引擎必须能够访问 <block ref="046fd603b18837f482287e5ec741e5ed" category="inline-link-macro-rx"></block></block>
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="list-text">适用于 NetApp ONTAP 的 Amazon FSX</block>
   <block id="4b88d56bd65ef92611ac63064c38369f" category="list-text">Amazon CloudWatch</block>
   <block id="1ee7c829860de53ba4857ad78b7aadef" category="doc">适用于GenAI的工作负载工厂初始版本</block>
@@ -745,4 +740,20 @@
   <block id="849293736c770408f68a35f4fcdf9592" category="cell">选择*重建*按钮。适用于GenAI的BlueXP  工作负载工厂会重建基础架构并显示重建进度。完成后、您的知识库将重新连接到重建的基础架构、并显示知识库列表。</block>
   <block id="d1955ee5035af265f471c1debd693717" category="cell">BlueXP  工作负载工厂使用的后端Docker实例无法启动GenAI。</block>
   <block id="6ad17d07338dffda7982d8efdad3a276" category="section-title">2024年12月1日</block>
+  <block id="e8293cb4f1909d8329e31cefdfb4dba4" category="doc">为GenAI知识库激活外部身份验证</block>
+  <block id="b05735c6e4c6d503ad9f93af6e740fa9" category="doc">创建基于RAG的GenAI应用程序</block>
+  <block id="16cb0b733a26e9afa11f388e6d83aec1" category="doc">创建GenAI知识库</block>
+  <block id="79cee61f29eb5a0e2dd156871eb70a40" category="list-text">AI引擎必须能够访问BlueXP  https://api NetApp端点：\ap.dom.ap.d.com BlueXP 。</block>
+  <block id="e63e0ed616c63ed724e592b04e608826" category="doc">使用GenAI外部示例聊天机器人应用程序</block>
+  <block id="52f26f0fff3bae61240c4b3a43f3624d" category="doc">获取有关适用于GenAI的BlueXP  工作负载工厂的帮助</block>
+  <block id="e1cdd82a2918ba1a2c0ff51770aad51e" category="doc">确定要集成到您的GenAI知识库中的数据源</block>
+  <block id="fe1e8231ce0909884a561100cafd30a8" category="doc">BlueXP  工作负载工厂提供GenAI法律声明</block>
+  <block id="dd3ed9192bf4d0d55741ed48bf8a6695" category="doc">管理GenAI数据源</block>
+  <block id="10f8936c8a58bcff3825995f8d31ea40" category="doc">管理GenAI知识库</block>
+  <block id="335c0c9583885e1f231604b7fa10819a" category="doc">发布GenAI知识库并查看唯一端点</block>
+  <block id="97641902b7a17c72d34451f4f1417531" category="doc">注册获取BlueXP  Workload Factory for GenAI支持</block>
+  <block id="d9965afe654edc6d99fd1a5080f10f27" category="doc">测试GenAI知识库</block>
+  <block id="69065fcb8a054a77edd3d2da74b89c6e" category="doc">GenAI故障排除</block>
+  <block id="1e7bcc0dba826f450b3684e2a2c6f04e" category="doc">BlueXP  Workload Factory for GenAI的新增功能</block>
+  <block id="988a487756dcb4e1605a4e07dc7dbd42" category="doc">您接下来可以使用GenAI做什么</block>
 </blocks>

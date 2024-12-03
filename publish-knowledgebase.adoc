@@ -4,7 +4,7 @@ permalink: publish-knowledgebase.html
 keywords: ai, chatbot, publishing, knowledge base 
 summary: 在本地构建并测试知识库后、您可以发布知识库、以便与聊天机器人应用程序集成、使用户能够查询知识库。 
 ---
-= 发布知识库并查看唯一端点
+= 发布GenAI知识库并查看唯一端点
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

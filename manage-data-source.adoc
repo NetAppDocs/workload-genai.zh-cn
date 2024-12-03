@@ -4,7 +4,7 @@ permalink: manage-data-source.html
 keywords: ai, chatbot, creating, knowledge base, data source 
 summary: 在FSx for ONTAP文件系统上使用数据源创建知识库后、您可以查看数据源详细信息、更新或更改数据源内容、编辑数据源设置或删除数据源。 
 ---
-= 管理数据源
+= 管理GenAI数据源
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

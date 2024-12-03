@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
 summary: 了解工作负载工厂AI工作负载功能的新增功能。 
 ---
-= 新增功能
+= BlueXP  Workload Factory for GenAI的新增功能
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
