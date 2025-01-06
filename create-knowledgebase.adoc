@@ -25,7 +25,10 @@ summary: 在您部署了AI基础架构并从FSx for ONTAP数据存储库中确�
 link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解BlueXP分类"^](英文)
 
 
-NOTE: 可以随时启用或禁用数据防护。如果您要切换数据防护、Workload Factory会从头开始扫描整个知识库、从而产生成本。
+NOTE: 适用于GenAI的BlueXP  工作负载工厂不会屏蔽敏感的个人信息(SPii)。有关此类数据的详细信息、请参见link:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-sensitive-personal-data["敏感个人数据的类型"^]。
+
+
+NOTE: 可以随时启用或禁用数据防护。如果您要切换数据防护、工作负载工厂会从头开始扫描整个知识库、这会产生成本。
 
 --
 

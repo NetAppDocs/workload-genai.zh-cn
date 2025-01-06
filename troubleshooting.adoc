@@ -108,6 +108,25 @@ summary: 要向NetApp技术支持创建支持案例、您需要先将NetApp支�
 | 维护 | AI引擎启动失败，您在*Knowledge Bases*页面上看到错误"AI引擎实例错误"。 | AI引擎实例已损坏或不存在。 | 选择*重建*按钮。适用于GenAI的BlueXP  工作负载工厂会重建基础架构并显示重建进度。完成后、您的知识库将重新连接到重建的基础架构、并显示知识库列表。 
 
 
+| 维护 | AI引擎启动失败，您在*Knowledge Bases*页面上看到错误"The GenAI Engine Instance is Stop"(GenAI引擎实例已停止)。 | AI引擎实例未运行。 | 使用AWS管理控制台或AWS命令行界面启动AI引擎实例。 
+
+
+| 维护 | AI引擎启动失败，您在*Knowledge Bases*页面上看到错误"The GenAI引擎server is not starting"(GenAI引擎服务器未响应)。 | AI引擎实例未响应。  a| 
+请使用以下恢复步骤：
+
+.步骤
+. 修改GenAI引擎实例安全组、以启用对GenAI引擎实例的SSH访问。
+. 使用SSH登录到实例。
+. 运行以下命令：
++
+[source, console]
+----
+docker-compose up
+----
+
+
+
+
 | 维护 | BlueXP  工作负载工厂使用的后端Docker实例无法启动GenAI。 | 已删除此卷并重新启动EC2实例。  a| 
 请使用以下恢复步骤：
 

@@ -15,6 +15,34 @@ summary: 了解工作负载工厂AI工作负载功能的新增功能。
 
 
 
+== 2025年1月5日
+
+
+
+=== 自定义快照名称
+
+现在、您可以为临时快照提供快照名称。
+
+link:https://docs.netapp.com/us-en/workload-genai/manage-knowledgebase.html#protect-a-knowledge-base-with-snapshots["使用快照保护知识库"]
+
+
+
+=== 自定义AI引擎实例名称
+
+现在、您可以在部署期间为AI引擎实例提供一个自定义名称。
+
+link:https://docs.netapp.com/us-en/workload-genai/deploy-infrastructure.html["部署GenAI基础架构"]
+
+
+
+=== 重建损坏或缺失的GenAI基础架构
+
+如果您的AI引擎实例损坏或被以某种方式删除、您可以让工作负载在出厂时重建它。在完成重建后、工作负载工厂会自动将您的知识库重新连接到基础架构、以便可以随时使用。
+
+link:https://docs.netapp.com/us-en/workload-genai/troubleshooting.html["故障排除"]
+
+
+
 == 2024年12月1日
 
 
@@ -45,11 +73,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/use-onprem-data.html["发�
 
 link:https://docs.netapp.com/us-en/workload-genai/create-knowledgebase.html#create-and-configure-the-knowledge-base["创建知识库"]
 
-link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解BlueXP分类"^]
-
-
-
-== 2024年9月29日
+link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解BlueXP分类"^]= 2024年9月29日
 
 
 
