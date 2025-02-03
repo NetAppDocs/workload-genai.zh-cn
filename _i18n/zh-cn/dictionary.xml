@@ -5,7 +5,6 @@
   <block id="e3fbe9ea657688c1ff4a86f23c1752c3" category="list-text">*选择卷*：选择数据源文件所在的卷，然后选择*下一步*。</block>
   <block id="3bce906453410b081d8e495b9cf8c9b0" category="paragraph">选择使用SMB协议存储的文件时、您需要输入Active Directory信息、其中包括域、IP地址、用户名和密码。</block>
   <block id="7028355d43ef8a71ff4d5e7bed32be2b" category="list-text">*选择数据源*：根据文件的保存位置选择数据源位置。该卷可以是整个卷，也可以是卷中的特定文件夹或子文件夹，然后选择*Next*。</block>
-  <block id="12d073958c6d4922a6f27ae8b5e4b533" category="list-text">在*权限感知*部分(仅当您选择的数据源位于使用SMB协议的卷上时才可用)中、您可以启用或禁用此选择：</block>
   <block id="751157f855d8f0597671b65bc8ea1301" category="list-text">*已启用*：访问此知识库的聊天机器人用户只会从他们有权访问的数据源获得查询响应。</block>
   <block id="9969ec0e7476736a130c54f32700611e" category="list-text">*已禁用*：聊天机器人用户将使用所有集成数据源的内容接收响应。</block>
   <block id="65f706122d6156fd52b6cb2ff2214944" category="list-text">选择*Add*将此数据源添加到您的知识库中。</block>
@@ -115,9 +114,7 @@
   <block id="36d8c0d0c9711e8ac7a5bbcbe9b96008" category="list-text">出站规则对所有流量开放、而入站规则完全关闭。</block>
   <block id="1f171bab0b26254e4c58e536973c5c09" category="list-text">专用端点</block>
   <block id="34048930da0f8b448828d6774b139b17" category="list-text">亚马逊基岩</block>
-  <block id="c421d122321bec48d6b30858f4e7b515" category="list-text">Amazon EC2</block>
   <block id="719ffca696aa714ef090fce0aca97bd2" category="list-text">Amazon El生 容器注册表(ECR)</block>
-  <block id="270fcb785810d0206945029bb05f4e97" category="list-text">Amazon S3</block>
   <block id="0072b242011f459b57b0768dceac82f8" category="list-text">AWS Systems Manager (SSM)</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">获取帮助</block>
   <block id="6a7b2c9c4cec65ad972b108fa0a1192b" category="section-title">获取FSx for ONTAP支持</block>
@@ -475,7 +472,6 @@
   <block id="4fc1d0607a3fe50db5ef612a2c4a178e" category="list-text">浏览以登录到<block ref="0e14f9ffc1d2673bd92f13a4ac79e32e" category="inline-link-rx"></block> 应用程序。</block>
   <block id="5f62c285aea87618ed1381c43c7ae2cf" category="paragraph">此时将显示聊天机器人应用程序示例。</block>
   <block id="d59048f21fd887ad520398ce677be586" category="section-title">了解更多信息。</block>
-  <block id="8f3f613a5094ebfa7c5f531cb356028e" category="list-text">*定义AI参数*：在*Chunking strasy*部分中，定义在将数据源与知识库集成时，GenAI引擎如何将数据源内容拆分成块。您可以选择以下策略之一：</block>
   <block id="091e1c7957272ab69145f4859b4465d0" category="list-text">*多句拆分*：将数据源中的信息组织为句子定义的区块。您可以选择每个区块包含多少个句子(最多100个)。</block>
   <block id="87aa4ffcf50084a10651fe7094e75bda" category="list-text">*基于重叠的区块*：将数据源中的信息组织为字符定义的区块，这些区块可以重叠相邻区块。您可以选择每个区块的字符大小、以及每个区块与相邻区块重叠的程度。您可以将区块大小配置为50到3000个字符、并将重叠百分比配置为1到99%。</block>
   <block id="18c41e2a8da7a23dcc990da8d7dfe06d" category="admonition">选择较高的重叠百分比会显著增加存储需求、但检索准确性只会稍有提高。</block>
@@ -583,7 +579,6 @@
   <block id="3e3c8a56035df76e06772f4505dc58c7" category="list-text">确保您的环境满足前提条件</block>
   <block id="0ce4d42838344488f607ff306088fae9" category="list-text">部署BlueXP分类</block>
   <block id="b91895758c5a35a75fd3e87dc1fa0741" category="list-text">在编辑知识库页面中、您可以更改知识库名称、说明、嵌入模型、聊天模式、数据防护栏支持、选择是自动还是手动创建对话启动程序、以及为包含知识库的卷使用的快照策略。</block>
-  <block id="fde00ba8f64d2c57d64a163698fd6f03" category="admonition">每个知识库扫描(包括嵌入)都将产生成本。如果在创建知识库后启用了数据防护、则会再次扫描知识库并产生成本。</block>
   <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024年11月3日</block>
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="list-text">适用于 NetApp ONTAP 的 Amazon FSX</block>
   <block id="4b88d56bd65ef92611ac63064c38369f" category="list-text">Amazon CloudWatch</block>
@@ -781,5 +776,47 @@
   <block id="2c6cb4e03314c724c32217626f17bd37" category="list-text">使用SSH登录到实例。</block>
   <block id="337d79852891a37d41285c9101c3fff4" category="list-text">运行以下命令：</block>
   <block id="37b8354fe553b0151888468751ea8eb0" category="section-title">2025年1月5日</block>
-  <block id="0fdf33109843473a96b84acfe576030a" category="paragraph"><block ref="384713a8a1d5a2dd365da2851c50ad93" category="inline-link-macro-rx"></block>= 2024年9月29日</block>
+  <block id="2b33992406857bfe64aea3c375dfd0f3" category="list-text">*配置*：配置数据源如何从文件中获取信息，以及它包含在扫描中的文件：</block>
+  <block id="556d69e48e56f7282433b4470f9fc985" category="list-text">*定义数据源*：在*Chunking string*部分中，定义在数据源与知识库集成时，GenAI引擎如何将数据源内容拆分成块。您可以选择以下策略之一：</block>
+  <block id="441ffcb2a5deb53b096bf6da09532c3c" category="list-text">*文件过滤*：配置扫描中包含的文件：</block>
+  <block id="fbf5c3d1e175475dce2b6f27f23e342c" category="list-text">在*文件类型支持*部分，选择包括所有类型的文件，或选择要包含在数据源扫描中的单个文件类型。</block>
+  <block id="9c91ae043d4f1fed127449b7d9f56f1a" category="paragraph">如果您包含图像或PDF文件、BlueXP  Workload Factory for GenAI将解析图像中的文本(包括PDF文档中的图像)、这将导致成本增加。</block>
+  <block id="cdc5210ee55660ad12576b6b12e53505" category="paragraph">如果包含图像中的文本数据、则在将扫描的文本数据从您的环境发送到AWS时、GenAI无法屏蔽图像中的个人身份信息(个人身份信息、(PI))。但是、一旦存储数据、所有的数据都会在GenAI数据库中屏蔽。</block>
+  <block id="527140faa5b9a355e269287e721ad95b" category="admonition">您选择将图像文件包括在扫描中与知识库聊天模式相关。如果扫描中包含图像文件、则聊天模式必须支持图像。如果在此处选择了图像文件类型、则无法将知识库切换到不支持图像文件的聊天模式。</block>
+  <block id="2af4913e8e59a092d414744be9ae44d2" category="list-text">在*文件修改时间过滤器*部分，选择根据修改时间启用或禁用包含文件。如果启用了修改时间筛选、请从列表中选择一个日期范围。</block>
+  <block id="67aa8f84073b450b225b7d2830cc4e41" category="admonition">如果您包含基于修改日期范围的文件、则只要不满足日期范围(这些文件在您指定的日期范围内未被修改)、这些文件就会从定期扫描中排除、并且数据源不会包含这些文件。</block>
+  <block id="a036984d47253ddc828a04bc8ac85524" category="list-text">在*权限感知*部分(仅当您选择的数据源位于使用SMB协议的卷上时才可用)中、您可以启用或禁用权限感知响应：</block>
+  <block id="77fd00559b8279b555e48d21e5e67c34" category="doc">数据源的文件类型筛选</block>
+  <block id="47cf5538cc85b7acf0e24098fc5bbffd" category="paragraph">现在、GenAI支持在添加数据源时选择要包括在数据源扫描中的特定文件类型。</block>
+  <block id="e57c1e86c82776cdcb9c50b4e82943f8" category="paragraph"><block ref="e57c1e86c82776cdcb9c50b4e82943f8" category="inline-link-macro-rx"></block></block>
+  <block id="f191d5f0a123d62966b3617a9d8c752c" category="section-title">数据源的文件修改日期筛选</block>
+  <block id="b1be3e2e5ab05373dbf3927507ea84d2" category="paragraph">现在、GenAI支持在添加数据源时按修改日期筛选要包含在数据源扫描中的文件。您可以为包含的文件选择修改日期范围。</block>
+  <block id="7a7ba68ff13813a8c9d7413b67a91e34" category="section-title">支持图像文件和增强的PDF文件支持</block>
+  <block id="02edd7a4065e5f73535b550150fc46f2" category="paragraph">现在、GenAI支持扫描图像文件和PDF文件中的图像(也称为多模式文件支持)。如果选择图像文件、则图像中的文本将扫描到数据源并用作数据。此功能包括PDF文档中的图像；如果包含PDF文件类型、则会扫描每个PDF中的图像以查找文本、并且该文本会包含在数据源的信息中。</block>
+  <block id="b9a5ff8382cbb9f5609b8bff25344245" category="section-title">混合搜索和重新搜索支持</block>
+  <block id="429b63d212adaceb6de8dae934d76ea4" category="paragraph">现在、GenAI可以使用混合搜索并重新排列结果、从而增强搜索结果的相关性。混合搜索将关键字搜索与向量和语法搜索结合在一起。标准关键字搜索结果通过近似匹配和语言细微差别得到增强、从而增强相关性。GenAI会重新排列搜索结果、并仅返回相关性最高的结果。</block>
+  <block id="397adcec169a6ce17f0abfc941258c0f" category="paragraph"><block ref="397adcec169a6ce17f0abfc941258c0f" category="inline-link-macro-rx"></block></block>
+  <block id="c009fe342f72cc06fe63760e2eaa701c" category="list-text">利用GenAI提供的混合搜索和重新排序功能、从数据中获得高质量的结果。混合搜索与重新排名相结合、可显著提高搜索结果的相关性。这些功能可通过Amazon AWS获得、并且取决于区域。</block>
+  <block id="e1201f675c705c74b856dba391a68602" category="paragraph">某些多模式操作(如扫描图像以查找文本信息)可能会占用更多资源、因此成本会更高。某些配置操作(例如更改数据库的设置)可能会导致重新扫描数据源、数据源扫描的成本也会更高。</block>
+  <block id="0a2b76d9cf1a9ffdd3b88e030e038252" category="example-title">IAM角色权限</block>
+  <block id="216304eb42158c57d4ec762a309c7df6" category="list-text">基岩</block>
+  <block id="12789b4d0bdf3d54be09051f154d5eba" category="list-text">基岩-运行时</block>
+  <block id="ca6c1f270eb3bc12524f0c3ad6af0765" category="list-text">基岩-代理-运行时</block>
+  <block id="db974238714ca8de634a7ce1d083a14f" category="list-text">API</block>
+  <block id="05b6053c41a2130afd6fc3b158bda4e6" category="list-text">Docker</block>
+  <block id="078aab7ae8c1a0df339ac8525790d5e1" category="list-text">SSM</block>
+  <block id="627597c7a47356c5c9f55a4854a59ff3" category="list-text">ec2messages</block>
+  <block id="25f6388206f436c2d1de63216302b13d" category="list-text">Ssmmessages</block>
+  <block id="907e06a16862d82ca6907a28a68d0ad6" category="cell">JPEG</block>
+  <block id="8106d47388a74c58448d40c84de6fd91" category="cell">.jpg or.jpeg</block>
+  <block id="7281c70f390b5e0f3c8827352c83f0b0" category="cell">便携式网络图形</block>
+  <block id="6446d860dbbfe540e9e2cbab5f98f1e3" category="cell">png</block>
+  <block id="a97aa4a947e531a7fa6f96a2b73876e3" category="cell">图形交换格式</block>
+  <block id="03a46779cf1ed515b29e1c471efd4c0f" category="cell">gif</block>
+  <block id="830b1d3b1096152076b8daa22a275a74" category="cell">WebP映像</block>
+  <block id="f38a468e497336f7e3144a22393a4ca9" category="cell">.webp</block>
+  <block id="0c05a373f02466ab8f502ea4b3b8e2e8" category="admonition">每个知识库扫描(包括嵌入)都将产生成本。如果在创建知识库后启用了数据防护、则会再次扫描知识库并产生成本。同样、如果您更改聊天模式、GenAI将重新扫描关联的数据源(产生成本)。</block>
+  <block id="f7fb3b5dc06e03848b8f5ff23bbcd37d" category="paragraph">默认情况下、GenAI会重新排列搜索结果、以提高结果相关性。为了获得最佳结果、请确保您的Amazon基岩基础模型配置包含对重新排序模型的访问权限、例如Cohere Rerank或Amazon Rerank (如果您所在地区有)。</block>
+  <block id="986aee2caba870111e5ce3c5571c82de" category="section-title">2025年2月2日</block>
+  <block id="26e6f4cc71039ce95ddbb0acdad6891d" category="section-title">2024年9月29日</block>
 </blocks>

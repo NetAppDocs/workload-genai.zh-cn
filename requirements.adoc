@@ -35,6 +35,8 @@ https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["了解�
 * https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-supported.html["AWS文档：Amazon Brock知识库支持的区域和型号"^]
 
 
+默认情况下、GenAI会重新排列搜索结果、以提高结果相关性。为了获得最佳结果、请确保您的Amazon基岩基础模型配置包含对重新排序模型的访问权限、例如Cohere Rerank或Amazon Rerank (如果您所在地区有)。
+
 --
 嵌入模型:: 在创建知识库之前、您必须启用计划使用的嵌入模型。支持以下嵌入模型：
 +

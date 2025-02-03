@@ -17,31 +17,184 @@ EC2实例类型:: m5.large
 IAM角色:: GenAI引擎实例需要具有向Amazon Brock上的嵌入模型发送数据区块以及与NetApp AI服务后端进行通信的权限。IAM角色包括以下权限：
 +
 --
+.IAM角色权限
+[%collapsible]
+====
 [source, json]
 ----
-"ssm:Describe*",
-"ssm:Get*",
-"ssm:List*",
-"ssm:PutInventory",
-"ssm:PutComplianceItems",
-"ssm:PutConfigurePackageResult",
-"ssm:SendCommand",
-"ssm:UpdateAssociationStatus",
-"ssm:UpdateInstanceAssociationStatus",
-"ssm:UpdateInstanceInformation",
-"ssmmessages:*",
-"ec2messages:GetMessages"
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Action": [
+        "ssm:DescribeDocument",
+        "ssm:DescribeAssociation",
+        "ssm:GetDeployablePatchSnapshotForInstance",
+        "ssm:GetManifest",
+        "ssm:ListInstanceAssociations",
+        "ssm:ListAssociations",
+        "ssm:PutInventory",
+        "ssm:PutComplianceItems",
+        "ssm:PutConfigurePackageResult",
+        "ssm:UpdateAssociationStatus",
+        "ssm:UpdateInstanceAssociationStatus",
+        "ssm:UpdateInstanceInformation",
+        "ssmmessages:CreateControlChannel",
+        "ssmmessages:CreateDataChannel",
+        "ssmmessages:OpenControlChannel",
+        "ssmmessages:OpenDataChannel"
+      ],
+      "Resource": "*",
+      "Effect": "Allow"
+    },
+    {
+      "Action": [
+        "ssm:GetParameter"
+      ],
+      "Resource": "arn:aws:ssm:*:*:parameter/netapp/wlmai/*",
+      "Effect": "Allow"
+    },
+    {
+      "Action": [
+        "fsx:DescribeVolumes",
+        "fsx:DescribeStorageVirtualMachines",
+        "fsx:DescribeFileSystems"
+      ],
+      "Resource": "*",
+      "Effect": "Allow"
+    },
+    {
+      "Action": [
+        "fsx:TagResource",
+        "fsx:ListTagsForResource"
+      ],
+      "Resource": [
+        "arn:aws:fsx:*:*:storage-virtual-machine/*/*",
+        "arn:aws:fsx:*:*:volume/*/*"
+      ],
+      "Effect": "Allow"
+    },
+    {
+      "Action": [
+        "fsx:CreateVolume"
+      ],
+      "Resource": [
+        "arn:aws:fsx:*:*:volume/*/*",
+        "arn:aws:fsx:*:*:storage-virtual-machine/*/*"
+      ],
+      "Effect": "Allow"
+    },
+    {
+      "Condition": {
+        "StringLike": {
+          "aws:ResourceTag/netapp:wlmai:c92e9ed6-dcbb-45f7-95f0-58647ebec9d7:kbId": "*"
+        }
+      },
+      "Action": "fsx:DeleteVolume",
+      "Resource": [
+        "arn:aws:fsx:*:*:volume/*/*",
+        "arn:aws:fsx:*:*:backup/*"
+      ],
+      "Effect": "Allow"
+    },
+    {
+      "Condition": {
+        "StringLike": {
+          "aws:ResourceTag/netapp:wlmai:c92e9ed6-dcbb-45f7-95f0-58647ebec9d7": "*"
+        }
+      },
+      "Action": "fsx:UntagResource",
+      "Resource": "arn:aws:fsx:*:*:storage-virtual-machine/*/*",
+      "Effect": "Allow"
+    },
+    {
+      "Condition": {
+        "StringLike": {
+          "aws:ResourceTag/netapp:wlmai:c92e9ed6-dcbb-45f7-95f0-58647ebec9d7:kbId": "*"
+        }
+      },
+      "Action": "fsx:UntagResource",
+      "Resource": "arn:aws:fsx:*:*:volume/*/*",
+      "Effect": "Allow"
+    },
+    {
+      "Action": [
+        "bedrock:InvokeModel",
+        "bedrock:Rerank"
+      ],
+      "Resource": "*",
+      "Effect": "Allow"
+    },
+    {
+      "Action": [
+        "iam:PassRole"
+      ],
+      "Resource": [
+        "arn:aws:iam::*:role/NetApp_AI_Bedrock_wlmai-*"
+      ],
+      "Effect": "Allow"
+    },
+    {
+      "Action": [
+        "ec2messages:GetMessages",
+        "ec2messages:GetEndpoint",
+        "ec2messages:AcknowledgeMessage",
+        "ec2messages:DeleteMessage",
+        "ec2messages:FailMessage",
+        "ec2messages:SendReply"
+      ],
+      "Resource": "*",
+      "Effect": "Allow"
+    },
+    {
+      "Action": [
+        "logs:DescribeLogGroups"
+      ],
+      "Resource": "*",
+      "Effect": "Allow"
+    },
+    {
+      "Action": [
+        "logs:DescribeLogStreams",
+        "logs:PutLogEvents",
+        "logs:CreateLogStream",
+        "logs:CreateLogGroup"
+      ],
+      "Resource": [
+        "arn:aws:logs:*:*:log-group:/netapp/wlmai/*:log-stream:*",
+        "arn:aws:logs:*:*:log-group:/netapp/wlmai/*"
+      ],
+      "Effect": "Allow"
+    }
+  ]
+}
 ----
+====
 --
 安全组:: 出站规则对所有流量开放、而入站规则完全关闭。
 专用端点:: 如果目标VPC尚不具有专用端点、则工作负载工厂将为GenAI引擎EC2实例创建专用端点、以便它可以与以下AWS服务进行通信：
 +
 --
 * 亚马逊基岩
-* Amazon EC2
++
+** 基岩
+** 基岩-运行时
+** 基岩-代理-运行时
+
+
 * Amazon El生 容器注册表(ECR)
-* Amazon S3
++
+** API
+** Docker
+
+
 * AWS Systems Manager (SSM)
++
+** SSM
+** ec2messages
+** Ssmmessages
+
+
 * 适用于 NetApp ONTAP 的 Amazon FSX
 * Amazon CloudWatch
 

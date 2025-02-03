@@ -65,4 +65,16 @@ summary: '确定或创建FSx for ONTAP文件系统上要集成到知识库中的
 
 
 | 可移植文档格式 | .pdf 
+
+
+| JPEG | .jpg or.jpeg 
+
+
+| 便携式网络图形 | png 
+
+
+| 图形交换格式 | gif 
+
+
+| WebP映像 | .webp 
 |===

@@ -15,6 +15,42 @@ summary: 了解工作负载工厂AI工作负载功能的新增功能。
 
 
 
+== 2025年2月2日
+
+
+
+=== 数据源的文件类型筛选
+
+现在、GenAI支持在添加数据源时选择要包括在数据源扫描中的特定文件类型。
+
+link:https://docs.netapp.com/us-en/workload-genai/create-knowledgebase.html#add-data-sources-to-the-knowledge-base["向知识库添加数据源"]
+
+
+
+=== 数据源的文件修改日期筛选
+
+现在、GenAI支持在添加数据源时按修改日期筛选要包含在数据源扫描中的文件。您可以为包含的文件选择修改日期范围。
+
+link:https://docs.netapp.com/us-en/workload-genai/create-knowledgebase.html#add-data-sources-to-the-knowledge-base["向知识库添加数据源"]
+
+
+
+=== 支持图像文件和增强的PDF文件支持
+
+现在、GenAI支持扫描图像文件和PDF文件中的图像(也称为多模式文件支持)。如果选择图像文件、则图像中的文本将扫描到数据源并用作数据。此功能包括PDF文档中的图像；如果包含PDF文件类型、则会扫描每个PDF中的图像以查找文本、并且该文本会包含在数据源的信息中。
+
+link:https://docs.netapp.com/us-en/workload-genai/create-knowledgebase.html#add-data-sources-to-the-knowledge-base["向知识库添加数据源"]
+
+
+
+=== 混合搜索和重新搜索支持
+
+现在、GenAI可以使用混合搜索并重新排列结果、从而增强搜索结果的相关性。混合搜索将关键字搜索与向量和语法搜索结合在一起。标准关键字搜索结果通过近似匹配和语言细微差别得到增强、从而增强相关性。GenAI会重新排列搜索结果、并仅返回相关性最高的结果。
+
+link:https://docs.netapp.com/us-en/workload-genai/ai-workloads-overview.html#benefits-of-using-genai-to-create-generative-ai-applications["了解适用于GenAI的BlueXP  工作负载工厂"]
+
+
+
 == 2025年1月5日
 
 
@@ -73,7 +109,11 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/use-onprem-data.html["发�
 
 link:https://docs.netapp.com/us-en/workload-genai/create-knowledgebase.html#create-and-configure-the-knowledge-base["创建知识库"]
 
-link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解BlueXP分类"^]= 2024年9月29日
+link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解BlueXP分类"^]
+
+
+
+== 2024年9月29日
 
 
 
