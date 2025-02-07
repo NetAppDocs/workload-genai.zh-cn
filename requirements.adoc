@@ -50,21 +50,34 @@ https://aws.amazon.com/bedrock/titan/["详细了解Amazon大力孙"^]
 
 
 --
-聊天模式:: 在创建知识库之前、您必须启用计划使用的基本聊天模式。支持以下克洛德聊天模式：
+聊天模式:: 在创建知识库之前、您必须启用计划使用的基本聊天模式。由于型号支持因AWS地区而异、请参见 https://docs.aws.amazon.com/bedrock/latest/userguide/models-regions.html["AWS文档"^] 以验证您可以在计划部署知识库的地区使用哪些型号。
 +
 --
-* Claude 3.5 Sonnet
-* 克洛德3 Ops.
-* 克洛德3号
-* 克洛德3 Sonnet
-* 克洛德2.1
-* 克洛德2.0
-+
-由于型号支持因AWS地区而异、请参见 https://docs.aws.amazon.com/bedrock/latest/userguide/models-regions.html["此AWS文档页面"^] 以验证您可以在计划部署知识库的地区使用哪些型号。
+GenAI支持以下Anthropic Claude和Amazon Nova型号：
 
+* 克洛德的anthpic：
 +
-详细了解可帮助您进行选择的型号： https://aws.amazon.com/bedrock/claude/["anthpic的克洛德在亚马逊基岩"^]
+** Claude 3.5 Sonnet
+** 克洛德3 Ops.
+** 克洛德3号
+** 克洛德3 Sonnet
+** 克洛德2.1
+** 克洛德2.0
 
+
+* Amazon Nova：
++
+** Nova Micro
+** Nova Lite (支持图像和文本)
+** Nova Pro (支持图像和文本)
+
+
+
+
+了解有关将这些模型与Amazon Brock结合使用的更多信息：
+
+* https://aws.amazon.com/bedrock/claude/["anthpic的克洛德在亚马逊基岩"^]
+* https://docs.aws.amazon.com/nova/latest/userguide/getting-started-console.html["在Amazon B基石 控制台中开始使用Amazon Nova"^]
 
 
 --
