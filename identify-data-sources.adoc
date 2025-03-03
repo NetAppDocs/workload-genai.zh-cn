@@ -52,7 +52,16 @@ summary: '确定或创建FSx for ONTAP文件系统上要集成到知识库中的
 | 文件格式 | 扩展 
 
 
+| Apache镶木地板 | 镶木地板 
+
+
 | 逗号分隔值文件 | .csv 
+
+
+| 图形交换格式 | gif 
+
+
+| JPEG | .jpg or.jpeg 
 
 
 | 降价 | .MD 
@@ -67,13 +76,7 @@ summary: '确定或创建FSx for ONTAP文件系统上要集成到知识库中的
 | 可移植文档格式 | .pdf 
 
 
-| JPEG | .jpg or.jpeg 
-
-
 | 便携式网络图形 | png 
-
-
-| 图形交换格式 | gif 
 
 
 | WebP映像 | .webp 
