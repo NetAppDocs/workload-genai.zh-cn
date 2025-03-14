@@ -27,3 +27,13 @@ indexpage:
     links:
     - title: 管理知识库基础架构
       url: manage-infrastructure.html
+  - title: 博客和社区
+    links:
+    - title: NetApp 社区
+      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
+    - title: BlueXP博客
+      url: https://bluexp.netapp.com/blog
+    - title: 云网络研讨会
+      url: https://bluexp.netapp.com/events
+    - title: 利用数据释放GenAI的潜能
+      url: https://community.netapp.com/t5/Tech-ONTAP-Blogs/Unlocking-GenAI-with-your-data-using-Amazon-FSx-for-NetApp-ONTAP-and-BlueXP/ba-p/456394
