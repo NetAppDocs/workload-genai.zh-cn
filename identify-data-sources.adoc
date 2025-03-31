@@ -52,16 +52,19 @@ summary: '确定或创建FSx for ONTAP文件系统上要集成到知识库中的
 | 文件格式 | 扩展 
 
 
-| Apache镶木地板 | 镶木地板 
+| Apache Parquet脚 注：免责声明[在插入结构化数据文件时不支持数据防护功能。] | 镶木地板 
 
 
-| 逗号分隔值文件 | .csv 
+| 逗号分隔值文件注释：免责声明[] | .csv 
 
 
 | 图形交换格式 | gif 
 
 
 | JPEG | .jpg or.jpeg 
+
+
+| JSON和JSON脚注：免责声明[] | .json 
 
 
 | 降价 | .MD 

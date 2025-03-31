@@ -60,9 +60,14 @@ https://aws.amazon.com/bedrock/titan/["详细了解Amazon大力孙"^]
 
 
 
-.. *聊天模式*：从集成在Amazon Brock中的Claude聊天模式中进行选择。请注意、您必须已启用Amazon Brock中的聊天模式。
+.. *聊天模式*：从集成在Amazon BROMOT中的Anthorpic CLAUDE或Amazon Nova聊天模式中进行选择。请注意、您必须已启用Amazon Brock中的聊天模式。
 +
-详细了解可帮助您进行选择的型号： https://aws.amazon.com/bedrock/claude/["anthpic的克洛德在亚马逊基岩"^]
+了解有关将这些模型与Amazon Brock结合使用的更多信息：
+
++
+*** https://aws.amazon.com/bedrock/claude/["anthpic的克洛德在亚马逊基岩"^]
+*** https://docs.aws.amazon.com/nova/latest/userguide/getting-started-console.html["在Amazon B基石 控制台中开始使用Amazon Nova"^]
+
 
 .. *数据防护*：选择是启用还是禁用数据防护。link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解由BlueXP  分类提供支持的数据防护"^](英文)
 +
@@ -70,7 +75,7 @@ https://aws.amazon.com/bedrock/titan/["详细了解Amazon大力孙"^]
 
 +
 *** 要与BlueXP  分类进行通信、需要使用服务帐户。要创建服务帐户、您必须在BlueXP  租户帐户上具有_Organization admin_角色。具有组织管理员角色的成员可以完成BlueXP  中的所有操作。link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#add-a-role-to-a-member["了解如何在BlueXP  中向成员添加角色"^]
-*** AI引擎必须能够访问BlueXP  https://api NetApp端点：\ap.dom.ap.d.com BlueXP 。
+*** AI引擎必须能够访问link:https://api.bluexp.netapp.com["BlueXP  API端点"^]。
 *** 您需要执行中所述的以下操作link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html#quick-start["BlueXP分类文档"^]：
 +
 .... 创建BlueXP Connector
@@ -80,6 +85,13 @@ https://aws.amazon.com/bedrock/titan/["详细了解Amazon大力孙"^]
 
 
 
+
+
++
+
+NOTE: 在导出CSV、JSON、JSONP或Parquet等结构化数据文件时、不支持数据防护功能。
+
++
 .. *对话开场白*：选择是否要提供最多四个对话开场提示、这些提示将显示给与使用此知识库的聊天机器人进行交互的用户。建议您启用此设置。
 +
 如果您激活了启动对话器、则默认情况下会选中"自动模式"。只有在将数据源添加到知识库后、才能启用"手动模式"。link:manage-knowledgebase.html["了解如何修改知识库设置"](英文)
