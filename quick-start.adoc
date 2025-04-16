@@ -26,11 +26,7 @@ link:requirements.html["详细了解GenAI要求"^](英文)
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"]确定包含数据源的FSx for ONTAP文件系统
 [role="quick-margin-para"]
-您将集成到知识库中的数据源可以位于一个FSx for ONTAP文件系统上、也可以位于多个FSx for ONTAP文件系统上。如果这些系统位于不同的VPC中、则必须使用以下两种配置之一：
-
-* 可在同一网络中访问
-* VPC必须建立对等连接、并使用与AI引擎相同的区域和AWS帐户
-
+您将集成到知识库中的数据源可以位于一个FSx for ONTAP文件系统上、也可以位于多个FSx for ONTAP文件系统上。如果这些系统位于不同的VPC中、则必须可在同一网络中访问这些系统、或者必须为这些VPC建立对等关系、并使用与AI引擎相同的区域和AWS帐户。
 
 [role="quick-margin-para"]
 link:identify-data-sources.html["了解如何识别数据源"^](英文)
