@@ -833,7 +833,6 @@
   <block id="cb1c6d98111a4dc0f10d1914aabf97ff" category="paragraph">此版本的GenAI提供了增强的文件支持：</block>
   <block id="20fae993429f53ad24302c4bea3332d1" category="list-text">聊天模式改进了CSV支持。这样、在从CSV文件查询数据时、可以做出更有用的响应。</block>
   <block id="820ddf0d1fd0a9cf5aaea49d2b400838" category="list-text">现在、GenAI可以从数据源中安装Apache Parquet文件。</block>
-  <block id="9e64c0f3360c80d2707e71b213c5fc58" category="paragraph"><block ref="9e64c0f3360c80d2707e71b213c5fc58" category="inline-link-macro-rx"></block></block>
   <block id="2041784b912a2b2e72827a5e9c656f5f" category="cell">镶木地板</block>
   <block id="f1776184cd873aef06fc869138b3b776" category="admonition">您可以调整聊天机器人模拟器窗口的大小并重新命名、还可以将问题和回答复制到剪贴板。</block>
   <block id="e27f142520976de0e091895abd1a2b45" category="list-text">您可以通过展开响应下的*sources *列表来查看用于生成答案的源。此选项将提供用于生成答案的文件列表。通过将鼠标悬停在文件名上、您可以查看每个文件和卷路径中使用的数据块并将其复制到每个文件。</block>
@@ -873,4 +872,5 @@
   <block id="0fcf305133bffed241e3ea17efbba5fc" category="inline-link-macro">使用工作负载出厂API</block>
   <block id="a6efc6ca3aa5af2c7a8cad1239df17c0" category="paragraph"><block ref="a6efc6ca3aa5af2c7a8cad1239df17c0" category="inline-link-macro-rx"></block></block>
   <block id="1013a9a62eb4667e6ae35cbe4e298de6" category="paragraph">您将集成到知识库中的数据源可以位于一个FSx for ONTAP文件系统上、也可以位于多个FSx for ONTAP文件系统上。如果这些系统位于不同的VPC中、则必须可在同一网络中访问这些系统、或者必须为这些VPC建立对等关系、并使用与AI引擎相同的区域和AWS帐户。</block>
+  <block id="b70e34d229298faea8d481f1cfdd32a9" category="paragraph"><block ref="b70e34d229298faea8d481f1cfdd32a9" category="inline-link-macro-rx"></block></block>
 </blocks>
