@@ -45,7 +45,7 @@ summary: '确定或创建FSx for ONTAP文件系统上要集成到知识库中的
 NOTE: 将数据源添加到Amazon Q Business Connector时、只有用户权限才会应用于数据源文件。未应用组权限。
 
 
-NOTE: 如果数据源中有不包含任何文本的文件、Amazon Q Business不会为这些文件编制索引、而是在Amazon CloudWatch日志中记录一个条目、指出这些文件不包含要编制索引的文本。
+NOTE: 如果数据源中的某个文件缺少文本(例如无文本图像)、Amazon Q Business不会对其编制索引、而是在Amazon CloudWatch日志中记录一个条目、指出缺少文本。
 
 
 
