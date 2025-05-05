@@ -8,7 +8,7 @@
 
 现在、您可以为临时快照提供快照名称。
 
-link:https://docs.netapp.com/us-en/workload-genai/manage-knowledgebase.html#protect-a-knowledge-base-with-snapshots["使用快照保护知识库"]
+link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/manage-knowledgebase.html#protect-a-knowledge-base-with-snapshots["使用快照保护知识库"]
 
 
 
@@ -16,7 +16,7 @@ link:https://docs.netapp.com/us-en/workload-genai/manage-knowledgebase.html#prot
 
 现在、您可以在部署期间为AI引擎实例提供一个自定义名称。
 
-link:https://docs.netapp.com/us-en/workload-genai/deploy-infrastructure.html["部署GenAI基础架构"]
+link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/deploy-infrastructure.html["部署GenAI基础架构"]
 
 
 
@@ -24,4 +24,4 @@ link:https://docs.netapp.com/us-en/workload-genai/deploy-infrastructure.html["�
 
 如果您的AI引擎实例损坏或被以某种方式删除、您可以让工作负载在出厂时重建它。在完成重建后、工作负载工厂会自动将您的知识库重新连接到基础架构、以便可以随时使用。
 
-link:https://docs.netapp.com/us-en/workload-genai/troubleshooting.html["故障排除"]
+link:https://docs.netapp.com/us-en/workload-genai/general/troubleshooting.html["故障排除"]

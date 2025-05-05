@@ -1,13 +1,13 @@
 ---
 sidebar: sidebar 
-permalink: example-chatbot-application.html 
+permalink: knowledge-base/example-chatbot-application.html 
 keywords: ai, example, sample, chatbot, app, application, local 
 summary: 您可以安装并运行示例聊天机器人应用程序来测试您的知识库、并了解如何使用工作负载工厂API创建您自己的生成型AI应用程序。 
 ---
 = 使用GenAI外部示例聊天机器人应用程序
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

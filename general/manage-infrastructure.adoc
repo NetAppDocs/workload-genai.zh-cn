@@ -1,13 +1,13 @@
 ---
 sidebar: sidebar 
-permalink: manage-infrastructure.html 
+permalink: general/manage-infrastructure.html 
 keywords: ai, chatbot, creating, knowledge base 
 summary: 您可以查看有关已部署的GenAI RAG基础架构的详细信息、或者删除不再需要的聊天机器人基础架构。 
 ---
 = 管理GenAI基础架构
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
@@ -42,7 +42,7 @@ summary: 您可以查看有关已部署的GenAI RAG基础架构的详细信息�
 
 NOTE: 此基础架构上部署的所有聊天机器人都将被禁用、并且所有聊天历史记录都将被删除。
 
-此操作只会从工作负载工厂中删除指向AI基础架构的链接、而不会从AWS中删除所有组件。您需要从AWS中手动删除以下基础架构组件：
+此操作仅会从工作负载工厂中删除指向AI基础架构的链接、而不会从AWS中删除所有组件。您需要从AWS中手动删除以下基础架构组件：
 
 * VM实例
 * 专用端点

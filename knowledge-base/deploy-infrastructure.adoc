@@ -1,19 +1,19 @@
 ---
 sidebar: sidebar 
-permalink: deploy-infrastructure.html 
+permalink: knowledge-base/deploy-infrastructure.html 
 keywords: ai, chatbot, infrastructure, bedrock, fsx for ontap 
 summary: 您需要先在环境中部署RAG框架的基础架构、然后才能为组织构建FSx for ONTAP知识库和应用程序。主要基础架构组件包括Amazon Brock AI服务、NetApp GenAI引擎的虚拟机实例以及适用于ONTAP文件系统的FSx。 
 ---
 = 部署GenAI基础架构
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
-您需要先在环境中部署适用于RAG框架的GenAI基础架构、然后才能为组织构建FSx for ONTAP知识库和应用程序。主要基础架构组件包括Amazon Brock服务、NetApp GenAI引擎的虚拟机实例以及适用于ONTAP文件系统的FSx。
+您需要先在环境中部署适用于RAG框架的GenAI基础架构、然后才能为组织构建FSx for ONTAP知识库、连接器和应用程序。主要基础架构组件包括Amazon Brock服务、NetApp GenAI引擎的虚拟机实例以及适用于ONTAP文件系统的FSx。
 
-部署的基础架构可以支持多个知识库和聊天机器人、因此您通常只需要执行一次此任务。
+部署的基础架构可以支持多个知识库、聊天机器人和连接器、因此您通常只需要执行一次此任务。
 
 
 
@@ -21,12 +21,18 @@ summary: 您需要先在环境中部署RAG框架的基础架构、然后才能�
 
 您的GenAI部署必须位于启用了Amazon Brock的AWS地区。 https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-supported.html["查看受支持区域的列表"^]
 
-此部署包含以下组件。
+基础架构由以下组件组成。
 
 亚马逊基岩服务:: Amazon Brock是一项完全托管的服务、支持您通过单个API使用领先AI公司的基础模型(FMS)。它还提供构建安全生成型AI应用程序所需的功能。
 +
 --
 https://aws.amazon.com/bedrock/["了解有关Amazon Brock的更多信息"^]
+
+--
+Amazon Q Business:: Amazon Q基于Amazon BROBON构建、可提供一个完全托管的生成型AI助手、您可以使用它来回答问题并根据数据源中的信息生成内容。
++
+--
+https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/what-is.html["详细了解Amazon Q Business"^]
 
 --
 NetApp GenAI引擎的虚拟机:: 在此过程中会部署NetApp GenAI引擎。它提供了从数据源中加载数据、然后将该数据写入向量数据库的处理能力。
@@ -44,7 +50,7 @@ NetApp GenAI引擎可监控这两个卷并与之交互。
 
 下图显示了GenAI基础架构。编号为1、2和3的部件将在此过程中展开。在开始部署之前、其他要素必须已准备就绪。
 
-image:diagram-chatbot-infrastructure.png["AI聊天机器人组件示意图。"]
+image:genai-infrastructure-diagram-numbered.png["GenAI基础架构组件示意图。"]
 
 
 
@@ -53,7 +59,11 @@ image:diagram-chatbot-infrastructure.png["AI聊天机器人组件示意图。"]
 您需要输入AWS凭据并选择FSx for ONTAP文件系统、以部署检索增强型生成(RAG)基础架构。
 
 .开始之前
-在开始此过程之前、请确保您的环境满足 link:requirements.html["要求"] 要求。
+在开始此过程之前、根据您选择的内容、确保您的环境满足知识库或连接器的要求。
+
+* link:../knowledge-base/requirements-knowledge-base.html["知识库要求"]
+* link:../connector/requirements-connector.html["连接器要求"]
+
 
 .步骤
 . 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。

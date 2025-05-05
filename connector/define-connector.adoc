@@ -1,0 +1,132 @@
+---
+sidebar: sidebar 
+permalink: connector/define-connector.html 
+keywords: ai, chatbot, connector, 
+summary: 部署AI基础架构并确定要与Amazon Q Business集成的数据源后、您可以定义连接器。 
+---
+= 创建适用于Amazon的NetApp ONTAP连接器Q
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在部署AI基础架构并确定将从FSx for ONTAP数据存储库中使用的数据源之后、您可以定义适用于Amazon的NetApp ONTAP连接器问题
+
+在继续操作之前、请确保您的环境符合link:requirements-connector.html["要求"]Amazon Q Business的要求。
+
+.关于此任务
+您的组织中的数据源可能包含个人身份信息(个人身份信息、个人身份信息)。要保护此敏感信息的安全、可以在定义连接器时启用_data护栏_。由BlueXP  分类提供支持的数据防护栏可识别和屏蔽可识别身份信息、使其无法访问和检索。
+
+link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解BlueXP分类"^](英文)
+
+
+NOTE: 适用于GenAI的BlueXP  工作负载工厂不会屏蔽敏感的个人信息(SPII)。有关此类数据的详细信息、请参见link:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-sensitive-personal-data["敏感个人数据的类型"^]。
+
+
+NOTE: 可以随时启用或禁用数据防护。如果您要切换数据防护、则工作负载工厂会从头开始扫描整个数据源、这可能会产生成本。
+
+
+
+== 定义接头
+
+创建适用于Amazon Q的NetApp ONTAP连接器。该连接器支持在GenAI和Amazon Q Business之间进行API和数据源通信。
+
+.步骤
+. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
+. 在AI Workloads (AI工作负载)磁贴中、选择*部署和管理*。
+. 从“知识库和连接器”选项卡中，选择“*新建*”下拉列表，然后选择“* Amazon Q Business Connectors *”。
+. 在"定义连接器"页面上、配置连接器设置：
++
+.. *Name*：输入要用于连接器的名称。
+.. *Description*：输入连接器的详细说明。
+.. *Amazon Q*：要集成的Amazon Q Business实例的区域和应用程序名称。
+.. *数据防护*：选择是启用还是禁用数据防护。link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解由BlueXP  分类提供支持的数据防护"^](英文)
++
+要启用数据防护、必须满足以下前提条件。
+
++
+*** 要与BlueXP  分类进行通信、需要使用服务帐户。要创建服务帐户、您必须在BlueXP  租户帐户上具有_Organization admin_角色。具有组织管理员角色的成员可以完成BlueXP  中的所有操作。link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#add-a-role-to-a-member["了解如何在BlueXP  中向成员添加角色"^]
+*** AI引擎必须能够访问link:https://api.bluexp.netapp.com["BlueXP  API端点"^]。
+*** 您需要执行中所述的以下操作link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html#quick-start["BlueXP分类文档"^]：
++
+.... 创建BlueXP Connector
+.... 确保您的环境满足前提条件
+.... 部署BlueXP分类
+
+
+
+
+
+
++
+
+NOTE: 启用数据保障功能后、GenAI将通过仅输入纯文本(不包括嵌入的图像或媒体文本)并屏蔽任何私有或敏感数据来处理.txt、.MD、.csv、.DOCX和.pdf文件。所有其他文件类型均正常处理、不会屏蔽私有或敏感数据。
+
++
+.. *FSx for ONTAP文件系统*：定义新的NetApp ONTAP Connector for Amazon Q时，Workload Factory会创建新的Amazon FSx for NetApp ONTAP卷来存储连接器信息。选择要在其中创建新卷的现有文件系统和SVM (也称为Storage VM)。
+.. *Snapshot policy*：从工作负载出厂存储清单中定义的现有策略列表中选择一个Snapshot策略。GenAI会自动为卷创建重复快照、并根据您选择的快照策略以一定频率存储连接器信息。
++
+如果不存在所需的快照策略、则可以 https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html["创建快照策略"^]在包含此卷的Storage VM上执行此操作。
+
+
+
+. 选择*创建连接器*以将Amazon Q Business与GenAI集成。
++
+创建连接器时、将显示进度指示器。
+
++
+创建连接器后、您可以选择向连接器添加数据源、以便Amazon Q Business可以先插入数据、然后将其添加到索引中。建议您选择*添加数据源*，然后立即添加一个或多个数据源。
+
+
+
+
+
+== 将数据源添加到连接器
+
+您可以添加一个或多个数据源、以便使用您组织的数据填充Amazon Q Business索引。
+
+.关于此任务
+* 支持的最大数据源数为10。
+* 有关亚马逊Q业务索引的特定服务限制、请参阅 https://docs.aws.amazon.com/kendra/latest/dg/quotas.html["Amazon Q Business文档"^]。
+
+
+.步骤
+. 选择*添加数据源*后，将显示*选择文件系统*页。
+. *选择文件系统*：选择数据源文件所在的FSx for ONTAP文件系统，然后选择*下一步*。
+. *选择卷*：选择数据源文件所在的卷，然后选择*下一步*。
++
+选择使用SMB协议存储的文件时、您需要输入Active Directory信息、其中包括域、IP地址、用户名和密码。
+
+. *选择数据源*：根据文件的保存位置选择数据源位置。该卷可以是整个卷，也可以是卷中的特定文件夹或子文件夹，然后选择*Next*。
+. *配置*：配置数据源如何从文件中获取信息，以及它包含在扫描中的文件：
++
+** *文件过滤*：配置扫描中包含的文件：
++
+*** 在*文件类型支持*部分，选择包括所有类型的文件，或选择要包含在数据源扫描中的单个文件类型。
+*** 在*文件修改时间过滤器*部分，选择根据修改时间启用或禁用包含文件。如果启用了修改时间筛选、请从列表中选择一个日期范围。
++
+
+NOTE: 如果您包含基于修改日期范围的文件、则只要不满足日期范围(这些文件在您指定的日期范围内未被修改)、这些文件就会从定期扫描中排除、并且数据源不会包含这些文件。
+
+
+
+
+
+. 在*权限感知*部分(仅当您选择的数据源位于使用SMB协议的卷上时才可用)中、您可以启用或禁用权限感知响应：
++
+** *已启用*：访问此连接器的聊天机器人用户将仅获得其有权访问的数据源的查询响应。
+** *已禁用*：聊天机器人用户将使用所有集成数据源的内容接收响应。
++
+
+NOTE: Amazon Q Business Connector数据源不支持Active Directory组权限。
+
+
+
+. 选择*添加*以将此数据源添加到Amazon Q Business连接器。
+
+
+.结果
+数据源嵌入到Amazon Q Business索引中。当数据源完全嵌入时、状态将从"嵌入"更改为"嵌入"。
+
+向连接器添加单个数据源后、您可以在Amazon Q Business聊天机器人环境中对其进行测试、并进行任何必要的更改、然后再向用户提供服务。您也可以按照相同的步骤向连接器添加其他数据源。

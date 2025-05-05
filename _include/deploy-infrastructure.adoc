@@ -1,0 +1,105 @@
+= 基础架构详细信息
+:allow-uri-read: 
+
+
+[role="lead"]
+您需要先在环境中部署适用于RAG框架的GenAI基础架构、然后才能为组织构建FSx for ONTAP知识库、连接器和应用程序。主要基础架构组件包括Amazon Brock服务、NetApp GenAI引擎的虚拟机实例以及适用于ONTAP文件系统的FSx。
+
+部署的基础架构可以支持多个知识库、聊天机器人和连接器、因此您通常只需要执行一次此任务。
+
+
+
+== 基础架构详细信息
+
+您的GenAI部署必须位于启用了Amazon Brock的AWS地区。 https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-supported.html["查看受支持区域的列表"^]
+
+基础架构由以下组件组成。
+
+亚马逊基岩服务:: Amazon Brock是一项完全托管的服务、支持您通过单个API使用领先AI公司的基础模型(FMS)。它还提供构建安全生成型AI应用程序所需的功能。
++
+--
+https://aws.amazon.com/bedrock/["了解有关Amazon Brock的更多信息"^]
+
+--
+Amazon Q Business:: Amazon Q基于Amazon BROBON构建、可提供一个完全托管的生成型AI助手、您可以使用它来回答问题并根据数据源中的信息生成内容。
++
+--
+https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/what-is.html["详细了解Amazon Q Business"^]
+
+--
+NetApp GenAI引擎的虚拟机:: 在此过程中会部署NetApp GenAI引擎。它提供了从数据源中加载数据、然后将该数据写入向量数据库的处理能力。
+FSx for ONTAP文件系统:: FSx for ONTAP文件系统为您的GenAI系统提供存储。
++
+--
+此时将部署一个卷、其中包含用于存储基础模型根据数据源生成的数据的向量数据库。
+
+您要集成到知识库中的数据源可以位于同一个FSx for ONTAP文件系统上、也可以位于不同的系统上。
+
+NetApp GenAI引擎可监控这两个卷并与之交互。
+
+--
+
+
+下图显示了GenAI基础架构。编号为1、2和3的部件将在此过程中展开。在开始部署之前、其他要素必须已准备就绪。
+
+image:genai-infrastructure-diagram-numbered.png["GenAI基础架构组件示意图。"]
+
+
+
+== 部署GenAI基础架构
+
+您需要输入AWS凭据并选择FSx for ONTAP文件系统、以部署检索增强型生成(RAG)基础架构。
+
+.开始之前
+在开始此过程之前、根据您选择的内容、确保您的环境满足知识库或连接器的要求。
+
+* link:../knowledge-base/requirements-knowledge-base.html["知识库要求"]
+* link:../connector/requirements-connector.html["连接器要求"]
+
+
+.步骤
+. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
+. 在AI Workloads (AI工作负载)磁贴中、选择*部署和管理*。
+. 查看基础架构图并选择“*下一步”。
+. 完成*AWS设置*部分中的项目：
++
+.. *AWS凭据*：选择或添加可提供部署AWS资源权限的AWS凭据。
+.. *位置*：选择AWS区域、VPC和子网。
++
+GenAI部署必须位于启用了Amazon Brock的AWS区域中。 https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-supported.html["查看受支持区域的列表"^]
+
+
+
+. 完成*Infrastructure settings (基础架构设置)*部分中的项目：
++
+.. *标记*：输入要应用于此部署中的所有AWS资源的任何标记键/值对。这些标记可在AWS管理控制台和工作负载工厂内的基础架构信息区域中查看、并可帮助您跟踪工作负载工厂资源。
+
+
+. 完成*连接*部分：
++
+.. *密钥对*：选择一个可安全连接到NetApp GenAI引擎实例的密钥对。
+
+
+. 完成*AI引擎*部分：
++
+.. *实例名称*：(可选)选择*定义实例名称*并为AI引擎实例输入自定义名称。实例名称显示在工作负载工厂的AWS管理控制台和基础架构信息区域中、可帮助您跟踪工作负载工厂资源。
+
+
+. 选择*Deploy开始部署。
++
+
+NOTE: 如果部署失败并显示凭据错误、您可以通过选择错误消息中的超链接来获取更多错误详细信息。您可以查看缺少或阻止的权限列表、以及GenAI工作负载部署GenAI基础架构所需的权限列表。
+
+
+
+.结果
+工作负载工厂开始部署聊天机器人基础架构。此过程可能需要长达10分钟。
+
+在部署过程中、将设置以下各项：
+
+* 网络与专用端点一起设置。
+* 此时将创建IAM角色、实例配置文件和安全组。
+* 此时将部署GenAI引擎的虚拟机实例。
+* Amazon Brock配置为使用带有前缀的日志组将日志发送到Amazon CloudWatch日志 `/aws/bedrock/`。
+* GenAI引擎配置为使用名为的日志组将日志发送到Amazon CloudWatch Logs、 `/netapp/wlmai/<tenancyAccountId>/randomId`其中是当前用户的。 `<tenancyAccountID>` https://docs.netapp.com/us-en/bluexp-automation/platform/get_identifiers.html#get-the-account-identifier["BlueXP帐户ID"^]
+

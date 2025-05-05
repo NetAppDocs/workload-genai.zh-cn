@@ -1,13 +1,13 @@
 ---
 sidebar: sidebar 
-permalink: identify-data-sources.html 
-keywords: data sources, chatbot, documents, knowledge base 
+permalink: knowledge-base/identify-data-sources-knowledge-base.html 
+keywords: data sources, chatbot, documents, knowledge base, connector 
 summary: '确定或创建FSx for ONTAP文件系统上要集成到知识库中的文档(数据源)。通过这些数据源、知识库可以根据与您的组织相关的数据为用户查询提供准确且个性化的答案。' 
 ---
-= 确定要集成到您的GenAI知识库中的数据源
+= 确定要添加到知识库或连接器的数据源
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
@@ -45,14 +45,14 @@ summary: '确定或创建FSx for ONTAP文件系统上要集成到知识库中的
 
 == 支持的数据源文件格式
 
-当前支持以下数据源文件格式。
+工作负载工厂的GenAI知识库目前支持以下数据源文件格式。
 
 [cols="2*"]
 |===
 | 文件格式 | 扩展 
 
 
-| Apache Parquet脚 注：免责声明[在插入结构化数据文件时不支持数据防护功能。] | 镶木地板 
+| Apache Parquet脚 注：免责声明[将结构化数据文件纳入知识库时不支持数据防护功能。] | 镶木地板 
 
 
 | 逗号分隔值文件注释：免责声明[] | .csv 

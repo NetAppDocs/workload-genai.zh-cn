@@ -1,17 +1,19 @@
 ---
 sidebar: sidebar 
-permalink: create-knowledgebase.html 
+permalink: knowledge-base/create-knowledgebase.html 
 keywords: ai, chatbot, creating, knowledge base 
 summary: 在您部署了AI基础架构并从FSx for ONTAP数据存储库中确定了要集成到知识库中的数据源之后、您便可以使用工作负载工厂构建知识库了。在此步骤中、您还将定义AI特征并创建对话开场白。 
 ---
 = 创建GenAI知识库
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
 在您部署了AI基础架构并从FSx for ONTAP数据存储库中确定了要集成到知识库中的数据源之后、您便可以使用工作负载工厂构建知识库了。在此步骤中、您还将定义AI特征并创建对话开场白。
+
+在继续操作之前、请确保您的环境符合link:requirements-knowledge-base.html["要求"]知识库的要求。
 
 .关于此任务
 知识库有两种数据集成方式-_public mode/和_Enterprise mode/。
@@ -20,7 +22,7 @@ summary: 在您部署了AI基础架构并从FSx for ONTAP数据存储库中确�
 企业模式:: 在大多数情况下、您需要将组织中的数据源集成到知识库中。这种方式称为_Enterprise mode_integration、因为它可以提供企业的知识。
 +
 --
-您的组织的数据源可能包含私人身份信息(隐私信息、个人身份信息)。为了保护此敏感信息的安全、您可以在创建和配置知识库时启用_data护栏_。由BlueXP  分类提供支持的数据防护栏可识别和屏蔽可识别身份信息、使其无法访问和检索。
+您组织的数据源可能包含个人身份信息(个人身份信息、个人身份信息)。为了保护此敏感信息的安全、您可以在创建和配置知识库时启用_data护栏_。由BlueXP  分类提供支持的数据防护栏可识别和屏蔽可识别身份信息、使其无法访问和检索。
 
 link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解BlueXP分类"^](英文)
 
@@ -42,7 +44,7 @@ NOTE: 可以随时启用或禁用数据防护。如果您要切换数据防护�
 .步骤
 . 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
 . 在AI Workloads (AI工作负载)磁贴中、选择*部署和管理*。
-. 从“Knowledge Bases”(知识库)选项卡中，选择“*添加知识库*”。
+. 从“知识库和连接器”选项卡中，选择*Create New*下拉列表，然后选择NetApp GenAI Knowledge base for based*。
 . 在Define Knowledge Base页面上、配置知识库设置：
 +
 .. *Name*：输入要用于知识库的名称。
@@ -52,6 +54,8 @@ NOTE: 可以随时启用或禁用数据防护。如果您要切换数据防护�
 *** T人 嵌入G1 -文本
 *** T人 嵌入文本v2
 *** 第1代多模态嵌入
+*** 嵌入英语
+*** 嵌入多语言
 +
 请注意、您必须已启用Amazon Brock中的嵌入模型。
 
@@ -60,15 +64,7 @@ https://aws.amazon.com/bedrock/titan/["详细了解Amazon大力孙"^]
 
 
 
-.. *聊天模式*：从集成在Amazon BROMOT中的Anthorpic CLAUDE或Amazon Nova聊天模式中进行选择。请注意、您必须已启用Amazon Brock中的聊天模式。
-+
-了解有关将这些模型与Amazon Brock结合使用的更多信息：
-
-+
-*** https://aws.amazon.com/bedrock/claude/["anthpic的克洛德在亚马逊基岩"^]
-*** https://docs.aws.amazon.com/nova/latest/userguide/getting-started-console.html["在Amazon B基石 控制台中开始使用Amazon Nova"^]
-
-
+.. *聊天模式*：从Amazon Brock中集成的各种聊天模式中进行选择。请注意、您必须已启用Amazon Brock中的聊天模式。
 .. *数据防护*：选择是启用还是禁用数据防护。link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解由BlueXP  分类提供支持的数据防护"^](英文)
 +
 要启用数据防护、必须满足以下前提条件。

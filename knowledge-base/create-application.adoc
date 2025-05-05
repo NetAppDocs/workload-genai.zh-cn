@@ -1,13 +1,13 @@
 ---
 sidebar: sidebar 
-permalink: create-application.html 
+permalink: knowledge-base/create-application.html 
 keywords: ai, chatbot, creating, application, knowledge base, rag, retrieval augmented generation 
 summary: 构建知识库并测试聊天机器人后、您可以设置应用程序、使用户能够查询聊天机器人。 
 ---
 = 创建基于RAG的GenAI应用程序
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

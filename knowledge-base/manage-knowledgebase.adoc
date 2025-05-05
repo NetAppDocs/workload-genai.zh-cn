@@ -1,13 +1,13 @@
 ---
 sidebar: sidebar 
-permalink: manage-knowledgebase.html 
+permalink: knowledge-base/manage-knowledgebase.html 
 keywords: ai, chatbot, managing, knowledge base 
 summary: 创建知识库后、您可以查看知识库详细信息、修改知识库、集成其他数据源或删除知识库。 
 ---
 = 管理GenAI知识库
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
@@ -237,6 +237,22 @@ NOTE: 如果您包含基于修改日期范围的文件、则只要不满足日�
 
 .结果
 知识库与所连接的数据源同步、任何活动的聊天机器人都将开始使用您的数据源中的最新信息。
+
+
+
+=== 暂停或恢复计划的同步
+
+如果要暂停或恢复数据源的下次同步(扫描)、您可以随时执行此操作。如果要更改数据源、并且不希望在更改窗口期间进行同步、则可能需要暂停下一次计划同步。
+
+.步骤
+. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
+. 从"Knowledge Bases & Connectors"(知识库和连接器)选项卡中、选择要暂停或恢复扫描的知识库。
+. 选择 image:icon-action.png["选项按钮"] 并选择*管理知识库*。
+. 选择*Actions*菜单，然后选择*Scan > Pause Scheduled scan-*或*Scan > Resume Scheduled scan-*。
++
+您将看到一条消息、指出下一个计划扫描已暂停或恢复。
+
+
 
 
 

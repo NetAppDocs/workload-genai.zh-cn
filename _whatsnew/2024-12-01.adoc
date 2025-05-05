@@ -8,7 +8,7 @@
 
 适用于GenAI的BlueXP  工作负载工厂现在支持从快照克隆知识库。这样可以快速恢复知识库、使用现有数据源创建新的知识库、并有助于数据恢复和开发。
 
-link:https://docs.netapp.com/us-en/workload-genai/manage-knowledgebase.html#clone-a-knowledge-base["克隆知识库"]
+link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/manage-knowledgebase.html#clone-a-knowledge-base["克隆知识库"]
 
 
 

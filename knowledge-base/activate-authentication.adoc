@@ -1,13 +1,13 @@
 ---
 sidebar: sidebar 
-permalink: activate-authentication.html 
+permalink: knowledge-base/activate-authentication.html 
 keywords: ai, chatbot, publishing, knowledge base 
 summary: 激活知识库身份验证、以便在将知识库与聊天机器人应用程序集成时需要令牌验证和ACL。 
 ---
 = 为GenAI知识库激活外部身份验证
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

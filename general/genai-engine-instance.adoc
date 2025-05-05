@@ -1,13 +1,13 @@
 ---
 sidebar: sidebar 
-permalink: genai-engine-instance.html 
+permalink: general/genai-engine-instance.html 
 keywords: genai engine, instance, ec2, role, iam role, permissions, security group, inbound, outbound, private endpoints 
 summary: 在部署GenAI基础架构时、工作负载工厂会为GenAI引擎创建一个EC2实例。它还会为此实例创建IAM角色、安全组和专用端点。您可能希望了解有关工作负载工厂在AWS环境中创建的这些组件的更多详细信息。 
 ---
 = NetApp GenAI引擎的组件
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
@@ -87,7 +87,7 @@ IAM角色:: GenAI引擎实例需要具有向Amazon Brock上的嵌入模型发送
     {
       "Condition": {
         "StringLike": {
-          "aws:ResourceTag/netapp:wlmai:8529f2ac-b443-4224-9abe-f42dc418ab8d:kbId": "*"
+          "aws:ResourceTag/netapp:wlmai: :<ai-engine-id>:kbId": "*"
         }
       },
       "Action": "fsx:DeleteVolume",
@@ -100,7 +100,20 @@ IAM角色:: GenAI引擎实例需要具有向Amazon Brock上的嵌入模型发送
     {
       "Condition": {
         "StringLike": {
-          "aws:ResourceTag/netapp:wlmai:8529f2ac-b443-4224-9abe-f42dc418ab8d": "*"
+          "aws:ResourceTag/netapp:wlmai: :<ai-engine-id>:qConnectorId": "*"
+        }
+      },
+      "Action": "fsx:DeleteVolume",
+      "Resource": [
+        "arn:aws:fsx:*:*:volume/*/*",
+        "arn:aws:fsx:*:*:backup/*"
+      ],
+      "Effect": "Allow"
+    },
+    {
+      "Condition": {
+        "StringLike": {
+          "aws:ResourceTag/netapp:wlmai:<ai-engine-id>": "*"
         }
       },
       "Action": "fsx:UntagResource",
@@ -110,7 +123,17 @@ IAM角色:: GenAI引擎实例需要具有向Amazon Brock上的嵌入模型发送
     {
       "Condition": {
         "StringLike": {
-          "aws:ResourceTag/netapp:wlmai:8529f2ac-b443-4224-9abe-f42dc418ab8d:kbId": "*"
+          "aws:ResourceTag/netapp:wlmai:<ai-engine-id>:kbId": "*"
+        }
+      },
+      "Action": "fsx:UntagResource",
+      "Resource": "arn:aws:fsx:*:*:volume/*/*",
+      "Effect": "Allow"
+    },
+    {
+      "Condition": {
+        "StringLike": {
+          "aws:ResourceTag/netapp:wlmai:<ai-engine-id>:qConnectorId": "*"
         }
       },
       "Action": "fsx:UntagResource",
@@ -135,6 +158,22 @@ IAM角色:: GenAI引擎实例需要具有向Amazon Brock上的嵌入模型发送
         "ec2messages:DeleteMessage",
         "ec2messages:FailMessage",
         "ec2messages:SendReply"
+      ],
+      "Resource": "*",
+      "Effect": "Allow"
+    },
+    {
+      "Action": [
+        "qbusiness:ListWebExperiences",
+        "qbusiness:GetApplication",
+        "qbusiness:CreateDataSource",
+        "qbusiness:DeleteDataSource",
+        "qbusiness:ListIndices",
+        "qbusiness:StartDataSourceSyncJob",
+        "qbusiness:StopDataSourceSyncJob",
+        "qbusiness:ListDataSourceSyncJobs",
+        "qbusiness:BatchPutDocument",
+        "qbusiness:BatchDeleteDocument"
       ],
       "Resource": "*",
       "Effect": "Allow"

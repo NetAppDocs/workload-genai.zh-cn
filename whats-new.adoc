@@ -15,47 +15,39 @@ summary: 了解工作负载工厂AI工作负载功能的新增功能。
 
 
 
-== 2025年3月30日
+== 2025年5月4日
 
 
 
-=== 增强了文件类型支持
+=== 支持NetApp ONTAP Connector for Amazon Q
 
-此版本的GenAI引入了在从数据源中精妙设计文件时对JSON和JSONP文件格式的支持 `.json`。支持包含嵌套对象的JSON文件、但对嵌套阵列的支持有限。
+此版本的GenAI支持适用于Amazon Q的NetApp ONTAP连接器、使您能够为Amazon Q Business创建连接器。快速轻松地利用Amazon Q Business AI助理、与构建Amazon Brock的GenAI知识库相比、初始配置更少。
 
-link:https://docs.netapp.com/us-en/workload-genai/identify-data-sources.html#supported-data-source-file-formats["支持的数据源文件格式"]
-
-
-
-=== 为外部聊天机器人示例应用程序提供国际化支持
-
-现在、您可以轻松地将GenAI示例外部聊天机器人应用程序的用户界面更改为其他语言或区域设置。
-
-link:https://github.com/NetApp/FSx-ONTAP-samples-scripts/tree/main/AI/GenAI-ChatBot-application-sample#netapp-workload-factory-genai-sample-application["GenAI外部示例聊天机器人应用程序"]
+link:https://docs.netapp.com/us-en/workload-genai/connector/define-connector.html["为Amazon Q Business创建一个GenAI连接器"]
 
 
 
-=== 支持Anthropic Claude Sonnet 3.7聊天模式
+=== 增强了聊天模式支持
 
-GenAI现在支持Anthropic Claude 3.7 Sonnet聊天模式。CLODE 3.7 Sonnet的测试版功能允许每个请求最多128K输出令牌、并支持新的计算机使用操作。将来的GenAI版本将支持CLAUDE 3.7 Sonnet扩展思维模式。
+现在、GenAI还支持在知识库中使用以下聊天模式：
 
-link:https://docs.netapp.com/us-en/workload-genai/create-knowledgebase.html["创建GenAI知识库"]
-
-
-
-=== 支持从通用NFS/SMB共享添加数据源
-
-现在、您可以使用工作负载出厂API从通用NFSv3、NFSv4或SMB共享添加数据源。从NFS或SMB共享添加数据源时、知识库卷仍保留在Amazon FSx for NetApp ONTAP卷上。工作负载出厂Web UI将在未来版本中支持此功能。
-
-link:https://console.workloads.netapp.com/api-doc["使用工作负载出厂API"^]
+* link:https://docs.mistral.ai/getting-started/models/models_overview/["Mistral AI型号"^]
+* link:https://docs.aws.amazon.com/bedrock/latest/userguide/titan-text-models.html["Amazon T人 文本模型"^]
+* link:https://www.llama.com/docs/model-cards-and-prompt-formats/["Meta Llama模型"^]
+* link:https://docs.ai21.com/["JAMBA 1.5型号"^]
+* link:https://docs.cohere.com/docs/the-cohere-platform["Cohere命令模型"^]
+* link:https://aws.amazon.com/bedrock/deepseek/["DeepSeek型号"^]
 
 
-
-=== VPC对等支持
-
-现在、您可以在同一区域部署GenAI基础架构link:https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html["对等虚拟私有云(VPC)"^]、并使用相同的AWS帐户。您可以在VPC中部署AI引擎、然后在对等VPC中创建知识库、并选择位于对等VPC中的Amazon FSx for NetApp ONTAP文件系统。
+GenAI支持Amazon Brock支持的每个提供商的型号：link:https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html["Amazon Brock中支持的基础模型"^]
 
 link:https://docs.netapp.com/us-en/workload-genai/create-knowledgebase.html["创建GenAI知识库"]
+
+
+
+=== 更新了权限术语
+
+现在、工作负载出厂用户界面和文档使用"只读"来表示读取权限、使用"读写"来表示自动执行权限。
 
 
 
@@ -67,7 +59,7 @@ link:https://docs.netapp.com/us-en/workload-genai/create-knowledgebase.html["创
 
 现在、您可以将问题和回答直接复制到剪贴板、调整聊天窗口的大小并更改其标题。此外、聊天响应现在可以包括表、这些表也是可复制的。
 
-link:https://docs.netapp.com/us-en/workload-genai/test-knowledgebase.html["测试GenAI知识库"]
+link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/test-knowledgebase.html["测试GenAI知识库"]
 
 
 
@@ -75,7 +67,7 @@ link:https://docs.netapp.com/us-en/workload-genai/test-knowledgebase.html["测�
 
 聊天回复现在包含引用、列出用于生成回复的文件和数据块。
 
-link:https://docs.netapp.com/us-en/workload-genai/test-knowledgebase.html["测试GenAI知识库"]
+link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/test-knowledgebase.html["测试GenAI知识库"]
 
 
 
@@ -88,7 +80,7 @@ link:https://docs.netapp.com/us-en/workload-genai/test-knowledgebase.html["测�
 * GenAI现在支持载入包含图像的Microsoft Word DOCX文件。对DOCX文档中嵌入的图像进行扫描、对知识库查询的响应中包含嵌入图像中的文本洞察信息。
 
 
-link:https://docs.netapp.com/us-en/workload-genai/identify-data-sources.html#supported-data-source-file-formats["支持的数据源文件格式"]
+link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/identify-data-sources-knowledge-base.html#supported-data-source-file-formats["支持的数据源文件格式"]
 
 
 
@@ -100,7 +92,7 @@ link:https://docs.netapp.com/us-en/workload-genai/identify-data-sources.html#sup
 
 现在、GenAI支持Amazon Nova基础模型。支持Amazon Nova Micro、Amazon Nova Lite和Amazon Nova Pro。
 
-link:https://docs.netapp.com/us-en/workload-genai/requirements.html["GenAI要求"]
+link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/requirements-knowledge-base.html["GenAI要求"]
 
 
 
@@ -108,7 +100,7 @@ link:https://docs.netapp.com/us-en/workload-genai/requirements.html["GenAI要求
 
 现在、GenAI支持在添加数据源时选择要包括在数据源扫描中的特定文件类型。
 
-link:https://docs.netapp.com/us-en/workload-genai/create-knowledgebase.html#add-data-sources-to-the-knowledge-base["向知识库添加数据源"]
+link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledgebase.html#add-data-sources-to-the-knowledge-base["向知识库添加数据源"]
 
 
 
@@ -116,7 +108,7 @@ link:https://docs.netapp.com/us-en/workload-genai/create-knowledgebase.html#add-
 
 现在、GenAI支持在添加数据源时按修改日期筛选要包含在数据源扫描中的文件。您可以为包含的文件选择修改日期范围。
 
-link:https://docs.netapp.com/us-en/workload-genai/create-knowledgebase.html#add-data-sources-to-the-knowledge-base["向知识库添加数据源"]
+link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledgebase.html#add-data-sources-to-the-knowledge-base["向知识库添加数据源"]
 
 
 
@@ -124,7 +116,7 @@ link:https://docs.netapp.com/us-en/workload-genai/create-knowledgebase.html#add-
 
 现在、GenAI支持通过从图像和图形说明以及文档文本中获得洞察力来增强对知识库查询的响应、从而获得更丰富、质量更高的答案。现在、GenAI可以扫描PDF文件中的图像文件和图像(也称为多模式文件支持)。如果您选择扫描图像或PDF文件、则图像中的文本(包括PDF文档中嵌入的图像)将扫描到数据源中、扫描中的见解将包括在知识库查询的响应中。
 
-link:https://docs.netapp.com/us-en/workload-genai/create-knowledgebase.html#add-data-sources-to-the-knowledge-base["向知识库添加数据源"]
+link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledgebase.html#add-data-sources-to-the-knowledge-base["向知识库添加数据源"]
 
 
 
@@ -132,7 +124,7 @@ link:https://docs.netapp.com/us-en/workload-genai/create-knowledgebase.html#add-
 
 现在、GenAI可以使用混合搜索并重新排列结果、从而显著提高搜索结果的相关性和准确性。混合搜索将基于关键字的传统搜索的优势与基于密集矢量的高级语法搜索技术相结合。标准关键字搜索结果通过近似匹配和语言细微差别得到增强、从而增强相关性。然后、GenAI使用Cohere Rerank和Amazon Rerank等高级重新排名模型进一步细化这些结果、并返回最相关的结果。此功能可用于新创建的知识库。
 
-link:https://docs.netapp.com/us-en/workload-genai/ai-workloads-overview.html#benefits-of-using-genai-to-create-generative-ai-applications["了解适用于GenAI的BlueXP  工作负载工厂"]
+link:https://docs.netapp.com/us-en/workload-genai/general/ai-workloads-overview.html#benefits-of-using-genai-to-create-generative-ai-applications["了解适用于GenAI的BlueXP  工作负载工厂"]
 
 
 
@@ -144,7 +136,7 @@ link:https://docs.netapp.com/us-en/workload-genai/ai-workloads-overview.html#ben
 
 现在、您可以为临时快照提供快照名称。
 
-link:https://docs.netapp.com/us-en/workload-genai/manage-knowledgebase.html#protect-a-knowledge-base-with-snapshots["使用快照保护知识库"]
+link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/manage-knowledgebase.html#protect-a-knowledge-base-with-snapshots["使用快照保护知识库"]
 
 
 
@@ -152,7 +144,7 @@ link:https://docs.netapp.com/us-en/workload-genai/manage-knowledgebase.html#prot
 
 现在、您可以在部署期间为AI引擎实例提供一个自定义名称。
 
-link:https://docs.netapp.com/us-en/workload-genai/deploy-infrastructure.html["部署GenAI基础架构"]
+link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/deploy-infrastructure.html["部署GenAI基础架构"]
 
 
 
@@ -160,7 +152,7 @@ link:https://docs.netapp.com/us-en/workload-genai/deploy-infrastructure.html["�
 
 如果您的AI引擎实例损坏或被以某种方式删除、您可以让工作负载在出厂时重建它。在完成重建后、工作负载工厂会自动将您的知识库重新连接到基础架构、以便可以随时使用。
 
-link:https://docs.netapp.com/us-en/workload-genai/troubleshooting.html["故障排除"]
+link:https://docs.netapp.com/us-en/workload-genai/general/troubleshooting.html["故障排除"]
 
 
 
@@ -172,7 +164,7 @@ link:https://docs.netapp.com/us-en/workload-genai/troubleshooting.html["故障�
 
 适用于GenAI的BlueXP  工作负载工厂现在支持从快照克隆知识库。这样可以快速恢复知识库、使用现有数据源创建新的知识库、并有助于数据恢复和开发。
 
-link:https://docs.netapp.com/us-en/workload-genai/manage-knowledgebase.html#clone-a-knowledge-base["克隆知识库"]
+link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/manage-knowledgebase.html#clone-a-knowledge-base["克隆知识库"]
 
 
 
@@ -192,7 +184,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/use-onprem-data.html["发�
 
 生成型AI工作负载引入了由BlueXP  分类提供支持的数据防护功能。数据防护功能可识别和屏蔽个人身份信息(Personal可识别信息、Personal可识别信息、Personal可识别信息)、帮助您保持合规性并增强敏感组织数据的安全性。
 
-link:https://docs.netapp.com/us-en/workload-genai/create-knowledgebase.html#create-and-configure-the-knowledge-base["创建知识库"]
+link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledgebase.html["创建GenAI知识库"]
 
 link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解BlueXP分类"^]
 
@@ -206,9 +198,9 @@ link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-complianc
 
 现在、您可以通过创建知识库的时间点副本来保护生成性AI工作负载数据。这样、您就可以保护数据、防止意外丢失或测试对知识库设置所做的更改。您可以随时还原知识库卷的先前版本。
 
-https://docs.netapp.com/us-en/workload-genai/manage-knowledgebase.html#take-a-snapshot-of-a-knowledge-base-volume["为知识库卷创建快照"]
+https://docs.netapp.com/us-en/workload-genai/knowledge-base/manage-knowledgebase.html#take-a-snapshot-of-a-knowledge-base-volume["为知识库卷创建快照"]
 
-https://review.docs.netapp.com/us-en/workload-genai_29-sept-24-release/manage-knowledgebase.html#restore-a-snapshot-of-a-knowledge-base-volume["还原知识库卷的快照"]
+https://docs.netapp.com/us-en/workload-genai/knowledge-base/manage-knowledgebase.html#restore-a-snapshot-of-a-knowledge-base-volume["还原知识库卷的快照"]
 
 
 
@@ -216,7 +208,7 @@ https://review.docs.netapp.com/us-en/workload-genai_29-sept-24-release/manage-kn
 
 现在、您可以暂停计划的数据源扫描。默认情况下、生成性AI工作负载每天都会扫描每个数据源、以便将新数据导入到每个知识库中。如果您不希望(例如在测试或还原快照期间)导入最新更改、您可以随时暂停计划的扫描并恢复它们。
 
-https://docs.netapp.com/us-en/workload-genai/manage-knowledgebase.html["管理知识库"]
+https://docs.netapp.com/us-en/workload-genai/knowledge-base/manage-knowledgebase.html["管理知识库"]
 
 
 
@@ -224,7 +216,7 @@ https://docs.netapp.com/us-en/workload-genai/manage-knowledgebase.html["管理�
 
 现在、在选择知识库卷时、您可以选择属于NetApp SnapMirror复制关系的数据保护卷。这样、您就可以将知识库存储在已受SnapMirror复制保护的卷上。
 
-https://docs.netapp.com/us-en/workload-genai/identify-data-sources.html["确定要集成到知识库中的数据源"]
+https://docs.netapp.com/us-en/workload-genai/knowledge-base/identify-data-sources-knowledge-base.html["确定要集成到知识库中的数据源"]
 
 
 

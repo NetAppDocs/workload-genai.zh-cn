@@ -1,0 +1,95 @@
+---
+sidebar: sidebar 
+permalink: connector/identify-data-sources-connector.html 
+keywords: data sources, chatbot, documents, knowledge base, connector 
+summary: '确定或创建FSx for ONTAP文件系统上要集成到知识库中的文档(数据源)。通过这些数据源、知识库可以根据与您的组织相关的数据为用户查询提供准确且个性化的答案。' 
+---
+= 确定要添加到连接器的数据源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+确定或创建将集成到连接器中的FSx for ONTAP文件系统上的文档(数据源)。通过这些数据源、Amazon Q Business可以根据与您的组织相关的数据为用户查询提供准确且个性化的答案。
+
+
+
+== 数据源的最大数量
+
+支持的最大数据源数为10。
+
+
+
+== 数据源的位置
+
+数据源可以存储在Amazon FSx for NetApp ONTAP文件系统上的SMB共享或NFS导出上的单个卷或卷内的文件夹中。数据源还可以存储在NetApp SnapMirror数据保护关系中适用于NetApp ONTAP的Amazon FSx卷上。
+
+您不能选择卷或文件夹中的单个文档、因此、应确保包含数据源的每个卷或文件夹不包含不应与知识库集成的无关文档。
+
+您可以将多个数据源添加到每个连接器中、但这些数据源都需要驻留在可从AWS帐户访问的FSx for ONTAP文件系统上。
+
+每个数据源的最大文件大小为50 MB。
+
+
+
+== 支持的协议
+
+连接器支持使用NFS或SMB/CCIFS协议的卷中的数据。选择使用SMB协议存储的文件时、您需要输入Active Directory信息、以便连接器可以访问这些卷上的文件。这包括Active Directory域、IP地址、用户名和密码。
+
+将数据源存储在通过SMB访问的共享(文件或目录)上时、只有有权访问该共享的聊天机器人用户或组才能访问该数据。启用此"权限感知功能"后、AI系统会将auth0中的用户电子邮件与允许查看或使用SMB共享上文件的用户进行比较。聊天机器人将根据用户对嵌入文件的权限提供答案。
+
+例如、如果您已将10个文件(数据源)集成到连接器中、并且其中2个文件是包含受限信息的人力资源文件、则只有经过身份验证可以访问这2个文件的聊天机器人用户才会收到来自包含这些文件中数据的聊天机器人的响应。
+
+
+NOTE: 将数据源添加到Amazon Q Business Connector时、只有用户权限才会应用于数据源文件。未应用组权限。
+
+
+NOTE: 如果数据源中有不包含任何文本的文件、Amazon Q Business不会为这些文件编制索引、而是在Amazon CloudWatch日志中记录一个条目、指出这些文件不包含要编制索引的文本。
+
+
+
+== 支持的数据源文件格式
+
+NetApp ONTAP Connector for Amazon Q当前支持以下数据源文件格式
+
+[cols="2*"]
+|===
+| 文件格式 | 扩展 
+
+
+| 逗号分隔值文件 | .csv 
+
+
+| JSON和JSONP | .json 
+
+
+| 降价 | .MD 
+
+
+| Microsoft Word | .docx 
+
+
+| 纯文本 | .txt 
+
+
+| 可移植文档格式 | .pdf 
+
+
+| Microsoft PowerPoint | .PPT或.pptx 
+
+
+| 超文本标记语言 | .html 
+
+
+| 可扩展标记语言 | .xml 
+
+
+| 。 | ..x等等 
+
+
+| Microsoft Excel | .xls 
+
+
+| 富文本格式 | .rtf 
+|===

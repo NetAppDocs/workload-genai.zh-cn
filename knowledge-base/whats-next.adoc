@@ -1,13 +1,13 @@
 ---
 sidebar: sidebar 
-permalink: whats-next.html 
+permalink: knowledge-base/whats-next.html 
 keywords: what you can do, knowledge base 
 summary: 现在、您已经使用企业数据创建了知识库并为用户部署了该知识库、您可以管理知识库、数据源和RAG基础架构、包括适用于ONTAP文件系统的FSx。 
 ---
 = 您接下来可以使用GenAI做什么
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

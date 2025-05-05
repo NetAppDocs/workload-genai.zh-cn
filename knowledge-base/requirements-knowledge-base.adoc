@@ -1,31 +1,43 @@
 ---
 sidebar: sidebar 
-permalink: requirements.html 
+permalink: knowledge-base/requirements-knowledge-base.html 
 keywords: ai, chatbot, prerequisites, bedrock, fsx for ontap, prerequisites, requirements 
 summary: '在构建知识库之前、请确保已正确设置工作负载工厂和AWS。其中包括拥有AWS登录凭据、部署了一个FSx for ONTAP文件系统(其中包含您要集成到知识库中的数据源)、访问Amazon B基石AI服务等。' 
 ---
-= GenAI要求
+= GenAI知识库要求
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
 在构建知识库之前、请确保已正确设置工作负载工厂和AWS。其中包括拥有AWS登录凭据、部署了一个FSx for ONTAP文件系统(其中包含您要集成到知识库中的数据源)、访问Amazon B基石AI服务等。
 
+
+
+== 基本GenAI要求
+
+GenAI具有您的环境在开始使用之前需要满足的一般要求。
+
 工作负载出厂登录和帐户:: 您需要 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在Workload Factory中设置一个帐户"^]使用其中一个登录 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
-AWS 凭据和权限:: 您需要将AWS凭据添加到具有自动化权限的工作负载工厂、这意味着您将在_Automate _模式下对GenAI使用工作负载工厂。
+AWS 凭据和权限:: 您需要向工作负载工厂添加具有读/写权限的AWS凭据、这意味着您将在_Read/Write_模式下对GenAI使用工作负载工厂。
 +
 --
-目前不支持_Basic_模式和_Read_模式权限。
+目前不支持_Basic_模式和_read-only _模式权限。
 
 设置凭据时、选择如下所示的权限后、您将拥有管理FSx for ONTAP文件系统以及部署和管理GenAI EC2实例以及知识库和聊天机器人所需的其他AWS资源的完全访问权限。
-
-image:screenshot-ai-permissions.png["屏幕截图显示了用于完全管理AI资源的权限设置。"]
 
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["了解如何将AWS凭据添加到工作负载工厂"^]
 
 --
+
+
+
+
+== GenAI知识库要求
+
+如果您计划使用知识库、请确保您的环境满足以下要求。
+
 亚马逊基岩:: Amazon Brock使您能够使用基础模型、并提供构建生成性AI应用程序的功能。
 +
 --
@@ -44,6 +56,8 @@ https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["了解�
 * T人 嵌入G1 -文本
 * T人 嵌入文本v2
 * 第1代多模态嵌入
+* 嵌入英语
+* 嵌入多语言
 +
 https://aws.amazon.com/bedrock/titan/["详细了解Amazon大力孙"^]
 
@@ -53,38 +67,24 @@ https://aws.amazon.com/bedrock/titan/["详细了解Amazon大力孙"^]
 聊天模式:: 在创建知识库之前、您必须启用计划使用的基本聊天模式。由于型号支持因AWS地区而异、请参见 https://docs.aws.amazon.com/bedrock/latest/userguide/models-regions.html["AWS文档"^] 以验证您可以在计划部署知识库的地区使用哪些型号。
 +
 --
-GenAI支持以下Anthropic Claude和Amazon Nova型号：
+GenAI支持各种型号、包括Anthropic、Amazon、Mistral AI、Meta、JAMBA和cothere。
 
-* 克洛德的anthpic：
-+
-** Claude 3.5 Sonnet
-** 克洛德3 Ops.
-** 克洛德3号
-** 克洛德3 Sonnet
-** 克洛德2.1
-** 克洛德2.0
-
-
-* Amazon Nova：
-+
-** Nova Micro
-** Nova Lite (支持图像和文本)
-** Nova Pro (支持图像和文本)
-
-
-
-
-了解有关将这些模型与Amazon Brock结合使用的更多信息：
+详细了解如何在Amazon Brock中使用这些模型：
 
 * https://aws.amazon.com/bedrock/claude/["anthpic的克洛德在亚马逊基岩"^]
 * https://docs.aws.amazon.com/nova/latest/userguide/getting-started-console.html["在Amazon B基石 控制台中开始使用Amazon Nova"^]
+* https://aws.amazon.com/bedrock/mistral/["Mistral AI型号"^]
+* https://docs.aws.amazon.com/bedrock/latest/userguide/titan-text-models.html["Amazon T人 文本模型"^]
+* https://aws.amazon.com/bedrock/llama/["Meta Llama模型"^]
+* https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-jamba.html["JAMBA型号"^]
+* https://aws.amazon.com/bedrock/cohere/["Cohere命令模型"^]
 
 
 --
 FSx for ONTAP文件系统:: 对于ONTAP文件系统、至少需要一个FSx：
 +
 --
-* NetApp GenAI引擎将使用一个文件系统来存储知识库所使用的矢量数据库。
+* NetApp GenAI引擎将使用一个文件系统(如果不存在、则创建一个文件系统)来存储知识库使用的矢量数据库。
 +
 此FSx for ONTAP文件系统必须使用FlexVol卷。不支持 FlexGroup 卷。
 

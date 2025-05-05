@@ -1,13 +1,13 @@
 ---
 sidebar: sidebar 
-permalink: test-knowledgebase.html 
+permalink: knowledge-base/test-knowledgebase.html 
 keywords: ai, chatbot, creating, knowledge base 
 summary: 创建知识库后、您将能够使用聊天机器人模拟器在本地对其进行测试、并进行任何必要的更改、然后再通过聊天机器人应用程序向用户提供知识库。 
 ---
 = 测试GenAI知识库
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

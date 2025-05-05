@@ -1,27 +1,29 @@
 ---
 sidebar: sidebar 
-permalink: ai-workloads-overview.html 
+permalink: general/ai-workloads-overview.html 
 keywords: overview, concepts, features, use case, workloads, AI, Bedrock, knowledge base, chatbot 
 summary: 通过适用于GenAI的BlueXP  工作负载工厂、您可以将适用于NetApp ONTAP文件系统的Amazon FSx与GenAI基础模型相集成。这为您提供了高性能存储、并为您的AI数据集提供了一套丰富的保护、安全性和成本优化功能。 
 ---
 = 了解适用于GenAI的BlueXP  工作负载工厂
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
-通过适用于GenAI的工作负载工厂、您可以将适用于NetApp ONTAP文件系统的Amazon FSx与GenAI基础模型相集成。这为您提供了高性能存储、并为您的AI数据集提供了一套丰富的保护、安全性和成本优化功能。
+通过适用于GenAI的BlueXP  工作负载工厂、您可以将适用于NetApp ONTAP文件系统的Amazon FSx与GenAI基础模型相集成。这为您提供了高性能存储、并为您的AI数据集提供了一套丰富的保护、安全性和成本优化功能。
 
 
 
 == 什么是适用于GenAI的BlueXP  工作负载工厂？
 
-借助适用于GenAI的BlueXP  工作负载工厂、您可以在Amazon FSx for NetApp ONTAP上将企业级数据源与生成性AI应用程序结合使用。利用"恢复增强生成"(RAG)框架、您可以快速将数据源连接到Amazon BROBON提供的基础模型、以开发由AI提供支持的生成性应用程序、例如虚拟助手、问答聊天机器人、文档汇总、内容创建等
+借助适用于GenAI的BlueXP  工作负载工厂、您可以在Amazon FSx for NetApp ONTAP上将企业级数据源与生成性AI应用程序结合使用。利用检索增强型生成(RAG)、您可以快速将数据源连接到Amazon BROBON或Amazon Q Business提供的基础模型、以开发由AI提供支持的生成型应用程序、例如虚拟助手、问答聊天机器人、文档汇总、内容创建等
 
 将生成型AI与组织数据结合使用、您可以利用自己的知识和专业知识、而不仅仅是依靠模型基于模型所训练的公共数据的智能。使用RAG自定义模型可确保对组织特定问题做出准确且相关的响应、从而提高使用生成性AI的应用程序用户的工作效率。
 
 开发一款专为企业数据定制的GenAI应用程序、让您可以利用自己的知识和专业知识。这种自定义功能可确保准确、相关地回答组织特定的问题、从而提高所有用户的满意度和工作效率。
+
+如果link:../knowledge-base/create-knowledgebase.html["创建知识库"^]，GenAI将从数据源中获取数据，将向量化结果存储在数据库中，并使您能够完全控制如何使用所获取的数据来回答查询。这种方法需要更多的初始配置、但允许您为不同的结果选择不同的聊天模式。如果是link:../connector/define-connector.html["定义适用于Amazon的NetApp ONTAP连接器Q"]，则数据源中的数据将由Amazon Q Business读取并存储在索引中。这种方法所需的初始配置较少、但对结果的控制较少。
 
 有关工作负载工厂的详细信息，请参见 https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["工作负载出厂概述"^]。
 
@@ -29,12 +31,12 @@ summary: 通过适用于GenAI的BlueXP  工作负载工厂、您可以将适用
 
 == 使用GenAI创建生成性AI应用程序的优势
 
-适用于GenAI的BlueXP  工作负载工厂可简化使用"恢复增强型生成"(RAG)构建生成型AI应用程序所需的基础架构部署流程。具体而言、GenAI具有以下优势：
+适用于GenAI的BlueXP  工作负载工厂可简化使用检索增强型生成(RAG)构建生成型AI应用程序所需的基础架构部署流程。具体而言、GenAI具有以下优势：
 
 * IT管理员和开发人员无需深入了解数据基础架构、基础架构和语言模型、即可利用GenAI提供的自动化功能加快应用程序开发速度。数据管理员和开发人员可以轻松快速地创建企业知识库、以嵌入贵组织的非结构化数据、供生成型AI应用程序使用。
 * 通过在知识库中嵌入的文件中保留用户权限来增强安全性、以确保维护数据安全和隐私。可以开发一个应用程序(例如聊天机器人)、以便仅为经过身份验证的用户提供基于用户有权访问的数据的答案。
 * 在您的AWS客户帐户中保护企业数据的隐私和安全、您的组织数据绝不会对外公开。
-* 使用开源框架(如LangChin)加快GenAI应用程序(如问答聊天机器人)的开发速度、利用GenAI API配置和管理知识库、与知识库聊天以及存储和检索聊天历史记录。
+* 使用开源框架(如LangChin)加快GenAI应用程序(如问答聊天机器人)的开发速度、利用GenAI API配置和管理知识库和连接器、与知识库聊天以及存储和检索聊天历史记录。
 * 通过在适用于NetApp ONTAP文件系统的FSx上部署生成性AI数据基础架构并利用ONTAP功能(例如、高可用性、用于本地数据保护和恢复的快照、用于灾难恢复的SnapMirror以及用于备份数据基础架构的SnapVault)、改善数据保护和可用性状况。
 * 利用重复数据删除、数据压缩和数据缩减、数据分层和精简配置等ONTAP数据效率功能、降低生成型AI数据基础架构的整体存储成本。
 * 利用GenAI提供的混合搜索和重新排序功能、从数据中获得高质量的结果。混合搜索与重新排名相结合、可显著提高搜索结果的相关性。这些功能可通过Amazon AWS获得、并且取决于区域。
@@ -44,9 +46,9 @@ summary: 通过适用于GenAI的BlueXP  工作负载工厂、您可以将适用
 
 == GenAI的工作原理
 
-GenAI使用您组织的私有数据来补充模型的智能(基于模型所训练的数据)、为您组织中的用户提出的问题提供自定义的答案。您首先部署RAG框架所需的基础架构、然后使用您组织的数据源和Amazon Brock提供的基础模型构建知识库、最后将应用程序(例如问答聊天机器人)连接到知识库。
+GenAI使用您组织的私有数据来补充模型的智能(基于模型所训练的数据)、为您组织中的用户提出的问题提供自定义的答案。您首先部署RAG框架所需的基础架构、然后使用您组织的数据源和基础模型(可通过Amazon Brock或Amazon Q Business获得)构建知识库或定义连接器、最后将应用程序(例如问答聊天机器人)连接到知识库或连接器。
 
-image:diagram-chatbot-processing.png["显示GenAI关键组件及其功能及其工作原理的示意图。"]
+image:genai-infrastructure-diagram.png["显示GenAI关键组件及其功能及其工作原理的示意图。"]
 
 
 
@@ -54,25 +56,15 @@ image:diagram-chatbot-processing.png["显示GenAI关键组件及其功能及其�
 
 GenAI可通过以下方式帮助使用RAG构建生成性AI应用程序：
 
-* 部署用于"恢复增强生成"(RAG)框架的所需基础架构、以便在FSx上使用适用于ONTAP文件系统的数据源和Amazon Brock。该基础架构包括用于管理数据的NetApp GenAI引擎实例、嵌入式矢量数据库(LanceDB)以及Vector数据库FSx for ONTAP文件系统上的存储。
-* 帮助将数据源连接到Amazon Brock提供的嵌入和语言模型、以嵌入数据源并检索用户查询的响应。数据源及其型号及其配置以FSx for ONTAP知识库的形式提供。
-* 将源数据内嵌到知识库中、以便在适用于ONTAP文件系统的FSx上嵌入SMB共享上的源文件和NFS导出、并存储SMB共享中文件的文件权限。
+* 部署用于检索增强生成(RAG)框架的所需基础架构、以便与FSx上适用于ONTAP文件系统的数据源以及Amazon Brock或Amazon Q Business结合使用。该基础架构包括用于管理数据的NetApp GenAI引擎实例、嵌入式矢量数据库(LanceDB)以及Vector数据库FSx for ONTAP文件系统上的存储。
+* 帮助将数据源连接到Amazon Brock或Amazon Q Business提供的嵌入和语言模型、以嵌入数据源并检索用户查询的响应。数据源及其型号及其配置以FSx for ONTAP知识库的形式提供。
+* 将源数据内嵌到知识库或连接器中、以在SMB共享上嵌入源文件、并在适用于ONTAP文件系统的FSx上嵌入NFS导出、同时存储SMB共享中文件的文件权限。
 * 根据知识库中的内容自动构建对话开场问题。
 * 为数据管理员提供了一个聊天模拟器、用于测试与知识库的聊天。
+* 提供一个简单的连接器接口、便于您将GenAI与Amazon Q Business连接起来、快速轻松地利用此AI助手的功能。
 
 
-
-
-== 用于工作负载工厂的工具
-
-您可以将BlueXP  工作负载工厂与以下工具结合使用：
-
-* *工作负载工厂控制台*：工作负载工厂控制台提供了一个可视化界面，可让您全面了解应用程序和项目。
-* BlueXP  console*：BlueXP  控制台提供了混合接口体验，因此您可以将BlueXP  工作负载出厂配置与其他BlueXP  服务结合使用。
-* *REST API*：工作负载出厂REST API允许您部署和管理适用于ONTAP文件系统和其他AWS资源的FSx。
-* *CloudFormation*：AWS CloudFormation代码可用于执行您在工作负载工厂控制台中定义的操作、以便在AWS帐户中对CloudFormation堆栈中的AWS和第三方资源进行建模、配置和管理。
-* *Terraform BlueXP  工作负载工厂提供程序*：Terraform支持您构建和管理在工作负载工厂控制台中生成的基础架构工作流。
-
+https://raw.githubusercontent.com/NetAppDocs/workload-family/main/_include/learn-about-tools.adoc[]
 
 
 
@@ -80,7 +72,7 @@ GenAI可通过以下方式帮助使用RAG构建生成性AI应用程序：
 
 使用工作负载工厂的GenAI功能无需任何成本。
 
-但是、要支持生成性AI基础架构、您需要为部署的AWS资源付费。例如、您将为Amazon Brock AI服务支付AWS费用、为ONTAP文件系统和存储容量支付FSx费用、并为GenAI引擎EC2实例支付费用。
+但是、要支持生成性AI基础架构、您需要为部署的AWS资源付费。例如、您需要为Amazon Brock或Amazon Q Business支付AWS费用、为ONTAP文件系统和存储容量支付FSx费用以及为GenAI引擎EC2实例支付费用。
 
 某些多模式操作(如扫描图像以查找文本信息)可能会占用更多资源、因此成本会更高。某些配置操作(例如更改数据库的设置)可能会导致重新扫描数据源、数据源扫描的成本也会更高。
 
