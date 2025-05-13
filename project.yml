@@ -57,9 +57,9 @@ sidebar:
       entries:
       - title: 快速入门
         url: "/connector/quick-start-connector.html"
-      - title: 知识库要求
+      - title: 连接器要求
         url: "/connector/requirements-connector.html"
-      - title: 确定要添加到知识库中的数据源
+      - title: 确定要添加到连接器的数据源
         url: "/connector/identify-data-sources-connector.html"
       - title: 部署GenAI基础架构
         url: "/connector/deploy-infrastructure.html"
