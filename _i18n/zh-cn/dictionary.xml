@@ -974,7 +974,6 @@
   <block id="1e99c460cf537bae167f699f72f10783" category="list-text">根据知识库中的内容自动构建对话开场问题。</block>
   <block id="f7876b81c07b146c27fb7196bb0889f1" category="list-text">为数据管理员提供了一个聊天模拟器、用于测试与知识库的聊天。</block>
   <block id="183107db84b5d97e830561a02417467f" category="list-text">提供一个简单的连接器接口、便于您将GenAI与Amazon Q Business连接起来、快速轻松地利用此AI助手的功能。</block>
-  <block id="1c9640aa9075334712c6c2b922771c50" category="paragraph"><block ref="1c9640aa9075334712c6c2b922771c50" category="inline-link-rx"></block></block>
   <block id="3e037b952ced7d9d3d5f755278df683d" category="paragraph">但是、要支持生成性AI基础架构、您需要为部署的AWS资源付费。例如、您需要为Amazon Brock或Amazon Q Business支付AWS费用、为ONTAP文件系统和存储容量支付FSx费用以及为GenAI引擎EC2实例支付费用。</block>
   <block id="eb172a4ea0ca9b00dbcb16f6401ade8d" category="doc">NetApp GenAI引擎的组件</block>
   <block id="9f6ab331f6e1b93cd7720e3b01290dfe" category="paragraph">在FSx for ONTAP文件系统上使用数据源创建知识库或连接器之后、您可以查看数据源详细信息、更新或更改数据源内容、编辑数据源设置或删除数据源。</block>
@@ -1025,4 +1024,13 @@
   <block id="04e72ad1a1f8c5d1bc6e9d9cd655d231" category="sidebar">确定要添加到知识库中的数据源</block>
   <block id="6d0922d38f508966c79ec8917c90f839" category="sidebar">使用GenAI为Amazon Q Business创建连接器</block>
   <block id="12195af943d3077522e0ef3c26f4b4fd" category="admonition">如果数据源中的某个文件缺少文本(例如无文本图像)、Amazon Q Business不会对其编制索引、而是在Amazon CloudWatch日志中记录一个条目、指出缺少文本。</block>
+  <block id="200e3179449390bdf5f3f8d9a199630c" category="section-title">用于工作负载工厂的工具</block>
+  <block id="b5a374f3f5b31b5057808689d26fe2c4" category="paragraph">您可以将BlueXP  工作负载工厂与以下工具结合使用：</block>
+  <block id="4b50901597179fa075617d96ccf51901" category="list-text">*工作负载工厂控制台*：工作负载工厂控制台提供应用程序和项目的可视化、整体视图。</block>
+  <block id="590410b3a112ba2f531f9aae44e29ed1" category="list-text">BlueXP  console*：BlueXP  控制台提供了混合接口体验，因此您可以将BlueXP  工作负载出厂配置与其他BlueXP  服务结合使用。</block>
+  <block id="62c5120220d244bd5e611d7c4459b5c5" category="list-text">*问我*：使用"问我人工智能"助手提出问题并了解有关工作负载工厂的更多信息、而无需退出工作负载工厂Web UI。从工作负载出厂帮助菜单访问"询问我"。</block>
+  <block id="e234d079cc2fccaeed8041a81e1e8122" category="list-text">*CloudShell命令行界面*：工作负载工厂包括一个CloudShell命令行界面、用于通过一个基于浏览器的命令行界面跨帐户管理和操作AWS和NetApp环境。从工作负载出厂控制台的顶部栏访问CloudShell。</block>
+  <block id="dfbf98e5a4263fb93c5b851bfc384ae3" category="list-text">*REST API*：使用工作负载工厂REST API部署和管理适用于ONTAP文件系统和其他AWS资源的FSx。</block>
+  <block id="57f4ce64453b6cd8aa398c4f88d38c2e" category="list-text">*CloudFormation*：使用AWS CloudFormation代码执行您在工作负载出厂控制台中定义的操作、以便在您的AWS帐户中对CloudFormation堆栈中的AWS和第三方资源进行建模、配置和管理。</block>
+  <block id="06c2e2277da374dd2cc7b735a1d1e848" category="list-text">*Terraform BlueXP  工作负载工厂提供程序*：使用Terraform构建和管理在工作负载工厂控制台中生成的基础架构工作流。</block>
 </blocks>
