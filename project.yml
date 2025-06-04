@@ -65,7 +65,7 @@ sidebar:
         url: "/connector/deploy-infrastructure.html"
     - title: 创建适用于Amazon的NetApp ONTAP连接器Q
       url: "/connector/define-connector.html"
-  - title: 管理GenAI
+  - title: 管理和监控
     entries:
     - title: 管理GenAI基础架构
       url: "/general/manage-infrastructure.html"
@@ -75,6 +75,8 @@ sidebar:
       url: "/connector/manage-connector.html"
     - title: 管理数据源
       url: "/general/manage-data-source.html"
+    - title: 使用Tracker监控操作
+      url: "/general/monitor-operations.html"
   - title: 知识和支持
     entries:
     - title: 注册以获得支持

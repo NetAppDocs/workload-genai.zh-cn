@@ -65,6 +65,7 @@ https://aws.amazon.com/bedrock/titan/["详细了解Amazon大力孙"^]
 
 
 .. *聊天模式*：从Amazon Brock中集成的各种聊天模式中进行选择。请注意、您必须已启用Amazon Brock中的聊天模式。
+.. *重新排名*：启用或禁用重新排名功能，此功能可以提高查询结果的相关性和质量。您可以选择标准聊天模型或专用的重新排名模型进行重新排名。只有您所在地区支持的重新排名模型选项才会显示。
 .. *数据防护*：选择是启用还是禁用数据防护。link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解由BlueXP  分类提供支持的数据防护"^](英文)
 +
 要启用数据防护、必须满足以下前提条件。
