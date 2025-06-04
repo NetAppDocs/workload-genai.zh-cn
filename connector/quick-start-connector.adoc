@@ -11,7 +11,7 @@ summary: 开始使用您所在组织在Amazon FSx for NetApp ONTAP文件系统�
 
 
 [role="lead"]
-开始使用您所在组织在适用于NetApp ONTAP文件系统的Amazon FSx上的数据创建适用于Amazon Q的NetApp ONTAP Connector。创建连接器后、最终用户可以访问亚马逊Q业务助理、获得以组织为中心的问题解答。
+开始使用您组织在 Amazon FSx for NetApp ONTAP 文件系统上的数据创建 NetApp Connector for Amazon Q Business。创建连接器后、最终用户可以访问亚马逊Q业务助理、获得以组织为中心的问题解答。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"]登录到工作负载工厂
 [role="quick-margin-para"]

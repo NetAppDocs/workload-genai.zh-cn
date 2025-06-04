@@ -51,7 +51,7 @@ NOTE: 如果数据源中的某个文件缺少文本(例如无文本图像)、Ama
 
 == 支持的数据源文件格式
 
-NetApp ONTAP Connector for Amazon Q当前支持以下数据源文件格式
+NetApp Connector for Amazon Q Business 目前支持以下数据源文件格式。
 
 [cols="2*"]
 |===

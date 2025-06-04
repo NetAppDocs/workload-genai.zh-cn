@@ -770,7 +770,6 @@
   <block id="4d79fade08f1e8c2d92bbdf0e3237924" category="paragraph"><block ref="4d79fade08f1e8c2d92bbdf0e3237924" category="inline-link-macro-rx"></block></block>
   <block id="26ea891fa4f63d071728537d886e0f6c" category="section-title">支持Anthropic Claude Sonnet 3.7聊天模式</block>
   <block id="4c58515c1bd9657f223b7731d306475c" category="paragraph">GenAI现在支持Anthropic Claude 3.7 Sonnet聊天模式。CLODE 3.7 Sonnet的测试版功能允许每个请求最多128K输出令牌、并支持新的计算机使用操作。将来的GenAI版本将支持CLAUDE 3.7 Sonnet扩展思维模式。</block>
-  <block id="fe72cb2aff5f7bf6138e806921c5d3d6" category="paragraph"><block ref="fe72cb2aff5f7bf6138e806921c5d3d6" category="inline-link-macro-rx"></block></block>
   <block id="40bd8fe426c37e97f38be2c5a2728752" category="section-title">支持从通用NFS/SMB共享添加数据源</block>
   <block id="1813c42a79840f7d495281cf050a30dc" category="paragraph">现在、您可以使用工作负载出厂API从通用NFSv3、NFSv4或SMB共享添加数据源。从NFS或SMB共享添加数据源时、知识库卷仍保留在Amazon FSx for NetApp ONTAP卷上。工作负载出厂Web UI将在未来版本中支持此功能。</block>
   <block id="fbc7eedf5c13a549330a0c3f52777db8" category="section-title">VPC对等支持</block>
@@ -820,10 +819,6 @@
   <block id="4ea5a8d3b0067bf5307eb05137bce817" category="paragraph"><block ref="4ea5a8d3b0067bf5307eb05137bce817" category="inline-link-macro-rx"></block></block>
   <block id="77a89cd0e5a14d8b8709467f579b8edc" category="paragraph"><block ref="77a89cd0e5a14d8b8709467f579b8edc" category="inline-link-macro-rx"></block></block>
   <block id="c9cbd1d1d65e3b0d2ec2922daec8bddf" category="paragraph"><block ref="c9cbd1d1d65e3b0d2ec2922daec8bddf" category="inline-link-macro-rx"></block></block>
-  <block id="fa499afb5b0e71cede67d6430b479aad" category="doc">支持NetApp ONTAP Connector for Amazon Q</block>
-  <block id="c77dd74f22a4c7346ab562d5eff0bc5a" category="paragraph">此版本的GenAI支持适用于Amazon Q的NetApp ONTAP连接器、使您能够为Amazon Q Business创建连接器。快速轻松地利用Amazon Q Business AI助理、与构建Amazon Brock的GenAI知识库相比、初始配置更少。</block>
-  <block id="cf79fa4b0d1663f0ab76e8bc4b4e5ff3" category="inline-link-macro">为Amazon Q Business创建一个GenAI连接器</block>
-  <block id="9e4085aea7ddf49d777bc0d6415232d0" category="paragraph"><block ref="9e4085aea7ddf49d777bc0d6415232d0" category="inline-link-macro-rx"></block></block>
   <block id="535baaac5969b3bd7fd10592a2cb8e22" category="section-title">增强了聊天模式支持</block>
   <block id="48ced6c80c0d41a7f68e3e9caece65d9" category="paragraph">现在、GenAI还支持在知识库中使用以下聊天模式：</block>
   <block id="ba7ee7dc8867588bd50d38f7762f4e93" category="inline-link-macro">Mistral AI型号</block>
@@ -843,22 +838,18 @@
   <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">更新了权限术语</block>
   <block id="a7b97ab7d88b015e92ed51ef4bee9c25" category="paragraph">现在、工作负载出厂用户界面和文档使用"只读"来表示读取权限、使用"读写"来表示自动执行权限。</block>
   <block id="da1f9b1e0d45e28b599d8f40c855f668" category="summary">部署AI基础架构并确定要与Amazon Q Business集成的数据源后、您可以定义连接器。</block>
-  <block id="06576beecf0a3b501bd304361172e710" category="doc">创建适用于Amazon的NetApp ONTAP连接器Q</block>
-  <block id="eb56f84f8c7f39034f8b4f008276df54" category="paragraph">在部署AI基础架构并确定将从FSx for ONTAP数据存储库中使用的数据源之后、您可以定义适用于Amazon的NetApp ONTAP连接器问题</block>
   <block id="b4851e92b19af0c5c82447fc0937709d" category="inline-link-macro">要求</block>
   <block id="c544ac4406a53e3d89f1f777f49bd9ab" category="paragraph">在继续操作之前、请确保您的环境符合<block ref="e9a731368b15c5c87437cf87756c4dd9" category="inline-link-macro-rx"></block>Amazon Q Business的要求。</block>
   <block id="416b1ad25d5076e01c81a106a5183bb8" category="paragraph">您的组织中的数据源可能包含个人身份信息(个人身份信息、个人身份信息)。要保护此敏感信息的安全、可以在定义连接器时启用_data护栏_。由BlueXP  分类提供支持的数据防护栏可识别和屏蔽可识别身份信息、使其无法访问和检索。</block>
   <block id="32a3d08b7aad0fea19d07c320ae1572b" category="admonition">适用于GenAI的BlueXP  工作负载工厂不会屏蔽敏感的个人信息(SPII)。有关此类数据的详细信息、请参见<block ref="0cdb750dab1dfb2fce5dd1cc6f558f0e" category="inline-link-macro-rx"></block>。</block>
   <block id="35c5b8334726059a903cf8e72acd6567" category="admonition">可以随时启用或禁用数据防护。如果您要切换数据防护、则工作负载工厂会从头开始扫描整个数据源、这可能会产生成本。</block>
   <block id="7110ae9aea43e2e00725933a5f626fa1" category="section-title">定义接头</block>
-  <block id="587c0510bec4ca8fb8c5c828596d2bf3" category="paragraph">创建适用于Amazon Q的NetApp ONTAP连接器。该连接器支持在GenAI和Amazon Q Business之间进行API和数据源通信。</block>
   <block id="cef935b09c14a76911c2bc3b2878c1eb" category="list-text">从“知识库和连接器”选项卡中，选择“*新建*”下拉列表，然后选择“* Amazon Q Business Connectors *”。</block>
   <block id="e90a1e1cd02488bfade2709b90f749fd" category="list-text">在"定义连接器"页面上、配置连接器设置：</block>
   <block id="5e8ca8e597dc55a04039701d5dac2cf3" category="list-text">*Name*：输入要用于连接器的名称。</block>
   <block id="dffbc54d16e84507b04590e6d1c0c866" category="list-text">*Description*：输入连接器的详细说明。</block>
   <block id="c9feba567b8d3a8ba8747f88e19831cc" category="list-text">*Amazon Q*：要集成的Amazon Q Business实例的区域和应用程序名称。</block>
   <block id="bf5ee3ec2f3e4b65913ce148dc85d307" category="admonition">启用数据保障功能后、GenAI将通过仅输入纯文本(不包括嵌入的图像或媒体文本)并屏蔽任何私有或敏感数据来处理.txt、.MD、.csv、.DOCX和.pdf文件。所有其他文件类型均正常处理、不会屏蔽私有或敏感数据。</block>
-  <block id="48ca727fe38026867b97dd4a2615a41f" category="list-text">*FSx for ONTAP文件系统*：定义新的NetApp ONTAP Connector for Amazon Q时，Workload Factory会创建新的Amazon FSx for NetApp ONTAP卷来存储连接器信息。选择要在其中创建新卷的现有文件系统和SVM (也称为Storage VM)。</block>
   <block id="5449bd448d32094e1be238f48844c03e" category="list-text">*Snapshot policy*：从工作负载出厂存储清单中定义的现有策略列表中选择一个Snapshot策略。GenAI会自动为卷创建重复快照、并根据您选择的快照策略以一定频率存储连接器信息。</block>
   <block id="c5639571aa9605e9474435556c2b9258" category="paragraph">如果不存在所需的快照策略、则可以<block ref="446afe1ef4f3740a216a777a896ec27c" category="inline-link-rx"></block>在包含此卷的Storage VM上执行此操作。</block>
   <block id="c47b1f6ddc8b5b2b1c01ea580fdcbe2b" category="list-text">选择*创建连接器*以将Amazon Q Business与GenAI集成。</block>
@@ -876,7 +867,6 @@
   <block id="7072813121d82ae0d2bc05aaab425d4c" category="paragraph">连接器支持使用NFS或SMB/CCIFS协议的卷中的数据。选择使用SMB协议存储的文件时、您需要输入Active Directory信息、以便连接器可以访问这些卷上的文件。这包括Active Directory域、IP地址、用户名和密码。</block>
   <block id="40ad80bd520fcb9c58d8bdf69bfeafe8" category="paragraph">例如、如果您已将10个文件(数据源)集成到连接器中、并且其中2个文件是包含受限信息的人力资源文件、则只有经过身份验证可以访问这2个文件的聊天机器人用户才会收到来自包含这些文件中数据的聊天机器人的响应。</block>
   <block id="7be29227377788a5b12c7a7e7a66cd65" category="admonition">将数据源添加到Amazon Q Business Connector时、只有用户权限才会应用于数据源文件。未应用组权限。</block>
-  <block id="5004434ec8c79db151dd6e0c18edd6b3" category="paragraph">NetApp ONTAP Connector for Amazon Q当前支持以下数据源文件格式</block>
   <block id="68dfdbe39ab30356a21fe4db773d9589" category="cell">逗号分隔值文件</block>
   <block id="67cddf56c0ff55c79aee7dfa01b3d310" category="cell">JSON和JSONP</block>
   <block id="8c7a7a618a6d4acfe85b4b4b1048846d" category="cell">.docx</block>
@@ -931,7 +921,6 @@
   <block id="cd5654a62ac0ae4992fc556cbbfc385c" category="paragraph">此连接器将从工作负载出厂时删除、并且其关联卷也将被删除。</block>
   <block id="182e3e33bf92b5fae899ae295398f967" category="summary">开始使用您所在组织在Amazon FSx for NetApp ONTAP文件系统上的数据创建连接器。</block>
   <block id="450eb57f37211d072a7368e65c267a97" category="doc">GenAI连接器快速入门</block>
-  <block id="3327960afa4d33a42952d6c7d8ed56ec" category="paragraph">开始使用您所在组织在适用于NetApp ONTAP文件系统的Amazon FSx上的数据创建适用于Amazon Q的NetApp ONTAP Connector。创建连接器后、最终用户可以访问亚马逊Q业务助理、获得以组织为中心的问题解答。</block>
   <block id="473b0d4489afb6847b3528470c283f5e" category="paragraph">您需要AWS凭据来部署AWS基础架构、部署和发现FSx for ONTAP文件系统、要在连接器中集成的数据源列表、对Amazon Q Business应用程序的访问等。</block>
   <block id="ecce7b5245e843c6ae115994088db5e2" category="paragraph"><block ref="a4570bff78b2af8a7e4a27bf4959db8d" category="inline-link-macro-rx"></block>(英文)</block>
   <block id="aa9cd94a01409a2e0db1cfbaa2ff5574" category="paragraph">您要集成到连接器中的数据源可以位于一个FSx for ONTAP文件系统上、也可以位于多个FSx for ONTAP文件系统上。如果这些系统位于不同的VPC中、则必须可在同一网络中访问这些系统、或者必须为这些VPC建立对等关系、并使用与AI引擎相同的区域和AWS帐户。</block>
@@ -942,12 +931,10 @@
   <block id="a052f63c8b3d79d0e865981102e38253" category="paragraph"><block ref="0d6818cfcf477d8cb9e6d8498d1a9d44" category="inline-link-macro-rx"></block>(英文)</block>
   <block id="136533d4992078df7d1f45db41363ffc" category="paragraph">现在、您可以为Amazon Q Business创建一个连接器、以便为最终用户提供以组织为中心的响应。</block>
   <block id="69c3ca978f076b54fa2030f25d3332fc" category="doc">GenAI连接器要求</block>
-  <block id="a3b1269946165413b25e6bd3a003b6be" category="paragraph">在创建适用于Amazon的NetApp ONTAP连接器之前、请确保已正确设置工作负载工厂和AWS</block>
   <block id="a6390dd71ac213c8926f4e003361b1c7" category="section-title">基本GenAI要求</block>
   <block id="d94f906cc0b4e822ea4cc6f7282c6f3f" category="paragraph">GenAI具有您的环境在开始使用之前需要满足的一般要求。</block>
   <block id="5d077bd2e14c4e2191fcc692704a074c" category="list-text">您需要向工作负载工厂添加具有读/写权限的AWS凭据、这意味着您将在_Read/Write_模式下对GenAI使用工作负载工厂。</block>
   <block id="92b8944386b41a864c3b42d0a5f178da" category="paragraph">目前不支持_Basic_模式和_read-only _模式权限。</block>
-  <block id="595f56efdb431edfb5c98924891aa631" category="section-title">NetApp ONTAP Connector for Amazon的要求问题</block>
   <block id="dc24ca2a4507b8d4ffa56cd2f4ff7a5c" category="paragraph">确保您的环境满足Amazon Q Business连接器的以下特定要求。</block>
   <block id="50a0042a7df9c6588a808141018da878" category="list-text">Amazon Q Business应用程序</block>
   <block id="89092e7ac04c4e6446bab5908228964d" category="list-text">您需要创建Amazon Q Business应用程序或使用现有应用程序。</block>
@@ -961,8 +948,6 @@
   <block id="a6389fdd3aafc525ca961513074657c7" category="paragraph">通过适用于GenAI的BlueXP  工作负载工厂、您可以将适用于NetApp ONTAP文件系统的Amazon FSx与GenAI基础模型相集成。这为您提供了高性能存储、并为您的AI数据集提供了一套丰富的保护、安全性和成本优化功能。</block>
   <block id="60525997ca84017159be9ccc575fddc6" category="paragraph">借助适用于GenAI的BlueXP  工作负载工厂、您可以在Amazon FSx for NetApp ONTAP上将企业级数据源与生成性AI应用程序结合使用。利用检索增强型生成(RAG)、您可以快速将数据源连接到Amazon BROBON或Amazon Q Business提供的基础模型、以开发由AI提供支持的生成型应用程序、例如虚拟助手、问答聊天机器人、文档汇总、内容创建等</block>
   <block id="9eac267e04135210fd13de3d35bf966f" category="inline-link-macro">创建知识库</block>
-  <block id="7857532e4fb86ce943421b8f4c90279e" category="inline-link-macro">定义适用于Amazon的NetApp ONTAP连接器Q</block>
-  <block id="816eaa71f63bd8cfa450e3a6a6a4e21b" category="paragraph">如果<block ref="a1707f04689d949f85e4cb6db99b5c64" category="inline-link-macro-rx"></block>，GenAI将从数据源中获取数据，将向量化结果存储在数据库中，并使您能够完全控制如何使用所获取的数据来回答查询。这种方法需要更多的初始配置、但允许您为不同的结果选择不同的聊天模式。如果是<block ref="7e2e1fab0b17942f623c655a801494c8" category="inline-link-macro-rx"></block>，则数据源中的数据将由Amazon Q Business读取并存储在索引中。这种方法所需的初始配置较少、但对结果的控制较少。</block>
   <block id="33ce7f647f173acb7ace68da57d0ad93" category="paragraph">适用于GenAI的BlueXP  工作负载工厂可简化使用检索增强型生成(RAG)构建生成型AI应用程序所需的基础架构部署流程。具体而言、GenAI具有以下优势：</block>
   <block id="71aa508255eddc0938ca384c87a7c8a1" category="list-text">使用开源框架(如LangChin)加快GenAI应用程序(如问答聊天机器人)的开发速度、利用GenAI API配置和管理知识库和连接器、与知识库聊天以及存储和检索聊天历史记录。</block>
   <block id="f0bdc00cfa448d8f15fa17aea3aee5fa" category="paragraph">GenAI使用您组织的私有数据来补充模型的智能(基于模型所训练的数据)、为您组织中的用户提出的问题提供自定义的答案。您首先部署RAG框架所需的基础架构、然后使用您组织的数据源和基础模型(可通过Amazon Brock或Amazon Q Business获得)构建知识库或定义连接器、最后将应用程序(例如问答聊天机器人)连接到知识库或连接器。</block>
@@ -1015,7 +1000,6 @@
   <block id="822748e99c70e9162ce5432b2e1eff5c" category="section-title">2025年5月4日</block>
   <block id="95ab6a86600b31e05b001864adcc30f3" category="sidebar">为Amazon Brock构建知识库</block>
   <block id="bbe0643c4c2515d0e740168fae1ac3a3" category="sidebar">知识库快速入门</block>
-  <block id="5c4a7a0d9d9ffc8363d3d3be4bfed390" category="sidebar">为Amazon Q Business创建连接器</block>
   <block id="4434db0ad858887dd143bcf9ca54f677" category="sidebar">连接器快速入门</block>
   <block id="c1e122c06e6fbdba97be83b62420f066" category="sidebar">管理GenAI基础架构</block>
   <block id="91e2b8d20f36e828f16fe4114f527899" category="sidebar">管理连接器</block>
@@ -1079,4 +1063,17 @@
   <block id="4aa37f4d9a391345e9a54c68333e2503" category="section-title">2025年6月3日</block>
   <block id="5eb43e1edd4f0757c83c6d6f6632ff94" category="sidebar">管理和监控</block>
   <block id="2e0c4c64c2671f5575eb184e577dcdae" category="sidebar">使用Tracker监控操作</block>
+  <block id="93f953f50f24ae6dbf0400fde1bcc67d" category="doc">支持 NetApp Connector for Amazon Q Business</block>
+  <block id="f6f6ab51c21f03ba653ceea7301964e4" category="paragraph">此版本的 GenAI 引入了对 NetApp Connector for Amazon Q Business 的支持，使您能够为 Amazon Q Business 创建连接器。快速轻松地利用Amazon Q Business AI助理、与构建Amazon Brock的GenAI知识库相比、初始配置更少。</block>
+  <block id="3381eec0e48920855b86597d56709196" category="inline-link-macro">为 Amazon Q Business 创建 NetApp 连接器</block>
+  <block id="8320a18edf6c2a7804ecd7a111b33314" category="paragraph"><block ref="8320a18edf6c2a7804ecd7a111b33314" category="inline-link-macro-rx"></block></block>
+  <block id="534e426be2627a9319bb3c894762f050" category="paragraph">部署 AI 基础架构并确定将从 FSx for ONTAP 数据存储区使用的数据源后，您就可以为 Amazon Q Business 定义 NetApp 连接器了。</block>
+  <block id="6d3af8c853c012217bf8fe36271d8240" category="paragraph">为 Amazon Q Business 创建 NetApp 连接器。该连接器支持 GenAI 和 Amazon Q Business 之间的 API 和数据源通信。</block>
+  <block id="656010651ec8363cac194260d40bd4ee" category="list-text">*FSx for ONTAP 文件系统*：当您为 Amazon Q Business 定义新的 NetApp 连接器时，工作负载工厂会创建一个新的 Amazon FSx for NetApp ONTAP 卷来存储连接器信息。选择要在其中创建新卷的现有文件系统和SVM (也称为Storage VM)。</block>
+  <block id="9d9d5c45b6105d758da7731605f8df1e" category="paragraph">NetApp Connector for Amazon Q Business 目前支持以下数据源文件格式。</block>
+  <block id="9a5f71b3118fef9873b3a70c67778664" category="paragraph">开始使用您组织在 Amazon FSx for NetApp ONTAP 文件系统上的数据创建 NetApp Connector for Amazon Q Business。创建连接器后、最终用户可以访问亚马逊Q业务助理、获得以组织为中心的问题解答。</block>
+  <block id="c7a0c2f464177538b923186b84b0328f" category="paragraph">在为 Amazon Q Business 创建 NetApp 连接器之前，请确保工作负载工厂和 AWS 已正确设置。</block>
+  <block id="65a16de587f6ba26884202bf406c26fe" category="section-title">NetApp Connector for Amazon Q Business 的要求</block>
+  <block id="56daa392224e0cdcc6a69457c4094aa8" category="inline-link-macro">为 Amazon Q Business 定义 NetApp 连接器</block>
+  <block id="7e8def5c748db55cfe2ebcc2c26543fd" category="paragraph">如果<block ref="a1707f04689d949f85e4cb6db99b5c64" category="inline-link-macro-rx"></block>，GenAI将从数据源中获取数据，将向量化结果存储在数据库中，并使您能够完全控制如何使用所获取的数据来回答查询。这种方法需要更多的初始配置、但允许您为不同的结果选择不同的聊天模式。如果是<block ref="fbe77fd827b80e33ddc74f945f323ccb" category="inline-link-macro-rx"></block>，则数据源中的数据将由Amazon Q Business读取并存储在索引中。这种方法所需的初始配置较少、但对结果的控制较少。</block>
 </blocks>

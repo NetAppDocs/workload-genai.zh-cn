@@ -23,7 +23,7 @@ summary: 通过适用于GenAI的BlueXP  工作负载工厂、您可以将适用
 
 开发一款专为企业数据定制的GenAI应用程序、让您可以利用自己的知识和专业知识。这种自定义功能可确保准确、相关地回答组织特定的问题、从而提高所有用户的满意度和工作效率。
 
-如果link:../knowledge-base/create-knowledgebase.html["创建知识库"^]，GenAI将从数据源中获取数据，将向量化结果存储在数据库中，并使您能够完全控制如何使用所获取的数据来回答查询。这种方法需要更多的初始配置、但允许您为不同的结果选择不同的聊天模式。如果是link:../connector/define-connector.html["定义适用于Amazon的NetApp ONTAP连接器Q"]，则数据源中的数据将由Amazon Q Business读取并存储在索引中。这种方法所需的初始配置较少、但对结果的控制较少。
+如果link:../knowledge-base/create-knowledgebase.html["创建知识库"^]，GenAI将从数据源中获取数据，将向量化结果存储在数据库中，并使您能够完全控制如何使用所获取的数据来回答查询。这种方法需要更多的初始配置、但允许您为不同的结果选择不同的聊天模式。如果是link:../connector/define-connector.html["为 Amazon Q Business 定义 NetApp 连接器"]，则数据源中的数据将由Amazon Q Business读取并存储在索引中。这种方法所需的初始配置较少、但对结果的控制较少。
 
 有关工作负载工厂的详细信息，请参见 https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["工作负载出厂概述"^]。
 

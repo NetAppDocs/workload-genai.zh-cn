@@ -4,14 +4,14 @@ permalink: connector/define-connector.html
 keywords: ai, chatbot, connector, 
 summary: 部署AI基础架构并确定要与Amazon Q Business集成的数据源后、您可以定义连接器。 
 ---
-= 创建适用于Amazon的NetApp ONTAP连接器Q
+= 为 Amazon Q Business 创建 NetApp 连接器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-在部署AI基础架构并确定将从FSx for ONTAP数据存储库中使用的数据源之后、您可以定义适用于Amazon的NetApp ONTAP连接器问题
+部署 AI 基础架构并确定将从 FSx for ONTAP 数据存储区使用的数据源后，您就可以为 Amazon Q Business 定义 NetApp 连接器了。
 
 在继续操作之前、请确保您的环境符合link:requirements-connector.html["要求"]Amazon Q Business的要求。
 
@@ -30,7 +30,7 @@ NOTE: 可以随时启用或禁用数据防护。如果您要切换数据防护�
 
 == 定义接头
 
-创建适用于Amazon Q的NetApp ONTAP连接器。该连接器支持在GenAI和Amazon Q Business之间进行API和数据源通信。
+为 Amazon Q Business 创建 NetApp 连接器。该连接器支持 GenAI 和 Amazon Q Business 之间的 API 和数据源通信。
 
 .步骤
 . 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
@@ -64,7 +64,7 @@ NOTE: 可以随时启用或禁用数据防护。如果您要切换数据防护�
 NOTE: 启用数据保障功能后、GenAI将通过仅输入纯文本(不包括嵌入的图像或媒体文本)并屏蔽任何私有或敏感数据来处理.txt、.MD、.csv、.DOCX和.pdf文件。所有其他文件类型均正常处理、不会屏蔽私有或敏感数据。
 
 +
-.. *FSx for ONTAP文件系统*：定义新的NetApp ONTAP Connector for Amazon Q时，Workload Factory会创建新的Amazon FSx for NetApp ONTAP卷来存储连接器信息。选择要在其中创建新卷的现有文件系统和SVM (也称为Storage VM)。
+.. *FSx for ONTAP 文件系统*：当您为 Amazon Q Business 定义新的 NetApp 连接器时，工作负载工厂会创建一个新的 Amazon FSx for NetApp ONTAP 卷来存储连接器信息。选择要在其中创建新卷的现有文件系统和SVM (也称为Storage VM)。
 .. *Snapshot policy*：从工作负载出厂存储清单中定义的现有策略列表中选择一个Snapshot策略。GenAI会自动为卷创建重复快照、并根据您选择的快照策略以一定频率存储连接器信息。
 +
 如果不存在所需的快照策略、则可以 https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html["创建快照策略"^]在包含此卷的Storage VM上执行此操作。
