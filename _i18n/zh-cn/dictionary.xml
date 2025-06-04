@@ -836,7 +836,6 @@
   <block id="dbc68fe7976455ff2b6f2e5143dfd308" category="inline-link-macro">Amazon Brock中支持的基础模型</block>
   <block id="b198f4cca9409499187762bec5420672" category="paragraph">GenAI支持Amazon Brock支持的每个提供商的型号：<block ref="9f10081366e85554159ed4dc640b95c7" category="inline-link-macro-rx"></block></block>
   <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">更新了权限术语</block>
-  <block id="a7b97ab7d88b015e92ed51ef4bee9c25" category="paragraph">现在、工作负载出厂用户界面和文档使用"只读"来表示读取权限、使用"读写"来表示自动执行权限。</block>
   <block id="da1f9b1e0d45e28b599d8f40c855f668" category="summary">部署AI基础架构并确定要与Amazon Q Business集成的数据源后、您可以定义连接器。</block>
   <block id="b4851e92b19af0c5c82447fc0937709d" category="inline-link-macro">要求</block>
   <block id="c544ac4406a53e3d89f1f777f49bd9ab" category="paragraph">在继续操作之前、请确保您的环境符合<block ref="e9a731368b15c5c87437cf87756c4dd9" category="inline-link-macro-rx"></block>Amazon Q Business的要求。</block>
@@ -933,7 +932,6 @@
   <block id="69c3ca978f076b54fa2030f25d3332fc" category="doc">GenAI连接器要求</block>
   <block id="a6390dd71ac213c8926f4e003361b1c7" category="section-title">基本GenAI要求</block>
   <block id="d94f906cc0b4e822ea4cc6f7282c6f3f" category="paragraph">GenAI具有您的环境在开始使用之前需要满足的一般要求。</block>
-  <block id="5d077bd2e14c4e2191fcc692704a074c" category="list-text">您需要向工作负载工厂添加具有读/写权限的AWS凭据、这意味着您将在_Read/Write_模式下对GenAI使用工作负载工厂。</block>
   <block id="92b8944386b41a864c3b42d0a5f178da" category="paragraph">目前不支持_Basic_模式和_read-only _模式权限。</block>
   <block id="dc24ca2a4507b8d4ffa56cd2f4ff7a5c" category="paragraph">确保您的环境满足Amazon Q Business连接器的以下特定要求。</block>
   <block id="50a0042a7df9c6588a808141018da878" category="list-text">Amazon Q Business应用程序</block>
@@ -1076,4 +1074,7 @@
   <block id="65a16de587f6ba26884202bf406c26fe" category="section-title">NetApp Connector for Amazon Q Business 的要求</block>
   <block id="56daa392224e0cdcc6a69457c4094aa8" category="inline-link-macro">为 Amazon Q Business 定义 NetApp 连接器</block>
   <block id="7e8def5c748db55cfe2ebcc2c26543fd" category="paragraph">如果<block ref="a1707f04689d949f85e4cb6db99b5c64" category="inline-link-macro-rx"></block>，GenAI将从数据源中获取数据，将向量化结果存储在数据库中，并使您能够完全控制如何使用所获取的数据来回答查询。这种方法需要更多的初始配置、但允许您为不同的结果选择不同的聊天模式。如果是<block ref="fbe77fd827b80e33ddc74f945f323ccb" category="inline-link-macro-rx"></block>，则数据源中的数据将由Amazon Q Business读取并存储在索引中。这种方法所需的初始配置较少、但对结果的控制较少。</block>
+  <block id="4ead5e435cb4f2c7cf627b1d1e84c333" category="paragraph">工作负载工厂用户界面和文档现在使用“只读”来指代读取权限，使用“读/写”来指代自动化权限。</block>
+  <block id="2285d955a18bdde3d5780d04f48d58cd" category="list-text">您需要将 AWS 凭证添加到具有读/写权限的工作负载工厂，这意味着您将在 GenAI 的读/写模式下使用工作负载工厂。</block>
+  <block id="c45d86a4185cef0bc3cadb7e6e9b46f4" category="paragraph">目前不支持_基本_模式和_只读_模式权限。</block>
 </blocks>

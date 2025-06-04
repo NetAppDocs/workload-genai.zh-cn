@@ -20,10 +20,10 @@ summary: '在构建知识库之前、请确保已正确设置工作负载工厂�
 GenAI具有您的环境在开始使用之前需要满足的一般要求。
 
 工作负载出厂登录和帐户:: 您需要 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在Workload Factory中设置一个帐户"^]使用其中一个登录 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
-AWS 凭据和权限:: 您需要向工作负载工厂添加具有读/写权限的AWS凭据、这意味着您将在_Read/Write_模式下对GenAI使用工作负载工厂。
+AWS 凭据和权限:: 您需要将 AWS 凭证添加到具有读/写权限的工作负载工厂，这意味着您将在 GenAI 的读/写模式下使用工作负载工厂。
 +
 --
-目前不支持_Basic_模式和_read-only _模式权限。
+目前不支持_基本_模式和_只读_模式权限。
 
 设置凭据时、选择如下所示的权限后、您将拥有管理FSx for ONTAP文件系统以及部署和管理GenAI EC2实例以及知识库和聊天机器人所需的其他AWS资源的完全访问权限。
 
