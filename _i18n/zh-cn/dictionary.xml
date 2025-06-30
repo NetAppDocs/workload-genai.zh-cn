@@ -53,7 +53,6 @@
   <block id="831e8ddab4c3e70bcfe67a3e58aaf8cc" category="paragraph">您可以添加一个或多个数据源、以便使用组织的数据填充知识库。</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">关于此任务</block>
   <block id="443fa995d0ec899357a7e519e2055b98" category="paragraph">支持的最大数据源数为10。</block>
-  <block id="10031d73287aadb6c5f8b3dae7b23860" category="list-text">选择*添加数据源*后，将显示*选择文件系统*页。</block>
   <block id="8817d70d4163473468fa1b2b6e498321" category="paragraph">数据源开始嵌入到您的知识库中。当数据源完全嵌入时、状态将从"嵌入"更改为"嵌入"。</block>
   <block id="b9605cf748e4b8e1c97d786258a0be40" category="summary">您需要先在环境中部署RAG框架的基础架构、然后才能为组织构建FSx for ONTAP知识库和应用程序。主要基础架构组件包括Amazon Brock AI服务、NetApp GenAI引擎的虚拟机实例以及适用于ONTAP文件系统的FSx。</block>
   <block id="e379b913896cf9bdd4e2d6717212215a" category="doc">部署GenAI基础架构</block>
@@ -757,7 +756,6 @@
   <block id="f1776184cd873aef06fc869138b3b776" category="admonition">您可以调整聊天机器人模拟器窗口的大小并重新命名、还可以将问题和回答复制到剪贴板。</block>
   <block id="e27f142520976de0e091895abd1a2b45" category="list-text">您可以通过展开响应下的*sources *列表来查看用于生成答案的源。此选项将提供用于生成答案的文件列表。通过将鼠标悬停在文件名上、您可以查看每个文件和卷路径中使用的数据块并将其复制到每个文件。</block>
   <block id="8e08c9e7067a8bc5d8828ba0b5a8a5b2" category="list-text">如果响应中包含表、则可以对每列中的数据进行排序、并将每个表复制到剪贴板。</block>
-  <block id="2d5a4b914acb6c2f03d312067c73ce32" category="section-title">2025年3月2日</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">博客和社区</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 社区</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXP博客</block>
@@ -1077,4 +1075,30 @@
   <block id="4ead5e435cb4f2c7cf627b1d1e84c333" category="paragraph">工作负载工厂用户界面和文档现在使用“只读”来指代读取权限，使用“读/写”来指代自动化权限。</block>
   <block id="2285d955a18bdde3d5780d04f48d58cd" category="list-text">您需要将 AWS 凭证添加到具有读/写权限的工作负载工厂，这意味着您将在 GenAI 的读/写模式下使用工作负载工厂。</block>
   <block id="c45d86a4185cef0bc3cadb7e6e9b46f4" category="paragraph">目前不支持_基本_模式和_只读_模式权限。</block>
+  <block id="7d906e58a1354072160e6ed36352865a" category="open-title">添加 FSx for ONTAP 文件系统</block>
+  <block id="6d74c0f67ca2ffc7e802992699848ce7" category="open-title">添加通用 NFS 文件系统</block>
+  <block id="47f6d5704c1ced6391a6f696c9715d6f" category="list-text">*选择文件系统*：输入数据源文件所在的文件系统主机的 IP 地址或 FQDN，选择网络共享的 NFS 协议，然后选择*下一步*。</block>
+  <block id="f877eadc66897f3228392ce8c7190a3b" category="admonition">在某些情况下，您可能需要手动输入 NFS 导出名称，然后选择“检索目录”以显示可用目录。您可以选择整个导出，或仅选择导出中的特定文件夹。</block>
+  <block id="d6cc21a7239c70140c4fe9e5d219835f" category="list-text">选择*添加数据源*将此数据源添加到您的知识库。</block>
+  <block id="72d08830496d7cb22679d7006ceb540d" category="open-title">添加通用 SMB 文件系统</block>
+  <block id="8dc6eb4b595b0f73bfb84bc0ff3bbe68" category="list-text">*选择文件系统*：</block>
+  <block id="cff886b73f836ffbb81637a1582026d6" category="list-text">输入数据源文件所在的文件系统主机的 IP 地址或 FQDN。</block>
+  <block id="097fffee0ff7b9dc84809630d58d9921" category="list-text">为网络共享选择 SMB 协议。</block>
+  <block id="3a38971888a2c2f134ec4c4fe6164859" category="list-text">输入 Active Directory 信息，包括域、IP 地址、用户名和密码。</block>
+  <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">选择 * 下一步 * 。</block>
+  <block id="50e87b511edc21ffba5ebba81a768f04" category="admonition">在某些情况下，您可能需要手动输入 SMB 共享名称，然后选择“检索目录”以显示可用目录。您可以选择整个共享，或仅选择共享中的特定文件夹。</block>
+  <block id="0065452defb4a4481c8fe8db6f74a038" category="list-text">*权限感知*：启用或禁用权限感知响应：</block>
+  <block id="944ee388209d33a3bf1b309c6acdf693" category="doc">支持托管在通用 NFS/SMB 文件系统上的数据源</block>
+  <block id="9a7d241f00b55d0e00761313cced5dd8" category="paragraph">您现在可以从通用 SMB 或 NFS 共享添加数据源。这使您能够包含存储在 Amazon FSx for NetApp ONTAP 以外的文件系统托管的卷上的文件。</block>
+  <block id="5cba57d460e5683815517b44a7811760" category="inline-link">向知识库添加数据源</block>
+  <block id="b37629096d44c6fda917848365c84ebe" category="paragraph"><block ref="b37629096d44c6fda917848365c84ebe" category="inline-link-rx"></block></block>
+  <block id="6320af7d92cd5d357460c5cbc5f642a9" category="inline-link">向连接器添加数据源</block>
+  <block id="5cd676bef1867c904c092c33ad4a8f2d" category="paragraph"><block ref="5cd676bef1867c904c092c33ad4a8f2d" category="inline-link-rx"></block></block>
+  <block id="68548c26cece20bcf93105ea4fe89e88" category="list-text">选择*添加数据源*后，将出现*选择文件系统*页面。</block>
+  <block id="cf398eb273d2634893193d0e955a4fa2" category="list-text">选择要添加的数据源类型：</block>
+  <block id="c0f70038820005956aaf78b931d681c4" category="list-text">添加 FSx for ONTAP 文件系统（使用现有 FSx for ONTAP 卷中的文件）</block>
+  <block id="63e19fdc4a09680278ff2270264b3005" category="list-text">添加文件系统（使用来自通用 SMB 或 NFS 共享的文件）</block>
+  <block id="438852e39ff5e2c7366e67dde7cfdab4" category="list-text">选择*添加数据源*后，选择要添加的数据源类型：</block>
+  <block id="7454fc4c14df2a987637928e569efe3a" category="section-title">2025年6月29日</block>
+  <block id="84cd46ec8d4d2d63881ed3e5d98fe218" category="paragraph">工作负载工厂用户界面和文档现在使用“只读”来指代读取权限，使用“读/写”来指代自动化权限。== 2025年3月2日</block>
 </blocks>
