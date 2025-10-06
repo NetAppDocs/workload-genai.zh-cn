@@ -16,15 +16,15 @@ summary: 部署AI基础架构并确定要与Amazon Q Business集成的数据源�
 在继续操作之前、请确保您的环境符合link:requirements-connector.html["要求"]Amazon Q Business的要求。
 
 .关于此任务
-您的组织中的数据源可能包含个人身份信息(个人身份信息、个人身份信息)。要保护此敏感信息的安全、可以在定义连接器时启用_data护栏_。由BlueXP  分类提供支持的数据防护栏可识别和屏蔽可识别身份信息、使其无法访问和检索。
+您组织的数据源可能包含个人身份信息 (PII)。为了保护这些敏感信息，您可以在定义连接器时启用_数据护栏_。由NetApp数据分类提供支持的数据护栏可识别和屏蔽 PII，使其无法访问和恢复。
 
-link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解BlueXP分类"^](英文)
-
-
-NOTE: 适用于GenAI的BlueXP  工作负载工厂不会屏蔽敏感的个人信息(SPII)。有关此类数据的详细信息、请参见link:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-sensitive-personal-data["敏感个人数据的类型"^]。
+link:https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["了解NetApp数据分类"^] 。
 
 
-NOTE: 可以随时启用或禁用数据防护。如果您要切换数据防护、则工作负载工厂会从头开始扫描整个数据源、这可能会产生成本。
+NOTE: NetApp Workload Factory for GenAI 不会屏蔽敏感个人信息 (SPII)。参考link:https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html#types-of-sensitive-personal-data["敏感个人数据的类型"^]有关此类数据的更多信息。
+
+
+NOTE: 数据护栏可以随时启用或禁用。如果您切换数据护栏启用，Workload Factory 将从头开始扫描整个数据源，这可能会产生成本。
 
 
 
@@ -33,26 +33,26 @@ NOTE: 可以随时启用或禁用数据防护。如果您要切换数据防护�
 为 Amazon Q Business 创建 NetApp 连接器。该连接器支持 GenAI 和 Amazon Q Business 之间的 API 和数据源通信。
 
 .步骤
-. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
+. 使用以下方式之一登录 Workload Factorylink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
 . 在AI Workloads (AI工作负载)磁贴中、选择*部署和管理*。
-. 从“知识库和连接器”选项卡中，选择“*新建*”下拉列表，然后选择“* Amazon Q Business Connectors *”。
+. 从知识库和连接器菜单中，选择*新建*下拉菜单并选择*Amazon Q 商业连接器*。
 . 在"定义连接器"页面上、配置连接器设置：
 +
 .. *Name*：输入要用于连接器的名称。
 .. *Description*：输入连接器的详细说明。
 .. *Amazon Q*：要集成的Amazon Q Business实例的区域和应用程序名称。
-.. *数据防护*：选择是启用还是禁用数据防护。link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解由BlueXP  分类提供支持的数据防护"^](英文)
+.. *数据护栏*：选择是否要启用或禁用数据护栏。link:https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["了解由NetApp数据分类提供支持的数据护栏"^] 。
 +
 要启用数据防护、必须满足以下前提条件。
 
 +
-*** 要与BlueXP  分类进行通信、需要使用服务帐户。要创建服务帐户、您必须在BlueXP  租户帐户上具有_Organization admin_角色。具有组织管理员角色的成员可以完成BlueXP  中的所有操作。link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#add-a-role-to-a-member["了解如何在BlueXP  中向成员添加角色"^]
-*** AI引擎必须能够访问link:https://api.bluexp.netapp.com["BlueXP  API端点"^]。
-*** 您需要执行中所述的以下操作link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html#quick-start["BlueXP分类文档"^]：
+*** 需要服务帐户才能与NetApp数据分类进行通信。您必须在NetApp控制台租赁帐户上拥有“组织管理员”角色才能创建服务帐户。具有组织管理员角色的成员可以在NetApp控制台中完成所有操作。link:https://docs.netapp.com/us-en/console-setup-admin/task-iam-manage-members-permissions.html#add-a-role-to-a-member["了解如何在NetApp控制台中为成员添加角色"^]
+*** AI 引擎必须能够访问link:https://api.bluexp.netapp.com["NetApp控制台 API 端点"^]。
+*** 您需要按照link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-cloud-compliance.html#quick-start["NetApp数据分类文档"^]：
 +
-.... 创建BlueXP Connector
+.... 创建控制台代理
 .... 确保您的环境满足前提条件
-.... 部署BlueXP分类
+.... 部署NetApp数据分类
 
 
 
@@ -64,8 +64,8 @@ NOTE: 可以随时启用或禁用数据防护。如果您要切换数据防护�
 NOTE: 启用数据保障功能后、GenAI将通过仅输入纯文本(不包括嵌入的图像或媒体文本)并屏蔽任何私有或敏感数据来处理.txt、.MD、.csv、.DOCX和.pdf文件。所有其他文件类型均正常处理、不会屏蔽私有或敏感数据。
 
 +
-.. *FSx for ONTAP 文件系统*：当您为 Amazon Q Business 定义新的 NetApp 连接器时，工作负载工厂会创建一个新的 Amazon FSx for NetApp ONTAP 卷来存储连接器信息。选择要在其中创建新卷的现有文件系统和SVM (也称为Storage VM)。
-.. *Snapshot policy*：从工作负载出厂存储清单中定义的现有策略列表中选择一个Snapshot策略。GenAI会自动为卷创建重复快照、并根据您选择的快照策略以一定频率存储连接器信息。
+.. *FSx for ONTAP文件系统*：当您为 Amazon Q Business 定义新的NetApp Connector 时，Workload Factory 会创建一个新的Amazon FSx for NetApp ONTAP卷来存储连接器信息。选择将在其中创建新卷的现有文件系统和 SVM（也称为存储 VM）。
+.. *快照策略*：从 Workload Factory 存储清单中定义的现有策略列表中选择一个快照策略。  GenAI 会根据您选择的快照策略以一定频率自动创建存储连接器信息的卷的定期快照。
 +
 如果不存在所需的快照策略、则可以 https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html["创建快照策略"^]在包含此卷的Storage VM上执行此操作。
 

@@ -22,6 +22,6 @@ link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/deploy-infrastr
 
 === 重建损坏或缺失的GenAI基础架构
 
-如果您的AI引擎实例损坏或被以某种方式删除、您可以让工作负载在出厂时重建它。在完成重建后、工作负载工厂会自动将您的知识库重新连接到基础架构、以便可以随时使用。
+如果您的 AI 引擎实例损坏或以某种方式被删除，您可以让 Workload Factory 为您重建它。重建完成后，工作负载工厂会自动将您的知识库重新连接到基础设施，以便随时可以使用。
 
 link:https://docs.netapp.com/us-en/workload-genai/general/troubleshooting.html["故障排除"]

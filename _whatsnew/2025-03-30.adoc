@@ -30,9 +30,9 @@ link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledg
 
 === 支持从通用NFS/SMB共享添加数据源
 
-现在、您可以使用工作负载出厂API从通用NFSv3、NFSv4或SMB共享添加数据源。从NFS或SMB共享添加数据源时、知识库卷仍保留在Amazon FSx for NetApp ONTAP卷上。工作负载出厂Web UI将在未来版本中支持此功能。
+使用 Workload Factory API，您现在可以从通用 NFSv3、NFSv4 或 SMB 共享添加数据源。当您从 NFS 或 SMB 共享添加数据源时，知识库卷将保留在Amazon FSx for NetApp ONTAP卷上。  Workload Factory Web UI 将在未来版本中支持此功能。
 
-link:https://console.workloads.netapp.com/api-doc["使用工作负载出厂API"^]
+link:https://console.workloads.netapp.com/api-doc["使用工作负载工厂 API"^]
 
 
 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: knowledge-base/requirements-knowledge-base.html 
 keywords: ai, chatbot, prerequisites, bedrock, fsx for ontap, prerequisites, requirements 
-summary: '在构建知识库之前、请确保已正确设置工作负载工厂和AWS。其中包括拥有AWS登录凭据、部署了一个FSx for ONTAP文件系统(其中包含您要集成到知识库中的数据源)、访问Amazon B基石AI服务等。' 
+summary: 在构建知识库之前，请确保 Workload Factory 和 AWS 已正确设置。这包括拥有您的 AWS 登录凭证、已部署的 FSx for ONTAP文件系统（其中包含您想要集成到知识库中的数据源）、访问 Amazon Bedrock AI 服务等等。 
 ---
 = GenAI知识库要求
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: '在构建知识库之前、请确保已正确设置工作负载工厂�
 
 
 [role="lead"]
-在构建知识库之前、请确保已正确设置工作负载工厂和AWS。其中包括拥有AWS登录凭据、部署了一个FSx for ONTAP文件系统(其中包含您要集成到知识库中的数据源)、访问Amazon B基石AI服务等。
+在构建知识库之前，请确保 Workload Factory 和 AWS 已正确设置。这包括拥有您的 AWS 登录凭证、已部署的 FSx for ONTAP文件系统（其中包含您想要集成到知识库中的数据源）、访问 Amazon Bedrock AI 服务等等。
 
 
 
@@ -19,15 +19,15 @@ summary: '在构建知识库之前、请确保已正确设置工作负载工厂�
 
 GenAI具有您的环境在开始使用之前需要满足的一般要求。
 
-工作负载出厂登录和帐户:: 您需要 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在Workload Factory中设置一个帐户"^]使用其中一个登录 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
-AWS 凭据和权限:: 您需要将 AWS 凭证添加到具有读/写权限的工作负载工厂，这意味着您将在 GenAI 的读/写模式下使用工作负载工厂。
+工作负载工厂登录和帐户:: 你需要 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在 Workload Factory 上创建一个帐户"^]并使用以下任一方式登录 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
+AWS 凭据和权限:: 您需要将具有读/写权限的 AWS 凭证添加到 Workload Factory，这意味着您将以读/写模式使用 Workload Factory 进行 GenAI。
 +
 --
 目前不支持_Basic_模式和_read-only _模式权限。
 
 设置凭据时、选择如下所示的权限后、您将拥有管理FSx for ONTAP文件系统以及部署和管理GenAI EC2实例以及知识库和聊天机器人所需的其他AWS资源的完全访问权限。
 
-https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["了解如何将AWS凭据添加到工作负载工厂"^]
+https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["了解如何将 AWS 凭证添加到 Workload Factory"^]
 
 --
 
@@ -41,7 +41,7 @@ https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["了解�
 亚马逊基岩:: Amazon Brock使您能够使用基础模型、并提供构建生成性AI应用程序的功能。
 +
 --
-在开始使用适用于GenAI的BlueXP  工作负载工厂之前、您必须先设置Amazon Brock。您的GenAI部署必须位于启用了Amazon Brock的AWS地区。
+在开始使用NetApp Workload Factory for GenAI 之前，您必须设置 Amazon Bedrock。您的 GenAI 部署必须位于启用了 Amazon Bedrock 的 AWS 区域。
 
 * https://docs.aws.amazon.com/bedrock/latest/userguide/setting-up.html["AWS文档：设置Amazon Brock"^]
 * https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-supported.html["AWS文档：Amazon Brock知识库支持的区域和型号"^]

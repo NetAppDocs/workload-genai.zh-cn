@@ -58,7 +58,7 @@ image:genai-infrastructure-diagram-numbered.png["GenAI基础架构组件示意�
 
 
 .步骤
-. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
+. 使用以下方式之一登录 Workload Factorylink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
 . 在AI Workloads (AI工作负载)磁贴中、选择*部署和管理*。
 . 查看基础架构图并选择“*下一步”。
 . 完成*AWS设置*部分中的项目：
@@ -72,7 +72,7 @@ GenAI部署必须位于启用了Amazon Brock的AWS区域中。 https://docs.aws.
 
 . 完成*Infrastructure settings (基础架构设置)*部分中的项目：
 +
-.. *标记*：输入要应用于此部署中的所有AWS资源的任何标记键/值对。这些标记可在AWS管理控制台和工作负载工厂内的基础架构信息区域中查看、并可帮助您跟踪工作负载工厂资源。
+.. *标签*：输入您想要应用于此部署的所有 AWS 资源的任何标签键/值对。这些标签在 AWS 管理控制台和 Workload Factory 内的基础设施信息区域中可见，可以帮助您跟踪 Workload Factory 资源。
 
 
 . 完成*连接*部分：
@@ -82,7 +82,7 @@ GenAI部署必须位于启用了Amazon Brock的AWS区域中。 https://docs.aws.
 
 . 完成*AI引擎*部分：
 +
-.. *实例名称*：(可选)选择*定义实例名称*并为AI引擎实例输入自定义名称。实例名称显示在工作负载工厂的AWS管理控制台和基础架构信息区域中、可帮助您跟踪工作负载工厂资源。
+.. *实例名称*：可选地，选择*定义实例名称*并输入 AI 引擎实例的自定义名称。实例名称出现在 AWS 管理控制台和 Workload Factory 内的基础设施信息区域，可以帮助您跟踪 Workload Factory 资源。
 
 
 . 选择*Deploy开始部署。
@@ -93,7 +93,7 @@ NOTE: 如果部署失败并显示凭据错误、您可以通过选择错误消�
 
 
 .结果
-工作负载工厂开始部署聊天机器人基础架构。此过程可能需要长达10分钟。
+Workload Factory 开始部署聊天机器人基础设施。此过程最多可能需要 10 分钟。
 
 在部署过程中、将设置以下各项：
 
@@ -101,5 +101,5 @@ NOTE: 如果部署失败并显示凭据错误、您可以通过选择错误消�
 * 此时将创建IAM角色、实例配置文件和安全组。
 * 此时将部署GenAI引擎的虚拟机实例。
 * Amazon Brock配置为使用带有前缀的日志组将日志发送到Amazon CloudWatch日志 `/aws/bedrock/`。
-* GenAI引擎配置为使用名为的日志组将日志发送到Amazon CloudWatch Logs、 `/netapp/wlmai/<tenancyAccountId>/randomId`其中是当前用户的。 `<tenancyAccountID>` https://docs.netapp.com/us-en/bluexp-automation/platform/get_identifiers.html#get-the-account-identifier["BlueXP帐户ID"^]
+* GenAI 引擎配置为使用名为 `/netapp/wlmai/<tenancyAccountId>/randomId`， 在哪里 `<tenancyAccountID>`是 https://docs.netapp.com/us-en/console-automation/platform/get_identifiers.html#get-the-account-identifier["NetApp控制台帐户 ID"^]对于当前用户。
 

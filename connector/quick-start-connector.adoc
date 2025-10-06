@@ -13,9 +13,9 @@ summary: 开始使用您所在组织在Amazon FSx for NetApp ONTAP文件系统�
 [role="lead"]
 开始使用您组织在 Amazon FSx for NetApp ONTAP 文件系统上的数据创建 NetApp Connector for Amazon Q Business。创建连接器后、最终用户可以访问亚马逊Q业务助理、获得以组织为中心的问题解答。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"]登录到工作负载工厂
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"]登录工作负载工厂
 [role="quick-margin-para"]
-您需要 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在Workload Factory中设置一个帐户"^]使用其中一个登录 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
+你需要 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在 Workload Factory 上创建一个帐户"^]并使用以下任一方式登录 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"]设置您的环境以满足GenAI要求
 [role="quick-margin-para"]

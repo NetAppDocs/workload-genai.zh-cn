@@ -8,7 +8,7 @@
 
 GenAI 现已提供 Tracker 监控功能。您可以使用 Tracker 监控和跟踪待处理、正在进行和已完成操作的进度和状态，查看操作任务和子任务的详细信息，诊断任何问题或故障，编辑失败操作的参数，以及重试失败的操作。
 
-link:https://docs.netapp.com/us-en/workload-genai/general/monitor-operations.html["使用 BlueXP 工作负载工厂中的 Tracker 监控工作负载操作"]
+link:https://docs.netapp.com/us-en/workload-genai/general/monitor-operations.html["使用NetApp Workload Factory 中的 Tracker 监控工作负载操作"]
 
 
 

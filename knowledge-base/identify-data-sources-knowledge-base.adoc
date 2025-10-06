@@ -45,7 +45,7 @@ summary: '确定或创建FSx for ONTAP文件系统上要集成到知识库中的
 
 == 支持的数据源文件格式
 
-工作负载工厂的GenAI知识库目前支持以下数据源文件格式。
+Workload Factory GenAI 知识库目前支持以下数据源文件格式。
 
 [cols="2*"]
 |===

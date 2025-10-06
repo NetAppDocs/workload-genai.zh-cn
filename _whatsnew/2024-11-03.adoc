@@ -6,8 +6,8 @@
 
 === 使用数据防护屏蔽个人身份信息
 
-生成型AI工作负载引入了由BlueXP  分类提供支持的数据防护功能。数据防护功能可识别和屏蔽个人身份信息(Personal可识别信息、Personal可识别信息、Personal可识别信息)、帮助您保持合规性并增强敏感组织数据的安全性。
+生成式人工智能工作负载引入了由NetApp控制台分类提供支持的数据护栏功能。数据护栏功能可识别和屏蔽个人身份信息 (PII)，帮助您保持合规性并加强敏感组织数据的安全性。
 
 link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledgebase.html["创建GenAI知识库"]
 
-link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解BlueXP分类"^]
+link:https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["了解NetApp控制台分类"^]

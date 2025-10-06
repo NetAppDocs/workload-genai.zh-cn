@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: general/troubleshooting.html 
 keywords: support registration, register for support, support, nss account, add nss account, 
-summary: 要向NetApp技术支持创建支持案例、您需要先将NetApp支持站点帐户添加到工作负载工厂、然后注册支持。 
+summary: 在向NetApp技术支持部门提交支持案例之前，您需要向 Workload Factory 添加一个NetApp支持站点帐户，然后注册以获得支持。 
 ---
 = GenAI故障排除
 :allow-uri-read: 
@@ -24,10 +24,10 @@ summary: 要向NetApp技术支持创建支持案例、您需要先将NetApp支�
 | 区域 | 问题描述 | 发生原因 | 临时解决策 
 
 
-| 部署 | 由于卷已存在、部署失败。 | 在部署过程中、适用于GenAI的BlueXP  工作负载工厂需要创建一个新卷、但使用您指定的名称的卷已存在。 | 指定要用于新卷的唯一名称、然后重新尝试部署。 
+| 部署 | 由于卷已存在、部署失败。 | NetApp Workload Factory for GenAI 需要在部署过程中创建一个新卷，但使用您指定的名称的卷已经存在。 | 指定要用于新卷的唯一名称、然后重新尝试部署。 
 
 
-| 部署 | 由于适用于GenAI的BlueXP  工作负载工厂无法挂载此卷、部署失败。 | FSx for NetApp ONTAP所需的一个或多个入站端口已关闭或筛选。  a| 
+| 部署 | 部署失败，因为NetApp Workload Factory for GenAI 无法挂载该卷。 | FSx for NetApp ONTAP所需的一个或多个入站端口已关闭或筛选。  a| 
 打开以下入站端口：
 
 [cols="10,10,80"]
@@ -105,7 +105,7 @@ summary: 要向NetApp技术支持创建支持案例、您需要先将NetApp支�
 |===
 
 
-| 维护 | AI引擎启动失败，您在*Knowledge Bases*页面上看到错误"AI引擎实例错误"。 | AI引擎实例已损坏或不存在。 | 选择*重建*按钮。适用于GenAI的BlueXP  工作负载工厂会重建基础架构并显示重建进度。完成后、您的知识库将重新连接到重建的基础架构、并显示知识库列表。 
+| 维护 | AI引擎启动失败，您在*Knowledge Bases*页面上看到错误"AI引擎实例错误"。 | AI引擎实例已损坏或不存在。 | 选择*重建*按钮。 NetApp Workload Factory for GenAI 重建基础架构并显示重建进度。完成后，您的知识库将重新连接到重建的基础设施，并显示知识库列表。 
 
 
 | 维护 | AI引擎启动失败，您在*Knowledge Bases*页面上看到错误"The GenAI Engine Instance is Stop"(GenAI引擎实例已停止)。 | AI引擎实例未运行。 | 使用AWS管理控制台或AWS命令行界面启动AI引擎实例。 
@@ -127,7 +127,7 @@ docker-compose up
 
 
 
-| 维护 | BlueXP  工作负载工厂使用的后端Docker实例无法启动GenAI。 | 已删除此卷并重新启动EC2实例。  a| 
+| 维护 | NetApp Workload Factory for GenAI 使用的后端 Docker 实例无法启动。 | 已删除此卷并重新启动EC2实例。  a| 
 请使用以下恢复步骤：
 
 .步骤
@@ -163,8 +163,8 @@ volumes:
 
 
 
-| 维护 | BlueXP  工作负载工厂使用的后端Docker实例无法启动GenAI。 | 已删除此根卷。 | 使用名称和路径创建一个卷、然后从Amazon EC2重新启动后端Docker实例。 
+| 维护 | NetApp Workload Factory for GenAI 使用的后端 Docker 实例无法启动。 | 已删除此根卷。 | 使用名称和路径创建一个卷、然后从Amazon EC2重新启动后端Docker实例。 
 
 
-| 维护 | BlueXP  工作负载工厂使用的后端Docker实例无法启动GenAI。 | 已删除此根卷。 | 使用名称和路径创建一个卷、然后从Amazon EC2重新启动后端Docker实例。 
+| 维护 | NetApp Workload Factory for GenAI 使用的后端 Docker 实例无法启动。 | 已删除此根卷。 | 使用名称和路径创建一个卷、然后从Amazon EC2重新启动后端Docker实例。 
 |===

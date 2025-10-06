@@ -20,8 +20,8 @@ summary: 在FSx for ONTAP文件系统上使用数据源创建知识库后、您�
 您可以查看有关数据源内容的信息、也可以通过知识库或连接器查看其嵌入状态。由于数据源与知识库或连接器相关联、因此您需要先选择知识库或连接器、然后才能查看数据源详细信息。
 
 .步骤
-. 使用其中一个登录到工作负载工厂 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
-. 从工作负载出厂导航菜单中、选择*AI*。
+. 使用以下方式之一登录 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
+. 在AI Workloads (AI工作负载)磁贴中、选择*部署和管理*。
 . 选择数据源所在的知识库或连接器，然后选择并选择*管理知识库image:icon-action.png["选项按钮"]*或*管理连接器*。
 +
 页面底部列出了关联的数据源。
@@ -39,7 +39,8 @@ summary: 在FSx for ONTAP文件系统上使用数据源创建知识库后、您�
 您可以编辑有关已与知识库或连接器集成的数据源的信息。在添加数据源后、大多数信息都会得到修复、但您可以对部分配置进行更改(例如、chunking定义或权限感知)。
 
 .步骤
-. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
+. 使用以下方式之一登录 Workload Factorylink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
+. 在AI Workloads (AI工作负载)磁贴中、选择*部署和管理*。
 . 在知识库清单页面中，选择数据源所在的知识库，然后选择 image:icon-action.png["选项按钮"] 并选择*Manage Knowledge bas*。
 +
 页面底部列出了此知识库中的数据源。
@@ -67,7 +68,8 @@ summary: 在FSx for ONTAP文件系统上使用数据源创建知识库后、您�
 如果您不再需要某个数据源加入知识库、可以将其删除。
 
 .步骤
-. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
+. 使用以下方式之一登录 Workload Factorylink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
+. 在AI Workloads (AI工作负载)磁贴中、选择*部署和管理*。
 . 从知识库清单页面中，选择数据源所在的知识库，然后选择并选择*管理知识库 image:icon-action.png["选项按钮"] *。
 +
 页面底部列出了此知识库中的数据源。

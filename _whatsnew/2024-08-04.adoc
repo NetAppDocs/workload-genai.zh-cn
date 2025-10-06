@@ -12,4 +12,4 @@
 
 === 聊天机器人应用程序示例
 
-通过NetApp Workload Factory GenAI示例应用程序、您可以在基于Web的聊天机器人应用程序中直接与发布的NetApp Workload Factory知识库进行交互、从而测试身份验证和从该知识库中检索的结果。
+NetApp Workload Factory GenAI 示例应用程序使您能够通过在基于 Web 的聊天机器人应用程序中直接与已发布的NetApp Workload Factory 知识库进行交互来测试其身份验证和检索。

@@ -2,22 +2,22 @@
 sidebar: sidebar 
 permalink: general/ai-workloads-overview.html 
 keywords: overview, concepts, features, use case, workloads, AI, Bedrock, knowledge base, chatbot 
-summary: 通过适用于GenAI的BlueXP  工作负载工厂、您可以将适用于NetApp ONTAP文件系统的Amazon FSx与GenAI基础模型相集成。这为您提供了高性能存储、并为您的AI数据集提供了一套丰富的保护、安全性和成本优化功能。 
+summary: NetApp Workload Factory for GenAI 使您能够将Amazon FSx for NetApp ONTAP文件系统与 GenAI 基础模型集成。这为您的 AI 数据集提供了高性能存储以及丰富的保护、安全和成本优化功能。 
 ---
-= 了解适用于GenAI的BlueXP  工作负载工厂
+= 了解NetApp Workload Factory for GenAI
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-通过适用于GenAI的BlueXP  工作负载工厂、您可以将适用于NetApp ONTAP文件系统的Amazon FSx与GenAI基础模型相集成。这为您提供了高性能存储、并为您的AI数据集提供了一套丰富的保护、安全性和成本优化功能。
+NetApp Workload Factory for GenAI 使您能够将Amazon FSx for NetApp ONTAP文件系统与 GenAI 基础模型集成。这为您的 AI 数据集提供了高性能存储以及丰富的保护、安全和成本优化功能。
 
 
 
-== 什么是适用于GenAI的BlueXP  工作负载工厂？
+== NetApp Workload Factory for GenAI 是什么？
 
-借助适用于GenAI的BlueXP  工作负载工厂、您可以在Amazon FSx for NetApp ONTAP上将企业级数据源与生成性AI应用程序结合使用。利用检索增强型生成(RAG)、您可以快速将数据源连接到Amazon BROBON或Amazon Q Business提供的基础模型、以开发由AI提供支持的生成型应用程序、例如虚拟助手、问答聊天机器人、文档汇总、内容创建等
+NetApp Workload Factory for GenAI 使您能够将Amazon FSx for NetApp ONTAP上的企业数据源与生成式 AI 应用程序结合使用。利用检索增强生成 (RAG)，您可以快速将数据源连接到可通过 Amazon Bedrock 或 Amazon Q Business 获得的基础模型，以开发生成式 AI 驱动的应用程序，例如虚拟助手、问答聊天机器人、文档摘要、内容创建等。
 
 将生成型AI与组织数据结合使用、您可以利用自己的知识和专业知识、而不仅仅是依靠模型基于模型所训练的公共数据的智能。使用RAG自定义模型可确保对组织特定问题做出准确且相关的响应、从而提高使用生成性AI的应用程序用户的工作效率。
 
@@ -25,13 +25,13 @@ summary: 通过适用于GenAI的BlueXP  工作负载工厂、您可以将适用
 
 如果link:../knowledge-base/create-knowledgebase.html["创建知识库"^]，GenAI将从数据源中获取数据，将向量化结果存储在数据库中，并使您能够完全控制如何使用所获取的数据来回答查询。这种方法需要更多的初始配置、但允许您为不同的结果选择不同的聊天模式。如果是link:../connector/define-connector.html["为 Amazon Q Business 定义 NetApp 连接器"]，则数据源中的数据将由Amazon Q Business读取并存储在索引中。这种方法所需的初始配置较少、但对结果的控制较少。
 
-有关工作负载工厂的详细信息，请参见 https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["工作负载出厂概述"^]。
+有关 Workload Factory 的更多信息，请参阅 https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["工作负载工厂概述"^]。
 
 
 
 == 使用GenAI创建生成性AI应用程序的优势
 
-适用于GenAI的BlueXP  工作负载工厂可简化使用检索增强型生成(RAG)构建生成型AI应用程序所需的基础架构部署流程。具体而言、GenAI具有以下优势：
+NetApp Workload Factory for GenAI 简化了使用检索增强生成 (RAG) 构建生成式 AI 应用程序所需的基础架构的部署过程。具体来说，GenAI 具有以下优势：
 
 * IT管理员和开发人员无需深入了解数据基础架构、基础架构和语言模型、即可利用GenAI提供的自动化功能加快应用程序开发速度。数据管理员和开发人员可以轻松快速地创建企业知识库、以嵌入贵组织的非结构化数据、供生成型AI应用程序使用。
 * 通过在知识库中嵌入的文件中保留用户权限来增强安全性、以确保维护数据安全和隐私。可以开发一个应用程序(例如聊天机器人)、以便仅为经过身份验证的用户提供基于用户有权访问的数据的答案。
@@ -52,7 +52,7 @@ image:genai-infrastructure-diagram.png["显示GenAI关键组件及其功能及�
 
 
 
-== 适用于GenAI的BlueXP  工作负载工厂如何帮助构建生成型AI应用程序
+== NetApp Workload Factory for GenAI 如何帮助构建生成式 AI 应用程序
 
 GenAI可通过以下方式帮助使用RAG构建生成性AI应用程序：
 
@@ -66,24 +66,24 @@ GenAI可通过以下方式帮助使用RAG构建生成性AI应用程序：
 
 
 
-== 用于工作负载工厂的工具
+== 使用NetApp Workload Factory 的工具
 
-您可以将BlueXP  工作负载工厂与以下工具结合使用：
+您可以将NetApp Workload Factory 与以下工具一起使用：
 
-* *工作负载工厂控制台*：工作负载工厂控制台提供应用程序和项目的可视化、整体视图。
-* BlueXP  console*：BlueXP  控制台提供了混合接口体验，因此您可以将BlueXP  工作负载出厂配置与其他BlueXP  服务结合使用。
-* *问我*：使用"问我人工智能"助手提出问题并了解有关工作负载工厂的更多信息、而无需退出工作负载工厂Web UI。从工作负载出厂帮助菜单访问"询问我"。
-* *CloudShell命令行界面*：工作负载工厂包括一个CloudShell命令行界面、用于通过一个基于浏览器的命令行界面跨帐户管理和操作AWS和NetApp环境。从工作负载出厂控制台的顶部栏访问CloudShell。
-* *REST API*：使用工作负载工厂REST API部署和管理适用于ONTAP文件系统和其他AWS资源的FSx。
-* *CloudFormation*：使用AWS CloudFormation代码执行您在工作负载出厂控制台中定义的操作、以便在您的AWS帐户中对CloudFormation堆栈中的AWS和第三方资源进行建模、配置和管理。
-* *Terraform BlueXP  工作负载工厂提供程序*：使用Terraform构建和管理在工作负载工厂控制台中生成的基础架构工作流。
+* *Workload Factory 控制台*：Workload Factory 控制台提供您的应用程序和项目的可视化、整体视图。
+* * NetApp控制台*： NetApp控制台提供混合界面体验，以便您可以将 Workload Factory 与其他NetApp数据服务一起使用。
+* *问我*：使用问我 AI 助手来提问并了解有关 Workload Factory 的更多信息，而无需离开 Workload Factory 控制台。从 Workload Factory 帮助菜单访问“问我”。
+* *CloudShell CLI*：Workload Factory 包含一个 CloudShell CLI，可通过基于浏览器的单个 CLI 跨账户管理和操作 AWS 和NetApp环境。从 Workload Factory 控制台顶部栏访问 CloudShell。
+* *REST API*：使用 Workload Factory REST API 部署和管理您的 FSx for ONTAP文件系统和其他 AWS 资源。
+* *CloudFormation*：使用 AWS CloudFormation 代码执行您在 Workload Factory 控制台中定义的操作，以从您的 AWS 账户中的 CloudFormation 堆栈对 AWS 和第三方资源进行建模、配置和管理。
+* *Terraform NetApp Workload Factory 提供商*：使用 Terraform 构建和管理在 Workload Factory 控制台中生成的基础架构工作流。
 
 
 
 
 == 成本
 
-使用工作负载工厂的GenAI功能无需任何成本。
+使用 Workload Factory 的 GenAI 功能无需任何成本。
 
 但是、要支持生成性AI基础架构、您需要为部署的AWS资源付费。例如、您需要为Amazon Brock或Amazon Q Business支付AWS费用、为ONTAP文件系统和存储容量支付FSx费用以及为GenAI引擎EC2实例支付费用。
 
@@ -93,4 +93,18 @@ GenAI可通过以下方式帮助使用RAG构建生成性AI应用程序：
 
 == 许可
 
-使用工作负载工厂的AI功能无需NetApp提供特殊许可证。
+无需NetApp的特殊许可即可使用 Workload Factory 的 AI 功能。
+
+
+
+== 区域
+
+所有支持 FSx for ONTAP 的商业区域均支持 Workload Factory。link:https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["查看支持的亚马逊区域。"^]
+
+以下 AWS 区域不受支持：
+
+* 中国地区
+* GovCloud（美国）区域
+* 秘密云
+* 绝密云
+

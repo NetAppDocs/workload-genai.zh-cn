@@ -20,8 +20,8 @@ summary: 创建知识库后、您可以查看知识库详细信息、修改知�
 您可以查看有关知识库和集成的数据源设置的信息。
 
 .步骤
-. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
-. 从工作负载出厂导航菜单中、选择*AI*。
+. 使用以下方式之一登录 Workload Factorylink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
+. 在AI Workloads (AI工作负载)磁贴中、选择*部署和管理*。
 . 选择要查看的知识库。
 +
 如果已定义、则当前正在使用的对话启动器将显示在右窗格中。
@@ -44,7 +44,8 @@ summary: 创建知识库后、您可以查看知识库详细信息、修改知�
 每次在知识库中添加、修改或删除数据源时、都必须同步数据源、以便将其重新编制到知识库索引。同步是增量的、因此Amazon Bonrock仅处理FSx for ONTAP卷中自上次同步以来添加、修改或删除的对象。
 
 .步骤
-. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
+. 使用以下方式之一登录 Workload Factorylink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
+. 在AI Workloads (AI工作负载)磁贴中、选择*部署和管理*。
 . 从"Knowledge Bases"清单页面中、选择要更新的知识库。
 . 选择 image:icon-action.png["选项按钮"] 并选择*管理知识库*。
 +
@@ -82,7 +83,8 @@ NOTE: 每个知识库扫描(包括嵌入)都将产生成本。如果在创建知
 您可以通过手动创建知识库卷的快照来保存知识库的状态。
 
 .步骤
-. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
+. 使用以下方式之一登录 Workload Factorylink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
+. 在AI Workloads (AI工作负载)磁贴中、选择*部署和管理*。
 . 从"Knowledge Bases"清单页面中、选择要保护的知识库。
 . 选择 image:icon-action.png["选项按钮"] 并选择*管理知识库*。
 +
@@ -109,7 +111,8 @@ NOTE: 每个知识库扫描(包括嵌入)都将产生成本。如果在创建知
 NOTE: 如果存储在卷上的数据库已损坏或被删除、则无法使用生成型AI工作负载UI还原快照。解决方法是、您可以在托管此卷的ONTAP集群上使用还原此快照 https://docs.netapp.com/us-en/ontap-cli/volume-snapshot-restore.html["ONTAP 命令行界面"^]。
 
 .步骤
-. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
+. 使用以下方式之一登录 Workload Factorylink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
+. 在AI Workloads (AI工作负载)磁贴中、选择*部署和管理*。
 . 从"Knowledge Bases"清单页面中、选择要还原的知识库。
 . 选择 image:icon-action.png["选项按钮"] 并选择*管理知识库*。
 +
@@ -134,7 +137,8 @@ NOTE: 如果存储在卷上的数据库已损坏或被删除、则无法使用�
 您可以从知识库快照创建新的知识库。如果原始知识库已损坏或丢失、则此功能非常有用。
 
 .步骤
-. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
+. 使用以下方式之一登录 Workload Factorylink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
+. 在AI Workloads (AI工作负载)磁贴中、选择*部署和管理*。
 . 从"Knowledge Bases"清单页面中、选择要还原的知识库。
 . 选择 image:icon-action.png["选项按钮"] 并选择*管理知识库*。
 +
@@ -162,7 +166,8 @@ NOTE: 如果存储在卷上的数据库已损坏或被删除、则无法使用�
 您可以在知识库中嵌入其他数据源、以使用其他组织数据填充该知识库。
 
 .步骤
-. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
+. 使用以下方式之一登录 Workload Factorylink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
+. 在AI Workloads (AI工作负载)磁贴中、选择*部署和管理*。
 . 从"Knowledge Bases"清单页面中、选择要添加数据源的知识库。
 . 选择，然后选择 image:icon-action.png["选项按钮"] *添加数据源*。
 . 选择要添加的数据源类型：
@@ -199,7 +204,7 @@ NOTE: 选择较高的重叠百分比会显著增加存储需求、但检索准�
 +
 *** 在*文件类型支持*部分，选择包括所有类型的文件，或选择要包含在数据源扫描中的单个文件类型。
 +
-如果您包含图像或PDF文件、BlueXP  Workload Factory for GenAI将解析图像中的文本(包括PDF文档中的图像)、这将导致成本增加。
+如果您包含图像或 PDF 文件， NetApp Workload Factory for GenAI 会解析图像中的文本（包括 PDF 文档中的图像），这会产生更高的成本。
 
 +
 如果包含图像中的文本数据、则在将扫描的文本数据从您的环境发送到AWS时、GenAI无法屏蔽图像中的个人身份信息(个人身份信息、(PI))。但是、一旦存储数据、所有的数据都会在GenAI数据库中屏蔽。
@@ -251,7 +256,7 @@ NOTE: 选择较高的重叠百分比会显著增加存储需求、但检索准�
 +
 *** 在*文件类型支持*部分，选择包括所有类型的文件，或选择要包含在数据源扫描中的单个文件类型。
 +
-如果您包含图像或PDF文件、BlueXP  Workload Factory for GenAI将解析图像中的文本(包括PDF文档中的图像)、这将导致成本增加。
+如果您包含图像或 PDF 文件， NetApp Workload Factory for GenAI 会解析图像中的文本（包括 PDF 文档中的图像），这会产生更高的成本。
 
 +
 如果包含图像中的文本数据、则在将扫描的文本数据从您的环境发送到AWS时、GenAI无法屏蔽图像中的个人身份信息(个人身份信息、(PI))。但是、一旦存储数据、所有的数据都会在GenAI数据库中屏蔽。
@@ -310,7 +315,7 @@ NOTE: 选择较高的重叠百分比会显著增加存储需求、但检索准�
 +
 *** 在*文件类型支持*部分，选择包括所有类型的文件，或选择要包含在数据源扫描中的单个文件类型。
 +
-如果您包含图像或PDF文件、BlueXP  Workload Factory for GenAI将解析图像中的文本(包括PDF文档中的图像)、这将导致成本增加。
+如果您包含图像或 PDF 文件， NetApp Workload Factory for GenAI 会解析图像中的文本（包括 PDF 文档中的图像），这会产生更高的成本。
 
 +
 如果包含图像中的文本数据、则在将扫描的文本数据从您的环境发送到AWS时、GenAI无法屏蔽图像中的个人身份信息(个人身份信息、(PI))。但是、一旦存储数据、所有的数据都会在GenAI数据库中屏蔽。
@@ -345,7 +350,8 @@ NOTE: 如果您包含基于修改日期范围的文件、则只要不满足日�
 同步是增量的、因此Amazon Bonck仅处理数据源中自上次同步以来添加、修改或删除的对象。
 
 .步骤
-. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
+. 使用以下方式之一登录 Workload Factorylink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
+. 在AI Workloads (AI工作负载)磁贴中、选择*部署和管理*。
 . 从"Knowledge Bases"清单页面中、选择要同步的知识库。
 . 选择 image:icon-action.png["选项按钮"] 并选择*管理知识库*。
 . 选择*Actions*菜单，然后选择*Scan Now (立即扫描)*。
@@ -364,8 +370,9 @@ NOTE: 如果您包含基于修改日期范围的文件、则只要不满足日�
 如果要暂停或恢复数据源的下次同步(扫描)、您可以随时执行此操作。如果要更改数据源、并且不希望在更改窗口期间进行同步、则可能需要暂停下一次计划同步。
 
 .步骤
-. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
-. 从"Knowledge Bases & Connectors"(知识库和连接器)选项卡中、选择要暂停或恢复扫描的知识库。
+. 使用以下方式之一登录 Workload Factorylink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
+. 在AI Workloads (AI工作负载)磁贴中、选择*部署和管理*。
+. 从知识库和连接器菜单中，选择要暂停或恢复扫描的知识库。
 . 选择 image:icon-action.png["选项按钮"] 并选择*管理知识库*。
 . 选择*Actions*菜单，然后选择*Scan > Pause Scheduled scan-*或*Scan > Resume Scheduled scan-*。
 +
@@ -383,7 +390,8 @@ NOTE: 如果您包含基于修改日期范围的文件、则只要不满足日�
 NOTE: 只有在未创建任何知识库时(即"知识库"清单页面中不存在任何知识库时)、此功能才可用。
 
 .步骤
-. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
+. 使用以下方式之一登录 Workload Factorylink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
+. 在AI Workloads (AI工作负载)磁贴中、选择*部署和管理*。
 . 在知识库清单页面中、您将在页面右侧看到选择聊天机器人聊天模式的选项。
 . 从列表中选择聊天模式、然后在提示区域输入一组问题、以查看聊天机器人的响应方式。
 . 尝试多种模式、了解哪种模式最适合您的实施。
@@ -401,7 +409,8 @@ NOTE: 只有在未创建任何知识库时(即"知识库"清单页面中不存�
 取消发布知识库会停止任何聊天应用程序的工作。已禁用可访问知识库的唯一API端点。
 
 .步骤
-. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
+. 使用以下方式之一登录 Workload Factorylink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
+. 在AI Workloads (AI工作负载)磁贴中、选择*部署和管理*。
 . 从"Knowledge Bases"清单页面中、选择要取消发布的知识库。
 . 选择 image:icon-action.png["选项按钮"] 并选择*管理知识库*。
 +
@@ -417,12 +426,13 @@ NOTE: 只有在未创建任何知识库时(即"知识库"清单页面中不存�
 
 == 删除知识库
 
-如果您不再需要知识库、可以将其删除。删除知识库后、该知识库将从工作负载出厂时被删除、包含该知识库的卷也将被删除。正在使用知识库的任何应用程序或聊天机器人将停止工作。删除知识库是不可逆的。
+如果您不再需要知识库，您可以将其删除。当您删除知识库时，它将从 Workload Factory 中删除，并且包含该知识库的卷也将被删除。任何使用知识库的应用程序或聊天机器人都将停止工作。删除知识库是不可逆的。
 
 删除知识库时、您还应解除知识库与关联的任何代理的关联、以完全删除与知识库关联的所有资源。
 
 .步骤
-. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
+. 使用以下方式之一登录 Workload Factorylink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
+. 在AI Workloads (AI工作负载)磁贴中、选择*部署和管理*。
 . 从"Knowledge Bases"清单页面中、选择要删除的知识库。
 . 选择 image:icon-action.png["选项按钮"] 并选择*管理知识库*。
 . 选择*操作*菜单，然后选择*删除知识库*。
@@ -430,4 +440,4 @@ NOTE: 只有在未创建任何知识库时(即"知识库"清单页面中不存�
 
 
 .结果
-知识库将从工作负载出厂时删除、其关联卷也将被删除。
+知识库已从 Workload Factory 中删除，并且其关联卷也已被删除。

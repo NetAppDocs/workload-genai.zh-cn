@@ -22,4 +22,4 @@ summary: 现在、您已经使用企业数据创建了知识库并为用户部�
 * 备份和保护FSx for ONTAP文件系统上的重要数据、以确保知识库数据和其他基础架构组件始终可用。
 
 
-有关管理FSx for ONTAP文件系统的信息、请转到 https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["Workload Factory for Amazon FSx for NetApp ONTAP文档"^] 以查看可使用的备份和保护功能。
+有关管理 FSx for ONTAP文件系统的信息，请访问 https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["Amazon FSx for NetApp ONTAP的 Workload Factory 文档"^]查看您可以使用的备份和保护功能。

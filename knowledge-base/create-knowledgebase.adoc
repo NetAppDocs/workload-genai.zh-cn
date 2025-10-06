@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: knowledge-base/create-knowledgebase.html 
 keywords: ai, chatbot, creating, knowledge base 
-summary: 在您部署了AI基础架构并从FSx for ONTAP数据存储库中确定了要集成到知识库中的数据源之后、您便可以使用工作负载工厂构建知识库了。在此步骤中、您还将定义AI特征并创建对话开场白。 
+summary: 部署 AI 基础架构并确定将从 FSx for ONTAP数据存储集成到知识库中的数据源后，您就可以使用 Workload Factory 构建知识库了。作为此步骤的一部分，您还将定义 AI 特性并创建对话开场白。 
 ---
 = 创建GenAI知识库
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 在您部署了AI基础架构并从FSx for ONTAP数据存储库中确�
 
 
 [role="lead"]
-在您部署了AI基础架构并从FSx for ONTAP数据存储库中确定了要集成到知识库中的数据源之后、您便可以使用工作负载工厂构建知识库了。在此步骤中、您还将定义AI特征并创建对话开场白。
+部署 AI 基础架构并确定将从 FSx for ONTAP数据存储集成到知识库中的数据源后，您就可以使用 Workload Factory 构建知识库了。作为此步骤的一部分，您还将定义 AI 特性并创建对话开场白。
 
 在继续操作之前、请确保您的环境符合link:requirements-knowledge-base.html["要求"]知识库的要求。
 
@@ -22,15 +22,15 @@ summary: 在您部署了AI基础架构并从FSx for ONTAP数据存储库中确�
 企业模式:: 在大多数情况下、您需要将组织中的数据源集成到知识库中。这种方式称为_Enterprise mode_integration、因为它可以提供企业的知识。
 +
 --
-您组织的数据源可能包含个人身份信息(个人身份信息、个人身份信息)。为了保护此敏感信息的安全、您可以在创建和配置知识库时启用_data护栏_。由BlueXP  分类提供支持的数据防护栏可识别和屏蔽可识别身份信息、使其无法访问和检索。
+您组织的数据源可能包含个人身份信息 (PII)。为了保护这些敏感信息，您可以在创建和配置知识库时启用_数据护栏_。由NetApp数据分类提供支持的数据护栏可识别和屏蔽 PII，使其无法访问和恢复。
 
-link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解BlueXP分类"^](英文)
-
-
-NOTE: 适用于GenAI的BlueXP  工作负载工厂不会屏蔽敏感的个人信息(SPii)。有关此类数据的详细信息、请参见link:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-sensitive-personal-data["敏感个人数据的类型"^]。
+link:https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["了解NetApp数据分类"^] 。
 
 
-NOTE: 可以随时启用或禁用数据防护。如果您要切换数据防护、工作负载工厂会从头开始扫描整个知识库、这会产生成本。
+NOTE: NetApp Workload Factory for GenAI 不会屏蔽敏感的个人信息 (SPii)。参考link:https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html#types-of-sensitive-personal-data["敏感个人数据的类型"^]有关此类数据的更多信息。
+
+
+NOTE: 数据护栏可以随时启用或禁用。如果您切换数据护栏启用，Workload Factory 将从头开始扫描整个知识库，这会产生成本。
 
 --
 
@@ -42,44 +42,52 @@ NOTE: 可以随时启用或禁用数据防护。如果您要切换数据防护�
 知识库定义了一些特征、例如、要用来创建知识库的基础AI模型和嵌入格式。
 
 .步骤
-. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
+. 使用以下方式之一登录 Workload Factorylink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
 . 在AI Workloads (AI工作负载)磁贴中、选择*部署和管理*。
-. 从“知识库和连接器”选项卡中，选择*Create New*下拉列表，然后选择NetApp GenAI Knowledge base for based*。
-. 在Define Knowledge Base页面上、配置知识库设置：
+. 从知识库和连接器菜单中，选择*新建*下拉菜单并选择* NetApp GenAI 知识库 for Bedrock*。
+. 在创建NetApp GenAI 知识库页面上，配置知识库设置：
+
+
+[discrete]
+===== 知识库详细信息
+
+. *Name*：输入要用于知识库的名称。
+. *Description*：输入知识库的详细说明。
+. *Bedrock*：选择您的 AWS 账户可使用 Amazon Bedrock 的区域。
+
+
+[discrete]
+===== 摄入
+
+. *嵌入模型*：
 +
-.. *Name*：输入要用于知识库的名称。
-.. *Description*：输入知识库的详细说明。
-.. *嵌入模型*：嵌入模型定义了如何将数据转换为知识库的矢量嵌入。工作负载出厂支持以下型号：
-+
-*** T人 嵌入G1 -文本
-*** T人 嵌入文本v2
-*** 第1代多模态嵌入
-*** 嵌入英语
-*** 嵌入多语言
+** 选择一个嵌入模型用于知识库。嵌入模型定义如何将数据转换为知识库的向量嵌入。  Workload Factory 支持以下模型：
+** T人 嵌入G1 -文本
+** T人 嵌入文本v2
+** 第1代多模态嵌入
+** 嵌入英语
+** 嵌入多语言
 +
 请注意、您必须已启用Amazon Brock中的嵌入模型。
 
 +
 https://aws.amazon.com/bedrock/titan/["详细了解Amazon大力孙"^]
 
+** 如果适用，请选择与所选嵌入模型的配置相匹配的推理类型。
 
 
-.. *聊天模式*：从Amazon Brock中集成的各种聊天模式中进行选择。请注意、您必须已启用Amazon Brock中的聊天模式。
-.. *重新排名*：启用或禁用重新排名功能，此功能可以提高查询结果的相关性和质量。您可以选择标准聊天模型或专用的重新排名模型进行重新排名。只有您所在地区支持的重新排名模型选项才会显示。
-.. *数据防护*：选择是启用还是禁用数据防护。link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解由BlueXP  分类提供支持的数据防护"^](英文)
+. *数据护栏*：选择是否要启用或禁用数据护栏。link:https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["了解由NetApp数据分类提供支持的数据护栏"^] 。
 +
 要启用数据防护、必须满足以下前提条件。
 
 +
-*** 要与BlueXP  分类进行通信、需要使用服务帐户。要创建服务帐户、您必须在BlueXP  租户帐户上具有_Organization admin_角色。具有组织管理员角色的成员可以完成BlueXP  中的所有操作。link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#add-a-role-to-a-member["了解如何在BlueXP  中向成员添加角色"^]
-*** AI引擎必须能够访问link:https://api.bluexp.netapp.com["BlueXP  API端点"^]。
-*** 您需要执行中所述的以下操作link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html#quick-start["BlueXP分类文档"^]：
+** 需要服务帐户才能与NetApp数据分类进行通信。您必须在NetApp控制台租赁帐户上拥有“组织管理员”角色才能创建服务帐户。具有组织管理员角色的成员可以完成组织中的所有操作。link:https://docs.netapp.com/us-en/console-setup-admin/task-iam-manage-members-permissions.html#add-a-role-to-a-member["了解如何在NetApp控制台中为成员添加角色"^]
+** AI 引擎必须能够访问link:https://api.bluexp.netapp.com["NetApp控制台 API 端点"^]。
+** 您需要按照link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-cloud-compliance.html#quick-start["NetApp数据分类文档"^]：
 +
-.... 创建BlueXP Connector
-.... 确保您的环境满足前提条件
-.... 部署BlueXP分类
-
-
+... 创建控制台代理
+... 确保您的环境满足前提条件
+... 部署NetApp数据分类
 
 
 
@@ -88,13 +96,37 @@ https://aws.amazon.com/bedrock/titan/["详细了解Amazon大力孙"^]
 
 NOTE: 在导出CSV、JSON、JSONP或Parquet等结构化数据文件时、不支持数据防护功能。
 
+
+
+[discrete]
+===== 聊天和检索设置
+
+. *聊天模型*：
 +
-.. *对话开场白*：选择是否要提供最多四个对话开场提示、这些提示将显示给与使用此知识库的聊天机器人进行交互的用户。建议您启用此设置。
+** 从 Amazon Bedrock 中集成的各种聊天模型中进行选择。请注意，您必须已经启用来自 Amazon Bedrock 的聊天模型。
+** 如果适用，请选择与所选模型的配置相匹配的推理类型。
+
+
+. *聊天设置*：
++
+** 为聊天机器人选择一个温度来配置响应的随机性和创造性。较低的温度会导致更可预测的响应，而较高的温度会导致更加多样化的响应。
+** 选择最大响应长度来配置响应的详细程度。响应长度越长，使用的响应令牌就越多，并且会产生更高的成本。
+
+
+. *思考模式*：启用思考模式后，聊天机器人将花费更多时间来处理查询，并且结果通常会更准确。当您启用思考模式时，您可以控制在生成结果时使用多少个推理标记。使用更多的推理标记可以得到更准确的响应，但可能会产生更高的成本。
+. *重新排名*：启用或禁用重新排名，这可以提高查询结果的相关性和质量。选择标准聊天模型或专门的重新排名模型用于重新排名。仅当您所在地区可用时才会显示 Reranker 模型选项。选择与所选模型的配置相匹配的推理类型。
+. *对话开场白*：选择是否要提供最多四个对话开场提示、这些提示将显示给与使用此知识库的聊天机器人进行交互的用户。建议您启用此设置。
 +
 如果您激活了启动对话器、则默认情况下会选中"自动模式"。只有在将数据源添加到知识库后、才能启用"手动模式"。link:manage-knowledgebase.html["了解如何修改知识库设置"](英文)
 
-.. *FSx for ONTAP文件系统*：定义新的知识库时，工作负载工厂会创建一个新的Amazon FSx for NetApp ONTAP卷来存储它。选择现有文件系统名称以及要创建新卷的SVM (也称为Storage VM)。
-.. *Snapshot policy*：从工作负载出厂存储清单中定义的现有策略列表中选择一个Snapshot策略。系统将根据您选择的快照策略、以一定频率自动创建知识库的重复快照。
+
+
+[discrete]
+===== 存储定义
+
+. *FSx for ONTAP文件系统*：当您定义新的知识库时，Workload Factory 会创建一个新的Amazon FSx for NetApp ONTAP卷来存储它。选择将在其中创建新卷的现有文件系统名称和 SVM（也称为存储 VM）。
+. *快照策略*：从 Workload Factory 存储清单中定义的现有策略列表中选择一个快照策略。知识库的定期快照将根据您选择的快照策略以一定频率自动创建。
+. *S3 存储桶*：如果聊天机器人查询结果包含结构化数据，GenAI 可以将结果存储在 S3 存储桶中。要使用此功能，请启用*激活 S3 存储桶*设置并从列表中选择与您的帐户关联的 S3 存储桶。当这些结果存储在 S3 存储桶中时，您可以使用聊天会话中的下载链接下载它们。
 +
 如果不存在所需的快照策略、则可以 https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html["创建快照策略"]在包含此卷的Storage VM上执行此操作。
 
@@ -153,7 +185,7 @@ NOTE: 选择较高的重叠百分比会显著增加存储需求、但检索准�
 +
 *** 在*文件类型支持*部分，选择包括所有类型的文件，或选择要包含在数据源扫描中的单个文件类型。
 +
-如果您包含图像或PDF文件、BlueXP  Workload Factory for GenAI将解析图像中的文本(包括PDF文档中的图像)、这将导致成本增加。
+如果您包含图像或 PDF 文件， NetApp Workload Factory for GenAI 会解析图像中的文本（包括 PDF 文档中的图像），这会产生更高的成本。
 
 +
 如果包含图像中的文本数据、则在将扫描的文本数据从您的环境发送到AWS时、GenAI无法屏蔽图像中的个人身份信息(个人身份信息、(PI))。但是、一旦存储数据、所有的数据都会在GenAI数据库中屏蔽。
@@ -205,7 +237,7 @@ NOTE: 选择较高的重叠百分比会显著增加存储需求、但检索准�
 +
 *** 在*文件类型支持*部分，选择包括所有类型的文件，或选择要包含在数据源扫描中的单个文件类型。
 +
-如果您包含图像或PDF文件、BlueXP  Workload Factory for GenAI将解析图像中的文本(包括PDF文档中的图像)、这将导致成本增加。
+如果您包含图像或 PDF 文件， NetApp Workload Factory for GenAI 会解析图像中的文本（包括 PDF 文档中的图像），这会产生更高的成本。
 
 +
 如果包含图像中的文本数据、则在将扫描的文本数据从您的环境发送到AWS时、GenAI无法屏蔽图像中的个人身份信息(个人身份信息、(PI))。但是、一旦存储数据、所有的数据都会在GenAI数据库中屏蔽。
@@ -264,7 +296,7 @@ NOTE: 选择较高的重叠百分比会显著增加存储需求、但检索准�
 +
 *** 在*文件类型支持*部分，选择包括所有类型的文件，或选择要包含在数据源扫描中的单个文件类型。
 +
-如果您包含图像或PDF文件、BlueXP  Workload Factory for GenAI将解析图像中的文本(包括PDF文档中的图像)、这将导致成本增加。
+如果您包含图像或 PDF 文件， NetApp Workload Factory for GenAI 会解析图像中的文本（包括 PDF 文档中的图像），这会产生更高的成本。
 
 +
 如果包含图像中的文本数据、则在将扫描的文本数据从您的环境发送到AWS时、GenAI无法屏蔽图像中的个人身份信息(个人身份信息、(PI))。但是、一旦存储数据、所有的数据都会在GenAI数据库中屏蔽。

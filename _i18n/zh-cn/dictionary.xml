@@ -98,7 +98,6 @@
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">获取帮助</block>
   <block id="6a7b2c9c4cec65ad972b108fa0a1192b" category="section-title">获取FSx for ONTAP支持</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">适用于 ONTAP 的 Amazon FSX</block>
-  <block id="9d06990508d25d367d9158c6558eb9c8" category="paragraph"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
   <block id="35f9849ffdd809bda11d0fc56e1e3583" category="paragraph">要获得特定于Workload Factory及其存储解决方案和服务的技术支持、请使用下面所述的支持选项。</block>
   <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">使用自助支持选项</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">这些选项每周 7 天，每天 24 小时免费提供：</block>
@@ -111,7 +110,6 @@
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">除了上述自助支持选项之外、您还可以在激活支持后与NetApp支持专家合作解决任何问题。</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="paragraph-title">开始之前</block>
   <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">了解如何注册获取支持</block>
-  <block id="aadd86a3fadf19221852692c6e4adc2f" category="paragraph">选择此选项将打开BlueXP控制台一个新的浏览器选项卡并加载支持信息板。</block>
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">在*资源*页面上、在技术支持下选择一个可用选项：</block>
   <block id="6a1b74969231967ed071d465206b15c7" category="list-text">如果您想通过电话与某人通话，请选择*呼叫我们*。系统会将您定向到netapp.com上的一个页面、其中列出了您可以拨打的电话号码。</block>
   <block id="d65a2a6fc9caad1867728d4382eeb989" category="list-text">选择*创建案例*向NetApp支持专家开立TT：</block>
@@ -129,11 +127,9 @@
   <block id="0ff9b4b8684b9e03c9c1e1320935eae3" category="paragraph">要查看支持案例的历史记录，您可以选择*设置&gt;时间线*并查找名为“创建支持案例”的操作。最右侧的按钮可用于展开操作以查看详细信息。</block>
   <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">尝试创建案例时、您可能会遇到以下错误消息：</block>
   <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">"您无权针对选定服务创建案例"</block>
-  <block id="c7b7a5ae9f37fd7d24e4d641b9186fe9" category="paragraph">此错误可能意味着NSS帐户及其关联的记录公司与BlueXP帐户序列号(即960xxxx)或工作环境序列号。您可以使用以下选项之一寻求帮助：</block>
   <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">使用产品内聊天功能</block>
   <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">请通过提交非技术案例<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
   <block id="898e35e1a4bf4b025c3edec879439b08" category="section-title">管理支持案例(预览)</block>
-  <block id="8b74b053fbeeff5c3b6f4991cb1d028d" category="paragraph">您可以直接从BlueXP查看和管理活动的和已解决的支持案例。您可以管理与您的NSS帐户和公司关联的案例。</block>
   <block id="394ef093ad3259b9ff0fe7406f015b83" category="paragraph">案例管理以预览形式提供。我们计划改进此体验、并在即将发布的版本中添加增强功能。请通过产品内聊天向我们发送反馈。</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">请注意以下事项：</block>
   <block id="5e4e7672ec2ba2b8a763da7f6714e212" category="list-text">页面顶部的案例管理信息板提供了两个视图：</block>
@@ -143,8 +139,6 @@
   <block id="56dcadeee6b0e5c47a52673f9b5a0bb3" category="list-text">您可以添加或删除感兴趣的列、也可以筛选优先级和状态等列的内容。其他列仅提供排序功能。</block>
   <block id="6f936762e1223311f031685422fcd3a4" category="paragraph">有关更多详细信息、请查看以下步骤。</block>
   <block id="b14929795a61440e9b4ec9f8a4885ae3" category="list-text">在每个案例级别、我们可以更新案例备注或关闭尚未处于"已关闭"或"待关闭"状态的案例。</block>
-  <block id="0a4050ac39772e9281a9aba225254bf8" category="list-text">选择*案例管理*，如果出现提示，请将您的NSS帐户添加到BlueXP。</block>
-  <block id="d8ce1865cf1fe3cffd60300b4b86ad63" category="paragraph">"*案例管理*"页面显示了与您的BlueXP用户帐户关联的NSS帐户相关的已打开案例。此NSS帐户与* NSS管理*页面顶部显示的NSS帐户相同。</block>
   <block id="2ae5ae78bdb2d222f15fd8e89248709c" category="list-text">也可以修改表中显示的信息：</block>
   <block id="1d39d3ab518e1e3f16cbafb2a56e1fd9" category="list-text">在“*组织案例*”下，选择“*查看*”以查看与贵公司关联的所有案例。</block>
   <block id="059e856250b59be3069246887b74a23c" category="list-text">通过选择确切的日期范围或选择其他时间范围来修改日期范围。</block>
@@ -222,7 +216,6 @@
   <block id="508f3532a01bc6eac0fb489a7e397e06" category="doc">管理GenAI基础架构</block>
   <block id="7c351869b3b2a6468e0d357c2d121293" category="section-title">查看有关基础架构的信息</block>
   <block id="515a807c0436b8ab5c5bd03392131fbe" category="paragraph">您可以查看有关聊天机器人基础架构的信息。</block>
-  <block id="3263e773b336a912867ed1aeefc4176b" category="list-text">选择*基础架构*选项卡。</block>
   <block id="441f8ae1adcfebb474bcc1b899e82a24" category="list-text">查看有关基础架构的信息、其中包括有关以下组件的详细信息：</block>
   <block id="fcf0479502455d0702db3f277c9df646" category="list-text">AWS 设置</block>
   <block id="ae83c68afab83f983d4cf40bb5e9197e" category="list-text">AI引擎</block>
@@ -320,27 +313,18 @@
   <block id="7d57ea8255b8142e76fbb442ea9a782f" category="paragraph"><block ref="7d57ea8255b8142e76fbb442ea9a782f" category="inline-link-rx"></block></block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">注册以获得支持</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">支持注册概述</block>
-  <block id="d7e4bb081bf4ec4814d83edcfbdb8b96" category="paragraph">注册您的帐户ID支持订阅(您的20位960xxxxxxxxx序列号位于BlueXP的支持资源页面上)将作为您的单个支持订阅ID。必须注册每个BlueXP帐户级别的支持订阅。</block>
-  <block id="f9e05c2b383e3f11e3b4bebbe8952225" category="paragraph">通过注册、您可以创建支持服务单和自动生成案例等功能。要完成注册、请按如下所述将NetApp 支持站点(NSS)帐户添加到BlueXP中。</block>
   <block id="856edc4caec68fece6859c4be9360f3c" category="section-title">注册您的帐户以获得NetApp支持</block>
-  <block id="2d6573b6ae4c51dc24e58109473f2490" category="paragraph">要注册支持并激活支持授权、您帐户中的一个用户必须将NetApp支持站点帐户与其BlueXP登录名关联。如何注册NetApp支持取决于您是否已拥有NetApp 支持站点 (NSS)帐户。</block>
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">具有NSS帐户的现有客户</block>
-  <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">如果您是拥有NSS帐户的NetApp客户、则只需通过BlueXP注册支持即可。</block>
-  <block id="0307a12e5749f8dd930472ee78f69d2c" category="list-text">在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。</block>
   <block id="f19ab635e6d5f884a22ee4ce067fdbfd" category="list-text">选择*用户凭据*。</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">选择*添加NSS凭证*，然后按照NetApp 支持站点(NSS)鉴定提示进行操作。</block>
   <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">要确认注册过程是否成功，请选择帮助图标，然后选择*Support*。</block>
   <block id="8add4eb0d3f6ce61d374f3df3ee4eadf" category="paragraph">“资源”页面应显示您的帐户已注册支持。</block>
   <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">屏幕截图、显示帐户序列号、绿色复选框以及注册支持的文本。</block>
   <block id="fa7897454f637026faa3e00ccbfec239" category="paragraph"><block ref="fa7897454f637026faa3e00ccbfec239" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d9a01bdcfab6f0a10fc126999b4d5988" category="paragraph">请注意、其他BlueXP用户如果没有将NetApp 支持站点 帐户与其BlueXP登录关联、则不会看到此相同的支持注册状态。但是、这并不意味着您的BlueXP帐户未注册支持。只要帐户中有一个用户执行了这些步骤、您的帐户即已注册。</block>
   <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">现有客户、但无NSS帐户</block>
-  <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">如果您是现有许可证和序列号但拥有_no_ nss帐户的现有NetApp客户、则需要创建一个NSS帐户并将其与BlueXP登录关联。</block>
   <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">NetApp 支持站点 用户注册表</block>
   <block id="0c4a8b62da9473fbd5401273c4f85ee0" category="list-text">完成以创建NetApp支持站点帐户<block ref="041bcb6d9bdf91f7d6ac92ae3a196e12" category="inline-link-rx"></block></block>
   <block id="d61c9f72493817776f392db42ac446a2" category="list-text">请务必选择适当的用户级别、通常为* NetApp客户/最终用户*。</block>
-  <block id="5226d4ec1f4f81b740cbbd27635b441f" category="list-text">请务必复制上面用于序列号字段的BlueXP帐户序列号(960xxxx)。这样可以加快帐户处理速度。</block>
-  <block id="0499bba105f8a891a2c671f1ba99dd34" category="list-text">通过完成下的步骤，将新的NSS帐户与BlueXP登录相关联 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
   <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">NetApp的新品牌</block>
   <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">如果您是NetApp的新客户、并且没有NSS帐户、请按照以下每个步骤进行操作。</block>
   <block id="f5d7029ed18f998c0a9d780b2554e538" category="list-text">从支持资源页面中找到您的帐户ID序列号。</block>
@@ -356,7 +340,6 @@
   <block id="201080500e946070a2e4873042507c77" category="paragraph">确认将向NetApp提交您的请求、并建议您创建NetApp 支持站点 帐户。</block>
   <block id="cc8b0535948da368f832027c19b7f853" category="list-text">请务必复制上面用于序列号字段的帐户序列号(960xxxx)。这样可以加快帐户处理速度。</block>
   <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">在此过程中、NetApp应与您联系。这是针对新用户的一次性入职练习。</block>
-  <block id="5cdee814e2d9ba3490a8f16d00c65759" category="paragraph">拥有NetApp支持站点帐户后，请完成下的步骤，将该帐户与BlueXP登录相关联 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
   <block id="d6c0fba55227980986b6e274e44b6e4e" category="summary">创建知识库后、您将能够使用聊天机器人模拟器在本地对其进行测试、并进行任何必要的更改、然后再通过聊天机器人应用程序向用户提供知识库。</block>
   <block id="a83574dd6db90afd60d3d6c11674872b" category="doc">测试知识库</block>
   <block id="7690c373e8d8bb7bb7781f53763e1ddd" category="paragraph">您可以对知识库进行测试、以确保其按预期运行、并且可以自定义默认情况下希望此知识库的聊天机器人用户可以使用的对话开场白。聊天机器人模拟器对知识库中嵌入的所有数据源运行。</block>
@@ -397,8 +380,6 @@
   <block id="da1fd32e4f4851fbf4922d1c55e8fcc0" category="list-text">从"Knowledge Bases"清单页面中、选择要激活身份验证的知识库。</block>
   <block id="d71d72ee7bc5c79bade09f02715592c3" category="paragraph">知识库身份验证现在处于活动状态、您可以使用API端点与知识库进行交互、并将知识库与聊天机器人应用程序集成。</block>
   <block id="c83d7c23906c063b64dd22d30483cb24" category="list-text">Amazon Brock配置为使用带有前缀的日志组将日志发送到Amazon CloudWatch日志<block ref="26245dda4fa653114e9a41956171489d" prefix=" " category="inline-code"></block>。</block>
-  <block id="6fbe5ae14d71eb3abafcfce8f7fe977a" category="inline-link">BlueXP帐户ID</block>
-  <block id="af270465b477b731bafe1e4859956cc4" category="list-text">GenAI引擎配置为使用名为的日志组将日志发送到Amazon CloudWatch Logs、<block ref="267ed14c989ee7da1da6b5683a1ba205" prefix=" " category="inline-code"></block>其中是当前用户的。<block ref="44014fe9a7dd0d34b59279b9206b84b3" prefix=" " category="inline-code"></block><block ref="bffdd6286177ca86f99ccefe410268a2" category="inline-link-rx"></block></block>
   <block id="691e71734464aaf43017f5b033e54559" category="section-title">2024 年 8 月 4 日</block>
   <block id="ec7827c2237ae7b863c9ba93b519cbc1" category="section-title">Amazon CloudWatch Logs集成</block>
   <block id="64c1dd8cb5f86710c3293cc9807760fb" category="paragraph">生成型AI工作负载现已与Amazon CloudWatch Logs集成、使您能够监控生成型AI工作负载日志文件。</block>
@@ -434,7 +415,6 @@
   <block id="a0a464c97ca1835adf3bddc803b001cd" category="paragraph">生成型AI工作负载现在支持对数据源执行多句分块和基于重叠的分块。</block>
   <block id="4cb92325ae7034576f6dff7fe48e3254" category="section-title">为每个知识库提供专用卷</block>
   <block id="a023a8333417a130bf6fb2c729aaa7f1" category="paragraph">现在、生成性AI工作负载会为每个新知识库创建一个专用的Amazon FSx for NetApp ONTAP卷、从而为每个知识库启用单独的快照策略、并提高对故障和数据中毒的防护能力。</block>
-  <block id="a97438cf1c94fe51248083c86ce591c5" category="list-text">在Define Knowledge Base页面上、配置知识库设置：</block>
   <block id="b651dafbe972dff3ef00c60a522c2c08" category="paragraph">如果您激活了启动对话器、则默认情况下会选中"自动模式"。只有在将数据源添加到知识库后、才能启用"手动模式"。<block ref="787b3d64d417e723feebaf5fa5dbfeee" category="inline-link-macro-rx"></block>(英文)</block>
   <block id="ced63c567878ed01730fce043c8ade96" category="inline-link">创建快照策略</block>
   <block id="ad36efe6c620944e32785812d09accd6" category="paragraph">如果不存在所需的快照策略、则可以<block ref="7546e5b5141e2979fa53ccc7106931ca" category="inline-link-rx"></block>在包含此卷的Storage VM上执行此操作。</block>
@@ -506,57 +486,14 @@
   <block id="44736bad98446163ecd5077653cbd105" category="paragraph">数据源每天自动与相关知识库同步一次、以便任何数据源更改都反映在聊天机器人中。如果您对任何数据源进行了更改、并且希望立即同步数据、则可以执行按需同步。</block>
   <block id="4936442e55cb8f837f9616ca6aaf1e92" category="doc">为知识库卷提供快照和还原支持</block>
   <block id="17e908b1a02b6ec45f4e125877322d0f" category="doc">使用数据防护屏蔽个人身份信息</block>
-  <block id="0f21cd7bd10e747bca7894a609acc04b" category="paragraph">生成型AI工作负载引入了由BlueXP  分类提供支持的数据防护功能。数据防护功能可识别和屏蔽个人身份信息(Personal可识别信息、Personal可识别信息、Personal可识别信息)、帮助您保持合规性并增强敏感组织数据的安全性。</block>
-  <block id="a686d5fa6b6925450f1b7fa2b4245d28" category="inline-link-macro">了解BlueXP分类</block>
-  <block id="384713a8a1d5a2dd365da2851c50ad93" category="paragraph"><block ref="384713a8a1d5a2dd365da2851c50ad93" category="inline-link-macro-rx"></block></block>
   <block id="ee538d8e0203b8c3e9bdb95ebee1162c" category="paragraph">知识库有两种数据集成方式-_public mode/和_Enterprise mode/。</block>
   <block id="3b3458714be1e5c3f76dd200e4227588" category="list-text">公共模式</block>
   <block id="ab6bcff4b8fb91fe0c83c8ef83da1c6e" category="list-text">企业模式</block>
-  <block id="2abf45f9ff5a74918b97267cd4e59d6a" category="paragraph"><block ref="384713a8a1d5a2dd365da2851c50ad93" category="inline-link-macro-rx"></block>(英文)</block>
-  <block id="1be907baab24daef236be08a55d381ce" category="inline-link-macro">了解由BlueXP  分类提供支持的数据防护</block>
-  <block id="239980b6c377cd208cd4875dd11871a7" category="list-text">*数据防护*：选择是启用还是禁用数据防护。<block ref="705e589dc60832aba1b9593eb1d26a9a" category="inline-link-macro-rx"></block>(英文)</block>
-  <block id="069e9a4c876c108cc9f27ee13170ed16" category="inline-link-macro">了解如何在BlueXP  中向成员添加角色</block>
-  <block id="f271e30d6a375057fa3075f037ab44e5" category="list-text">要与BlueXP  分类进行通信、需要使用服务帐户。要创建服务帐户、您必须在BlueXP  租户帐户上具有_Organization admin_角色。具有组织管理员角色的成员可以完成BlueXP  中的所有操作。<block ref="9ba9a2df720ef49e9efc4ba4af6ca608" category="inline-link-macro-rx"></block></block>
-  <block id="44b34442167c9611792529867ee76d90" category="inline-link-macro">BlueXP分类文档</block>
-  <block id="bc2f4df95fcf66983b127abe7caa7a0a" category="list-text">您需要执行中所述的以下操作<block ref="0e478e925fb96541eb2f7d657ca01cb8" category="inline-link-macro-rx"></block>：</block>
-  <block id="a5085066220b6bc77291e8a3ba481c5a" category="list-text">创建BlueXP Connector</block>
   <block id="3e3c8a56035df76e06772f4505dc58c7" category="list-text">确保您的环境满足前提条件</block>
-  <block id="0ce4d42838344488f607ff306088fae9" category="list-text">部署BlueXP分类</block>
   <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024年11月3日</block>
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="list-text">适用于 NetApp ONTAP 的 Amazon FSX</block>
   <block id="4b88d56bd65ef92611ac63064c38369f" category="list-text">Amazon CloudWatch</block>
-  <block id="1ee7c829860de53ba4857ad78b7aadef" category="doc">适用于GenAI的工作负载工厂初始版本</block>
-  <block id="082d99c5d452c4b44edd8ec50926da9a" category="paragraph">通过NetApp Workload Factory GenAI示例应用程序、您可以在基于Web的聊天机器人应用程序中直接与发布的NetApp Workload Factory知识库进行交互、从而测试身份验证和从该知识库中检索的结果。</block>
   <block id="dcafe9cce796ce855e87b270f0a5af59" category="inline-link-macro">控制台体验</block>
-  <block id="eb788a90862825cc147ed3f85612a8cc" category="list-text">使用其中一个登录到工作负载工厂<block ref="68ceec76279c6913cdee16884c2d813a" category="inline-link-macro-rx"></block>。</block>
-  <block id="70cb57a8d5d75d8762d6b082d319dec7" category="inline-link">工作负载出厂概述</block>
-  <block id="41dde101808f5228034390c3766fcad7" category="paragraph">有关工作负载工厂的详细信息，请参见<block ref="5b162ed7e5df7e2d72a6505743e2b555" category="inline-link-rx"></block>。</block>
-  <block id="eb2d717e4f7003bece96a54d9bfcab8c" category="paragraph">使用工作负载工厂的GenAI功能无需任何成本。</block>
-  <block id="fe25da415465509a9a69d606dab870c0" category="paragraph">使用工作负载工厂的AI功能无需NetApp提供特殊许可证。</block>
-  <block id="f6a347d6bbcc84735a944fdcd256092f" category="summary">在您部署了AI基础架构并从FSx for ONTAP数据存储库中确定了要集成到知识库中的数据源之后、您便可以使用工作负载工厂构建知识库了。在此步骤中、您还将定义AI特征并创建对话开场白。</block>
-  <block id="fa4638b85786436e91a0ed014ba9da00" category="paragraph">在您部署了AI基础架构并从FSx for ONTAP数据存储库中确定了要集成到知识库中的数据源之后、您便可以使用工作负载工厂构建知识库了。在此步骤中、您还将定义AI特征并创建对话开场白。</block>
-  <block id="aa4c92c8522aa5136d6fa172d6893485" category="list-text">*嵌入模型*：嵌入模型定义了如何将数据转换为知识库的矢量嵌入。工作负载出厂支持以下型号：</block>
-  <block id="525553d3b883b9c41607e7357ee094ad" category="list-text">*FSx for ONTAP文件系统*：定义新的知识库时，工作负载工厂会创建一个新的Amazon FSx for NetApp ONTAP卷来存储它。选择现有文件系统名称以及要创建新卷的SVM (也称为Storage VM)。</block>
-  <block id="e44ba744b83f512e7b5959cb21fc6b7f" category="list-text">*Snapshot policy*：从工作负载出厂存储清单中定义的现有策略列表中选择一个Snapshot策略。系统将根据您选择的快照策略、以一定频率自动创建知识库的重复快照。</block>
-  <block id="705eb4c2111768712c707614edb7516b" category="paragraph">工作负载工厂开始部署聊天机器人基础架构。此过程可能需要长达10分钟。</block>
-  <block id="5962cbafe4a82be941ee73f4b77fcb7c" category="summary">您可以安装并运行示例聊天机器人应用程序来测试您的知识库、并了解如何使用工作负载工厂API创建您自己的生成型AI应用程序。</block>
-  <block id="643a5a7772f51784a29b88cfdcf6b092" category="paragraph">在配置、激活和发布知识库之后、外部应用程序开发人员可以配置和运行NetApp提供的开源示例聊天机器人应用程序、以便与您的知识库进行交互、并了解如何使用工作负载工厂API创建自己的生成型AI应用程序。</block>
-  <block id="9a2d31075859ef5fbc409c301f367bc9" category="inline-link">编写出厂API文档</block>
-  <block id="9a4b097906b50bfdbef4c168dad3349b" category="paragraph"><block ref="9a4b097906b50bfdbef4c168dad3349b" category="inline-link-rx"></block></block>
-  <block id="557f283cc11851a5c05db183af9af3c5" category="summary">在部署GenAI基础架构时、工作负载工厂会为GenAI引擎创建一个EC2实例。它还会为此实例创建IAM角色、安全组和专用端点。您可能希望了解有关工作负载工厂在AWS环境中创建的这些组件的更多详细信息。</block>
-  <block id="ef369cb7624d410c7ba52a28543206d0" category="list-text">如果目标VPC尚不具有专用端点、则工作负载工厂将为GenAI引擎EC2实例创建专用端点、以便它可以与以下AWS服务进行通信：</block>
-  <block id="894106a56db6962222de989043e29e02" category="summary">NetApp可通过多种方式为工作负载工厂提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。</block>
-  <block id="e703cd6c7dd517a92f3648a2a1305e15" category="list-text">从工作负载出厂导航菜单中、选择*AI*。</block>
-  <block id="02c24f1607a88a7b66de312463a92ee0" category="paragraph">如果您不再需要为一个或多个聊天机器人部署的聊天机器人基础架构、可以将其从工作负载工厂中删除。</block>
-  <block id="62daa906a9333be93a5e975044f666a1" category="paragraph">chatbot基础架构组件已从工作负载出厂时删除。</block>
-  <block id="86dbd1b84518abb5c7347546b8844b7e" category="paragraph">如果您不再需要知识库、可以将其删除。删除知识库后、该知识库将从工作负载出厂时被删除、包含该知识库的卷也将被删除。正在使用知识库的任何应用程序或聊天机器人将停止工作。删除知识库是不可逆的。</block>
-  <block id="22f6a017871820df71fb38c6218efc2f" category="paragraph">知识库将从工作负载出厂时删除、其关联卷也将被删除。</block>
-  <block id="ba858f055e02600e40851bb1fac4f97f" category="paragraph">通过发布知识库、您可以在聊天应用程序中使用它。发布操作会触发工作负载工厂API来生成和发布唯一端点。发布后、可以访问聊天应用程序的知识库、API端点已准备好进行集成。</block>
-  <block id="621cd8cc7cde6376c8933ec4142532b7" category="paragraph">工作负载工厂发布知识库。在知识库的详细信息页面上、状态将从*未发布*更改为*已发布。*</block>
-  <block id="836f67391daf57190bd0d7acca174b88" category="paragraph">此时将显示有关如何使用工作负载出厂API访问知识库的详细信息。</block>
-  <block id="2fd605c5fdf1d57ba01b68838e68dc27" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>登录到工作负载工厂</block>
-  <block id="d9eebdefd5feceb309eadc305ce81e6f" category="inline-link">在Workload Factory中设置一个帐户</block>
-  <block id="113933a0a6b3eb57d22f707e6384bd49" category="paragraph">您需要<block ref="5eb9de2715b74ed434f03d8a9fef9b70" category="inline-link-rx"></block>使用其中一个登录<block ref="17b71e2884d56fdbadfe752689dbd4d6" category="inline-link-rx"></block>。</block>
   <block id="7c42a251218f29f59dd7dbf0987115c8" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>设置您的环境以满足GenAI要求</block>
   <block id="fca2fd00582f9c7c4a5a7f66db5c76d7" category="inline-link-macro">详细了解GenAI要求</block>
   <block id="13a3df270bbff43d6e9a3cda00e93bf6" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block>确定包含数据源的FSx for ONTAP文件系统</block>
@@ -564,32 +501,13 @@
   <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">四个</block>
   <block id="20ec4ab4fcf35b65157df141218adeb4" category="inline-link-macro">了解如何部署知识库基础架构</block>
   <block id="821dd0baa6265d27edc6fde0f7f8a2a7" category="paragraph"><block ref="cf103609479325827138f1030380ee71" category="inline-link-macro-rx"></block>(英文)</block>
-  <block id="7da236f1583acd597958e11defdd0aed" category="summary">在构建知识库之前、请确保已正确设置工作负载工厂和AWS。其中包括拥有AWS登录凭据、部署了一个FSx for ONTAP文件系统(其中包含您要集成到知识库中的数据源)、访问Amazon B基石AI服务等。</block>
-  <block id="7881e5952d93ca1a1396ec11c08fa645" category="list-text">工作负载出厂登录和帐户</block>
-  <block id="5145374f219e1c177ab5588a5344aa6e" category="inline-link">了解如何将AWS凭据添加到工作负载工厂</block>
-  <block id="ced1a4827b1ea3c1da0273c3d73fdd46" category="paragraph"><block ref="ced1a4827b1ea3c1da0273c3d73fdd46" category="inline-link-rx"></block></block>
-  <block id="056634bec4a153903ebb9b769277f4d7" category="summary">要向NetApp技术支持创建支持案例、您需要先将NetApp支持站点帐户添加到工作负载工厂、然后注册支持。</block>
-  <block id="3616889860b75d784463bb497e34e82f" category="paragraph">在应用程序中为用户部署知识库之前、您将在工作负载工厂内执行大部分测试。如果您需要更改数据源或聊天机器人操作、您可以在发布知识库之前立即进行更改。</block>
-  <block id="1862818cbcef0536011835283968bd91" category="summary">了解工作负载工厂AI工作负载功能的新增功能。</block>
-  <block id="34734891f639d2ae1ecbbaab22157fe2" category="paragraph">了解工作负载工厂生成型AI工作负载功能的新增功能。</block>
-  <block id="81ff996ef963d9805259d4a6c9bafac8" category="inline-link">Workload Factory for Amazon FSx for NetApp ONTAP文档</block>
-  <block id="07e2e5eecff8fe1dbb4712055f0055f1" category="paragraph">有关管理FSx for ONTAP文件系统的信息、请转到<block ref="3845b9852e43f2af9ae621ea5bb328c1" category="inline-link-rx"></block> 以查看可使用的备份和保护功能。</block>
-  <block id="2b6b3d10fe7ba8590618a95b1cc96a1a" category="sidebar">BlueXP  工作负载工厂提供GenAI文档</block>
   <block id="f8a21101d47aa852f29a4be35904736e" category="doc">从快照克隆一个信息库克隆</block>
-  <block id="c711d2f72cc16ad2c0919ebe70292834" category="paragraph">适用于GenAI的BlueXP  工作负载工厂现在支持从快照克隆知识库。这样可以快速恢复知识库、使用现有数据源创建新的知识库、并有助于数据恢复和开发。</block>
   <block id="53ea9e78bbaa3e1c3ead030a954216c8" category="inline-link-macro">克隆知识库</block>
   <block id="aadb8a2a44b75c1333f5a52c2ceb1516" category="section-title">内部ONTAP集群发现和复制</block>
-  <block id="490a30e9496a9d55f2cfdb934812658b" category="paragraph">发现内部ONTAP集群数据并将其复制到FSx for ONTAP文件系统、以便用于丰富AI知识库。所有内部发现和复制工作流均可从存储清单中新的*内部ONTAP *选项卡访问。</block>
   <block id="c6f905e067bdaa7ba33a58a907e59477" category="inline-link-macro">发现内部 ONTAP 集群</block>
   <block id="b169507cd10826b5a52f573e2f75ad2c" category="paragraph"><block ref="b169507cd10826b5a52f573e2f75ad2c" category="inline-link-macro-rx"></block></block>
-  <block id="b83113ab8d9d4c69dfb32e9034617513" category="summary">通过适用于GenAI的BlueXP  工作负载工厂、您可以将适用于NetApp ONTAP文件系统的Amazon FSx与GenAI基础模型相集成。这为您提供了高性能存储、并为您的AI数据集提供了一套丰富的保护、安全性和成本优化功能。</block>
-  <block id="77c129bd3271a24d7bdf27f4904c52f4" category="doc">了解适用于GenAI的BlueXP  工作负载工厂</block>
-  <block id="766c4de0717e832db67cb7e35ee5df4b" category="section-title">什么是适用于GenAI的BlueXP  工作负载工厂？</block>
-  <block id="daadd89cd1fba3fd8665e4d598faa29e" category="section-title">适用于GenAI的BlueXP  工作负载工厂如何帮助构建生成型AI应用程序</block>
   <block id="6849617ada590bcd67ec5c42f527dbca" category="paragraph">您需要输入AWS凭据并选择FSx for ONTAP文件系统、以部署检索增强型生成(RAG)基础架构。</block>
   <block id="29c02ba7cbd3c64fafa4c7eab2de837a" category="admonition">如果部署失败并显示凭据错误、您可以通过选择错误消息中的超链接来获取更多错误详细信息。您可以查看缺少或阻止的权限列表、以及GenAI工作负载部署GenAI基础架构所需的权限列表。</block>
-  <block id="428b0b39be2352757edeb5f9f12a7bdd" category="inline-link">BlueXP  工作负载工厂</block>
-  <block id="7cf449620aa459bc5c449db69b07e507" category="paragraph"><block ref="7cf449620aa459bc5c449db69b07e507" category="inline-link-rx"></block></block>
   <block id="3797e84a3c9da31524b0e5a526fb59cb" category="paragraph">您可以从知识库快照创建新的知识库。如果原始知识库已损坏或丢失、则此功能非常有用。</block>
   <block id="e83bec71ebafaf78ee9064dcfcc19f67" category="list-text">选择*操作*菜单，然后选择*快照&gt;克隆知识库*。</block>
   <block id="8b6829f6ee0ef3bfbe0ab0540f326557" category="paragraph">此时将显示克隆对话框。</block>
@@ -599,9 +517,6 @@
   <block id="86de75270b79ca51ee2b62cc69460393" category="list-text">输入新知识库的名称。</block>
   <block id="0ddebe34caa600a9062280228e099952" category="list-text">为新知识库选择文件系统SVM和卷名称。</block>
   <block id="9de0e2b17d7e1e2da6c0ce7e9dc6e377" category="list-text">选择 * 克隆 * 。</block>
-  <block id="f895e26ca8de37d350a247e7eae1987c" category="paragraph">在开始使用适用于GenAI的BlueXP  工作负载工厂之前、您必须先设置Amazon Brock。您的GenAI部署必须位于启用了Amazon Brock的AWS地区。</block>
-  <block id="96f6c1844fa04dad54f5ced764d5d751" category="cell">在部署过程中、适用于GenAI的BlueXP  工作负载工厂需要创建一个新卷、但使用您指定的名称的卷已存在。</block>
-  <block id="efc3cdef33c078d242eaa096c1a9da3d" category="cell">由于适用于GenAI的BlueXP  工作负载工厂无法挂载此卷、部署失败。</block>
   <block id="407b33bc44b7fc7c0c4648bcaeff2a44" category="paragraph">打开以下入站端口：</block>
   <block id="888a77f5ac0748b6c8001822417df8b6" category="cell">协议</block>
   <block id="60aaf44d4b562252c04db7f98497e9aa" category="cell">端口</block>
@@ -647,48 +562,28 @@
   <block id="ec29b09319bcf28d103f2dda2dae3590" category="cell">NFS Rquotad 协议</block>
   <block id="edd9b7b1aa59153309a4116720911246" category="cell">AI引擎启动失败，您在*Knowledge Bases*页面上看到错误"AI引擎实例错误"。</block>
   <block id="b7542ca3c48aa928fdf94d78371dd834" category="cell">AI引擎实例已损坏或不存在。</block>
-  <block id="849293736c770408f68a35f4fcdf9592" category="cell">选择*重建*按钮。适用于GenAI的BlueXP  工作负载工厂会重建基础架构并显示重建进度。完成后、您的知识库将重新连接到重建的基础架构、并显示知识库列表。</block>
-  <block id="d1955ee5035af265f471c1debd693717" category="cell">BlueXP  工作负载工厂使用的后端Docker实例无法启动GenAI。</block>
   <block id="6ad17d07338dffda7982d8efdad3a276" category="section-title">2024年12月1日</block>
   <block id="e8293cb4f1909d8329e31cefdfb4dba4" category="doc">为GenAI知识库激活外部身份验证</block>
   <block id="b05735c6e4c6d503ad9f93af6e740fa9" category="doc">创建基于RAG的GenAI应用程序</block>
   <block id="16cb0b733a26e9afa11f388e6d83aec1" category="doc">创建GenAI知识库</block>
   <block id="e63e0ed616c63ed724e592b04e608826" category="doc">使用GenAI外部示例聊天机器人应用程序</block>
-  <block id="52f26f0fff3bae61240c4b3a43f3624d" category="doc">获取有关适用于GenAI的BlueXP  工作负载工厂的帮助</block>
-  <block id="fe1e8231ce0909884a561100cafd30a8" category="doc">BlueXP  工作负载工厂提供GenAI法律声明</block>
   <block id="dd3ed9192bf4d0d55741ed48bf8a6695" category="doc">管理GenAI数据源</block>
   <block id="10f8936c8a58bcff3825995f8d31ea40" category="doc">管理GenAI知识库</block>
   <block id="335c0c9583885e1f231604b7fa10819a" category="doc">发布GenAI知识库并查看唯一端点</block>
-  <block id="97641902b7a17c72d34451f4f1417531" category="doc">注册获取BlueXP  Workload Factory for GenAI支持</block>
   <block id="d9965afe654edc6d99fd1a5080f10f27" category="doc">测试GenAI知识库</block>
   <block id="69065fcb8a054a77edd3d2da74b89c6e" category="doc">GenAI故障排除</block>
-  <block id="1e7bcc0dba826f450b3684e2a2c6f04e" category="doc">BlueXP  Workload Factory for GenAI的新增功能</block>
   <block id="988a487756dcb4e1605a4e07dc7dbd42" category="doc">您接下来可以使用GenAI做什么</block>
   <block id="a117d99fd0597e840921767ec50fe791" category="doc">自定义快照名称</block>
   <block id="34df51ccce053f8aef051fe069f6004a" category="paragraph">现在、您可以为临时快照提供快照名称。</block>
   <block id="63713d130d6ced83e06b8a2f84ca4236" category="section-title">自定义AI引擎实例名称</block>
   <block id="5a22f1756638135653917db715aeec43" category="paragraph">现在、您可以在部署期间为AI引擎实例提供一个自定义名称。</block>
   <block id="cc78f676d3193b6273b428bb17c26dd7" category="section-title">重建损坏或缺失的GenAI基础架构</block>
-  <block id="1691fa3a19bfaa3082dd2f6e01934960" category="paragraph">如果您的AI引擎实例损坏或被以某种方式删除、您可以让工作负载在出厂时重建它。在完成重建后、工作负载工厂会自动将您的知识库重新连接到基础架构、以便可以随时使用。</block>
   <block id="22d9005388d9e535daefed3f2e693f8c" category="inline-link-macro">敏感个人数据的类型</block>
-  <block id="9c5f697c48859cff8ee185f1b8ac3722" category="admonition">适用于GenAI的BlueXP  工作负载工厂不会屏蔽敏感的个人信息(SPii)。有关此类数据的详细信息、请参见<block ref="0cdb750dab1dfb2fce5dd1cc6f558f0e" category="inline-link-macro-rx"></block>。</block>
-  <block id="634af6b3fd334eee66435e4f2e04ce47" category="admonition">可以随时启用或禁用数据防护。如果您要切换数据防护、工作负载工厂会从头开始扫描整个知识库、这会产生成本。</block>
-  <block id="a7bb1a72ba5daec3d8a1d19df6b6bfdf" category="list-text">*标记*：输入要应用于此部署中的所有AWS资源的任何标记键/值对。这些标记可在AWS管理控制台和工作负载工厂内的基础架构信息区域中查看、并可帮助您跟踪工作负载工厂资源。</block>
   <block id="9792e49b2f9fed0238e75a434a13725e" category="list-text">完成*连接*部分：</block>
   <block id="dcb1e9c4a6d6ef362f734666c01d318f" category="list-text">完成*AI引擎*部分：</block>
-  <block id="da34ad28948952faf2270d1bcce9b360" category="list-text">*实例名称*：(可选)选择*定义实例名称*并为AI引擎实例输入自定义名称。实例名称显示在工作负载工厂的AWS管理控制台和基础架构信息区域中、可帮助您跟踪工作负载工厂资源。</block>
-  <block id="b6a4501cc05e54e2e5a513c3b552183a" category="paragraph">NetApp以多种方式为BlueXP  工作负载工厂及其云服务提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。</block>
-  <block id="261966eaf033c38f6934f2c8fc36d79c" category="paragraph">有关FSx for ONTAP、其基础架构或任何使用该服务的解决方案的技术支持、请参阅该产品的工作负载工厂文档中的"获得帮助"。</block>
-  <block id="5b49df4e58e2a4750acd8bfa8687ccd6" category="paragraph">您当前正在查看的工作负载工厂文档。</block>
-  <block id="ba51332e265e54eb4295d6e7d057bad8" category="paragraph">搜索工作负载工厂知识库、查找有助于解决问题的文章。</block>
-  <block id="fc3e8f3c2017c33d444d483913a485ba" category="paragraph">加入工作负载工厂社区、关注正在进行的讨论或创建新的讨论。</block>
-  <block id="ffa18fada5deeeb1e533786297855e7d" category="paragraph">要使用*创建案例*功能，您必须先注册支持。请将您的NetApp支持站点凭据与您的工作负载出厂登录名关联起来。<block ref="d9fea24984986beabae03291c4b721de" category="inline-link-macro-rx"></block>(英文)</block>
-  <block id="e13a5649dfef3a1c76c4be8e463226d7" category="list-text">在工作负载工厂控制台的右上角，选择*Help &gt; Support*。</block>
   <block id="e6a72011ca1d5b86a45e139dca7d8c59" category="list-text">(可选)选择*Define Snapshot name*并为快照输入自定义名称。</block>
   <block id="2fd69cb6fb890f515a9ee75ec3abef3e" category="paragraph">定义自定义名称可以帮助您更好地确定快照的内容、以便将来需要还原快照。</block>
   <block id="bf18811faac9b8e4fcaebab51afd1113" category="list-text">选择 * 创建 * 。</block>
-  <block id="ce638fcfafd4d79a49524062225d7fbc" category="paragraph">要获得特定于BlueXP  工作负载工厂及其存储解决方案和服务的技术支持、需要注册支持。您必须从BlueXP  控制台注册获取支持、该控制台是工作负载出厂时单独的基于Web的控制台。</block>
-  <block id="2cbcc262b0a39ec19c5f69bffccb70fb" category="paragraph">注册获取支持不会为云提供商文件服务启用NetApp支持。有关与云提供商文件服务、其基础架构或任何使用该服务的解决方案相关的技术支持、请参阅该产品的工作负载工厂文档中的"获得帮助"。</block>
   <block id="414ff5fbb1dedd0a94eaf89dd63e0d56" category="cell">AI引擎启动失败，您在*Knowledge Bases*页面上看到错误"The GenAI Engine Instance is Stop"(GenAI引擎实例已停止)。</block>
   <block id="350597e8589fb52f516cea4c281e8b5c" category="cell">AI引擎实例未运行。</block>
   <block id="00ab0abb4e492e5b332d431d1fc71f64" category="cell">使用AWS管理控制台或AWS命令行界面启动AI引擎实例。</block>
@@ -702,7 +597,6 @@
   <block id="556d69e48e56f7282433b4470f9fc985" category="list-text">*定义数据源*：在*Chunking string*部分中，定义在数据源与知识库集成时，GenAI引擎如何将数据源内容拆分成块。您可以选择以下策略之一：</block>
   <block id="441ffcb2a5deb53b096bf6da09532c3c" category="list-text">*文件过滤*：配置扫描中包含的文件：</block>
   <block id="fbf5c3d1e175475dce2b6f27f23e342c" category="list-text">在*文件类型支持*部分，选择包括所有类型的文件，或选择要包含在数据源扫描中的单个文件类型。</block>
-  <block id="9c91ae043d4f1fed127449b7d9f56f1a" category="paragraph">如果您包含图像或PDF文件、BlueXP  Workload Factory for GenAI将解析图像中的文本(包括PDF文档中的图像)、这将导致成本增加。</block>
   <block id="cdc5210ee55660ad12576b6b12e53505" category="paragraph">如果包含图像中的文本数据、则在将扫描的文本数据从您的环境发送到AWS时、GenAI无法屏蔽图像中的个人身份信息(个人身份信息、(PI))。但是、一旦存储数据、所有的数据都会在GenAI数据库中屏蔽。</block>
   <block id="527140faa5b9a355e269287e721ad95b" category="admonition">您选择将图像文件包括在扫描中与知识库聊天模式相关。如果扫描中包含图像文件、则聊天模式必须支持图像。如果在此处选择了图像文件类型、则无法将知识库切换到不支持图像文件的聊天模式。</block>
   <block id="2af4913e8e59a092d414744be9ae44d2" category="list-text">在*文件修改时间过滤器*部分，选择根据修改时间启用或禁用包含文件。如果启用了修改时间筛选、请从列表中选择一个日期范围。</block>
@@ -755,12 +649,8 @@
   <block id="2041784b912a2b2e72827a5e9c656f5f" category="cell">镶木地板</block>
   <block id="f1776184cd873aef06fc869138b3b776" category="admonition">您可以调整聊天机器人模拟器窗口的大小并重新命名、还可以将问题和回答复制到剪贴板。</block>
   <block id="e27f142520976de0e091895abd1a2b45" category="list-text">您可以通过展开响应下的*sources *列表来查看用于生成答案的源。此选项将提供用于生成答案的文件列表。通过将鼠标悬停在文件名上、您可以查看每个文件和卷路径中使用的数据块并将其复制到每个文件。</block>
-  <block id="8e08c9e7067a8bc5d8828ba0b5a8a5b2" category="list-text">如果响应中包含表、则可以对每列中的数据进行排序、并将每个表复制到剪贴板。</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">博客和社区</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 社区</block>
-  <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXP博客</block>
-  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">云网络研讨会</block>
-  <block id="8accc316c27ade20e4acbe4aa6c6742b" category="sidebar">利用数据释放GenAI的潜能</block>
   <block id="f3a4976ab2464242211263cea7e247f9" category="paragraph">此版本的GenAI引入了在从数据源中精妙设计文件时对JSON和JSONP文件格式的支持<block ref="cc8f0c0e5a5cef9b33f236a0a9c19ca0" prefix=" " category="inline-code"></block>。支持包含嵌套对象的JSON文件、但对嵌套阵列的支持有限。</block>
   <block id="0a8f6f086d5f30a416a61fd3606f1025" category="section-title">为外部聊天机器人示例应用程序提供国际化支持</block>
   <block id="a2f4023c744ab1521036ee54ec2e15ba" category="paragraph">现在、您可以轻松地将GenAI示例外部聊天机器人应用程序的用户界面更改为其他语言或区域设置。</block>
@@ -769,13 +659,10 @@
   <block id="26ea891fa4f63d071728537d886e0f6c" category="section-title">支持Anthropic Claude Sonnet 3.7聊天模式</block>
   <block id="4c58515c1bd9657f223b7731d306475c" category="paragraph">GenAI现在支持Anthropic Claude 3.7 Sonnet聊天模式。CLODE 3.7 Sonnet的测试版功能允许每个请求最多128K输出令牌、并支持新的计算机使用操作。将来的GenAI版本将支持CLAUDE 3.7 Sonnet扩展思维模式。</block>
   <block id="40bd8fe426c37e97f38be2c5a2728752" category="section-title">支持从通用NFS/SMB共享添加数据源</block>
-  <block id="1813c42a79840f7d495281cf050a30dc" category="paragraph">现在、您可以使用工作负载出厂API从通用NFSv3、NFSv4或SMB共享添加数据源。从NFS或SMB共享添加数据源时、知识库卷仍保留在Amazon FSx for NetApp ONTAP卷上。工作负载出厂Web UI将在未来版本中支持此功能。</block>
   <block id="fbc7eedf5c13a549330a0c3f52777db8" category="section-title">VPC对等支持</block>
   <block id="52bc46202bc9013e258f32f66b8bf88a" category="inline-link-macro">对等虚拟私有云(VPC)</block>
   <block id="93dbde0ee04c36dce05b96f3551f8606" category="paragraph">现在、您可以在同一区域部署GenAI基础架构<block ref="f008838004ac43a2c4a5b39672df7daf" category="inline-link-macro-rx"></block>、并使用相同的AWS帐户。您可以在VPC中部署AI引擎、然后在对等VPC中创建知识库、并选择位于对等VPC中的Amazon FSx for NetApp ONTAP文件系统。</block>
   <block id="7b64cb38404993f8db85b46fa460e3f1" category="paragraph">要启用数据防护、必须满足以下前提条件。</block>
-  <block id="b687386681bc74afd9f1f05a81484454" category="inline-link-macro">BlueXP  API端点</block>
-  <block id="52840142bc9ae1cec5ab47f43451b7f2" category="list-text">AI引擎必须能够访问<block ref="0d55c5152a345809ffefdd3a1a629e2a" category="inline-link-macro-rx"></block>。</block>
   <block id="b3e25fad7a8f45ec59f40a0eaf7b74ea" category="admonition">在导出CSV、JSON、JSONP或Parquet等结构化数据文件时、不支持数据防护功能。</block>
   <block id="230703a919b034364b970a5ee5c5ab76" category="cell">逗号分隔值文件注释：免责声明[]</block>
   <block id="33555d9ae9e8936cbd995ec23836ef0a" category="cell">JSON和JSON脚注：免责声明[]</block>
@@ -783,8 +670,6 @@
   <block id="fdd252a657eafa925fe82da2c74ab41c" category="paragraph">现在、GenAI支持通过从图像和图形说明以及文档文本中获得洞察力来增强对知识库查询的响应、从而获得更丰富、质量更高的答案。现在、GenAI可以扫描PDF文件中的图像文件和图像(也称为多模式文件支持)。如果您选择扫描图像或PDF文件、则图像中的文本(包括PDF文档中嵌入的图像)将扫描到数据源中、扫描中的见解将包括在知识库查询的响应中。</block>
   <block id="603e61783fa33cd04788f143e949760c" category="paragraph">现在、GenAI可以使用混合搜索并重新排列结果、从而显著提高搜索结果的相关性和准确性。混合搜索将基于关键字的传统搜索的优势与基于密集矢量的高级语法搜索技术相结合。标准关键字搜索结果通过近似匹配和语言细微差别得到增强、从而增强相关性。然后、GenAI使用Cohere Rerank和Amazon Rerank等高级重新排名模型进一步细化这些结果、并返回最相关的结果。此功能可用于新创建的知识库。</block>
   <block id="7c6f7e444c5d96b670cdcd189e2ee43a" category="list-text">GenAI现在支持载入包含图像的Microsoft Word DOCX文件。对DOCX文档中嵌入的图像进行扫描、对知识库查询的响应中包含嵌入图像中的文本洞察信息。</block>
-  <block id="0fcf305133bffed241e3ea17efbba5fc" category="inline-link-macro">使用工作负载出厂API</block>
-  <block id="a6efc6ca3aa5af2c7a8cad1239df17c0" category="paragraph"><block ref="a6efc6ca3aa5af2c7a8cad1239df17c0" category="inline-link-macro-rx"></block></block>
   <block id="1013a9a62eb4667e6ae35cbe4e298de6" category="paragraph">您将集成到知识库中的数据源可以位于一个FSx for ONTAP文件系统上、也可以位于多个FSx for ONTAP文件系统上。如果这些系统位于不同的VPC中、则必须可在同一网络中访问这些系统、或者必须为这些VPC建立对等关系、并使用与AI引擎相同的区域和AWS帐户。</block>
   <block id="3b0424c657d7f94d3576d4c275f58d4c" category="list-text">*已启用*：访问此连接器的聊天机器人用户将仅获得其有权访问的数据源的查询响应。</block>
   <block id="cc969578d5af5249aced30698622b541" category="admonition">Amazon Q Business Connector数据源不支持Active Directory组权限。</block>
@@ -814,7 +699,6 @@
   <block id="7dd2d826a181ea2f9a3b31239bf46de3" category="paragraph"><block ref="7dd2d826a181ea2f9a3b31239bf46de3" category="inline-link-macro-rx"></block></block>
   <block id="2e3901c216301ff20bf1108a16ffab23" category="paragraph"><block ref="2e3901c216301ff20bf1108a16ffab23" category="inline-link-macro-rx"></block></block>
   <block id="efaf8eeadceb43309e642a115859e2a0" category="paragraph"><block ref="efaf8eeadceb43309e642a115859e2a0" category="inline-link-macro-rx"></block></block>
-  <block id="4ea5a8d3b0067bf5307eb05137bce817" category="paragraph"><block ref="4ea5a8d3b0067bf5307eb05137bce817" category="inline-link-macro-rx"></block></block>
   <block id="77a89cd0e5a14d8b8709467f579b8edc" category="paragraph"><block ref="77a89cd0e5a14d8b8709467f579b8edc" category="inline-link-macro-rx"></block></block>
   <block id="c9cbd1d1d65e3b0d2ec2922daec8bddf" category="paragraph"><block ref="c9cbd1d1d65e3b0d2ec2922daec8bddf" category="inline-link-macro-rx"></block></block>
   <block id="535baaac5969b3bd7fd10592a2cb8e22" category="section-title">增强了聊天模式支持</block>
@@ -837,17 +721,12 @@
   <block id="da1f9b1e0d45e28b599d8f40c855f668" category="summary">部署AI基础架构并确定要与Amazon Q Business集成的数据源后、您可以定义连接器。</block>
   <block id="b4851e92b19af0c5c82447fc0937709d" category="inline-link-macro">要求</block>
   <block id="c544ac4406a53e3d89f1f777f49bd9ab" category="paragraph">在继续操作之前、请确保您的环境符合<block ref="e9a731368b15c5c87437cf87756c4dd9" category="inline-link-macro-rx"></block>Amazon Q Business的要求。</block>
-  <block id="416b1ad25d5076e01c81a106a5183bb8" category="paragraph">您的组织中的数据源可能包含个人身份信息(个人身份信息、个人身份信息)。要保护此敏感信息的安全、可以在定义连接器时启用_data护栏_。由BlueXP  分类提供支持的数据防护栏可识别和屏蔽可识别身份信息、使其无法访问和检索。</block>
-  <block id="32a3d08b7aad0fea19d07c320ae1572b" category="admonition">适用于GenAI的BlueXP  工作负载工厂不会屏蔽敏感的个人信息(SPII)。有关此类数据的详细信息、请参见<block ref="0cdb750dab1dfb2fce5dd1cc6f558f0e" category="inline-link-macro-rx"></block>。</block>
-  <block id="35c5b8334726059a903cf8e72acd6567" category="admonition">可以随时启用或禁用数据防护。如果您要切换数据防护、则工作负载工厂会从头开始扫描整个数据源、这可能会产生成本。</block>
   <block id="7110ae9aea43e2e00725933a5f626fa1" category="section-title">定义接头</block>
-  <block id="cef935b09c14a76911c2bc3b2878c1eb" category="list-text">从“知识库和连接器”选项卡中，选择“*新建*”下拉列表，然后选择“* Amazon Q Business Connectors *”。</block>
   <block id="e90a1e1cd02488bfade2709b90f749fd" category="list-text">在"定义连接器"页面上、配置连接器设置：</block>
   <block id="5e8ca8e597dc55a04039701d5dac2cf3" category="list-text">*Name*：输入要用于连接器的名称。</block>
   <block id="dffbc54d16e84507b04590e6d1c0c866" category="list-text">*Description*：输入连接器的详细说明。</block>
   <block id="c9feba567b8d3a8ba8747f88e19831cc" category="list-text">*Amazon Q*：要集成的Amazon Q Business实例的区域和应用程序名称。</block>
   <block id="bf5ee3ec2f3e4b65913ce148dc85d307" category="admonition">启用数据保障功能后、GenAI将通过仅输入纯文本(不包括嵌入的图像或媒体文本)并屏蔽任何私有或敏感数据来处理.txt、.MD、.csv、.DOCX和.pdf文件。所有其他文件类型均正常处理、不会屏蔽私有或敏感数据。</block>
-  <block id="5449bd448d32094e1be238f48844c03e" category="list-text">*Snapshot policy*：从工作负载出厂存储清单中定义的现有策略列表中选择一个Snapshot策略。GenAI会自动为卷创建重复快照、并根据您选择的快照策略以一定频率存储连接器信息。</block>
   <block id="c5639571aa9605e9474435556c2b9258" category="paragraph">如果不存在所需的快照策略、则可以<block ref="446afe1ef4f3740a216a777a896ec27c" category="inline-link-rx"></block>在包含此卷的Storage VM上执行此操作。</block>
   <block id="c47b1f6ddc8b5b2b1c01ea580fdcbe2b" category="list-text">选择*创建连接器*以将Amazon Q Business与GenAI集成。</block>
   <block id="0fd1c37214b672806d1b01aaa5e711ad" category="paragraph">创建连接器时、将显示进度指示器。</block>
@@ -883,7 +762,6 @@
   <block id="fe9c0e854bb75d8d0368615c8b433c6f" category="paragraph">为Amazon Q Business创建连接器之后、您可以查看连接器详细信息、修改连接器、集成其他数据源或删除连接器。</block>
   <block id="23a31567db48e019d75bf325ea4fd33f" category="section-title">查看有关连接器的信息</block>
   <block id="ce678abc65f85cf934579388d70bdda3" category="paragraph">您可以查看有关连接器设置和集成的数据源的信息。</block>
-  <block id="8f1455aac1b07c1a845480b659aeb292" category="list-text">选择要查看的连接器。</block>
   <block id="5cc101287966e66cd99c9c6c0764d04b" category="list-text">要查看连接器详细信息，请选择，然后选择<block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block>*Manage connector*。</block>
   <block id="b0d4da1928debc3094d8b21648c0c3a3" category="paragraph">如果要进行任何更改，可使用*Actions*菜单来管理连接器。</block>
   <block id="4f0c75d31e9e14362509657a4cc55a49" category="section-title">编辑连接器</block>
@@ -902,7 +780,6 @@
   <block id="e7977875f2273c9165fd47c3d3c3aee8" category="section-title">将数据源与连接器同步</block>
   <block id="3517d2b8ddd9b09d923867695e150fbf" category="paragraph">数据源每天自动与关联连接器同步一次、以便任何数据源更改都反映在Amazon Q Business中。如果您对任何数据源进行了更改、并且希望立即同步(扫描)数据、则可以执行按需同步。</block>
   <block id="c023f0c37e2395dfbcb86599990b54ce" category="paragraph">同步是增量操作、因此Amazon Q Business仅处理数据源中自上次同步以来添加、修改或删除的对象。</block>
-  <block id="d486ec04a4ff263da9129c2a5580442f" category="list-text">从"Knowledge Bases &amp; Connectors (知识库和连接器)"选项卡中、选择要同步的连接器。</block>
   <block id="d93801edfaf0b3ede0db39f53d95cf40" category="paragraph">此连接器将与所连接的数据源同步、Amazon Q Business将开始使用您的数据源中的最新信息。</block>
   <block id="6b67d2366cdfceb53aeea58819331958" category="section-title">暂停或恢复计划的同步</block>
   <block id="113b98024868773b6f70f39a7ddd716d" category="paragraph">如果要暂停或恢复数据源的下次同步(扫描)、您可以随时执行此操作。如果要更改数据源、并且不希望在更改窗口期间进行同步、则可能需要暂停下一次计划同步。</block>
@@ -910,12 +787,10 @@
   <block id="20fe7c74b98a61498f3b4cf9a0cedfe1" category="list-text">选择*Actions*菜单，然后选择*Scan &gt; Pause Scheduled scan-*或*Scan &gt; Resume Scheduled scan-*。</block>
   <block id="0d3742f512084e332df9cf3e01431604" category="paragraph">您将看到一条消息、指出下一个计划扫描已暂停或恢复。</block>
   <block id="bf5a484e29502a227f97ab9005183647" category="section-title">删除连接器</block>
-  <block id="523be0bf702b821a1ff0d32a0a447edb" category="paragraph">如果您不再需要连接器、可以将其删除。删除连接器后、该连接器将从工作负载出厂时删除、并且包含该连接器的卷也将被删除。删除连接器是不可逆的。</block>
   <block id="9c0f6136c0054738cd89f4434829341d" category="paragraph">删除连接器时，还应解除连接器与与其关联的任何代理的关联，以完全删除与连接器关联的所有资源。</block>
   <block id="5f04e305e4afb373dd4222c101416421" category="list-text">从"Knowledge Bases &amp; Connectors (知识库和连接器)"清单页面中、选择要删除的连接器。</block>
   <block id="49ca25cc293d8eaea5abbc997a98b766" category="list-text">选择*Actions*菜单，然后选择*Delete connector*。</block>
   <block id="fe4e9f24fd3a3e4e128adbeb8b1e4f63" category="list-text">在删除连接器对话框中，确认要将其删除，然后选择*Delete*。</block>
-  <block id="cd5654a62ac0ae4992fc556cbbfc385c" category="paragraph">此连接器将从工作负载出厂时删除、并且其关联卷也将被删除。</block>
   <block id="182e3e33bf92b5fae899ae295398f967" category="summary">开始使用您所在组织在Amazon FSx for NetApp ONTAP文件系统上的数据创建连接器。</block>
   <block id="450eb57f37211d072a7368e65c267a97" category="doc">GenAI连接器快速入门</block>
   <block id="473b0d4489afb6847b3528470c283f5e" category="paragraph">您需要AWS凭据来部署AWS基础架构、部署和发现FSx for ONTAP文件系统、要在连接器中集成的数据源列表、对Amazon Q Business应用程序的访问等。</block>
@@ -941,10 +816,7 @@
   <block id="5b7b71abf2920fafe6a621a8cd575f8c" category="list-text">NetApp GenAI引擎将使用一个文件系统(如果不存在、则会创建一个文件系统)来存储有关连接器的信息。</block>
   <block id="f06479e214120da53f991b1af4eb0097" category="list-text">一个或多个文件系统将包含要添加到连接器的数据源。</block>
   <block id="0d8ba413f648e51fef4fb209cc7b48a1" category="list-text">您需要了解AWS FSx for ONTAP文件系统所在的AWS区域、VPC和子网。</block>
-  <block id="a6389fdd3aafc525ca961513074657c7" category="paragraph">通过适用于GenAI的BlueXP  工作负载工厂、您可以将适用于NetApp ONTAP文件系统的Amazon FSx与GenAI基础模型相集成。这为您提供了高性能存储、并为您的AI数据集提供了一套丰富的保护、安全性和成本优化功能。</block>
-  <block id="60525997ca84017159be9ccc575fddc6" category="paragraph">借助适用于GenAI的BlueXP  工作负载工厂、您可以在Amazon FSx for NetApp ONTAP上将企业级数据源与生成性AI应用程序结合使用。利用检索增强型生成(RAG)、您可以快速将数据源连接到Amazon BROBON或Amazon Q Business提供的基础模型、以开发由AI提供支持的生成型应用程序、例如虚拟助手、问答聊天机器人、文档汇总、内容创建等</block>
   <block id="9eac267e04135210fd13de3d35bf966f" category="inline-link-macro">创建知识库</block>
-  <block id="33ce7f647f173acb7ace68da57d0ad93" category="paragraph">适用于GenAI的BlueXP  工作负载工厂可简化使用检索增强型生成(RAG)构建生成型AI应用程序所需的基础架构部署流程。具体而言、GenAI具有以下优势：</block>
   <block id="71aa508255eddc0938ca384c87a7c8a1" category="list-text">使用开源框架(如LangChin)加快GenAI应用程序(如问答聊天机器人)的开发速度、利用GenAI API配置和管理知识库和连接器、与知识库聊天以及存储和检索聊天历史记录。</block>
   <block id="f0bdc00cfa448d8f15fa17aea3aee5fa" category="paragraph">GenAI使用您组织的私有数据来补充模型的智能(基于模型所训练的数据)、为您组织中的用户提出的问题提供自定义的答案。您首先部署RAG框架所需的基础架构、然后使用您组织的数据源和基础模型(可通过Amazon Brock或Amazon Q Business获得)构建知识库或定义连接器、最后将应用程序(例如问答聊天机器人)连接到知识库或连接器。</block>
   <block id="3c7cdfc68dac7c9c2821a868ef7397e3" category="paragraph"><block ref="3c7cdfc68dac7c9c2821a868ef7397e3" category="inline-image-macro-rx" type="image"></block></block>
@@ -958,24 +830,17 @@
   <block id="eb172a4ea0ca9b00dbcb16f6401ade8d" category="doc">NetApp GenAI引擎的组件</block>
   <block id="9f6ab331f6e1b93cd7720e3b01290dfe" category="paragraph">在FSx for ONTAP文件系统上使用数据源创建知识库或连接器之后、您可以查看数据源详细信息、更新或更改数据源内容、编辑数据源设置或删除数据源。</block>
   <block id="d1bd53c9c036a0a164289d39a5a4edea" category="paragraph">您可以查看有关数据源内容的信息、也可以通过知识库或连接器查看其嵌入状态。由于数据源与知识库或连接器相关联、因此您需要先选择知识库或连接器、然后才能查看数据源详细信息。</block>
-  <block id="11bdb1b485383914846d0ec01ecbf8da" category="list-text">使用其中一个登录到工作负载工厂<block ref="17b71e2884d56fdbadfe752689dbd4d6" category="inline-link-rx"></block>。</block>
   <block id="a4d7e53eade04c3be167cb91eb35875b" category="list-text">选择数据源所在的知识库或连接器，然后选择并选择*管理知识库<block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block>*或*管理连接器*。</block>
   <block id="d18084c9cdad87027b728588d97de1d2" category="paragraph">页面底部列出了关联的数据源。</block>
   <block id="75b4e172ba31c79bb7c96549ff633102" category="paragraph">此外、还会列出嵌入信息以及该数据源当前是嵌入到知识库还是连接器中。</block>
   <block id="6a9319277b81fdcd682844204a1b8ddc" category="paragraph">您可以编辑有关已与知识库或连接器集成的数据源的信息。在添加数据源后、大多数信息都会得到修复、但您可以对部分配置进行更改(例如、chunking定义或权限感知)。</block>
   <block id="d9a5be1c6e2136c44531327606633c19" category="paragraph">数据源每天自动与知识库同步一次、以便任何数据源更改都反映在聊天机器人中。如果您对数据源进行了更改，并且希望立即同步数据，则可以 <block ref="0f5a728901202a758f49141d39e6d6c4" category="inline-link-macro-rx"></block>。</block>
-  <block id="8d1c283884ec2a2a9b912b6e070e8367" category="paragraph">此操作仅会从工作负载工厂中删除指向AI基础架构的链接、而不会从AWS中删除所有组件。您需要从AWS中手动删除以下基础架构组件：</block>
   <block id="e1750bb502afd54b5058d245599b0178" category="paragraph">在继续操作之前、请确保您的环境符合<block ref="d4b380da98d3e217e1a1342547359af5" category="inline-link-macro-rx"></block>知识库的要求。</block>
-  <block id="67018b2f9b0f536ad3b15e35baf7848f" category="paragraph">您组织的数据源可能包含个人身份信息(个人身份信息、个人身份信息)。为了保护此敏感信息的安全、您可以在创建和配置知识库时启用_data护栏_。由BlueXP  分类提供支持的数据防护栏可识别和屏蔽可识别身份信息、使其无法访问和检索。</block>
-  <block id="1353892c3200d5ef34ea39aff734e6b8" category="list-text">从“知识库和连接器”选项卡中，选择*Create New*下拉列表，然后选择NetApp GenAI Knowledge base for based*。</block>
   <block id="4ecacb5c42fc3b13c2e7d2cc8f5b177c" category="list-text">嵌入英语</block>
   <block id="675aea0734aa7d33f5b87dd79fb596ea" category="list-text">嵌入多语言</block>
-  <block id="f407f3d1164313838fd95c2ed0e3ea37" category="list-text">*聊天模式*：从Amazon Brock中集成的各种聊天模式中进行选择。请注意、您必须已启用Amazon Brock中的聊天模式。</block>
   <block id="088bdfcb190e7f5cbd74a7b7b0afc7ac" category="doc">确定要添加到知识库或连接器的数据源</block>
   <block id="22ae6b53af9d033c916e5ac98cafe398" category="paragraph">知识库支持使用NFS或SMB/CCIFS协议的卷中的数据。选择使用SMB协议存储的文件时、您需要输入Active Directory信息、以便知识库可以访问这些卷上的文件。这包括Active Directory域、IP地址、用户名和密码。</block>
-  <block id="144ed6dedc8fb9d6e8c267ed1b88f622" category="paragraph">工作负载工厂的GenAI知识库目前支持以下数据源文件格式。</block>
   <block id="bc288de0017ed79e5ddf41186d5a7bac" category="cell">Apache Parquet脚 注：免责声明[将结构化数据文件纳入知识库时不支持数据防护功能。]</block>
-  <block id="b322ac739d190389142090c734961275" category="list-text">从"Knowledge Bases &amp; Connectors"(知识库和连接器)选项卡中、选择要暂停或恢复扫描的知识库。</block>
   <block id="bcb256cc8db5d05b70f038b36e876110" category="doc">GenAI知识库快速入门</block>
   <block id="d46ff87e524577f2d38bb349e94974b6" category="paragraph">开始使用Amazon FSx for NetApp ONTAP文件系统上的组织数据创建知识库或Amazon Q Business Connector。聊天机器人等应用程序将访问此知识库或连接器、以便为最终用户提供以组织为中心的响应。</block>
   <block id="cccf2c6ba0366b925d6b91882c267b34" category="paragraph">您需要AWS凭据来部署AWS基础架构、部署和发现FSx for ONTAP文件系统、要集成到知识库或连接器中的数据源列表、访问Amazon Brock AI服务或Amazon Q Business应用程序等。</block>
@@ -1003,24 +868,10 @@
   <block id="04e72ad1a1f8c5d1bc6e9d9cd655d231" category="sidebar">确定要添加到知识库中的数据源</block>
   <block id="6d0922d38f508966c79ec8917c90f839" category="sidebar">使用GenAI为Amazon Q Business创建连接器</block>
   <block id="12195af943d3077522e0ef3c26f4b4fd" category="admonition">如果数据源中的某个文件缺少文本(例如无文本图像)、Amazon Q Business不会对其编制索引、而是在Amazon CloudWatch日志中记录一个条目、指出缺少文本。</block>
-  <block id="200e3179449390bdf5f3f8d9a199630c" category="section-title">用于工作负载工厂的工具</block>
-  <block id="b5a374f3f5b31b5057808689d26fe2c4" category="paragraph">您可以将BlueXP  工作负载工厂与以下工具结合使用：</block>
-  <block id="4b50901597179fa075617d96ccf51901" category="list-text">*工作负载工厂控制台*：工作负载工厂控制台提供应用程序和项目的可视化、整体视图。</block>
-  <block id="590410b3a112ba2f531f9aae44e29ed1" category="list-text">BlueXP  console*：BlueXP  控制台提供了混合接口体验，因此您可以将BlueXP  工作负载出厂配置与其他BlueXP  服务结合使用。</block>
-  <block id="62c5120220d244bd5e611d7c4459b5c5" category="list-text">*问我*：使用"问我人工智能"助手提出问题并了解有关工作负载工厂的更多信息、而无需退出工作负载工厂Web UI。从工作负载出厂帮助菜单访问"询问我"。</block>
-  <block id="e234d079cc2fccaeed8041a81e1e8122" category="list-text">*CloudShell命令行界面*：工作负载工厂包括一个CloudShell命令行界面、用于通过一个基于浏览器的命令行界面跨帐户管理和操作AWS和NetApp环境。从工作负载出厂控制台的顶部栏访问CloudShell。</block>
-  <block id="dfbf98e5a4263fb93c5b851bfc384ae3" category="list-text">*REST API*：使用工作负载工厂REST API部署和管理适用于ONTAP文件系统和其他AWS资源的FSx。</block>
-  <block id="57f4ce64453b6cd8aa398c4f88d38c2e" category="list-text">*CloudFormation*：使用AWS CloudFormation代码执行您在工作负载出厂控制台中定义的操作、以便在您的AWS帐户中对CloudFormation堆栈中的AWS和第三方资源进行建模、配置和管理。</block>
   <block id="ea3d4df6f8aff21b2dfe549c5ecf9775" category="doc">跟踪器可用于监控和跟踪操作</block>
   <block id="8daed4c7913162875cceb19ef5e0bf4c" category="paragraph">GenAI 现已提供 Tracker 监控功能。您可以使用 Tracker 监控和跟踪待处理、正在进行和已完成操作的进度和状态，查看操作任务和子任务的详细信息，诊断任何问题或故障，编辑失败操作的参数，以及重试失败的操作。</block>
-  <block id="27e9b8493c313885af8902ac1ae67e24" category="inline-link-macro">使用 BlueXP 工作负载工厂中的 Tracker 监控工作负载操作</block>
-  <block id="6cfb11211ef97bba3b2359a766b22994" category="paragraph"><block ref="6cfb11211ef97bba3b2359a766b22994" category="inline-link-macro-rx"></block></block>
   <block id="a3a574ae48c14d14b1a16908815471f6" category="section-title">为知识库选择重排序模型</block>
   <block id="9e0cf47f3974a0b121f9381245ed8931" category="paragraph">现在，您可以通过选择与知识库配合使用的特定重排序模型来提高重排序查询结果的相关性。GenAI支持 Cohere Rerank 和 Amazon Rerank 模型。</block>
-  <block id="af06e2a95bd9706f705a4480e8f40846" category="list-text">*Terraform BlueXP  工作负载工厂提供程序*：使用Terraform构建和管理在工作负载工厂控制台中生成的基础架构工作流。</block>
-  <block id="5906134abb5c841402381fefad833fcc" category="summary">使用 BlueXP 工作负载工厂中的 Tracker 来跟踪工作负载操作并监控作业进度。</block>
-  <block id="3c83889f8bf9dcafe14392fafd21fe54" category="paragraph">在BlueXP  工作负载工厂中使用跟踪器监控和跟踪工作负载操作的执行情况、并监控任务进度。</block>
-  <block id="2fc2f4d1cfd067d7b3d8b8baa3ccee57" category="paragraph">Workload Factory提供了一种监控功能、可用于监控和跟踪工作负载操作的进度和状态、查看操作任务和子任务的详细信息以及诊断任何问题或故障。</block>
   <block id="4a60367cb1382179b571e891381eaf8d" category="paragraph">Tracker提供了多种操作。您可以按时间范围(过去24小时、7天、14天或30天)、工作负载、状态和用户筛选作业；使用搜索功能查找作业；以及将作业表下载为CSV文件。您可以随时刷新Tracker、并快速重试失败的操作、或者编辑失败操作的参数并重试此操作。</block>
   <block id="9233b1148f18eb744b69d4d3620c296c" category="paragraph">Tracker支持两个级别的监控、具体取决于操作。每个任务(例如文件系统部署)都会显示任务说明、状态、开始时间、任务工期、用户、区域、代理资源、任务ID以及所有相关子任务。您可以查看API响应以了解操作期间发生的情况。</block>
   <block id="5cdbeb1c4cc65e8f551e161828701113" category="list-text">带有示例的跟踪器任务级别</block>
@@ -1033,28 +884,19 @@
   <block id="01b0a4fcc33bdafd6e65537f24f463de" category="list-text">事件保留</block>
   <block id="b3c382e94f4b4abcc049ce95e85dc998" category="list-text">事件将在用户界面中保留30天。</block>
   <block id="cfd98e00a6e308c04ab9f76a854b6989" category="section-title">跟踪和监控操作</block>
-  <block id="c82c26735f08b789c8bf574ab4962fcc" category="paragraph">使用跟踪器在BlueXP  中跟踪和监控操作。</block>
   <block id="e1e54933838bb7ba662301d01c937d2d" category="list-text">使用其中一个登录<block ref="68ceec76279c6913cdee16884c2d813a" category="inline-link-macro-rx"></block>。</block>
-  <block id="f6064bd4c17e4a2a2dcbd96f7ec83891" category="list-text">在工作负载中，选择帐户设置菜单，然后选择*Tracker。</block>
-  <block id="1c575ed3e5dce0a1d77706830609b278" category="inline-image-macro">帐户设置菜单的屏幕截图、突出显示了Tracker选项。</block>
-  <block id="7478b5abe2869b21138fe88cbd4d66da" category="paragraph"><block ref="7478b5abe2869b21138fe88cbd4d66da" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e443a93c9da9763cd15656814a7e0c2e" category="list-text">在Tracker选项卡中、使用筛选器或搜索功能缩小作业结果范围。您也可以下载作业报告。</block>
   <block id="aa2a2cd452f8a71b2f2dcdae68114732" category="section-title">查看API请求</block>
   <block id="68538d555ae12c680ea428aaa850d90f" category="paragraph">在跟踪程序的"Code"框中查看某个任务的API请求。</block>
   <block id="968877018213bf42962084001c210472" category="list-text">在Tracker中、选择一个任务。</block>
-  <block id="2e6179b36329b65c38a5ca113ba0c81c" category="list-text">选择三点菜单，然后选择*查看API请求*。</block>
   <block id="1448fba076a066622a9f93a25ab170a2" category="section-title">重试失败的操作</block>
   <block id="89f1070b2ef1ba678a8cb4823fa74cb2" category="paragraph">在Tracker中重试失败的操作。您还可以复制失败操作的错误消息。</block>
   <block id="25f39cb1a1fb7c5e04993249b6cabc32" category="admonition">对于失败的操作、您最多可以重试10次。</block>
   <block id="b866b632b7f32ded2a0a0907100641bf" category="list-text">在Tracker中、选择失败的操作。</block>
-  <block id="5d0eaa0ad00baabb57cbc22969070918" category="list-text">选择三点菜单，然后选择*Retry*。</block>
   <block id="121145d60db2324903b129ae74d6c0a9" category="paragraph">此时将重新启动此操作。</block>
   <block id="bde5076ae2a993de9042a7e1dd4dc445" category="section-title">编辑失败的操作并重试</block>
   <block id="2ae5a8ae85adca2aebf16aa81130c9c5" category="paragraph">编辑失败操作的参数、然后在Tracker外部重试此操作。</block>
-  <block id="524ab960a72817bd7f9f107dc357d1bd" category="list-text">选择三点菜单，然后选择*编辑并重试*。</block>
   <block id="a071e4310b0dbc18ec326c217f47692f" category="paragraph">系统会将您重定向到操作页面、您可以在其中编辑参数并重试此操作。</block>
   <block id="49814788ce382c87a117a40e54ae858b" category="paragraph">此时将重新启动此操作。进入跟踪器以查看操作状态。</block>
-  <block id="214e3d2c555829629cd286071bc00b1f" category="list-text">*重新排名*：启用或禁用重新排名功能，此功能可以提高查询结果的相关性和质量。您可以选择标准聊天模型或专用的重新排名模型进行重新排名。只有您所在地区支持的重新排名模型选项才会显示。</block>
   <block id="d86905965032add94b3c2374f18bf8a0" category="list-text">在编辑知识库页面中，您可以更改知识库名称、描述、嵌入模型、聊天模型、功能启用，选择是自动还是手动创建对话启动器，以及包含知识库的卷使用的快照策略。</block>
   <block id="4aa37f4d9a391345e9a54c68333e2503" category="section-title">2025年6月3日</block>
   <block id="5eb43e1edd4f0757c83c6d6f6632ff94" category="sidebar">管理和监控</block>
@@ -1065,15 +907,11 @@
   <block id="8320a18edf6c2a7804ecd7a111b33314" category="paragraph"><block ref="8320a18edf6c2a7804ecd7a111b33314" category="inline-link-macro-rx"></block></block>
   <block id="534e426be2627a9319bb3c894762f050" category="paragraph">部署 AI 基础架构并确定将从 FSx for ONTAP 数据存储区使用的数据源后，您就可以为 Amazon Q Business 定义 NetApp 连接器了。</block>
   <block id="6d3af8c853c012217bf8fe36271d8240" category="paragraph">为 Amazon Q Business 创建 NetApp 连接器。该连接器支持 GenAI 和 Amazon Q Business 之间的 API 和数据源通信。</block>
-  <block id="656010651ec8363cac194260d40bd4ee" category="list-text">*FSx for ONTAP 文件系统*：当您为 Amazon Q Business 定义新的 NetApp 连接器时，工作负载工厂会创建一个新的 Amazon FSx for NetApp ONTAP 卷来存储连接器信息。选择要在其中创建新卷的现有文件系统和SVM (也称为Storage VM)。</block>
   <block id="9d9d5c45b6105d758da7731605f8df1e" category="paragraph">NetApp Connector for Amazon Q Business 目前支持以下数据源文件格式。</block>
   <block id="9a5f71b3118fef9873b3a70c67778664" category="paragraph">开始使用您组织在 Amazon FSx for NetApp ONTAP 文件系统上的数据创建 NetApp Connector for Amazon Q Business。创建连接器后、最终用户可以访问亚马逊Q业务助理、获得以组织为中心的问题解答。</block>
-  <block id="c7a0c2f464177538b923186b84b0328f" category="paragraph">在为 Amazon Q Business 创建 NetApp 连接器之前，请确保工作负载工厂和 AWS 已正确设置。</block>
   <block id="65a16de587f6ba26884202bf406c26fe" category="section-title">NetApp Connector for Amazon Q Business 的要求</block>
   <block id="56daa392224e0cdcc6a69457c4094aa8" category="inline-link-macro">为 Amazon Q Business 定义 NetApp 连接器</block>
   <block id="7e8def5c748db55cfe2ebcc2c26543fd" category="paragraph">如果<block ref="a1707f04689d949f85e4cb6db99b5c64" category="inline-link-macro-rx"></block>，GenAI将从数据源中获取数据，将向量化结果存储在数据库中，并使您能够完全控制如何使用所获取的数据来回答查询。这种方法需要更多的初始配置、但允许您为不同的结果选择不同的聊天模式。如果是<block ref="fbe77fd827b80e33ddc74f945f323ccb" category="inline-link-macro-rx"></block>，则数据源中的数据将由Amazon Q Business读取并存储在索引中。这种方法所需的初始配置较少、但对结果的控制较少。</block>
-  <block id="4ead5e435cb4f2c7cf627b1d1e84c333" category="paragraph">工作负载工厂用户界面和文档现在使用“只读”来指代读取权限，使用“读/写”来指代自动化权限。</block>
-  <block id="2285d955a18bdde3d5780d04f48d58cd" category="list-text">您需要将 AWS 凭证添加到具有读/写权限的工作负载工厂，这意味着您将在 GenAI 的读/写模式下使用工作负载工厂。</block>
   <block id="c45d86a4185cef0bc3cadb7e6e9b46f4" category="paragraph">目前不支持_基本_模式和_只读_模式权限。</block>
   <block id="7d906e58a1354072160e6ed36352865a" category="open-title">添加 FSx for ONTAP 文件系统</block>
   <block id="6d74c0f67ca2ffc7e802992699848ce7" category="open-title">添加通用 NFS 文件系统</block>
@@ -1100,5 +938,205 @@
   <block id="63e19fdc4a09680278ff2270264b3005" category="list-text">添加文件系统（使用来自通用 SMB 或 NFS 共享的文件）</block>
   <block id="438852e39ff5e2c7366e67dde7cfdab4" category="list-text">选择*添加数据源*后，选择要添加的数据源类型：</block>
   <block id="7454fc4c14df2a987637928e569efe3a" category="section-title">2025年6月29日</block>
-  <block id="84cd46ec8d4d2d63881ed3e5d98fe218" category="paragraph">工作负载工厂用户界面和文档现在使用“只读”来指代读取权限，使用“读/写”来指代自动化权限。== 2025年3月2日</block>
+  <block id="b6ccd86968e3119b0a3621810c024e7e" category="paragraph">如果您包含图像或 PDF 文件， NetApp Workload Factory for GenAI 会解析图像中的文本（包括 PDF 文档中的图像），这会产生更高的成本。</block>
+  <block id="3016bef0785dbf8a30dcf950a617dad6" category="list-text">使用以下方式之一登录 Workload Factory<block ref="68ceec76279c6913cdee16884c2d813a" category="inline-link-macro-rx"></block> 。</block>
+  <block id="65d79cf14f8bf7cba17c5fcd746a539c" category="list-text">*标签*：输入您想要应用于此部署的所有 AWS 资源的任何标签键/值对。这些标签在 AWS 管理控制台和 Workload Factory 内的基础设施信息区域中可见，可以帮助您跟踪 Workload Factory 资源。</block>
+  <block id="62db196ccca48c6b6e8c8247a3c19e92" category="list-text">*实例名称*：可选地，选择*定义实例名称*并输入 AI 引擎实例的自定义名称。实例名称出现在 AWS 管理控制台和 Workload Factory 内的基础设施信息区域，可以帮助您跟踪 Workload Factory 资源。</block>
+  <block id="601674fba29f7ecc4a5620e6933241f6" category="paragraph">Workload Factory 开始部署聊天机器人基础设施。此过程最多可能需要 10 分钟。</block>
+  <block id="3b6193f6a54419d004dffa3f95d1480c" category="inline-link">NetApp控制台帐户 ID</block>
+  <block id="08059d777473c5418a0ed96cb5bb2557" category="list-text">GenAI 引擎配置为使用名为<block ref="267ed14c989ee7da1da6b5683a1ba205" prefix=" " category="inline-code"></block>， 在哪里<block ref="44014fe9a7dd0d34b59279b9206b84b3" prefix=" " category="inline-code"></block>是<block ref="9ae2029801ef16d08431072a27cf1a5b" category="inline-link-rx"></block>对于当前用户。</block>
+  <block id="9ba97d99706e208a6fec2439db710d74" category="doc">GenAI 工作负载工厂的初始版本</block>
+  <block id="75a337f9fd41608c507045c7429174be" category="paragraph">NetApp Workload Factory GenAI 示例应用程序使您能够通过在基于 Web 的聊天机器人应用程序中直接与已发布的NetApp Workload Factory 知识库进行交互来测试其身份验证和检索。</block>
+  <block id="50f87aa4065f1e9f98fe1c45e99b72ff" category="paragraph">生成式人工智能工作负载引入了由NetApp控制台分类提供支持的数据护栏功能。数据护栏功能可识别和屏蔽个人身份信息 (PII)，帮助您保持合规性并加强敏感组织数据的安全性。</block>
+  <block id="c72e72e3730a733653dd7e16c52e7f58" category="inline-link-macro">了解NetApp控制台分类</block>
+  <block id="9cf988428165db9bd8f4a61f9cf1f945" category="paragraph"><block ref="9cf988428165db9bd8f4a61f9cf1f945" category="inline-link-macro-rx"></block></block>
+  <block id="bdf890e61cb8f32c65f2866ddd74a564" category="paragraph">NetApp Workload Factory for GenAI 现在支持从快照克隆知识库。从而可以快速恢复知识库，并利用现有数据源创建新的知识库，有助于数据恢复和开发。</block>
+  <block id="36adf38ddd3a9fe042f19ba2e083c7d1" category="paragraph">发现并将本地ONTAP集群数据复制到 FSx for ONTAP文件系统，以便用于丰富 AI 知识库。所有本地发现和复制工作流程均可通过存储清单中新的 *On-Premises ONTAP* 菜单实现。</block>
+  <block id="2406f005ff5611d5f738d98c7b76d901" category="paragraph">如果您的 AI 引擎实例损坏或以某种方式被删除，您可以让 Workload Factory 为您重建它。重建完成后，工作负载工厂会自动将您的知识库重新连接到基础设施，以便随时可以使用。</block>
+  <block id="0328c0f4f4f9edb3f282fcbaf5a210c9" category="inline-link-macro">了解NetApp Workload Factory for GenAI</block>
+  <block id="b79fe0d120291a147378436cdb3f46fe" category="paragraph"><block ref="b79fe0d120291a147378436cdb3f46fe" category="inline-link-macro-rx"></block></block>
+  <block id="6ddae59de5020ef8e96b1aca0cd5d8ac" category="paragraph">使用 Workload Factory API，您现在可以从通用 NFSv3、NFSv4 或 SMB 共享添加数据源。当您从 NFS 或 SMB 共享添加数据源时，知识库卷将保留在Amazon FSx for NetApp ONTAP卷上。  Workload Factory Web UI 将在未来版本中支持此功能。</block>
+  <block id="e2a83150bbacee1cdf90556c9bbb3957" category="inline-link-macro">使用工作负载工厂 API</block>
+  <block id="b0b2d845aaa69eb09cb7c486b6c43542" category="paragraph"><block ref="b0b2d845aaa69eb09cb7c486b6c43542" category="inline-link-macro-rx"></block></block>
+  <block id="962abee1b74c5d5ab5f9bd0c47cbb068" category="paragraph">Workload Factory 用户界面和文档现在使用“只读”来指代读取权限，使用“读/写”来指代自动化权限。</block>
+  <block id="dbf9b4da18962880a78323e2737e1b02" category="inline-link-macro">使用NetApp Workload Factory 中的 Tracker 监控工作负载操作</block>
+  <block id="56e8e65630bdd479c2369c378496c234" category="paragraph"><block ref="56e8e65630bdd479c2369c378496c234" category="inline-link-macro-rx"></block></block>
+  <block id="1d92da78b598707dec3df4d7281f1ec3" category="doc">结构化数据结果的安全存储</block>
+  <block id="c4b4739fe392b8cae69417a08008577b" category="paragraph">如果聊天机器人查询结果包含结构化数据，GenAI 可以将结果存储在 Amazon S3 存储桶中。当这些结果存储在 S3 存储桶中时，您可以使用聊天会话中的下载链接下载它们。</block>
+  <block id="9a0737b14158e601f99b4265c5bd3e5a" category="section-title">MCP 服务器可用性</block>
+  <block id="e834ab03ab8af25bc66f7565fe0c683b" category="paragraph">NetApp现在为 GenAI 提供带有NetApp Workload Factory 的模型上下文协议 (MCP) 服务器。您可以在本地安装服务器，以允许外部 MCP 客户端从 GenAI 知识库中发现和检索查询结果。</block>
+  <block id="45b9616656c01be55aaa7cb75d3a7215" category="inline-link-macro">NetApp Workload Factory GenAI MCP 服务器</block>
+  <block id="272cce890c7aade4de2a42d9e414cf3e" category="paragraph"><block ref="272cce890c7aade4de2a42d9e414cf3e" category="inline-link-macro-rx"></block></block>
+  <block id="2bbead322f2dd5c4a40fbd66537e304f" category="doc">BlueXP workload factory现为NetApp工作负载工厂</block>
+  <block id="9c80606adc6065bc48c6d99fbb8c3f1d" category="paragraph">BlueXP已重命名并重新设计，以更好地反映其在管理数据基础设施中的作用。因此， BlueXP workload factory已重命名为NetApp工作负载工厂。</block>
+  <block id="3ddc651759568c7b8f0de7c7f9a41828" category="section-title">支持在适用于 Amazon Q Business 的NetApp连接器中添加通用 NFS/SMB 数据源</block>
+  <block id="a0689e9e0b6114698a732a2dc7c3c921" category="paragraph">使用 Workload Factory API，您现在可以将数据源从通用 NFSv3、NFSv4 或 SMB 共享添加到NetApp Connector for Amazon Q Business。这使您能够包含存储在由Amazon FSx for NetApp ONTAP以外的文件系统托管的卷上的文件。</block>
+  <block id="b6016044adc61a2efcd415d2be8b12bc" category="paragraph"><block ref="b6016044adc61a2efcd415d2be8b12bc" category="inline-link-macro-rx"></block></block>
+  <block id="b0462077e62a0ea67b3f53638651e833" category="section-title">知识库的高级聊天配置</block>
+  <block id="5335798f91a37df8ffc1be273ef666fa" category="paragraph">您现在可以配置适用于知识库聊天模型的高级聊天设置，例如响应长度、温度、推理设置等。其中一些设置（例如最近时间和修改时间设置、高级检索设置和系统提示）仅可使用 Workload Factory API。</block>
+  <block id="7ff7a0c83b9f68a4add0d263a7292e9c" category="section-title">现支持嵌入、聊天和重新排名模型的推理类型选择</block>
+  <block id="a4c5c24aeea4d68e48565188546da1a5" category="paragraph">如果您选择的嵌入、聊天或重新排名模型具有推理设置，您现在可以选择推理类型。这使您能够更好地根据您的需要调整聊天机器人的性能和资源需求。</block>
+  <block id="4c37c315c9d867d1ed68d5bf3b485581" category="paragraph">您组织的数据源可能包含个人身份信息 (PII)。为了保护这些敏感信息，您可以在定义连接器时启用_数据护栏_。由NetApp数据分类提供支持的数据护栏可识别和屏蔽 PII，使其无法访问和恢复。</block>
+  <block id="4964a8f5f86e15358c2fc765883fe9b2" category="inline-link-macro">了解NetApp数据分类</block>
+  <block id="0cac33ffe2dda7aadc188526e2c51e53" category="paragraph"><block ref="9d6a042c61c79fe658321fd8a6f48fe1" category="inline-link-macro-rx"></block> 。</block>
+  <block id="95980a4470a469a0b4b49d87ede034ea" category="admonition">NetApp Workload Factory for GenAI 不会屏蔽敏感个人信息 (SPII)。参考<block ref="486adf5600ecf2d2875320c7aa899e00" category="inline-link-macro-rx"></block>有关此类数据的更多信息。</block>
+  <block id="cfd1aab41effa713a788641daf978408" category="admonition">数据护栏可以随时启用或禁用。如果您切换数据护栏启用，Workload Factory 将从头开始扫描整个数据源，这可能会产生成本。</block>
+  <block id="e3ead23947b36196a13b3a8f797c1468" category="list-text">从知识库和连接器菜单中，选择*新建*下拉菜单并选择*Amazon Q 商业连接器*。</block>
+  <block id="cda7985a698f602180b074d70db09dce" category="inline-link-macro">了解由NetApp数据分类提供支持的数据护栏</block>
+  <block id="54672b66e432a993ef32b1d495dc9bf7" category="list-text">*数据护栏*：选择是否要启用或禁用数据护栏。<block ref="0c98f684f5935d3a05106a9e1df65026" category="inline-link-macro-rx"></block> 。</block>
+  <block id="50ba883e972aac90f3f54e02377a0066" category="inline-link-macro">了解如何在NetApp控制台中为成员添加角色</block>
+  <block id="8c0c2009c9ba5f1b6ae2a8afc9079866" category="list-text">需要服务帐户才能与NetApp数据分类进行通信。您必须在NetApp控制台租赁帐户上拥有“组织管理员”角色才能创建服务帐户。具有组织管理员角色的成员可以在NetApp控制台中完成所有操作。<block ref="4816da06277cd1af6657c0e6b3b28ce2" category="inline-link-macro-rx"></block></block>
+  <block id="4b38f71de84cf340c6a92a599b7d2702" category="inline-link-macro">NetApp控制台 API 端点</block>
+  <block id="b66922ff9d0907d8ca604e9f80f0c965" category="list-text">AI 引擎必须能够访问<block ref="2f0eab611b4a55919d99e53413894eb4" category="inline-link-macro-rx"></block>。</block>
+  <block id="e6d9434fa5832019fb3968212fe539d4" category="inline-link-macro">NetApp数据分类文档</block>
+  <block id="d5af22eb3d6ad0b81a1d75d9bdb7eb1f" category="list-text">您需要按照<block ref="4a53b097b4d22dbf0ff30eeabc366666" category="inline-link-macro-rx"></block>：</block>
+  <block id="f3aee30a3a487c746572616e3f53dc9d" category="list-text">创建控制台代理</block>
+  <block id="8adae84c043f8c8d4377581946e8bf95" category="list-text">部署NetApp数据分类</block>
+  <block id="9ee5025439b396672e9e5047a2825653" category="list-text">*FSx for ONTAP文件系统*：当您为 Amazon Q Business 定义新的NetApp Connector 时，Workload Factory 会创建一个新的Amazon FSx for NetApp ONTAP卷来存储连接器信息。选择将在其中创建新卷的现有文件系统和 SVM（也称为存储 VM）。</block>
+  <block id="6805d65730e1722701694bd005bfff41" category="list-text">*快照策略*：从 Workload Factory 存储清单中定义的现有策略列表中选择一个快照策略。  GenAI 会根据您选择的快照策略以一定频率自动创建存储连接器信息的卷的定期快照。</block>
+  <block id="37da493e7d653abd7b050a352b977771" category="list-text">从知识库和连接器清单页面中，选择要查看的连接器。</block>
+  <block id="b137dc7a676c39cb21f098b1a364a00a" category="list-text">从知识库和连接器菜单中，选择要同步的连接器。</block>
+  <block id="3f81c914f0f87aebe980b49caaf0dce7" category="paragraph">如果您不再需要连接器，您可以将其删除。当您删除连接器时，它将从 Workload Factory 中删除，并且包含该连接器的卷也将被删除。删除连接器是不可逆的。</block>
+  <block id="da020c51ebf30da6231116004fda7286" category="paragraph">连接器已从 Workload Factory 中移除，并且其关联的卷已被删除。</block>
+  <block id="3d784fb83da69a092542ad97e84229a1" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>登录工作负载工厂</block>
+  <block id="e3f4d5b3a0d16b68c0f95c7031bbab0f" category="inline-link">在 Workload Factory 上创建一个帐户</block>
+  <block id="8af94ef3a55ab31e78f60c3968ecc4e3" category="paragraph">你需要<block ref="c1e10d5d77d21feb199911d5a4450d55" category="inline-link-rx"></block>并使用以下任一方式登录<block ref="17b71e2884d56fdbadfe752689dbd4d6" category="inline-link-rx"></block>。</block>
+  <block id="edeb3214a40db0eb77e92c619eab6024" category="summary">在构建知识库之前，请确保 Workload Factory 和 AWS 已正确设置。这包括拥有您的 AWS 登录凭证、已部署的 FSx for ONTAP文件系统（其中包含您想要集成到知识库中的数据源）、访问 Amazon Bedrock AI 服务等等。</block>
+  <block id="c344d08c63cd0a61ae52c0afbc7a6983" category="paragraph">在为 Amazon Q Business 创建NetApp连接器之前，请确保 Workload Factory 和 AWS 已正确设置。</block>
+  <block id="55df1ea48b09b075b4b7dd39f32b38ee" category="list-text">工作负载工厂登录和帐户</block>
+  <block id="0aa33603aa5c04e97c7ea5fe24a5ae9c" category="list-text">您需要将具有读/写权限的 AWS 凭证添加到 Workload Factory，这意味着您将以读/写模式使用 Workload Factory 进行 GenAI。</block>
+  <block id="b6358992bb0152c2af9f3e2e315ef468" category="inline-link">了解如何将 AWS 凭证添加到 Workload Factory</block>
+  <block id="83106366073f0e7e6a64705516568b5d" category="paragraph"><block ref="83106366073f0e7e6a64705516568b5d" category="inline-link-rx"></block></block>
+  <block id="08f1f250c27892cfed785e79d8ae2020" category="summary">NetApp Workload Factory for GenAI 使您能够将Amazon FSx for NetApp ONTAP文件系统与 GenAI 基础模型集成。这为您的 AI 数据集提供了高性能存储以及丰富的保护、安全和成本优化功能。</block>
+  <block id="e52ae164cfd3d822c967b0cce5d2a21a" category="section-title">NetApp Workload Factory for GenAI 是什么？</block>
+  <block id="76c45e604f530699d43d3b687cbafcad" category="paragraph">NetApp Workload Factory for GenAI 使您能够将Amazon FSx for NetApp ONTAP上的企业数据源与生成式 AI 应用程序结合使用。利用检索增强生成 (RAG)，您可以快速将数据源连接到可通过 Amazon Bedrock 或 Amazon Q Business 获得的基础模型，以开发生成式 AI 驱动的应用程序，例如虚拟助手、问答聊天机器人、文档摘要、内容创建等。</block>
+  <block id="6ae8e58cb52cd45b321927bcb2961f4e" category="inline-link">工作负载工厂概述</block>
+  <block id="b5b60d536e6e0460769e5ad0ac34a2d7" category="paragraph">有关 Workload Factory 的更多信息，请参阅<block ref="3b764dfed54c8d9154794adb30144dfb" category="inline-link-rx"></block>。</block>
+  <block id="762b27ff07b52b81af4adcbeba979d3f" category="paragraph">NetApp Workload Factory for GenAI 简化了使用检索增强生成 (RAG) 构建生成式 AI 应用程序所需的基础架构的部署过程。具体来说，GenAI 具有以下优势：</block>
+  <block id="87032486b260ce5950093ee5632ed95e" category="section-title">NetApp Workload Factory for GenAI 如何帮助构建生成式 AI 应用程序</block>
+  <block id="4bbb8d481021011f9afb73ca196bfecd" category="section-title">使用NetApp Workload Factory 的工具</block>
+  <block id="227f846d45d01d0f9fb62a784d506d51" category="paragraph">您可以将NetApp Workload Factory 与以下工具一起使用：</block>
+  <block id="36445dd6e44838348239a5d874596e0d" category="list-text">*Workload Factory 控制台*：Workload Factory 控制台提供您的应用程序和项目的可视化、整体视图。</block>
+  <block id="e71fd0837014d1987a939c9af71a3353" category="list-text">* NetApp控制台*： NetApp控制台提供混合界面体验，以便您可以将 Workload Factory 与其他NetApp数据服务一起使用。</block>
+  <block id="38c157d73ba6e13febe98e5199b858c8" category="list-text">*问我*：使用问我 AI 助手来提问并了解有关 Workload Factory 的更多信息，而无需离开 Workload Factory 控制台。从 Workload Factory 帮助菜单访问“问我”。</block>
+  <block id="65c95ed5c9f895be6dfa81e8583c86af" category="list-text">*CloudShell CLI*：Workload Factory 包含一个 CloudShell CLI，可通过基于浏览器的单个 CLI 跨账户管理和操作 AWS 和NetApp环境。从 Workload Factory 控制台顶部栏访问 CloudShell。</block>
+  <block id="34904d30d825a389b588efb76a1ceb16" category="list-text">*REST API*：使用 Workload Factory REST API 部署和管理您的 FSx for ONTAP文件系统和其他 AWS 资源。</block>
+  <block id="3995165ba76339d9d4d08edf5a17c07c" category="list-text">*CloudFormation*：使用 AWS CloudFormation 代码执行您在 Workload Factory 控制台中定义的操作，以从您的 AWS 账户中的 CloudFormation 堆栈对 AWS 和第三方资源进行建模、配置和管理。</block>
+  <block id="a1b1209dad1b58c4e66fd68ee5bc0148" category="list-text">*Terraform NetApp Workload Factory 提供商*：使用 Terraform 构建和管理在 Workload Factory 控制台中生成的基础架构工作流。</block>
+  <block id="3163a16fc98aa29c5fea8b61c62bb459" category="paragraph">使用 Workload Factory 的 GenAI 功能无需任何成本。</block>
+  <block id="0ea77fd2fdca0ee14d426a023ea715ad" category="paragraph">无需NetApp的特殊许可即可使用 Workload Factory 的 AI 功能。</block>
+  <block id="5948f3347ebc02ebc690227c059661e1" category="section-title">区域</block>
+  <block id="d5b1044cbc510048a5dac270bde89ed5" category="inline-link-macro">查看支持的亚马逊区域。</block>
+  <block id="83484345c6c9799617ce91d7736b8b32" category="paragraph">所有支持 FSx for ONTAP 的商业区域均支持 Workload Factory。<block ref="c26e1d6730022abf3c378cf0c0cad7af" category="inline-link-macro-rx"></block></block>
+  <block id="186585d175a4fff1722ac82a5520c584" category="paragraph">以下 AWS 区域不受支持：</block>
+  <block id="cc6dcf46ebcb08f1caa420526cc0ab18" category="list-text">中国地区</block>
+  <block id="1411debdb32e6b128ca27ec92a708cbd" category="list-text">GovCloud（美国）区域</block>
+  <block id="ecd96786b112acf6970d6aaf3be575ca" category="list-text">秘密云</block>
+  <block id="151ef168e17772f7a361db78a0c86552" category="list-text">绝密云</block>
+  <block id="6b39fa3582a5336c28b4c324f016a9a8" category="summary">当您部署 GenAI 基础设施时，Workload Factory 会为 GenAI 引擎创建一个 EC2 实例。它还为此实例创建 IAM 角色、安全组和私有端点。您可能希望了解有关 Workload Factory 在您的 AWS 环境中创建的这些组件的更多详细信息。</block>
+  <block id="a91a3edb7605f2bbdd24de35ed37881d" category="list-text">如果目标 VPC 还没有它们，Workload Factory 会为 GenAI 引擎 EC2 实例创建私有端点，以便它可以与以下 AWS 服务通信：</block>
+  <block id="d516e280a366ca18651acbc6e4772bf0" category="list-text">使用以下方式之一登录 Workload Factory<block ref="17b71e2884d56fdbadfe752689dbd4d6" category="inline-link-rx"></block> 。</block>
+  <block id="192c926e9863b359baac9e0875666936" category="list-text">选择“*基础设施*”菜单。</block>
+  <block id="a7bf703b71095ade4e9a5a2efbfb0833" category="paragraph">如果您不再需要为一个或多个聊天机器人部署的聊天机器人基础架构，则可以将其从 Workload Factory 中删除。</block>
+  <block id="7aa10851e3620307984050c7d70b98aa" category="paragraph">此操作仅从 Workload Factory 中删除到 AI 基础设施的链接；它不会从 AWS 中删除所有组件。您需要从 AWS 中手动删除以下基础设施组件：</block>
+  <block id="f8633718706ae1721e0497e512234ee9" category="paragraph">聊天机器人基础设施组件已从 Workload Factory 中删除。</block>
+  <block id="60e1c500173035f5c36bd211079f9106" category="summary">使用NetApp Workload Factory for GenAI 中的 Tracker 跟踪工作负载操作并监控作业进度。</block>
+  <block id="90f1d591a5568f9514509a22083b5b1a" category="paragraph">使用NetApp Workload Factory 中的 Tracker 监控和跟踪工作负载操作的执行情况并监控任务进度。</block>
+  <block id="6e6b128e6a9a02188dabea0077b4ad0b" category="paragraph">NetApp Workload Factory 提供监控功能 Tracker，因此您可以监控和跟踪工作负载操作的进度和状态、查看操作任务和子任务的详细信息以及诊断任何问题或故障。</block>
+  <block id="3681c25085cfd3a56604857cdcbcb245" category="paragraph">使用 Tracker 跟踪和监控 Workload Factory 控制台中的操作。</block>
+  <block id="736c64c4ed0856a8d9aa760b894aef84" category="list-text">从工作量菜单中，选择*管理*，然后选择*跟踪器*。</block>
+  <block id="2ba65fb298b74a9b72d949d4fe3479b3" category="list-text">在 Tracker 中，使用过滤器或搜索来缩小工作结果范围。您还可以下载工作报告。</block>
+  <block id="bd56fc255ce900fc195c9bc0d7ed20c0" category="list-text">选择操作菜单，然后选择*查看 API 请求*。</block>
+  <block id="9d506eb8fb5e05c2467a690e5e727cd8" category="list-text">选择操作菜单，然后选择*重试*。</block>
+  <block id="0270fd4391a6b334aa157faf0a6b7304" category="list-text">选择操作菜单，然后选择*编辑并重试*。</block>
+  <block id="b334128403ed60ff931947907046e1f0" category="summary">在向NetApp技术支持部门提交支持案例之前，您需要向 Workload Factory 添加一个NetApp支持站点帐户，然后注册以获得支持。</block>
+  <block id="b7656321c37aaf9cf5f9eb24eeae0ce5" category="cell">NetApp Workload Factory for GenAI 需要在部署过程中创建一个新卷，但使用您指定的名称的卷已经存在。</block>
+  <block id="9dd5713fe73e0086c8163a6325c5e715" category="cell">部署失败，因为NetApp Workload Factory for GenAI 无法挂载该卷。</block>
+  <block id="d8d7e9269ad1c053f8b7b1f95e56638a" category="cell">选择*重建*按钮。 NetApp Workload Factory for GenAI 重建基础架构并显示重建进度。完成后，您的知识库将重新连接到重建的基础设施，并显示知识库列表。</block>
+  <block id="7592c3ee1329d09883719905a57d178f" category="cell">NetApp Workload Factory for GenAI 使用的后端 Docker 实例无法启动。</block>
+  <block id="243f4102d24e538f61072e19e53b373f" category="summary">NetApp通过多种方式为 Workload Factory 提供支持。全天候提供广泛的免费自助支持选项，例如知识库 (KB) 文章和社区论坛。您的支持注册包含通过网络工单获取的远程技术支持。</block>
+  <block id="b02383a4a2dfb0d7ae26d196d7d8c364" category="doc">获取有关NetApp Workload Factory for GenAI 的帮助</block>
+  <block id="3c6efe0ce159fb5b8ee4882bcf3ad973" category="paragraph">NetApp通过多种方式为 Workload Factory 及其云服务提供支持。全天候提供广泛的免费自助支持选项，例如知识库 (KB) 文章和社区论坛。您的支持注册包含通过网络工单获取的远程技术支持。</block>
+  <block id="4435b263dd1a35bcd8dfda050db92b3b" category="paragraph">有关 FSx for ONTAP、其基础架构或任何使用该服务的解决方案的技术支持，请参阅该产品的 Workload Factory 文档中的“获取帮助”。</block>
+  <block id="359d8b16e442ffaa72e03c95fcd60448" category="paragraph"><block ref="359d8b16e442ffaa72e03c95fcd60448" category="inline-link-macro-rx"></block></block>
+  <block id="d935525f4850c4638cbf48ae53fb4686" category="paragraph">您当前正在查看的 Workload Factory 文档。</block>
+  <block id="ba6274b9c9d1f81bb3a648fa289986b8" category="paragraph">搜索 Workload Factory 知识库以查找有助于解决问题的文章。</block>
+  <block id="7faef90df03399696ba9d4815b37171a" category="paragraph">加入 Workload Factory 社区以关注正在进行的讨论或创建新的讨论。</block>
+  <block id="a12ea39ddf1c98adfd7f751299705efa" category="paragraph">要使用*创建案例*功能，您必须首先注册支持。将您的NetApp支持站点凭据与您的 Workload Factory 登录名关联。<block ref="d9fea24984986beabae03291c4b721de" category="inline-link-macro-rx"></block> 。</block>
+  <block id="356c88ac4b0ec3f7689cc91f54701fef" category="list-text">在 Workload Factory 控制台的右上角，选择 *帮助 &gt; 支持*。</block>
+  <block id="6e74b203173a9994c366c7e7a3cf4748" category="paragraph">选择此选项将在新浏览器选项卡中打开NetApp控制台并加载支持仪表板。</block>
+  <block id="3f13dd54818447375c92bf35e0a35f00" category="paragraph">此错误可能意味着 NSS 帐户及其关联的记录公司与NetApp控制台帐户序列号的记录公司不同（即。960xxxx）或系统序列号。您可以使用以下选项之一寻求帮助：</block>
+  <block id="289d2ab2d9b0e116790d035921c12b56" category="paragraph">您可以直接从NetApp控制台查看和管理活动和已解决的支持案例。您可以管理与您的 NSS 帐户和公司相关的案例。</block>
+  <block id="f9a63cd3a07378e169c58addd5fdce8d" category="paragraph">选择此选项将打开NetApp控制台的新浏览器选项卡并加载支持仪表板。</block>
+  <block id="785b440c0be1d853c5e2f4fb1f1ee2ab" category="list-text">选择*案例管理*，如果出现提示，请将您的 NSS 帐户添加到NetApp控制台。</block>
+  <block id="c80d8addb8aa8e8872bbc44894b077f3" category="paragraph">*案例管理*页面显示与您的NetApp控制台用户帐户关联的 NSS 帐户相关的未结案例。这与出现在 *NSS 管理* 页面顶部的 NSS 帐户相同。</block>
+  <block id="1bb31e213d9a78b11c5c2c214bcffc0d" category="summary">部署 AI 基础架构并确定将从 FSx for ONTAP数据存储集成到知识库中的数据源后，您就可以使用 Workload Factory 构建知识库了。作为此步骤的一部分，您还将定义 AI 特性并创建对话开场白。</block>
+  <block id="f5319b0c82a4988a803605055631adad" category="paragraph">部署 AI 基础架构并确定将从 FSx for ONTAP数据存储集成到知识库中的数据源后，您就可以使用 Workload Factory 构建知识库了。作为此步骤的一部分，您还将定义 AI 特性并创建对话开场白。</block>
+  <block id="4397773b221958b434d451849b218a9e" category="paragraph">您组织的数据源可能包含个人身份信息 (PII)。为了保护这些敏感信息，您可以在创建和配置知识库时启用_数据护栏_。由NetApp数据分类提供支持的数据护栏可识别和屏蔽 PII，使其无法访问和恢复。</block>
+  <block id="37bc35c3807c6c69405dc248ed745088" category="admonition">NetApp Workload Factory for GenAI 不会屏蔽敏感的个人信息 (SPii)。参考<block ref="486adf5600ecf2d2875320c7aa899e00" category="inline-link-macro-rx"></block>有关此类数据的更多信息。</block>
+  <block id="cf24c0f0066b07e51df4da735abd84e5" category="admonition">数据护栏可以随时启用或禁用。如果您切换数据护栏启用，Workload Factory 将从头开始扫描整个知识库，这会产生成本。</block>
+  <block id="fa9fc0df67fe3d84bf641ee49efe3d55" category="list-text">从知识库和连接器菜单中，选择*新建*下拉菜单并选择* NetApp GenAI 知识库 for Bedrock*。</block>
+  <block id="df3fcfc93797413d00a0297022269f14" category="list-text">在创建NetApp GenAI 知识库页面上，配置知识库设置：</block>
+  <block id="0c8f3391e330644976b6636caf13d918" category="floating-title">知识库详细信息</block>
+  <block id="0bbef5b7307b42248f817bd61a873f87" category="list-text">*Bedrock*：选择您的 AWS 账户可使用 Amazon Bedrock 的区域。</block>
+  <block id="1f715e306a8c1a0a9dbe74addb6c07ae" category="floating-title">摄入</block>
+  <block id="a2e5aba31e4d8221984e6d06114456a6" category="list-text">*嵌入模型*：</block>
+  <block id="730d5a492a771af1baa69e62c28d174b" category="list-text">选择一个嵌入模型用于知识库。嵌入模型定义如何将数据转换为知识库的向量嵌入。  Workload Factory 支持以下模型：</block>
+  <block id="4352d805998d8ad32a7859d012f71a83" category="list-text">如果适用，请选择与所选嵌入模型的配置相匹配的推理类型。</block>
+  <block id="fa6dbab8f49c3fbf86bcf670cd5280f6" category="list-text">需要服务帐户才能与NetApp数据分类进行通信。您必须在NetApp控制台租赁帐户上拥有“组织管理员”角色才能创建服务帐户。具有组织管理员角色的成员可以完成组织中的所有操作。<block ref="4816da06277cd1af6657c0e6b3b28ce2" category="inline-link-macro-rx"></block></block>
+  <block id="a3d0f581ff3f31203aac2e427919aeb6" category="floating-title">聊天和检索设置</block>
+  <block id="0fe732cdf8d726b7680f12df792132f4" category="list-text">*聊天模型*：</block>
+  <block id="ee3f006053047e8f7d917d3dc000a807" category="list-text">从 Amazon Bedrock 中集成的各种聊天模型中进行选择。请注意，您必须已经启用来自 Amazon Bedrock 的聊天模型。</block>
+  <block id="b4d262b9dbcc7721787cd235f8b6159e" category="list-text">如果适用，请选择与所选模型的配置相匹配的推理类型。</block>
+  <block id="3ab1b3d64ba93cb7e1ef853cd3639952" category="list-text">*聊天设置*：</block>
+  <block id="369d9aca2d3c066c059af54441a74872" category="list-text">为聊天机器人选择一个温度来配置响应的随机性和创造性。较低的温度会导致更可预测的响应，而较高的温度会导致更加多样化的响应。</block>
+  <block id="cc32f4736ded54433e70ddb755c95a79" category="list-text">选择最大响应长度来配置响应的详细程度。响应长度越长，使用的响应令牌就越多，并且会产生更高的成本。</block>
+  <block id="2d684805dcde7ef4347d6c5033fe370b" category="list-text">*思考模式*：启用思考模式后，聊天机器人将花费更多时间来处理查询，并且结果通常会更准确。当您启用思考模式时，您可以控制在生成结果时使用多少个推理标记。使用更多的推理标记可以得到更准确的响应，但可能会产生更高的成本。</block>
+  <block id="ff815f097bfc58adb62009d74f9d6b74" category="list-text">*重新排名*：启用或禁用重新排名，这可以提高查询结果的相关性和质量。选择标准聊天模型或专门的重新排名模型用于重新排名。仅当您所在地区可用时才会显示 Reranker 模型选项。选择与所选模型的配置相匹配的推理类型。</block>
+  <block id="d48d38ca6fc4ccc27cb85395666d7f2d" category="floating-title">存储定义</block>
+  <block id="ce08e73f7c40cf7e58d6371a757d23c6" category="list-text">*FSx for ONTAP文件系统*：当您定义新的知识库时，Workload Factory 会创建一个新的Amazon FSx for NetApp ONTAP卷来存储它。选择将在其中创建新卷的现有文件系统名称和 SVM（也称为存储 VM）。</block>
+  <block id="c880ade9c6e1657038a733388834bf6d" category="list-text">*快照策略*：从 Workload Factory 存储清单中定义的现有策略列表中选择一个快照策略。知识库的定期快照将根据您选择的快照策略以一定频率自动创建。</block>
+  <block id="c88eb449e8388152b30e0d6f5c7fd191" category="list-text">*S3 存储桶*：如果聊天机器人查询结果包含结构化数据，GenAI 可以将结果存储在 S3 存储桶中。要使用此功能，请启用*激活 S3 存储桶*设置并从列表中选择与您的帐户关联的 S3 存储桶。当这些结果存储在 S3 存储桶中时，您可以使用聊天会话中的下载链接下载它们。</block>
+  <block id="9f6d7e16caf2363ed289cf415c43d68e" category="summary">您可以安装并运行示例聊天机器人应用程序来测试您的知识库，并了解如何使用 Workload Factory API 创建您自己的生成式 AI 应用程序。</block>
+  <block id="15abf1d561eb7f7ddb0e28f6c4562a8c" category="paragraph">配置、激活和发布知识库后，外部应用程序开发人员可以配置和运行NetApp提供的开源示例聊天机器人应用程序，以便与您的知识库进行交互，并了解如何使用 Workload Factory API 创建自己的生成式 AI 应用程序。</block>
+  <block id="862b02acae8afc7a8e5ed9bf4c7cb18e" category="inline-link">工作负载工厂 API 文档</block>
+  <block id="39d0fcde59bc31b066cd026cdc9718f8" category="paragraph"><block ref="39d0fcde59bc31b066cd026cdc9718f8" category="inline-link-rx"></block></block>
+  <block id="6824bbecd16674bc938a9caee69ddf80" category="paragraph">Workload Factory GenAI 知识库目前支持以下数据源文件格式。</block>
+  <block id="a2dcb34ffa2df34dfaba4a6b7a5fe723" category="list-text">从知识库和连接器菜单中，选择要暂停或恢复扫描的知识库。</block>
+  <block id="88f99918375bbf8120b251d975b7e03e" category="paragraph">如果您不再需要知识库，您可以将其删除。当您删除知识库时，它将从 Workload Factory 中删除，并且包含该知识库的卷也将被删除。任何使用知识库的应用程序或聊天机器人都将停止工作。删除知识库是不可逆的。</block>
+  <block id="fa20235938197ed878f7da8159917a1d" category="paragraph">知识库已从 Workload Factory 中删除，并且其关联卷也已被删除。</block>
+  <block id="63c0b4117f24258cf088fd810fcdbd9f" category="paragraph">发布知识库使您能够在聊天应用程序中使用它。发布操作触发 Workload Factory API 生成并发布唯一端点。发布后，知识库可供聊天应用程序访问，并且 API 端点已准备好进行集成。</block>
+  <block id="19761722f9e779bd2a70fef96c24a1bc" category="paragraph">Workload Factory 发布知识库。在知识库的详细信息页面上，状态从*未发布*更改为*已发布*。</block>
+  <block id="b3ec171bb9a8cc7c009e2caf4d945535" category="paragraph">显示有关如何使用 Workload Factory API 访问知识库的详细信息。</block>
+  <block id="4c75c82a12df676b1ee7d559665c434a" category="paragraph">在开始使用NetApp Workload Factory for GenAI 之前，您必须设置 Amazon Bedrock。您的 GenAI 部署必须位于启用了 Amazon Bedrock 的 AWS 区域。</block>
+  <block id="6ea2edc8e481e05029a9c17c0d118a4c" category="paragraph">在为用户在应用程序中部署知识库之前，您将在 Workload Factory 中执行大部分测试。如果您需要更改数据源或聊天机器人操作，则需要在发布知识库之前进行更改。</block>
+  <block id="c56ce0bea3e69444b0c0078136e9b7ce" category="list-text">如果答案中包含表格，您可以对每列中的数据进行排序，然后将每个表格复制到剪贴板。</block>
+  <block id="689b99dcda35ffe2433b85248726142a" category="list-text">如果答案结果包含结构化数据，并且知识库启用了 *S3 Bucket* 功能，GenAI 会将结果存储在 S3 Bucket 中。您可以使用聊天会话中的*下载结果*链接从存储桶中下载结果。</block>
+  <block id="e7581e4ae4d96b238a63b95760365ab6" category="inline-link">Amazon FSx for NetApp ONTAP的 Workload Factory 文档</block>
+  <block id="739e9505cf489ae6de839a15d67ad290" category="paragraph">有关管理 FSx for ONTAP文件系统的信息，请访问<block ref="80490e4643319ea0ed1c5bef7c007699" category="inline-link-rx"></block>查看您可以使用的备份和保护功能。</block>
+  <block id="00676d2ca06bd25a3f51887d4e44d6c2" category="doc">NetApp Workload Factory for GenAI 法律声明</block>
+  <block id="aeb31c9f8c311597856b129ab948b4e6" category="inline-link">NetApp工作负载工厂</block>
+  <block id="55f7843f27571db97da76bdf68a76d22" category="paragraph"><block ref="55f7843f27571db97da76bdf68a76d22" category="inline-link-rx"></block></block>
+  <block id="fee3c6714ec408c0885430459291dc01" category="doc">注册以获取NetApp Workload Factory for GenAI 的支持</block>
+  <block id="3d9b602ae77ac6a4951ca31b05b6b54f" category="paragraph">需要注册支持才能获得针对NetApp Workload Factory 及其存储解决方案和服务的技术支持。您必须注册NetApp Console 的支持，它是独立于 Workload Factory 的基于 Web 的控制台。</block>
+  <block id="c552970fd4dc8118ba1806da596acad9" category="paragraph">注册支持并不能使NetApp获得云提供商文件服务的支持。有关云提供商文件服务、其基础设施或使用该服务的任何解决方案的技术支持，请参阅该产品的 Workload Factory 文档中的“获取帮助”。</block>
+  <block id="eb803e55617f13b716b5e56642cce2b0" category="paragraph">注册您的帐户 ID 支持订阅（位于NetApp控制台中的“支持资源”页面上的 20 位 960xxxxxxxxx 序列号）作为您的单一支持订阅 ID。每个NetApp帐户级支持订阅都必须注册。</block>
+  <block id="4cffd3c1dbf2f1038c01d18e7a860305" category="paragraph">注册后即可实现开立支持票和自动生成案例等功能。通过将NetApp支持站点 (NSS) 帐户添加到NetApp控制台即可完成注册，如下所述。</block>
+  <block id="f6c4a3ae75d6616126e6da8310ae7384" category="paragraph">要注册支持并激活支持权利，您帐户中的一名用户必须将NetApp支持站点帐户与其NetApp控制台登录名关联。如何注册NetApp支持取决于您是否已经拥有NetApp支持站点 (NSS) 帐户。</block>
+  <block id="f732375b4bc27328f202e3b10a957017" category="paragraph">如果您是拥有 NSS 帐户的NetApp客户，则只需通过NetApp控制台注册即可获得支持。</block>
+  <block id="f65aaf10469eac2932fc53c6a37afb71" category="list-text">从NetApp控制台菜单中，选择 *管理*，然后选择 *凭据*。</block>
+  <block id="9094354ffd09e4644caa0010edc66d24" category="paragraph">请注意，如果其他NetApp控制台用户尚未将NetApp支持站点帐户与其NetApp控制台登录名关联，则他们将看不到相同的支持注册状态。但是，这并不意味着您的NetApp帐户未注册支持。只要账户中有一位用户遵循了这些步骤，那么您的账户就注册成功了。</block>
+  <block id="a8f62b208e5177a219f0b0d4ce88e0a9" category="paragraph">如果您是现有NetApp客户，拥有现有许可证和序列号但没有 NSS 帐户，则需要创建一个 NSS 帐户并将其与您的NetApp控制台登录关联。</block>
+  <block id="fb9b6bbcab5fb396a13f67594a0ba1ee" category="list-text">请务必复制上面用于序列号字段的NetApp帐户序列号 (960xxxx)。这将加快账户处理速度。</block>
+  <block id="40eff8559acd41057187b6cb11fa1919" category="list-text">完成以下步骤，将您的新 NSS 帐户与您的NetApp控制台登录关联<block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
+  <block id="f335678326583cea28377216c5515221" category="paragraph">拥有NetApp支持站点帐户后，请按照以下步骤将该帐户与您的NetApp控制台登录关联<block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
+  <block id="11408eb169fbb608ff150e7669c76840" category="summary">了解 Workload Factory 的 AI 工作负载功能的新功能。</block>
+  <block id="2f2acbb06599abf3cd623990e9e56fb9" category="doc">NetApp Workload Factory for GenAI 的新功能</block>
+  <block id="798b17d8de1952262296a846e0def34f" category="paragraph">了解 Workload Factory 的生成式 AI 工作负载功能的新功能。</block>
+  <block id="7fe837fc0a93acdad81da1d440ee3fd2" category="section-title">2025年10月5日</block>
+  <block id="613abd0d9da6f7ee37d283174e11fcaf" category="section-title">2025年8月3日</block>
+  <block id="2d5a4b914acb6c2f03d312067c73ce32" category="section-title">2025年3月2日</block>
+  <block id="7db2ec898084af7838dc320984fa51fe" category="sidebar">NetApp Workload Factory for GenAI 文档</block>
+  <block id="3c031b939f6ec312ee601d021e7a6644" category="sidebar">NetApp控制台</block>
+  <block id="cc58d3a9b2264c4fd8cb1d3f61b90bdc" category="sidebar">NetApp数据服务</block>
 </blocks>

@@ -2,16 +2,72 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes, genai' 
-summary: 了解工作负载工厂AI工作负载功能的新增功能。 
+summary: 了解 Workload Factory 的 AI 工作负载功能的新功能。 
 ---
-= BlueXP  Workload Factory for GenAI的新增功能
+= NetApp Workload Factory for GenAI 的新功能
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-了解工作负载工厂生成型AI工作负载功能的新增功能。
+了解 Workload Factory 的生成式 AI 工作负载功能的新功能。
+
+
+
+== 2025年10月5日
+
+
+
+=== BlueXP workload factory现为NetApp工作负载工厂
+
+BlueXP已重命名并重新设计，以更好地反映其在管理数据基础设施中的作用。因此， BlueXP workload factory已重命名为NetApp工作负载工厂。
+
+
+
+=== 支持在适用于 Amazon Q Business 的NetApp连接器中添加通用 NFS/SMB 数据源
+
+使用 Workload Factory API，您现在可以将数据源从通用 NFSv3、NFSv4 或 SMB 共享添加到NetApp Connector for Amazon Q Business。这使您能够包含存储在由Amazon FSx for NetApp ONTAP以外的文件系统托管的卷上的文件。
+
+link:https://docs.netapp.com/us-en/workload-genai/connector/define-connector.html["为 Amazon Q Business 创建 NetApp 连接器"]
+
+link:https://docs.netapp.com/us-en/workload-genai/connector/define-connector.html#add-data-sources-to-the-connector["向连接器添加数据源"]
+
+
+
+=== 知识库的高级聊天配置
+
+您现在可以配置适用于知识库聊天模型的高级聊天设置，例如响应长度、温度、推理设置等。其中一些设置（例如最近时间和修改时间设置、高级检索设置和系统提示）仅可使用 Workload Factory API。
+
+link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledgebase.html["创建GenAI知识库"]
+
+
+
+=== 现支持嵌入、聊天和重新排名模型的推理类型选择
+
+如果您选择的嵌入、聊天或重新排名模型具有推理设置，您现在可以选择推理类型。这使您能够更好地根据您的需要调整聊天机器人的性能和资源需求。
+
+link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledgebase.html["创建GenAI知识库"]
+
+
+
+== 2025年8月3日
+
+
+
+=== 结构化数据结果的安全存储
+
+如果聊天机器人查询结果包含结构化数据，GenAI 可以将结果存储在 Amazon S3 存储桶中。当这些结果存储在 S3 存储桶中时，您可以使用聊天会话中的下载链接下载它们。
+
+link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledgebase.html["创建GenAI知识库"]
+
+
+
+=== MCP 服务器可用性
+
+NetApp现在为 GenAI 提供带有NetApp Workload Factory 的模型上下文协议 (MCP) 服务器。您可以在本地安装服务器，以允许外部 MCP 客户端从 GenAI 知识库中发现和检索查询结果。
+
+link:https://github.com/NetApp/mcp/tree/main/NetApp-KnowledgeBase-MCP-server["NetApp Workload Factory GenAI MCP 服务器"^]
 
 
 
@@ -37,7 +93,7 @@ https://docs.netapp.com/us-en/workload-genai/connector/define-connector.html#add
 
 GenAI 现已提供 Tracker 监控功能。您可以使用 Tracker 监控和跟踪待处理、正在进行和已完成操作的进度和状态，查看操作任务和子任务的详细信息，诊断任何问题或故障，编辑失败操作的参数，以及重试失败的操作。
 
-link:https://docs.netapp.com/us-en/workload-genai/general/monitor-operations.html["使用 BlueXP 工作负载工厂中的 Tracker 监控工作负载操作"]
+link:https://docs.netapp.com/us-en/workload-genai/general/monitor-operations.html["使用NetApp Workload Factory 中的 Tracker 监控工作负载操作"]
 
 
 
@@ -81,7 +137,11 @@ link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledg
 
 === 更新了权限术语
 
-工作负载工厂用户界面和文档现在使用“只读”来指代读取权限，使用“读/写”来指代自动化权限。== 2025年3月2日
+Workload Factory 用户界面和文档现在使用“只读”来指代读取权限，使用“读/写”来指代自动化权限。
+
+
+
+== 2025年3月2日
 
 
 
@@ -154,7 +214,7 @@ link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledg
 
 现在、GenAI可以使用混合搜索并重新排列结果、从而显著提高搜索结果的相关性和准确性。混合搜索将基于关键字的传统搜索的优势与基于密集矢量的高级语法搜索技术相结合。标准关键字搜索结果通过近似匹配和语言细微差别得到增强、从而增强相关性。然后、GenAI使用Cohere Rerank和Amazon Rerank等高级重新排名模型进一步细化这些结果、并返回最相关的结果。此功能可用于新创建的知识库。
 
-link:https://docs.netapp.com/us-en/workload-genai/general/ai-workloads-overview.html#benefits-of-using-genai-to-create-generative-ai-applications["了解适用于GenAI的BlueXP  工作负载工厂"]
+link:https://docs.netapp.com/us-en/workload-genai/general/ai-workloads-overview.html#benefits-of-using-genai-to-create-generative-ai-applications["了解NetApp Workload Factory for GenAI"]
 
 
 
@@ -180,7 +240,7 @@ link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/deploy-infrastr
 
 === 重建损坏或缺失的GenAI基础架构
 
-如果您的AI引擎实例损坏或被以某种方式删除、您可以让工作负载在出厂时重建它。在完成重建后、工作负载工厂会自动将您的知识库重新连接到基础架构、以便可以随时使用。
+如果您的 AI 引擎实例损坏或以某种方式被删除，您可以让 Workload Factory 为您重建它。重建完成后，工作负载工厂会自动将您的知识库重新连接到基础设施，以便随时可以使用。
 
 link:https://docs.netapp.com/us-en/workload-genai/general/troubleshooting.html["故障排除"]
 
@@ -192,7 +252,7 @@ link:https://docs.netapp.com/us-en/workload-genai/general/troubleshooting.html["
 
 === 从快照克隆一个信息库克隆
 
-适用于GenAI的BlueXP  工作负载工厂现在支持从快照克隆知识库。这样可以快速恢复知识库、使用现有数据源创建新的知识库、并有助于数据恢复和开发。
+NetApp Workload Factory for GenAI 现在支持从快照克隆知识库。从而可以快速恢复知识库，并利用现有数据源创建新的知识库，有助于数据恢复和开发。
 
 link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/manage-knowledgebase.html#clone-a-knowledge-base["克隆知识库"]
 
@@ -200,7 +260,7 @@ link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/manage-knowledg
 
 === 内部ONTAP集群发现和复制
 
-发现内部ONTAP集群数据并将其复制到FSx for ONTAP文件系统、以便用于丰富AI知识库。所有内部发现和复制工作流均可从存储清单中新的*内部ONTAP *选项卡访问。
+发现并将本地ONTAP集群数据复制到 FSx for ONTAP文件系统，以便用于丰富 AI 知识库。所有本地发现和复制工作流程均可通过存储清单中新的 *On-Premises ONTAP* 菜单实现。
 
 link:https://docs.netapp.com/us-en/workload-fsx-ontap/use-onprem-data.html["发现内部 ONTAP 集群"]
 
@@ -212,11 +272,11 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/use-onprem-data.html["发�
 
 === 使用数据防护屏蔽个人身份信息
 
-生成型AI工作负载引入了由BlueXP  分类提供支持的数据防护功能。数据防护功能可识别和屏蔽个人身份信息(Personal可识别信息、Personal可识别信息、Personal可识别信息)、帮助您保持合规性并增强敏感组织数据的安全性。
+生成式人工智能工作负载引入了由NetApp控制台分类提供支持的数据护栏功能。数据护栏功能可识别和屏蔽个人身份信息 (PII)，帮助您保持合规性并加强敏感组织数据的安全性。
 
 link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledgebase.html["创建GenAI知识库"]
 
-link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解BlueXP分类"^]
+link:https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["了解NetApp控制台分类"^]
 
 
 
@@ -278,7 +338,7 @@ https://docs.netapp.com/us-en/workload-genai/knowledge-base/identify-data-source
 
 === 聊天机器人应用程序示例
 
-通过NetApp Workload Factory GenAI示例应用程序、您可以在基于Web的聊天机器人应用程序中直接与发布的NetApp Workload Factory知识库进行交互、从而测试身份验证和从该知识库中检索的结果。
+NetApp Workload Factory GenAI 示例应用程序使您能够通过在基于 Web 的聊天机器人应用程序中直接与已发布的NetApp Workload Factory 知识库进行交互来测试其身份验证和检索。
 
 
 
@@ -286,6 +346,6 @@ https://docs.netapp.com/us-en/workload-genai/knowledge-base/identify-data-source
 
 
 
-=== 适用于GenAI的工作负载工厂初始版本
+=== GenAI 工作负载工厂的初始版本
 
 初始版本支持开发一个知识库、该知识库可通过嵌入组织的数据进行自定义。您的用户可以通过聊天机器人应用程序访问知识库。此功能可确保准确、相关地回答组织特定的问题、从而提高所有用户的满意度和工作效率。

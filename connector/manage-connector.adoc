@@ -20,9 +20,9 @@ summary: 创建知识库后、您可以查看知识库详细信息、修改知�
 您可以查看有关连接器设置和集成的数据源的信息。
 
 .步骤
-. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
-. 从工作负载出厂导航菜单中、选择*AI*。
-. 选择要查看的连接器。
+. 使用以下方式之一登录 Workload Factorylink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
+. 在AI Workloads (AI工作负载)磁贴中、选择*部署和管理*。
+. 从知识库和连接器清单页面中，选择要查看的连接器。
 . 要查看连接器详细信息，请选择，然后选择image:icon-action.png["选项按钮"]*Manage connector*。
 +
 此页面显示已发布状态、数据源的嵌入状态、嵌入模式、所有嵌入数据源的列表等。
@@ -41,7 +41,8 @@ summary: 创建知识库后、您可以查看知识库详细信息、修改知�
 每次在连接器中添加、修改或删除数据源时、GenAI都需要将数据源信息发送到Amazon Q Business、以便对其重新编制索引。同步是增量操作、因此Amazon Q Business仅处理FSx for ONTAP卷中自上次同步以来添加、修改或删除的对象。
 
 .步骤
-. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
+. 使用以下方式之一登录 Workload Factorylink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
+. 在AI Workloads (AI工作负载)磁贴中、选择*部署和管理*。
 . 从"Knowledge Bases & Connectors (知识库和连接器)"清单页面中、选择要更新的连接器。
 . 选择image:icon-action.png["选项按钮"]并选择*Manage connector*。
 +
@@ -63,7 +64,8 @@ NOTE: 每次数据源扫描(包括嵌入)都会带来成本。如果在创建连
 您可以在连接器中嵌入其他数据源、以使用其他组织数据填充该数据源。
 
 .步骤
-. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
+. 使用以下方式之一登录 Workload Factorylink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
+. 在AI Workloads (AI工作负载)磁贴中、选择*部署和管理*。
 . 从"Knowledge Bases & Connectors (知识库和连接器)"清单页面中、选择要添加数据源的连接器。
 . 选择，然后选择 image:icon-action.png["选项按钮"] *添加数据源*。
 . 选择要添加的数据源类型：
@@ -100,7 +102,7 @@ NOTE: 选择较高的重叠百分比会显著增加存储需求、但检索准�
 +
 *** 在*文件类型支持*部分，选择包括所有类型的文件，或选择要包含在数据源扫描中的单个文件类型。
 +
-如果您包含图像或PDF文件、BlueXP  Workload Factory for GenAI将解析图像中的文本(包括PDF文档中的图像)、这将导致成本增加。
+如果您包含图像或 PDF 文件， NetApp Workload Factory for GenAI 会解析图像中的文本（包括 PDF 文档中的图像），这会产生更高的成本。
 
 +
 如果包含图像中的文本数据、则在将扫描的文本数据从您的环境发送到AWS时、GenAI无法屏蔽图像中的个人身份信息(个人身份信息、(PI))。但是、一旦存储数据、所有的数据都会在GenAI数据库中屏蔽。
@@ -152,7 +154,7 @@ NOTE: 选择较高的重叠百分比会显著增加存储需求、但检索准�
 +
 *** 在*文件类型支持*部分，选择包括所有类型的文件，或选择要包含在数据源扫描中的单个文件类型。
 +
-如果您包含图像或PDF文件、BlueXP  Workload Factory for GenAI将解析图像中的文本(包括PDF文档中的图像)、这将导致成本增加。
+如果您包含图像或 PDF 文件， NetApp Workload Factory for GenAI 会解析图像中的文本（包括 PDF 文档中的图像），这会产生更高的成本。
 
 +
 如果包含图像中的文本数据、则在将扫描的文本数据从您的环境发送到AWS时、GenAI无法屏蔽图像中的个人身份信息(个人身份信息、(PI))。但是、一旦存储数据、所有的数据都会在GenAI数据库中屏蔽。
@@ -211,7 +213,7 @@ NOTE: 选择较高的重叠百分比会显著增加存储需求、但检索准�
 +
 *** 在*文件类型支持*部分，选择包括所有类型的文件，或选择要包含在数据源扫描中的单个文件类型。
 +
-如果您包含图像或PDF文件、BlueXP  Workload Factory for GenAI将解析图像中的文本(包括PDF文档中的图像)、这将导致成本增加。
+如果您包含图像或 PDF 文件， NetApp Workload Factory for GenAI 会解析图像中的文本（包括 PDF 文档中的图像），这会产生更高的成本。
 
 +
 如果包含图像中的文本数据、则在将扫描的文本数据从您的环境发送到AWS时、GenAI无法屏蔽图像中的个人身份信息(个人身份信息、(PI))。但是、一旦存储数据、所有的数据都会在GenAI数据库中屏蔽。
@@ -246,8 +248,9 @@ NOTE: 如果您包含基于修改日期范围的文件、则只要不满足日�
 同步是增量操作、因此Amazon Q Business仅处理数据源中自上次同步以来添加、修改或删除的对象。
 
 .步骤
-. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
-. 从"Knowledge Bases & Connectors (知识库和连接器)"选项卡中、选择要同步的连接器。
+. 使用以下方式之一登录 Workload Factorylink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
+. 在AI Workloads (AI工作负载)磁贴中、选择*部署和管理*。
+. 从知识库和连接器菜单中，选择要同步的连接器。
 . 选择image:icon-action.png["选项按钮"]并选择*Manage connector*。
 . 选择*Actions*菜单，然后选择*Scan Now (立即扫描)*。
 +
@@ -265,7 +268,8 @@ NOTE: 如果您包含基于修改日期范围的文件、则只要不满足日�
 如果要暂停或恢复数据源的下次同步(扫描)、您可以随时执行此操作。如果要更改数据源、并且不希望在更改窗口期间进行同步、则可能需要暂停下一次计划同步。
 
 .步骤
-. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
+. 使用以下方式之一登录 Workload Factorylink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
+. 在AI Workloads (AI工作负载)磁贴中、选择*部署和管理*。
 . 从连接器清单页面中、选择要暂停或恢复扫描的连接器。
 . 选择image:icon-action.png["选项按钮"]并选择*Manage connector*。
 . 选择*Actions*菜单，然后选择*Scan > Pause Scheduled scan-*或*Scan > Resume Scheduled scan-*。
@@ -278,12 +282,13 @@ NOTE: 如果您包含基于修改日期范围的文件、则只要不满足日�
 
 == 删除连接器
 
-如果您不再需要连接器、可以将其删除。删除连接器后、该连接器将从工作负载出厂时删除、并且包含该连接器的卷也将被删除。删除连接器是不可逆的。
+如果您不再需要连接器，您可以将其删除。当您删除连接器时，它将从 Workload Factory 中删除，并且包含该连接器的卷也将被删除。删除连接器是不可逆的。
 
 删除连接器时，还应解除连接器与与其关联的任何代理的关联，以完全删除与连接器关联的所有资源。
 
 .步骤
-. 使用其中一个登录到工作负载工厂link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
+. 使用以下方式之一登录 Workload Factorylink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
+. 在AI Workloads (AI工作负载)磁贴中、选择*部署和管理*。
 . 从"Knowledge Bases & Connectors (知识库和连接器)"清单页面中、选择要删除的连接器。
 . 选择image:icon-action.png["选项按钮"]并选择*Manage connector*。
 . 选择*Actions*菜单，然后选择*Delete connector*。
@@ -291,4 +296,4 @@ NOTE: 如果您包含基于修改日期范围的文件、则只要不满足日�
 
 
 .结果
-此连接器将从工作负载出厂时删除、并且其关联卷也将被删除。
+连接器已从 Workload Factory 中移除，并且其关联的卷已被删除。

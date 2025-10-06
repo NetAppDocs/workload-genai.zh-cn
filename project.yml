@@ -18,9 +18,9 @@ sidebar:
     entries:
     - title: 新增功能
       url: "/whats-new.html"
-  - title: 了解适用于GenAI的BlueXP  工作负载工厂
+  - title: 了解NetApp Workload Factory for GenAI
     entries:
-    - title: 了解适用于GenAI的BlueXP  工作负载工厂
+    - title: 了解NetApp Workload Factory for GenAI
       url: "/general/ai-workloads-overview.html"
     - title: NetApp GenAI引擎的组件
       url: "/general/genai-engine-instance.html"
@@ -87,5 +87,5 @@ sidebar:
   - title: 法律声明
     url: "/legal-notices.html"
 product-family:
-  name: BlueXP workload factory
+  name: NetApp Workload Factory
   repo: workload-family

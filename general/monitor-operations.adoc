@@ -2,19 +2,19 @@
 sidebar: sidebar 
 permalink: general/monitor-operations.html 
 keywords: monitor genai, monitor jobs, track jobs, tracker 
-summary: 使用 BlueXP 工作负载工厂中的 Tracker 来跟踪工作负载操作并监控作业进度。 
+summary: 使用NetApp Workload Factory for GenAI 中的 Tracker 跟踪工作负载操作并监控作业进度。 
 ---
-= 使用 BlueXP 工作负载工厂中的 Tracker 监控工作负载操作
+= 使用NetApp Workload Factory 中的 Tracker 监控工作负载操作
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-在BlueXP  工作负载工厂中使用跟踪器监控和跟踪工作负载操作的执行情况、并监控任务进度。
+使用NetApp Workload Factory 中的 Tracker 监控和跟踪工作负载操作的执行情况并监控任务进度。
 
 .关于此任务
-Workload Factory提供了一种监控功能、可用于监控和跟踪工作负载操作的进度和状态、查看操作任务和子任务的详细信息以及诊断任何问题或故障。
+NetApp Workload Factory 提供监控功能 Tracker，因此您可以监控和跟踪工作负载操作的进度和状态、查看操作任务和子任务的详细信息以及诊断任何问题或故障。
 
 Tracker提供了多种操作。您可以按时间范围(过去24小时、7天、14天或30天)、工作负载、状态和用户筛选作业；使用搜索功能查找作业；以及将作业表下载为CSV文件。您可以随时刷新Tracker、并快速重试失败的操作、或者编辑失败操作的参数并重试此操作。
 
@@ -42,15 +42,12 @@ Tracker支持两个级别的监控、具体取决于操作。每个任务(例如
 
 == 跟踪和监控操作
 
-使用跟踪器在BlueXP  中跟踪和监控操作。
+使用 Tracker 跟踪和监控 Workload Factory 控制台中的操作。
 
 .步骤
 . 使用其中一个登录link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
-. 在工作负载中，选择帐户设置菜单，然后选择*Tracker。
-+
-image:screenshot-menu-tracker-option.png["帐户设置菜单的屏幕截图、突出显示了Tracker选项。"]
-
-. 在Tracker选项卡中、使用筛选器或搜索功能缩小作业结果范围。您也可以下载作业报告。
+. 从工作量菜单中，选择*管理*，然后选择*跟踪器*。
+. 在 Tracker 中，使用过滤器或搜索来缩小工作结果范围。您还可以下载工作报告。
 
 
 
@@ -61,7 +58,7 @@ image:screenshot-menu-tracker-option.png["帐户设置菜单的屏幕截图、�
 
 .步骤
 . 在Tracker中、选择一个任务。
-. 选择三点菜单，然后选择*查看API请求*。
+. 选择操作菜单，然后选择*查看 API 请求*。
 
 
 
@@ -75,7 +72,7 @@ NOTE: 对于失败的操作、您最多可以重试10次。
 
 .步骤
 . 在Tracker中、选择失败的操作。
-. 选择三点菜单，然后选择*Retry*。
+. 选择操作菜单，然后选择*重试*。
 
 
 .结果
@@ -89,7 +86,7 @@ NOTE: 对于失败的操作、您最多可以重试10次。
 
 .步骤
 . 在Tracker中、选择失败的操作。
-. 选择三点菜单，然后选择*编辑并重试*。
+. 选择操作菜单，然后选择*编辑并重试*。
 +
 系统会将您重定向到操作页面、您可以在其中编辑参数并重试此操作。
 
